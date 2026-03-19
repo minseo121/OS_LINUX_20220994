@@ -1,0 +1,12 @@
+Script started on 2026-03-20 05:14:30+09:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week02[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week02[00m$ you[K[K[Ktu[Koou[K[Kuch test.txt
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week02[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week02[00m$ ls
+[?2004l2026_20220994_week02_log.txt  t.txt  test.txt
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week02[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week02[00m$ [7mwatch -n 1 ls -l 2026_20220994_week02_log.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwatch -n 1 ls -l 2026_20220994_week02_log.txt
+[?2004l[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m]4;8;rgb:54/54/54\]4;9;rgb:FF/54/54\]4;10;rgb:54/FF/54\]4;11;rgb:FF/FF/54\]4;12;rgb:54/54/FF\]4;13;rgb:FF/54/FF\]4;14;rgb:54/FF/FF\[39;49m(B[m[H[2JEvery 1.0s: ls -l 2026_20220994_week02_log.txt[1;80HDESKTOP-2HHEQA0: Fri Mar 20 05:15:38 2026[3;1H-rw-r--r-- 1 minseo minseo 909 Mar 20 05:15 2026_20220994_week02_log.txt[30;120H(B[m[1;115H9[3;28H1309 Mar 20 05:15 2026_20220994_week02_log.txt[30;120H(B[m[1;114H40[3;30H86[30;120H(B[m[1;115H1[3;29H420[30;120H(B[m[1;115H2[3;30H54[30;120H(B[m[3;30H87[3;40H 2026[30;120H(B[m[1;115H3[3;29H523[3;40H05:15[30;120H(B[m[39;49m]104[30;1H[?1049l[23;0;0t[?1l>[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week02[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week02[00m$ exit
+[?2004lexit
+
+Script done on 2026-03-20 05:15:48+09:00 [COMMAND_EXIT_CODE="0"]
