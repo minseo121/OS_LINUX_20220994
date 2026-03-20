@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  nginx-server:
+    image: nginx:1.25-alpine
+    container_name: my-web-proxy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./html:/usr/share/nginx/html
+      #여기서 이미 폴더에 있는 html을 사용하겠다고 적어둠.
+      #즉, 로컬 html 폴더 → nginx 웹 루트 연결 
+    networks:
+      - web-net
+
+networks:
+  web-net:
+    driver: bridge
