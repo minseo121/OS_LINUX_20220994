@@ -1102,4 +1102,1198 @@ drwxr-xr-x 2 minseo minseo 4096 Mar 20 09:29 [01;34m2026-03-20[0m
 drwxr-xr-x 3 minseo minseo 4096 Mar 20 11:49 [01;34mweek02[0m
 drwxr-xr-x 4 minseo minseo 4096 Mar 20 10:12 [01;34mweek03[0m
 [?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ ls -al[Kmv week02/.git .[6Pcd ~/linux[1Pgit add .
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ git commit -m ""3"w"n"c"k"[1P"[1P"[1P"[1P"주"차 "수"업 "진"행"
+[?2004l[main a3440b6] 3주차 수업 진행
+ 16 files changed, 11687 insertions(+)
+ create mode 100644 2026-03-20/minseo_2026-03-20_session.log
+ create mode 100644 2026-03-20/minseo_2026-03-20_session.tm
+ rename 2026_20220994_week02_log.txt => week02/2026_20220994_week02_log.txt (100%)
+ rename get-docker.sh => week02/get-docker.sh (100%)
+ rename readme.md => week02/readme.md (100%)
+ rename t.txt => week02/t.txt (100%)
+ rename test.txt => week02/test.txt (100%)
+ rename test2.txt => week02/test2.txt (100%)
+ rename test3.txt => week02/test3.txt (100%)
+ rename {www => week02/www}/50x.html (100%)
+ rename {www => week02/www}/index.html (100%)
+ create mode 100644 week03/2026_20220994_week03_log.txt
+ create mode 100644 week03/t.txt
+ create mode 100644 week03/web_service/docker-compose.yml
+ create mode 100644 week03/web_service/html/about.html
+ create mode 100644 week03/web_service/html/index.html
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ git push rogiai[K[K[K[K[K[Korigin main
+[?2004lEnumerating objects: 14, done.
+Counting objects:   7% (1/14)Counting objects:  14% (2/14)Counting objects:  21% (3/14)Counting objects:  28% (4/14)Counting objects:  35% (5/14)Counting objects:  42% (6/14)Counting objects:  50% (7/14)Counting objects:  57% (8/14)Counting objects:  64% (9/14)Counting objects:  71% (10/14)Counting objects:  78% (11/14)Counting objects:  85% (12/14)Counting objects:  92% (13/14)Counting objects: 100% (14/14)Counting objects: 100% (14/14), done.
+Delta compression using up to 16 threads
+Compressing objects:   7% (1/13)Compressing objects:  15% (2/13)Compressing objects:  23% (3/13)Compressing objects:  30% (4/13)Compressing objects:  38% (5/13)Compressing objects:  46% (6/13)Compressing objects:  53% (7/13)Compressing objects:  61% (8/13)Compressing objects:  69% (9/13)Compressing objects:  76% (10/13)Compressing objects:  84% (11/13)Compressing objects:  92% (12/13)Compressing objects: 100% (13/13)Compressing objects: 100% (13/13), done.
+Writing objects:   7% (1/13)Writing objects:  15% (2/13)Writing objects:  23% (3/13)Writing objects:  38% (5/13)Writing objects:  46% (6/13)Writing objects:  53% (7/13)Writing objects:  61% (8/13)Writing objects:  69% (9/13)Writing objects:  76% (10/13)Writing objects:  84% (11/13)Writing objects:  92% (12/13)Writing objects: 100% (13/13)Writing objects: 100% (13/13), 60.33 KiB | 2.87 MiB/s, done.
+Total 13 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), done.[K
+To https://github.com/minseo121/OS_LINUX_20220994.git
+   9498251..a3440b6  main -> main
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ [?2004l
+exit
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/update-motd.d[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/update-motd.d[00m$ Script started on 2026-03-27 09:23:38+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="98" LINES="30"]
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-27[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-27[00m$ [7mwatch -n 1 ls -l 2026_20220994_week03_log.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwatch -n 1 ls -l 2026_20220994_week03_log.txt
+[?2004l[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m]4;8;rgb:54/54/54\]4;9;rgb:FF/54/54\]4;10;rgb:54/FF/54\]4;11;rgb:FF/FF/54\]4;12;rgb:54/54/FF\]4;13;rgb:FF/54/FF\]4;14;rgb:54/FF/FF\[39;49m(B[m[H[2JEvery 1.0s: ls -l 2026_20220994_week03_log.txt[1;58HDESKTOP-2HHEQA0: Fri Mar 27 09:23:54 2026[3;1Hls: cannot access '2026_20220994_week03_log.txt': No such file or directory[30;98H(B[m[1;93H5[30;98H[1;93H6[30;98H[1;93H7[30;98H[1;93H8[30;98H[1;93H9[30;98H[39;49m]104[30;1H[?1049l[23;0;0t[?1l>[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-27[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-27[00m$ [7mcd week03[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd week03
+[A
+[?2004lbash: cd: week03: No such file or directory
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-27[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-27[00m$ cd /[K..
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ cd ..week03
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ [7mmkdir –p web_service/html[27mmkdir –p web_service/html
+[?2004lmkdir: cannot create directory ‘–p’: File exists
+mkdir: cannot create directory ‘web_service/html’: File exists
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ mkdir -[ [K[Kp web [K_serciv[K[K[Kvie[Kce/html
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ cd ../[K[K[Kweb-s[K[K_service
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ touch docker.[K-compose.xml
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ nano docker-compose
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;44H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2                              docker-compose                                        [1;97H(B[m[29d(B[0;7m^G(B[m Help[29;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[29;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location[30d(B[0;7m^X(B[m Exit[30;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[30;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line[2d[?12l[?25h[?25l[28d[K[1;60H(B[0;7m*[97G(B[m[2d[36m# 실무형 docker-compose.yml 예시[3d[39m(B[mversion: '3.8'[4dservices:[5d nginx-server:[6d image: nginx:1.25-alpine[7d container_name: my-web-proxy[8d restart: unless-stopped[9d ports:[10d - "80:80"[11d volumes:[12d - ./html:/usr/share/nginx/html[13d networks:[14d - web-net[15dnetworks:[16d web-net:[17d driver: bridge[18d[?12l[?25h[?25l[?12l[?25h[17;16H[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K [?25l[?12l[?25h[?25l[16;10H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K [?25l[?12l[?25h[?25l[15;10H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[14;11H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h[K [?25l[?12l[?25h[?25l[13;11H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K [?25l[?12l[?25h[?25l[12;32H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h[K [?25l[?12l[?25h[?25l[11;10H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K [?25l[?12l[?25h[?25l[10;11H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h[K [?25l[?12l[?25h[?25l[9;8H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K [?25l[?12l[?25h[?25l[8;25H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K [?25l[?12l[?25h[?25l[7;30H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K [?25l[?12l[?25h[?25l[6;26H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K [?25l[?12l[?25h[?25l[5;15H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K [?25l[?12l[?25h[?25l[4;10H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[3;15H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[2;33H[?12l[?25h[?25l[?12l[?25h[K[?25l[?12l[?25h[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[?12l[?25h[K[?25l[?12l[?25h[K[?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[28d(B[0;7mSave modified buffer?                                                                             [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;18H(B[0;7mC(B[m Cancel[K[28;23H[?12l[?25h[?25l[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ code docker-compose.
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ [7msudo apt install docker-compose[27msudo apt install docker-compose
+[?2004l[sudo] password for minseo: 
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 0sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 1sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 2sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 3sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 4sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 5sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 6sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 7sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 8sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 9sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 10sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 11sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 12sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 13sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 14sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 15sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 16sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 17sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 18sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 19sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 20sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 21sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 22sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 23sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 24sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 25sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 26sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 27sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 28sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 29sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)... 30sWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 1116 (unattended-upgr)       
+Reading package lists... 0%                                                                                         Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+docker-compose is already the newest version (1.29.2-6ubuntu1).
+0 upgraded, 0 newly installed, 0 to remove and 13 not upgraded.
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ [7mdocker-compose up -d[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker-compose up -d
+[A
+[?2004lmy-web-proxy is up-to-date
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ ls
+[?2004ldocker-compose  docker-compose.xml  docker-compose.yml  [0m[01;34mhtml[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ cd html/
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ ls
+[?2004labout.html  index.html  [0m[01;34mpds[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ [7mdocker-compose ps[27mdocker-compose ps
+[?2004l    Name                  Command               State                Ports              
+----------------------------------------------------------------------------------------
+my-web-proxy   /docker-entrypoint.sh ngin ...   Up      0.0.0.0:80->80/tcp,:::80->80/tcp
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ [7mdocker-compose stop[27mdocker-compose stop
+[?2004lStopping my-web-proxy ... 
+[1A[2KStopping my-web-proxy ... [32mdone[0m[1B[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ [7mmkdir pds[27mmkdir pds
+[?2004lmkdir: cannot create directory ‘pds’: File exists
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ [7mgetent group[27mgetent group
+[?2004lroot:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,minseo
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:minseo
+floppy:x:25:
+tape:x:26:
+sudo:x:27:minseo
+audio:x:29:
+dip:x:30:minseo
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:minseo
+staff:x:50:
+games:x:60:
+users:x:100:minseo,guest,web_ad,guest2
+nogroup:x:65534:
+systemd-journal:x:999:
+systemd-network:x:998:
+crontab:x:997:
+systemd-timesync:x:996:
+input:x:995:
+sgx:x:994:
+kvm:x:993:
+render:x:992:
+messagebus:x:101:
+syslog:x:102:
+systemd-resolve:x:991:
+uuidd:x:103:
+_ssh:x:104:
+landscape:x:105:
+polkitd:x:990:
+admin:x:106:
+netdev:x:107:
+minseo:x:1000:
+docker:x:989:minseo
+guest:x:1001:
+web_admin:x:1002:
+web_ad:x:1003:
+guest2:x:1004:
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ getent group[3Pmkdir pds[K[K[Kminseo
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ mkdir ge[Kuset
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ mkdir [K[K[K[K[K[Kls
+[?2004labout.html  [0m[01;34mguset[0m  index.html  [01;34mminseo[0m  [01;34mpds[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ [7mstat pds[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstat pds
+[A
+[?2004l  File: pds
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,48	Inode: 47619       Links: 2
+Access: (0770/drwxrwx---)  Uid: ( 1000/  minseo)   Gid: (   33/www-data)
+Access: 2026-03-20 11:43:55.872148013 +0900
+Modify: 2026-03-20 10:14:14.800777858 +0900
+Change: 2026-03-20 11:18:28.380132283 +0900
+ Birth: 2026-03-20 10:14:14.800777858 +0900
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ rmdir minseo
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ rmdir guset
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ ls
+[?2004labout.html  index.html  [0m[01;34mpds[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ [7mgetent group www-data[27mgetent group www-data
+[?2004lwww-data:x:33:
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ [7msudo chgrp www-data html/pds[27msudo chgrp www-data html/pds
+[?2004lchgrp: cannot access 'html/pds': No such file or directory
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ [7msudo chgrp www-data pds[27msudo chgrp www-data pds
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ [7msudo chmod 755 pds[27msudo chmod 755 pds
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ sudo chmod 755 pds[5@grp www-data[C[C[C[Chtml/pds[7Pgetent group www-datals[Krmdir gusetminseo[4Pstat pdsls[Kstat pds
+[?2004l  File: pds
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,48	Inode: 47619       Links: 2
+Access: (0755/drwxr-xr-x)  Uid: ( 1000/  minseo)   Gid: (   33/www-data)
+Access: 2026-03-20 11:43:55.872148013 +0900
+Modify: 2026-03-20 10:14:14.800777858 +0900
+Change: 2026-03-27 09:32:15.314400015 +0900
+ Birth: 2026-03-20 10:14:14.800777858 +0900
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ [7msudo adduser guest[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo adduser guest
+[A
+[?2004lfatal: The user `guest' already exists.
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ [7msudo chmod 770 pds[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo chmod 770 pds
+[A
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ [7msu guest[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csu guest
+[A
+[?2004lPassword: 
+[?2004h]0;guest@DESKTOP-2HHEQA0: /home/minseo/linux/week03/web_service/html[01;32mguest@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week03/web_service/html[00m$ su guesr[Kt2
+[?2004lPassword: 
+[?2004h]0;guest2@DESKTOP-2HHEQA0: /home/minseo/linux/week03/web_service/html[01;32mguest2@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week03/web_service/html[00m$ [7msudo visudo[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo visudo
+[A
+[?2004l[sudo] password for guest2: 
+guest2 is not in the sudoers file.
+[?2004h]0;guest2@DESKTOP-2HHEQA0: /home/minseo/linux/week03/web_service/html[01;32mguest2@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week03/web_service/html[00m$ cd ../[K[K[K~/etc/sudor[Kers
+[?2004lbash: cd: /home/guest2/etc/sudoers: No such file or directory
+[?2004h]0;guest2@DESKTOP-2HHEQA0: /home/minseo/linux/week03/web_service/html[01;32mguest2@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week03/web_service/html[00m$ su minseo
+[?2004lPassword: 
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-27[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-27[00m$ cd ..
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ cd /etc/skel
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ ls -al
+[?2004ltotal 20
+drwxr-xr-x  2 root root 4096 Mar 20 11:32 [0m[01;34m.[0m
+drwxr-xr-x 90 root root 4096 Mar 27 09:27 [01;34m..[0m
+-rw-r--r--  1 root root  220 Mar 31  2024 .bash_logout
+-rw-r--r--  1 root root 3771 Mar 31  2024 .bashrc
+-rw-r--r--  1 root root  806 Mar 20 11:32 .profile
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ su - guest
+[?2004lPassword: 
+반갑습니다 to Ubuntu 24.04.4 LTS (GNU/Linux 6.6.87.2-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Fri Mar 27 09:36:35 KST 2026
+
+  System load:  0.0                 Processes:             45
+  Usage of /:   0.2% of 1006.85GB   Users logged in:       1
+  Memory usage: 6%                  IPv4 address for eth0: 172.21.174.24
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+This message is shown once a day. To disable it please create the
+/home/guest/.hushlogin file.
+[?2004h]0;guest@DESKTOP-2HHEQA0: ~[01;32mguest@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ cd /etc/skel
+[?2004l[?2004h]0;guest@DESKTOP-2HHEQA0: /etc/skel[01;32mguest@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ cat .por[K[Krogi[K[Kfile
+[?2004l# ~/.profile: executed by the command interpreter for login shells.
+# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
+# exists.
+# see /usr/share/doc/bash/examples/startup-files for examples.
+# the files are located in the bash-doc package.
+
+# the default umask is set in /etc/profile; for setting the umask
+# for ssh logins, install and configure the libpam-umask package.
+umask 077
+
+# if running bash
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+	. "$HOME/.bashrc"
+    fi
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+[?2004h]0;guest@DESKTOP-2HHEQA0: /etc/skel[01;32mguest@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ su[K[Ksu minseo
+[?2004lPassword: 
+-----------------------------------------------
+ 알림: 오늘의 로그 파일이 이미 존재합니다.
+-----------------------------------------------
+[?2004h]0;guest@DESKTOP-2HHEQA0: /etc/skel[01;32mguest@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ su[K[Ksu minseo
+[?2004lPassword: 
+-----------------------------------------------
+ 알림: 오늘의 로그 파일이 이미 존재합니다.
+-----------------------------------------------
+-----------------------------------------------
+ 이어서 기록합니다. 취소하려면 Ctrl+C
+-----------------------------------------------
+Script started, output log file is '/home/minseo/linux/2026-03-27/minseo_2026-03-27_session.log', timing file is '/home/minseo/linux/2026-03-27/minseo_2026-03-27_session.tm'.
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-27[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-27[00m$ cd ..
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ su[K[Kcat.[K .por[K[Krofile
+[?2004lcat: .profile: No such file or directory
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ cd /ec[Ktc.s[K[K/skel
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ cat .profile
+[?2004l# ~/.profile: executed by the command interpreter for login shells.
+# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
+# exists.
+# see /usr/share/doc/bash/examples/startup-files for examples.
+# the files are located in the bash-doc package.
+
+# the default umask is set in /etc/profile; for setting the umask
+# for ssh logins, install and configure the libpam-umask package.
+umask 077
+
+# if running bash
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+	. "$HOME/.bashrc"
+    fi
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ sudo nano /etc/se[Kkel.[K/.profile
+[?2004l[sudo] password for minseo: 
+[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;43H(B[0;7m[ Reading... ](B[m[28;41H(B[0;7m[ Read 27 lines ](B[m[H(B[0;7m  GNU nano 7.2                            /etc/skel/.profile                                      [1;97H(B[m[29d(B[0;7m^G(B[m Help[29;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[29;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location[30d(B[0;7m^X(B[m Exit[30;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[30;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line[2d[36m# ~/.profile: executed by the command interpreter for login shells.[3d# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login[4d# exists.[5d# see /usr/share/doc/bash/examples/startup-files for examples.[6d# the files are located in the bash-doc package.[8d# the default umask is set in /etc/profile; for setting the umask[9d# for ssh logins, install and configure the libpam-umask package.[10d(B[0;1m[34mumask[39m(B[m 077[12d[36m# if running bash[13d[32mif[39m(B[m [32m[(B[0;1m[35m -n[39m(B[m (B[0;1m[33m"$BASH_VERSION"[39m(B[m [32m];[39m(B[m [32mthen[14;4H[36m # include .bashrc if it exists[15;5H[32mif[39m(B[m [32m[(B[0;1m[35m -f[39m(B[m (B[0;1m[33m"$HOME/.bashrc"[39m(B[m [32m];[39m(B[m [32mthen[16;9H[39m(B[m. (B[0;1m[33m"$HOME/.bashrc"[17;5H(B[0m[32mfi[18dfi[20d[36m# set PATH so it includes user's private bin if it exists[21d[32mif[39m(B[m [32m[(B[0;1m[35m -d[39m(B[m (B[0;1m[33m"$HOME/bin"[39m(B[m [32m][39m(B[m [32m;[39m(B[m [32mthen[22;5H[39m(B[mPATH[32m=(B[0;1m[33m"$HOME/bin:$PATH"[23d(B[0m[32mfi[25d[36m# set PATH so it includes user's private bin if it exists[26d[32mif[39m(B[m [32m[(B[0;1m[35m -d[39m(B[m (B[0;1m[33m"$HOME/.local/bin"[39m(B[m [32m][39m(B[m [32m;[39m(B[m [32mthen[27;5H[39m(B[mPATH[32m=(B[0;1m[33m"$HOME/.local/bin:$PATH"[2d[39m(B[m[?12l[?25h[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ cat .v[Kbashrc
+[?2004l# ~/.bashrc: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# for examples
+
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
+
+# append to the history file, don't overwrite it
+shopt -s histappend
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+
+# If set, the pattern "**" used in a pathname expansion context will
+# match all files and zero or more directories and subdirectories.
+#shopt -s globstar
+
+# make less more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
+# set variable identifying the chroot you work in (used in the prompt below)
+if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
+    debian_chroot=$(cat /etc/debian_chroot)
+fi
+
+# set a fancy prompt (non-color, unless we know we "want" color)
+case "$TERM" in
+    xterm-color|*-256color) color_prompt=yes;;
+esac
+
+# uncomment for a colored prompt, if the terminal has the capability; turned
+# off by default to not distract the user: the focus in a terminal window
+# should be on the output of commands, not on the prompt
+#force_color_prompt=yes
+
+if [ -n "$force_color_prompt" ]; then
+    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+	# We have color support; assume it's compliant with Ecma-48
+	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+	# a case would tend to support setf rather than setaf.)
+	color_prompt=yes
+    else
+	color_prompt=
+    fi
+fi
+
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+fi
+unset color_prompt force_color_prompt
+
+# If this is an xterm set the title to user@host:dir
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    ;;
+*)
+    ;;
+esac
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# colored GCC warnings and errors
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ sudo[Ko nano .bashrc
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;43H(B[0;7m[ Reading... ](B[m[28;41H(B[0;7m[ Read 117 lines ](B[m[H(B[0;7m  GNU nano 7.2                                  .bashrc                                           [1;97H(B[m[29d(B[0;7m^G(B[m Help[29;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[29;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location[30d(B[0;7m^X(B[m Exit[30;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[30;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line[2d[36m# ~/.bashrc: executed by bash(1) for non-login shells.[3d# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)[4d# for examples[6d# If not running interactively, don't do anything[7d[32mcase[39m(B[m (B[0;1m[31m$-[39m(B[m [32min[8;5H[39m(B[m*i*[32m)[39m(B[m [32m;;[9;7H[39m(B[m*[32m)[39m(B[m [32mreturn;;[10desac[12d[36m# don't put duplicate lines or lines starting with space in the history.[13d# See bash(1) for more options[14d[39m(B[mHISTCONTROL[32m=[39m(B[mignoreboth[16d[36m# append to the history file, don't overwrite it[17d[39m(B[mshopt(B[0;1m[35m -s[39m(B[m histappend[19d[36m# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)[20d[39m(B[mHISTSIZE[32m=[39m(B[m1000[21dHISTFILESIZE[32m=[39m(B[m2000[23d[36m# check the window size after each command and, if necessary,[24d# update the values of LINES and COLUMNS.[25d[39m(B[mshopt(B[0;1m[35m -s[39m(B[m checkwinsize[27d[36m# If set, the pattern (B[0;1m[33m"**"(B[0m[36m used in a pathname expansion context will[2d[39m(B[m[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[16d[?25l[?12l[?25h[17d[?25l[?12l[?25h[18d[?25l[?12l[?25h[19d[?25l[?12l[?25h[20d[?25l[?12l[?25h[21d[?25l[1;57H(B[0;7m*[28d(B[m[K[1;97H[21;27r[21;1HM[1;30r[22;1H[?12l[?25h[?25l[21;28r[28;1H
+[1;30r[27;1H[36m# If set, the pattern (B[0;1m[33m"**"(B[0m[36m used in a pathname expansion context will[21d[39m(B[m[?12l[?25h[?25l[?12l[?25h[22d[?25l[?12l[?25h[32m\[39m(B[m[?25l7[23;27r8[23dM[1;30r[23;1H[?12l[?25h[?25l[23;28r[28;1H
+[1;30r[27;1H[36m# If set, the pattern (B[0;1m[33m"**"(B[0m[36m used in a pathname expansion context will[22;2H[39m(B[m[?12l[?25h[?25l[?12l[?25h[K[?25l7[22;27r8M[1;30r[23;1H[?12l[?25h[?25l[32mexport[39m(B[m HISTTIMEFORMAT[32m=(B[0;1m[33m"[%Y-%m-%d %H:%M:%S] "[39m(B[m[?12l[?25h[?25l7[24;28r8[24dM[1;30r[24;1H[?12l[?25h[?25l[28;43H(B[0;7m[ Writing... ](B[m[1;57H(B[0;7m [97G(B[m[28;40H(B[0;7m[ Wrote 119 lines ](B[m[?12l[?25h[24d[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ sudo nano create_user.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;44H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2                              create_user.sh                                        [1;97H(B[m[29d(B[0;7m^G(B[m Help[29;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[29;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location[30d(B[0;7m^X(B[m Exit[30;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[30;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line[2d[?12l[?25h[?25l[28d[K[1;60H(B[0;7m*[97G(B[m[2d[36m#!/bin/bash[3d[32mfor[39m(B[m i [32min[39m(B[m [32m{[39m(B[m1..20[32m}[36m # 반복문[4d[32mdo[5d[39m(B[museradd(B[0;1m[35m -m -s[39m(B[m /bin/bash (B[0;1m[33m"student$i"(B[0m[36m # 홈, bash쉘 지정[6;2H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"student$i:password!"[39m(B[m [32m|[39m(B[m chpasswd[7d[36m # 보안 설정 추가: 첫 로그인 시 비번 변경 강제[8;2H[39m(B[mchage(B[0;1m[35m -d[39m(B[m 0 (B[0;1m[33m"student$i"[9d(B[0m[32mdone[10d[39m(B[m[?12l[?25h[?25l[28;43H(B[0;7m[ Writing... ](B[m[1;60H(B[0;7m [97G(B[m[28;41H(B[0;7m[ Wrote 8 lines ](B[m[?12l[?25h[10d[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ [7msudo touch readme.txt[27msudo touch readme.txt
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ sudo nano readme.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;43H(B[0;7m[ Reading... ](B[m[28;42H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 7.2                                readme.txt                                          [1;97H(B[m[29d(B[0;7m^G(B[m Help[29;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[29;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location[30d(B[0;7m^X(B[m Exit[30;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[30;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line[2d[?12l[?25h[?25l[1;58H(B[0;7m*[97G(B[m[?12l[?25h[2dㅗ[?25l[?12l[?25h[K[?25l[?12l[?25hH[?25l[?12l[?25he[?25l[?12l[?25hl[?25l[?12l[?25hl[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25hs[?25l[?12l[?25hu[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25hu[?25l[?12l[?25hd[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25he[?25l[28d[K[?12l[?25h[2;12Hn[?25l[?12l[?25ht[?25l[?12l[?25h![?25l[3d[?12l[?25h[?25l[?12l[?25hw[?25l[?12l[?25he[?25l[?12l[?25hl[?25l[?12l[?25hc[?25l[?12l[?25ho[?25l[?12l[?25hm[?25l[?12l[?25he[?25l[?12l[?25h![?25l[28;43H(B[0;7m[ Writing... ](B[m[1;58H(B[0;7m [97G(B[m[28;41H(B[0;7m[ Wrote 2 lines ](B[m[?12l[?25h[3;9H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ ㅣㄴ [K[K[Ksl[K[Kls -al
+[?2004ltotal 28
+drwxr-xr-x  2 root root 4096 Mar 27 09:39 [0m[01;34m.[0m
+drwxr-xr-x 90 root root 4096 Mar 27 09:27 [01;34m..[0m
+-rw-r--r--  1 root root  220 Mar 31  2024 .bash_logout
+-rw-r--r--  1 root root 3817 Mar 27 09:38 .bashrc
+-rw-r--r--  1 root root  806 Mar 20 11:32 .profile
+-rw-r--r--  1 root root  235 Mar 27 09:39 create_user.sh
+-rw-r--r--  1 root root   24 Mar 27 09:39 readme.txt
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ su[K[Ksdu[K[Kudo chmod +x create [K_user.sh
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ ls
+[?2004l[0m[01;32mcreate_user.sh[0m  readme.txt
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ sudo ./r[Kce[Kreate_suer[K[K[K[Kuser.sh
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ cd /home/
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ ls
+[?2004l[0m[01;34mguest[0m   [01;34mstudent1[0m   [01;34mstudent12[0m  [01;34mstudent15[0m  [01;34mstudent18[0m  [01;34mstudent20[0m  [01;34mstudent5[0m  [01;34mstudent8[0m  [01;34mweb_admin[0m
+[01;34mguest2[0m  [01;34mstudent10[0m  [01;34mstudent13[0m  [01;34mstudent16[0m  [01;34mstudent19[0m  [01;34mstudent3[0m   [01;34mstudent6[0m  [01;34mstudent9[0m
+[01;34mminseo[0m  [01;34mstudent11[0m  [01;34mstudent14[0m  [01;34mstudent17[0m  [01;34mstudent2[0m   [01;34mstudent4[0m   [01;34mstudent7[0m  [01;34mweb_ad[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ [K]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ [K]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ [K]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ [K]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ [K]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ [K]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ [K]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ [K]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ [K]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ [K]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ [K]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ cd stu[Kudent9
+[?2004lbash: cd: student9: Permission denied
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ cd[Kode [K[K[K[K[Kcoe[K[K[K[7msudo touch readme.txt[27m[1Psudo touch readme.tx[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksl[K[Kls -al
+[?2004ltotal 108
+drwxr-xr-x 27 root      root      4096 Mar 27 09:40 [0m[01;34m.[0m
+drwxr-xr-x 22 root      root      4096 Mar 27 09:19 [01;34m..[0m
+drwxr-x---  3 guest     guest     4096 Mar 20 11:23 [01;34mguest[0m
+drwxr-x---  2 guest2    guest2    4096 Mar 20 11:41 [01;34mguest2[0m
+drwxr-x---  6 minseo    minseo    4096 Mar 27 09:21 [01;34mminseo[0m
+drwxr-x---  2 student1  student1  4096 Mar 27 09:40 [01;34mstudent1[0m
+drwxr-x---  2 student10 student10 4096 Mar 27 09:40 [01;34mstudent10[0m
+drwxr-x---  2 student11 student11 4096 Mar 27 09:40 [01;34mstudent11[0m
+drwxr-x---  2 student12 student12 4096 Mar 27 09:40 [01;34mstudent12[0m
+drwxr-x---  2 student13 student13 4096 Mar 27 09:40 [01;34mstudent13[0m
+drwxr-x---  2 student14 student14 4096 Mar 27 09:40 [01;34mstudent14[0m
+drwxr-x---  2 student15 student15 4096 Mar 27 09:40 [01;34mstudent15[0m
+drwxr-x---  2 student16 student16 4096 Mar 27 09:40 [01;34mstudent16[0m
+drwxr-x---  2 student17 student17 4096 Mar 27 09:40 [01;34mstudent17[0m
+drwxr-x---  2 student18 student18 4096 Mar 27 09:40 [01;34mstudent18[0m
+drwxr-x---  2 student19 student19 4096 Mar 27 09:40 [01;34mstudent19[0m
+drwxr-x---  2 student2  student2  4096 Mar 27 09:40 [01;34mstudent2[0m
+drwxr-x---  2 student20 student20 4096 Mar 27 09:40 [01;34mstudent20[0m
+drwxr-x---  2 student3  student3  4096 Mar 27 09:40 [01;34mstudent3[0m
+drwxr-x---  2 student4  student4  4096 Mar 27 09:40 [01;34mstudent4[0m
+drwxr-x---  2 student5  student5  4096 Mar 27 09:40 [01;34mstudent5[0m
+drwxr-x---  2 student6  student6  4096 Mar 27 09:40 [01;34mstudent6[0m
+drwxr-x---  2 student7  student7  4096 Mar 27 09:40 [01;34mstudent7[0m
+drwxr-x---  2 student8  student8  4096 Mar 27 09:40 [01;34mstudent8[0m
+drwxr-x---  2 student9  student9  4096 Mar 27 09:40 [01;34mstudent9[0m
+drwxr-x---  2 web_ad    web_ad    4096 Mar 20 11:51 [01;34mweb_ad[0m
+drwxr-x---  2 web_admin web_admin 4096 Mar 20 10:49 [01;34mweb_admin[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ cd sutr[K[K[Ktudect[K[Knt 9
+[?2004lbash: cd: too many arguments
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ cd student 9/
+[?2004lbash: cd: too many arguments
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ cd student 9/[1P9/[C[C
+[?2004lbash: cd: student9/: Permission denied
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ su su[Ktudent9
+[?2004lPassword: 
+su: Authentication failure
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ su student9
+[?2004lPassword: 
+You are required to change your password immediately (administrator enforced).
+Changing password for student9.
+Current password: 
+su: Authentication token manipulation error
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ su student9
+[?2004lPassword: 
+You are required to change your password immediately (administrator enforced).
+Changing password for student9.
+Current password: 
+su: Authentication token manipulation error
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ su student9
+[?2004lPassword: 
+You are required to change your password immediately (administrator enforced).
+Changing password for student9.
+Current password: 
+su: Authentication token manipulation error
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ sudoo[K passwd student9
+[?2004lNew password: 
+Retype new password: 
+passwd: password updated successfully
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ su student9
+[?2004lPassword: 
+[?2004h]0;student9@DESKTOP-2HHEQA0: /home[01;32mstudent9@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ [7mls -l /etc/shadow[27mls -l /etc/shadow
+[?2004l-rw-r----- 1 root shadow 3107 Mar 27 09:48 /etc/shadow
+[?2004h]0;student9@DESKTOP-2HHEQA0: /home[01;32mstudent9@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ [7mls -l /usr/bin/passwd[27mls -l /usr/bin/passwd
+[?2004l-rwsr-xr-x 1 root root 64152 May 30  2024 [0m[37;41m/usr/bin/passwd[0m
+[?2004h]0;student9@DESKTOP-2HHEQA0: /home[01;32mstudent9@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ [7mdf -h[27mdf -h
+[?2004lFilesystem      Size  Used Avail Use% Mounted on
+none            3.8G     0  3.8G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            3.8G  4.0K  3.8G   1% /mnt/wsl
+drivers         471G  370G  102G  79% /usr/lib/wsl/drivers
+/dev/sdd       1007G  2.6G  954G   1% /
+none            3.8G   84K  3.8G   1% /mnt/wslg
+none            3.8G     0  3.8G   0% /usr/lib/wsl/lib
+rootfs          3.8G  2.7M  3.8G   1% /init
+none            3.8G  616K  3.8G   1% /run
+none            3.8G     0  3.8G   0% /run/lock
+none            3.8G     0  3.8G   0% /run/shm
+none            3.8G   76K  3.8G   1% /mnt/wslg/versions.txt
+none            3.8G   76K  3.8G   1% /mnt/wslg/doc
+C:\             471G  370G  102G  79% /mnt/c
+D:\             5.0G  3.4G  1.7G  68% /mnt/d
+tmpfs           764M   20K  764M   1% /run/user/1000
+tmpfs           764M   20K  764M   1% /run/user/1001
+[?2004h]0;student9@DESKTOP-2HHEQA0: /home[01;32mstudent9@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ [7mmount | grep shadow[27mmount | grep shadow
+[?2004l[?2004h]0;student9@DESKTOP-2HHEQA0: /home[01;32mstudent9@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ mount | grep shadowdf -h[Kls -l /usr/bin/passwd[4Petc/shadow[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksu minseo
+[?2004lPassword: 
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-27[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-27[00m$ su [K[Ku ge[K[Kstudent9
+[?2004lPassword: 
+su: Authentication failure
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-27[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-27[00m$ su su[Ktudent [K8
+[?2004lPassword: 
+You are required to change your password immediately (administrator enforced).
+Changing password for student8.
+Current password: 
+New password: 
+Retype new password: 
+You must choose a longer password.
+New password: 
+Retype new password: 
+[?2004h]0;student8@DESKTOP-2HHEQA0: /home/minseo/linux/2026-03-27[01;32mstudent8@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/2026-03-27[00m$ cd studect[K[Knt8
+[?2004lbash: cd: student8: Permission denied
+[?2004h]0;student8@DESKTOP-2HHEQA0: /home/minseo/linux/2026-03-27[01;32mstudent8@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/2026-03-27[00m$ ..[K[Kcd ..[K[K~
+[?2004l[?2004h]0;student8@DESKTOP-2HHEQA0: ~[01;32mstudent8@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ cd /h=h[K=o[K[K[Kome
+[?2004l[?2004h]0;student8@DESKTOP-2HHEQA0: /home[01;32mstudent8@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ cd su[Ktudent8
+[?2004l[?2004h]0;student8@DESKTOP-2HHEQA0: ~[01;32mstudent8@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;32mcreate_user.sh[0m  readme.txt
+[?2004h]0;student8@DESKTOP-2HHEQA0: ~[01;32mstudent8@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ ls -al
+[?2004ltotal 28
+drwxr-x---  2 student8 student8 4096 Mar 27 09:40 [0m[01;34m.[0m
+drwxr-xr-x 27 root     root     4096 Mar 27 09:40 [01;34m..[0m
+-rw-r--r--  1 student8 student8  220 Mar 31  2024 .bash_logout
+-rw-r--r--  1 student8 student8 3817 Mar 27 09:38 .bashrc
+-rw-r--r--  1 student8 student8  806 Mar 20 11:32 .profile
+-rwxr-xr-x  1 student8 student8  235 Mar 27 09:39 [01;32mcreate_user.sh[0m
+-rw-r--r--  1 student8 student8   24 Mar 27 09:39 readme.txt
+[?2004h]0;student8@DESKTOP-2HHEQA0: ~[01;32mstudent8@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ cat readmi[Ke.txt
+[?2004lHello student!
+welcome!
+[?2004h]0;student8@DESKTOP-2HHEQA0: ~[01;32mstudent8@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ history
+[?2004l    1  [2026-03-27 09:58:38] cd student8
+    2  [2026-03-27 09:58:50] cd ~
+    3  [2026-03-27 09:58:55] cd /home
+    4  [2026-03-27 09:59:01] cd student8
+    5  [2026-03-27 09:59:05] ls
+    6  [2026-03-27 09:59:11] ls -al
+    7  [2026-03-27 09:59:24] cat readme.txt
+    8  [2026-03-27 09:59:28] history
+[?2004h]0;student8@DESKTOP-2HHEQA0: ~[01;32mstudent8@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ su minseo
+[?2004lPassword: 
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-27[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-27[00m$ ia[Kd web_admin
+[?2004luid=1002(web_admin) gid=1002(web_admin) groups=1002(web_admin)
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-27[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-27[00m$ sudo gru[Koupadd dev_team1
+[?2004l[sudo] password for minseo: 
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-27[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-27[00m$ ce[Kd ..
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ cd ..
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ grep dev[K[K[K"dev_team1" ec[K[K/etc/gru[Koup1[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcat /etc/gruo[K[K[Kropu[K[Kup
+[?2004lroot:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,minseo
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:minseo
+floppy:x:25:
+tape:x:26:
+sudo:x:27:minseo
+audio:x:29:
+dip:x:30:minseo
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:minseo
+staff:x:50:
+games:x:60:
+users:x:100:minseo,guest,web_ad,guest2
+nogroup:x:65534:
+systemd-journal:x:999:
+systemd-network:x:998:
+crontab:x:997:
+systemd-timesync:x:996:
+input:x:995:
+sgx:x:994:
+kvm:x:993:
+render:x:992:
+messagebus:x:101:
+syslog:x:102:
+systemd-resolve:x:991:
+uuidd:x:103:
+_ssh:x:104:
+landscape:x:105:
+polkitd:x:990:
+admin:x:106:
+netdev:x:107:
+minseo:x:1000:
+docker:x:989:minseo
+guest:x:1001:
+web_admin:x:1002:
+web_ad:x:1003:
+guest2:x:1004:
+student1:x:1005:
+student2:x:1006:
+student3:x:1007:
+student4:x:1008:
+student5:x:1009:
+student6:x:1010:
+student7:x:1011:
+student8:x:1012:
+student9:x:1013:
+student10:x:1014:
+student11:x:1015:
+student12:x:1016:
+student13:x:1017:
+student14:x:1018:
+student15:x:1019:
+student16:x:1020:
+student17:x:1021:
+student18:x:1022:
+student19:x:1023:
+student20:x:1024:
+dev_team1:x:1025:
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ grdp[K[Kep "dev_teat[Km1" /etc/gru[Kopu[K[Kup 1025[K[K[K[K[K
+[?2004l[01;31m[Kdev_team1[m[K:x:1025:
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ sudo nano teat[Km_user.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;38H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2                          team_user.sh                                   [1;86H(B[m[29d(B[0;7m^G(B[m Help[15G(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[29;57H(B[0;7m^T(B[m Execute    (B[0;7m^C(B[m Location[30d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste[57G(B[0;7m^J(B[m Justify    (B[0;7m^/(B[m Go To Line[2d[?12l[?25h[?25l[28d[K[1;54H(B[0;7m*[86G(B[m[2d[36m#!/bin/bash[3d# 반복문 시작[4d[32mfor[39m(B[m i [32min[39m(B[m [32m{[39m(B[m1..5[32m}[5ddo[6d[39m(B[msudo usermod -aG dev_team1 (B[0;1m[33m"student$i"[7d[34mecho[39m(B[m (B[0;1m[33m"student$i 를 dev_team1에 추가 완료"[8d(B[0m[32mdone[9d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"모든 작업이 완료되었습니다."[10d[39m(B[m[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[10d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[8G[1K sudo usermod -aG dev_team1 (B[0;1m[33m"student$i"[6;9H[39m(B[m[?25l[?12l[?25h[8P[?25l[?12l[?25h sudo usermod -aG dev_team1 (B[0;1m[33m"student$i"[C[39m(B[m[?25l[?12l[?25h[7d[?25l[?12l[?25h[?25l[?12l[?25h (B[0;1m[34mecho[39m(B[m (B[0;1m[33m"student$i 를 dev_team1에 추가 완료"[C[39m(B[m[?25l[?12l[?25h[8d[?25l[28;37H(B[0;7m[ Writing... ](B[m[1;54H(B[0;7m [86G(B[m[28;36H(B[0;7m[ Wrote 8 lines ](B[m[?12l[?25h[8;2H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ grd[Kep [K[K[K[K[Ksudo nano team_user.shgrep "dev_team1" /etc/group
+[?2004l[01;31m[Kdev_team1[m[K:x:1025:
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ sudo chmod +x [K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+[?2004l[0m[01;32mSCRIPT.sh[0m  [01;34mlinux[0m  team_user.sh
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ [7mmv team_user.sh ~/linux/week03/[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmv team_user.sh ~/linux/week03/
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ cd ~/linx[Kux/week03
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ ls
+[?2004l2026_20220994_week03_log.txt  t.txt  team_user.sh  [0m[01;34mweb_service[0m  [01;34m–p[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ sudo ch [Kmod -[K+x team_user.sh
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ ls
+[?2004l2026_20220994_week03_log.txt  t.txt  [0m[01;32mteam_user.sh[0m  [01;34mweb_service[0m  [01;34m–p[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ cd .[K/etc/skel
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ ls
+[?2004l[0m[01;32mcreate_user.sh[0m  readme.txt
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ mv create_user.sh ~/linux/week03/
+[?2004lmv: cannot move 'create_user.sh' to '/home/minseo/linux/week03/create_user.sh': Permission denied
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ sudo mv create_user.sh ~/linux/week03/
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ cd /[K~.[K/lucn[K[K[Kinux/week03
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ ls
+[?2004l2026_20220994_week03_log.txt  [0m[01;32mcreate_user.sh[0m  t.txt  [01;32mteam_user.sh[0m  [01;34mweb_service[0m  [01;34m–p[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ sudo ./team_user.sh 
+[?2004lstudent1 를 dev_team1에 추가 완료
+student2 를 dev_team1에 추가 완료
+student3 를 dev_team1에 추가 완료
+student4 를 dev_team1에 추가 완료
+student5 를 dev_team1에 추가 완료
+모든 작업이 완료되었습니다.
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ Asudo ./team_user.sh ls[Kcd ~/linux/week03sudo mv create_user.sh ~/linux/week03/[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd /etc/skells[Ksudo chmod +x team_user.shls[Kcd ~/linux/week03mv team_user.sh ~/linux/week03/ls[Kgrep "dev_team1" /etc/group
+[?2004l[01;31m[Kdev_team1[m[K:x:1025:student1,student2,student3,student4,student5
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ su studuevn[K[K[Knt[K[K[Kent1
+[?2004lPassword: 
+su: Authentication failure
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ su student1
+[?2004lPassword: 
+su: Authentication failure
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ su student1
+[?2004lPassword: 
+su: Authentication failure
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ [7mgrep student1 /etc/passwd[27mgrep student1 /etc/passwd
+[?2004l[01;31m[Kstudent1[m[K:x:1005:1005::/home/[01;31m[Kstudent1[m[K:/bin/bash
+[01;31m[Kstudent1[m[K0:x:1014:1014::/home/[01;31m[Kstudent1[m[K0:/bin/bash
+[01;31m[Kstudent1[m[K1:x:1015:1015::/home/[01;31m[Kstudent1[m[K1:/bin/bash
+[01;31m[Kstudent1[m[K2:x:1016:1016::/home/[01;31m[Kstudent1[m[K2:/bin/bash
+[01;31m[Kstudent1[m[K3:x:1017:1017::/home/[01;31m[Kstudent1[m[K3:/bin/bash
+[01;31m[Kstudent1[m[K4:x:1018:1018::/home/[01;31m[Kstudent1[m[K4:/bin/bash
+[01;31m[Kstudent1[m[K5:x:1019:1019::/home/[01;31m[Kstudent1[m[K5:/bin/bash
+[01;31m[Kstudent1[m[K6:x:1020:1020::/home/[01;31m[Kstudent1[m[K6:/bin/bash
+[01;31m[Kstudent1[m[K7:x:1021:1021::/home/[01;31m[Kstudent1[m[K7:/bin/bash
+[01;31m[Kstudent1[m[K8:x:1022:1022::/home/[01;31m[Kstudent1[m[K8:/bin/bash
+[01;31m[Kstudent1[m[K9:x:1023:1023::/home/[01;31m[Kstudent1[m[K9:/bin/bash
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ [7mgrep student1 /etc/passwd[27mgrep student1 /etc/passwd
+[?2004l[01;31m[Kstudent1[m[K:x:1005:1005::/home/[01;31m[Kstudent1[m[K:/bin/bash
+[01;31m[Kstudent1[m[K0:x:1014:1014::/home/[01;31m[Kstudent1[m[K0:/bin/bash
+[01;31m[Kstudent1[m[K1:x:1015:1015::/home/[01;31m[Kstudent1[m[K1:/bin/bash
+[01;31m[Kstudent1[m[K2:x:1016:1016::/home/[01;31m[Kstudent1[m[K2:/bin/bash
+[01;31m[Kstudent1[m[K3:x:1017:1017::/home/[01;31m[Kstudent1[m[K3:/bin/bash
+[01;31m[Kstudent1[m[K4:x:1018:1018::/home/[01;31m[Kstudent1[m[K4:/bin/bash
+[01;31m[Kstudent1[m[K5:x:1019:1019::/home/[01;31m[Kstudent1[m[K5:/bin/bash
+[01;31m[Kstudent1[m[K6:x:1020:1020::/home/[01;31m[Kstudent1[m[K6:/bin/bash
+[01;31m[Kstudent1[m[K7:x:1021:1021::/home/[01;31m[Kstudent1[m[K7:/bin/bash
+[01;31m[Kstudent1[m[K8:x:1022:1022::/home/[01;31m[Kstudent1[m[K8:/bin/bash
+[01;31m[Kstudent1[m[K9:x:1023:1023::/home/[01;31m[Kstudent1[m[K9:/bin/bash
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ [7msudo passwd -S student1[27msudo passwd -S student1
+[?2004lstudent1 P 1970-01-01 0 99999 7 -1
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ cat
+[?2004l12341234
+12341234
+^[[A^[[A^X^C
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ catsudo passwd -S student1grep student1 /etc/passwd[14Psu student1
+[?2004lPassword: 
+su: Authentication failure
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ su student1
+[?2004lPassword: 
+You are required to change your password immediately (administrator enforced).
+Changing password for student1.
+Current password: 
+New password: 
+Retype new password: 
+[?2004h]0;student1@DESKTOP-2HHEQA0: /home/minseo/linux/week03[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week03[00m$ cd sut[K[Ktudent1
+[?2004lbash: cd: student1: Permission denied
+[?2004h]0;student1@DESKTOP-2HHEQA0: /home/minseo/linux/week03[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week03[00m$ ..[K[Kcd ..[K[K~
+[?2004l[?2004h]0;student1@DESKTOP-2HHEQA0: ~[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ cd ~student1
+[?2004lbash: cd: student1: No such file or directory
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ ..cd[K[K[K[Kcd /[Kh[K/hmoe[K[K[Kome/
+[?2004l[?2004h]0;student1@DESKTOP-2HHEQA0: /home[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ cd /home/student1
+[?2004l[?2004h]0;student1@DESKTOP-2HHEQA0: ~[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ mkdir dev [K_share
+[?2004l[?2004h]0;student1@DESKTOP-2HHEQA0: ~[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ ls -1
+[?2004l[0m[01;32mcreate_user.sh[0m
+[01;34mdev_share[0m
+readme.txt
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ ls -al
+[?2004ltotal 32
+drwxr-x---  3 student1 student1 4096 Mar 27 10:29 [0m[01;34m.[0m
+drwxr-xr-x 27 root     root     4096 Mar 27 09:40 [01;34m..[0m
+-rw-r--r--  1 student1 student1  220 Mar 31  2024 .bash_logout
+-rw-r--r--  1 student1 student1 3817 Mar 27 09:38 .bashrc
+-rw-r--r--  1 student1 student1  806 Mar 20 11:32 .profile
+-rwxr-xr-x  1 student1 student1  235 Mar 27 09:39 [01;32mcreate_user.sh[0m
+drwxrwxr-x  2 student1 student1 4096 Mar 27 10:29 [01;34mdev_share[0m
+-rw-r--r--  1 student1 student1   24 Mar 27 09:39 readme.txt
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ stat dev_share_[K/
+[?2004l  File: dev_share/
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,48	Inode: 43836       Links: 2
+Access: (0775/drwxrwxr-x)  Uid: ( 1005/student1)   Gid: ( 1005/student1)
+Access: 2026-03-27 10:29:52.139185502 +0900
+Modify: 2026-03-27 10:29:52.139185502 +0900
+Change: 2026-03-27 10:29:52.139185502 +0900
+ Birth: 2026-03-27 10:29:52.139185502 +0900
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ chgrp dev_team1 dev_a[Kshare
+[?2004l[?2004h]0;student1@DESKTOP-2HHEQA0: ~[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ stat dev_share
+[?2004l  File: dev_share
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,48	Inode: 43836       Links: 2
+Access: (0775/drwxrwxr-x)  Uid: ( 1005/student1)   Gid: ( 1025/dev_team1)
+Access: 2026-03-27 10:29:52.139185502 +0900
+Modify: 2026-03-27 10:29:52.139185502 +0900
+Change: 2026-03-27 10:33:43.659318100 +0900
+ Birth: 2026-03-27 10:29:52.139185502 +0900
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ sudo chmode[K 2750 dev sh[K[K[K_she[Kare
+[?2004l[sudo] password for student1: 
+student1 is not in the sudoers file.
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ su minseo
+[?2004lPassword: 
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-27[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-27[00m$ cd /nome [K[K[K[K[Khmoe/[K[K[K[Kome/h[Ksh[Kth[Kudent1
+[?2004lbash: cd: /home/student1: Permission denied
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-27[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-27[00m$ cd .[K~
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ cd /hmoe[K[K[Kome
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ cd /sutr[K[K[Ktudent1
+[?2004lbash: cd: /student1: No such file or directory
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ ls
+[?2004l[0m[01;34mguest[0m     [01;34mstudent10[0m  [01;34mstudent14[0m  [01;34mstudent18[0m  [01;34mstudent3[0m  [01;34mstudent7[0m  [01;34mweb_admin[0m
+[01;34mguest2[0m    [01;34mstudent11[0m  [01;34mstudent15[0m  [01;34mstudent19[0m  [01;34mstudent4[0m  [01;34mstudent8[0m
+[01;34mminseo[0m    [01;34mstudent12[0m  [01;34mstudent16[0m  [01;34mstudent2[0m   [01;34mstudent5[0m  [01;34mstudent9[0m
+[01;34mstudent1[0m  [01;34mstudent13[0m  [01;34mstudent17[0m  [01;34mstudent20[0m  [01;34mstudent6[0m  [01;34mweb_ad[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ lscd /student1[1Pstudent1[C[C[C[C[C[C[C[C/
+[?2004lbash: cd: student1/: Permission denied
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ sudo chmod 2750 dev_share
+[?2004lchmod: cannot access 'dev_share': No such file or directory
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ cd [K[K[K[7mls -ld student1[27mls -ld student1
+[?2004ldrwxr-x--- 3 student1 student1 4096 Mar 27 10:29 [0m[01;34mstudent1[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ sudo su - [K student1
+[?2004l반갑습니다 to Ubuntu 24.04.4 LTS (GNU/Linux 6.6.87.2-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Fri Mar 27 10:36:37 KST 2026
+
+  System load:  0.0                 Processes:             66
+  Usage of /:   0.3% of 1006.85GB   Users logged in:       1
+  Memory usage: 7%                  IPv4 address for eth0: 172.21.174.24
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+This message is shown once a day. To disable it please create the
+/home/student1/.hushlogin file.
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ su minseo
+[?2004lPassword: 
+-----------------------------------------------
+ 알림: 오늘의 로그 파일이 이미 존재합니다.
+-----------------------------------------------
+ 알림: 오늘의 로그 파일이 이미 존재합니다.
+-----------------------------------------------
+-----------------------------------------------
+ 알림: 오늘의 로그 파일이 이미 존재합니다.
+-----------------------------------------------
+-----------------------------------------------
+ 이어서 기록합니다. 취소하려면 Ctrl+C
+-----------------------------------------------
+Script started, output log file is '/home/minseo/linux/2026-03-27/minseo_2026-03-27_session.log', timing file is '/home/minseo/linux/2026-03-27/minseo_2026-03-27_session.tm'.
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-27[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-27[00m$ cd ..[K[K~
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ [7msudo chmod 755 student1[27msudo chmod 755 student1
+[?2004l[sudo] password for minseo: 
+chmod: cannot access 'student1': No such file or directory
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ cd /hmoe[K[K[Kome/student1
+[?2004lbash: cd: /home/student1: Permission denied
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ cd /home/student1[K[K[K[K[K[K[K[K
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ cd /home/student1sudo chmod 755 student1
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ cd /[K/[K/sut[K[Ktudent1/
+[?2004lbash: cd: /student1/: No such file or directory
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ cd /student1/[K
+[?2004lbash: cd: /student1: No such file or directory
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ cd /student1[1Pstudent1[C[C[C[C[C[C[C[C/
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /home/student1[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home/student1[00m$ cd student1//student1/sudo chmod 755 student1[14Pcd /home/student1sudo chmod 755 student1cd ~[Kexitsudo nano .bashrcbash -n SCRIPT.sh[6@sudo chmod +x[C[C[C[C[C[C[C[C[C[Cls[Kmv /mnt/c/Users/ASUS/Downloads/SCRIPT.sh ~/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ..[K[K[K[K[K[Ksudo chmode[K 2750 dev_sa[Khare
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /home/student1[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home/student1[00m$ s[Ksu student1
+[?2004lPassword: 
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ stat dev_share
+[?2004l  File: dev_share
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,48	Inode: 43836       Links: 2
+Access: (2750/drwxr-s---)  Uid: ( 1005/student1)   Gid: ( 1025/dev_team1)
+Access: 2026-03-27 10:29:52.139185502 +0900
+Modify: 2026-03-27 10:29:52.139185502 +0900
+Change: 2026-03-27 10:38:02.732758810 +0900
+ Birth: 2026-03-27 10:29:52.139185502 +0900
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ ls -al
+[?2004ltotal 36
+drwxr-xr-x  4 student1 student1  4096 Mar 27 10:36 [0m[01;34m.[0m
+drwxr-xr-x 27 root     root      4096 Mar 27 09:40 [01;34m..[0m
+-rw-r--r--  1 student1 student1   220 Mar 31  2024 .bash_logout
+-rw-r--r--  1 student1 student1  3817 Mar 27 09:38 .bashrc
+drwxr-xr-x  2 student1 student1  4096 Mar 27 10:36 [01;34m.landscape[0m
+-rw-rw-r--  1 student1 student1     0 Mar 27 10:36 .motd_shown
+-rw-r--r--  1 student1 student1   806 Mar 20 11:32 .profile
+-rwxr-xr-x  1 student1 student1   235 Mar 27 09:39 [01;32mcreate_user.sh[0m
+drwxr-s---  2 student1 dev_team1 4096 Mar 27 10:29 [01;34mdev_share[0m
+-rw-r--r--  1 student1 student1    24 Mar 27 09:39 readme.txt
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ cd dec[Kv_sah[K[Khare/
+[?2004l[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ touch report1.hwp
+[?2004l[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ su sturd[K[Kdent08[K[K8
+[?2004lPassword: 
+[?2004h]0;student8@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent8@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ ls
+[?2004lls: cannot open directory '.': Permission denied
+[?2004h]0;student8@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent8@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ su stue[Kdent2
+[?2004lPassword: 
+You are required to change your password immediately (administrator enforced).
+Changing password for student2.
+Current password: 
+New password: 
+Retype new password: 
+[?2004h]0;student2@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent2@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ ls
+[?2004lreport1.hwp
+[?2004h]0;student2@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent2@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ fid [K[K[K[Kfidn[K[Knd /user[K[Kr/bin -pr[Kerm -2000
+[?2004l/usr/bin/expiry
+/usr/bin/ssh-agent
+/usr/bin/chage
+/usr/bin/crontab
+[?2004h]0;student2@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent2@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ nano report1.hwp 
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;28H(B[0;1m[37m[41m[ Directory '.' is not writable ][39;49m(B[m[H(B[0;7m  GNU nano 7.2                          report1.hwp                                    [1;86H(B[m[29d(B[0;7m^G(B[m Help[15G(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[29;57H(B[0;7m^T(B[m Execute    (B[0;7m^C(B[m Location[30d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste[57G(B[0;7m^J(B[m Justify    (B[0;7m^/(B[m Go To Line[2d[?12l[?25h[?25l[1;53H(B[0;7m*[86G(B[m[?12l[?25h[2dd[?25l[?12l[?25hd[?25l[?12l[?25hd[?25l[28;36H[1K (B[0;7m[ Writing... ](B[m[K[1;53H(B[0;7m [86G(B[m[28;36H(B[0;7m[ Wrote 1 line ](B[m[?12l[?25h[2;4H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;student2@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent2@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ cat report1.hwp 
+[?2004lddd
+[?2004h]0;student2@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent2@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ ls -al
+[?2004ltotal 12
+drwxr-s--- 2 student1 dev_team1 4096 Mar 27 10:41 [0m[01;34m.[0m
+drwxr-xr-x 4 student1 student1  4096 Mar 27 10:36 [01;34m..[0m
+-rw-rw-r-- 1 student1 dev_team1    4 Mar 27 10:52 report1.hwp
+[?2004h]0;student2@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent2@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ sa[Ktat report1.hwp 
+[?2004l  File: report1.hwp
+  Size: 4         	Blocks: 8          IO Block: 4096   regular file
+Device: 8,48	Inode: 43825       Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1005/student1)   Gid: ( 1025/dev_team1)
+Access: 2026-03-27 10:52:39.014620890 +0900
+Modify: 2026-03-27 10:52:34.682513658 +0900
+Change: 2026-03-27 10:52:34.682513658 +0900
+ Birth: 2026-03-27 10:41:09.895873747 +0900
+[?2004h]0;student2@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent2@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ su su[Ktudent1
+[?2004lPassword: 
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ nano test.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;38H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2                            test.sh                                      [1;86H(B[m[29d(B[0;7m^G(B[m Help[15G(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[29;57H(B[0;7m^T(B[m Execute    (B[0;7m^C(B[m Location[30d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste[57G(B[0;7m^J(B[m Justify    (B[0;7m^/(B[m Go To Line[2d[?12l[?25h[?25l[28d[K[1;51H(B[0;7m*[86G(B[m[2d[36m#!/bin/bash[3d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"=============================="[4d[34mecho[39m(B[m (B[0;1m[33m" 실행 테스트 성공"[5d[34mecho[39m(B[m (B[0;1m[33m" 실행 사용자: $(whoami)"[6d[34mecho[39m(B[m (B[0;1m[33m"=============================="[39m(B[m[?12l[?25h[?25l[28;37H(B[0;7m[ Writing... ](B[m[1;51H(B[0;7m [86G(B[m[28;36H(B[0;7m[ Wrote 5 lines ](B[m[?12l[?25h[6;38H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ chmod +x test.sh
+[?2004l[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ ls -al
+[?2004ltotal 16
+drwxr-s--- 2 student1 dev_team1 4096 Mar 27 11:09 [0m[01;34m.[0m
+drwxr-xr-x 5 student1 student1  4096 Mar 27 11:09 [01;34m..[0m
+-rw-rw-r-- 1 student1 dev_team1    4 Mar 27 10:52 report1.hwp
+-rwxrwxr-x 1 student1 dev_team1  156 Mar 27 11:09 [01;32mtest.sh[0m
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ chmod -a[Kx text[K[Kst.h[Ksh
+[?2004l[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ ls -al
+[?2004ltotal 16
+drwxr-s--- 2 student1 dev_team1 4096 Mar 27 11:09 [0m[01;34m.[0m
+drwxr-xr-x 5 student1 student1  4096 Mar 27 11:09 [01;34m..[0m
+-rw-rw-r-- 1 student1 dev_team1    4 Mar 27 10:52 report1.hwp
+-rw-rw-r-- 1 student1 dev_team1  156 Mar 27 11:09 test.sh
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ ch [Kmod 700 test.h[Ksh
+[?2004l[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ ls
+[?2004lreport1.hwp  [0m[01;32mtest.sh[0m
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ ls-al
+[?2004lls-al: command not found
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ ls -al
+[?2004ltotal 16
+drwxr-s--- 2 student1 dev_team1 4096 Mar 27 11:09 [0m[01;34m.[0m
+drwxr-xr-x 5 student1 student1  4096 Mar 27 11:09 [01;34m..[0m
+-rw-rw-r-- 1 student1 dev_team1    4 Mar 27 10:52 report1.hwp
+-rwx------ 1 student1 dev_team1  156 Mar 27 11:09 [01;32mtest.sh[0m
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ su minseo
+[?2004lPassword: 
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-27[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-27[00m$ sudo apt update [K
+[?2004l[sudo] password for minseo: 
+[33m0% [Working][0m            Hit:1 https://download.docker.com/linux/ubuntu noble InRelease
+[33m0% [Connecting to archive.ubuntu.com (91.189.92.24)] [Connecting to security.ubuntu.co[0m[33m0% [Connecting to archive.ubuntu.com (91.189.92.24)] [Connecting to security.ubuntu.co[0m                                                                                      Hit:2 http://archive.ubuntu.com/ubuntu noble InRelease
+[33m                                                                                      0% [Waiting for headers][0m[33m0% [Waiting for headers] [Waiting for headers][0m                                              Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+[33m0% [3 InRelease 10.5 kB/126 kB 8%] [Waiting for headers][0m                                                        Get:4 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+[33m0% [3 InRelease 11.8 kB/126 kB 9%] [4 InRelease 3736 B/126 kB 3%][0m[33m0% [3 InRelease 44.2 kB/126 kB 35%] [4 InRelease 40.1 kB/126 kB 32%][0m[33m                                                                    0% [4 InRelease 108 kB/126 kB 85%][0m[33m                                  0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m                        Get:5 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+[33m0% [5 InRelease 1040 B/126 kB 1%] [Waiting for headers][0m[33m                                                       0% [Waiting for headers][0m                        Get:6 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21.5 kB]
+[33m0% [Waiting for headers] [6 Components-amd64 1111 B/21.5 kB 5%][0m[33m                                                               0% [Waiting for headers][0m[33m0% [6 Components-amd64 store 0 B] [Waiting for headers] [Waiting for headers][0m[33m25% [6 Components-amd64 store 25.4 kB] [Waiting for headers] [Waiting for headers][0m[33m                                                                                  25% [Waiting for headers] [Waiting for headers][0m                                               Get:7 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1847 kB]
+[33m25% [7 Packages 1107 B/1847 kB 0%] [Waiting for headers][0m                                                        Get:8 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [74.2 kB]
+[33m27% [7 Packages 102 kB/1847 kB 6%] [8 Components-amd64 1110 B/74.2 kB 1%][0m[33m                                                                         30% [7 Packages 197 kB/1847 kB 11%] [Waiting for headers][0m[33m30% [8 Components-amd64 store 0 B] [7 Packages 197 kB/1847 kB 11%] [Waiting for header[0m                                                                                      Get:9 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+[33m30% [8 Components-amd64 store 0 B] [7 Packages 197 kB/1847 kB 11%] [9 Components-amd64[0m[33m30% [8 Components-amd64 store 0 B] [7 Packages 198 kB/1847 kB 11%] [Waiting for header[0m                                                                                      Get:10 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [212 B]
+[33m30% [8 Components-amd64 store 0 B] [7 Packages 198 kB/1847 kB 11%] [10 Components-amd6[0m[33m                                                                                      30% [8 Components-amd64 store 0 B] [7 Packages 198 kB/1847 kB 11%][0m[33m                                                                  30% [7 Packages 215 kB/1847 kB 12%][0m[33m30% [9 Components-amd64 store 0 B] [7 Packages 215 kB/1847 kB 12%][0m[33m                                                                  30% [7 Packages 215 kB/1847 kB 12%][0m[33m30% [10 Components-amd64 store 0 B] [7 Packages 215 kB/1847 kB 12%][0m[33m                                                                   30% [7 Packages 217 kB/1847 kB 12%][0m[33m43% [7 Packages 933 kB/1847 kB 50%][0m[33m                                   59% [Waiting for headers][0m                         Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [177 kB]
+[33m59% [11 Components-amd64 632 B/177 kB 0%][0m[33m59% [7 Packages store 0 B] [11 Components-amd64 14.1 kB/177 kB 8%][0m[33m                                                                  62% [7 Packages store 0 B] [Waiting for headers][0m                                                Get:12 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1666 kB]
+[33m62% [7 Packages store 0 B] [12 Packages 3803 B/1666 kB 0%][0m[33m                                                          91% [7 Packages store 0 B] [Waiting for headers][0m                                                Get:13 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [386 kB]
+[33m91% [7 Packages store 0 B] [13 Components-amd64 9432 B/386 kB 2%][0m[33m                                                                 96% [13 Components-amd64 275 kB/386 kB 71%][0m[33m96% [11 Components-amd64 store 0 B] [13 Components-amd64 275 kB/386 kB 71%][0m[33m                                                                           98% [11 Components-amd64 store 0 B] [Waiting for headers][0m                                                         Get:14 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+[33m98% [11 Components-amd64 store 0 B] [14 Components-amd64 212 B/212 B 100%][0m[33m                                                                          98% [11 Components-amd64 store 0 B] [Waiting for headers][0m                                                         Get:15 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+[33m98% [11 Components-amd64 store 0 B] [15 Components-amd64 940 B/940 B 100%][0m[33m                                                                          98% [11 Components-amd64 store 0 B] [Waiting for headers][0m                                                         Get:16 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [7348 B]
+[33m98% [11 Components-amd64 store 0 B] [16 Components-amd64 7348 B/7348 B 100%][0m[33m                                                                            98% [11 Components-amd64 store 0 B] [Waiting for headers][0m                                                         Get:17 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [13.2 kB]
+[33m99% [11 Components-amd64 store 0 B] [17 Components-amd64 13.2 kB/13.2 kB 100%][0m[33m                                                                              99% [11 Components-amd64 store 0 B] [Waiting for headers][0m                                                         Get:18 http://archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+[33m99% [11 Components-amd64 store 0 B] [18 Components-amd64 216 B/216 B 100%][0m[33m                                                                          99% [11 Components-amd64 store 0 B] [Waiting for headers][0m                                                         Get:19 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+[33m99% [11 Components-amd64 store 0 B] [19 Components-amd64 212 B/212 B 100%][0m[33m                                                                          99% [11 Components-amd64 store 0 B][0m[33m                                   99% [Working][0m[33m99% [12 Packages store 0 B][0m[33m                           99% [Working][0m[33m99% [13 Components-amd64 store 0 B][0m[33m                                   99% [Working][0m[33m99% [14 Components-amd64 store 0 B][0m[33m                                   99% [Working][0m[33m99% [15 Components-amd64 store 0 B][0m[33m                                   99% [Working][0m[33m99% [16 Components-amd64 store 0 B][0m[33m                                   100% [Working][0m[33m100% [17 Components-amd64 store 0 B][0m[33m                                    100% [Working][0m[33m100% [18 Components-amd64 store 0 B][0m[33m                                    100% [Working][0m[33m100% [19 Components-amd64 store 0 B][0m[33m                                    100% [Working][0m              Fetched 4573 kB in 4s (1065 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 3%Reading package lists... 3%Reading package lists... 4%Reading package lists... 4%Reading package lists... 30%Reading package lists... 35%Reading package lists... 35%Reading package lists... 49%Reading package lists... 49%Reading package lists... 49%Reading package lists... 49%Reading package lists... 49%Reading package lists... 49%Reading package lists... 50%Reading package lists... 50%Reading package lists... 50%Reading package lists... 50%Reading package lists... 54%Reading package lists... 54%Reading package lists... 57%Reading package lists... 57%Reading package lists... 62%Reading package lists... 62%Reading package lists... 63%Reading package lists... 63%Reading package lists... 69%Reading package lists... 71%Reading package lists... 71%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 80%Reading package lists... 80%Reading package lists... 83%Reading package lists... 83%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 94%Reading package lists... 94%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+31 packages can be upgraded. Run 'apt list --upgradable' to see them.
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-27[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-27[00m$ sudo[K[K[K[Kls
+[?2004lminseo_2026-03-27_session.log  minseo_2026-03-27_session.tm
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-27[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-27[00m$ sudo apt-get install acl
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following NEW packages will be installed:
+  acl
+0 upgraded, 1 newly installed, 0 to remove and 31 not upgraded.
+Need to get 39.4 kB of archives.
+After this operation, 197 kB of additional disk space will be used.
+0% [Working]0% [Connecting to archive.ubuntu.com (91.189.92.24)]                                                    Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 acl amd64 2.3.2-1build1.1 [39.4 kB]
+                                                    27% [1 acl 13.2 kB/39.4 kB 33%]                               100% [Working]              Fetched 39.4 kB in 1s (29.0 kB/s)
+Selecting previously unselected package acl.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 41615 files and directories currently installed.)
+Preparing to unpack .../acl_2.3.2-1build1.1_amd64.deb ...
+Unpacking acl (2.3.2-1build1.1) ...
+Setting up acl (2.3.2-1build1.1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-27[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-27[00m$ sudo setfacl -m u:studn[Kent2:--x test.sh
+[?2004lsetfacl: test.sh: No such file or directory
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-27[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-27[00m$ su stuc[Kdent1
+[?2004lPassword: 
+[?2004h]0;student1@DESKTOP-2HHEQA0: /home/minseo/linux/2026-03-27[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/2026-03-27[00m$ ls[K[Kcd ~/dev.[K_share
+[?2004l[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ cd ~/dev_share[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksudo seg[Kt[Kg[Ktcfa[K[K[Kfacl -m u:sut[K[Ktudent2 --x[K[K[K[K:--x test.sj[Kh
+[?2004l[sudo] password for student1: 
+student1 is not in the sudoers file.
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ setfacl -m u:strud[K[K[Kudent2: [K--x test.sh
+[?2004l[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ stat test.sh
+[?2004l  File: test.sh
+  Size: 156       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,48	Inode: 43848       Links: 1
+Access: (0710/-rwx--x---)  Uid: ( 1005/student1)   Gid: ( 1025/dev_team1)
+Access: 2026-03-27 11:09:41.024392381 +0900
+Modify: 2026-03-27 11:09:41.024392381 +0900
+Change: 2026-03-27 11:13:56.887100800 +0900
+ Birth: 2026-03-27 11:09:41.024392381 +0900
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ ls -al
+[?2004ltotal 16
+drwxr-s---  2 student1 dev_team1 4096 Mar 27 11:09 [0m[01;34m.[0m
+drwxr-xr-x  5 student1 student1  4096 Mar 27 11:09 [01;34m..[0m
+-rw-rw-r--  1 student1 dev_team1    4 Mar 27 10:52 report1.hwp
+-rwx--x---+ 1 student1 dev_team1  156 Mar 27 11:09 [01;32mtest.sh[0m
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ getfal[Kcl test.sh
+[?2004l# file: test.sh
+# owner: student1
+# group: dev_team1
+user::rwx
+user:student2:--x
+group::---
+mask::--x
+other::---
+
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ su student2
+[?2004lPassword: 
+[?2004h]0;student2@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent2@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ ./test.sh[K[Ksh
+[?2004l/bin/bash: ./test.sh: Permission denied
+[?2004h]0;student2@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent2@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ ls
+[?2004lreport1.hwp  [0m[01;32mtest.sh[0m
+[?2004h]0;student2@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent2@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ te[K[Ksu studnet[K[K[Kent1
+[?2004lPassword: 
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ setfacl -m [K u:strud[K[K[Kudent2:--x dev.[K_share
+[?2004lsetfacl: dev_share: No such file or directory
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ cd ..
+[?2004l[?2004h]0;student1@DESKTOP-2HHEQA0: ~[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ cd ..setfacl -m u:student2:--x dev_share
+[?2004l[?2004h]0;student1@DESKTOP-2HHEQA0: ~[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ getfacl dev_sj[Khare
+[?2004l# file: dev_share
+# owner: student1
+# group: dev_team1
+# flags: -s-
+user::rwx
+user:student2:--x
+group::r-x
+mask::r-x
+other::---
+
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ su student1[K2
+[?2004lPassword: 
+[?2004h]0;student2@DESKTOP-2HHEQA0: /home/student1[01;32mstudent2@DESKTOP-2HHEQA0[00m:[01;34m/home/student1[00m$ ./test.sh
+[?2004lbash: ./test.sh: No such file or directory
+[?2004h]0;student2@DESKTOP-2HHEQA0: /home/student1[01;32mstudent2@DESKTOP-2HHEQA0[00m:[01;34m/home/student1[00m$ ./test.sh[K[K[K[K[K[K[K[K[Kls
+[?2004l[0m[01;32mcreate_user.sh[0m  [01;34mdev_share[0m  readme.txt
+[?2004h]0;student2@DESKTOP-2HHEQA0: /home/student1[01;32mstudent2@DESKTOP-2HHEQA0[00m:[01;34m/home/student1[00m$ cd dev_share
+[?2004l[?2004h]0;student2@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent2@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ cd dev_sharels[K./test.sh
+[?2004l/bin/bash: ./test.sh: Permission denied
+[?2004h]0;student2@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent2@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ su steud[K[K[Kudent1
+[?2004lPassword: 
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ setfacl -, [K[Km u:sutd[K[K[Ktudnet[K[K[Kent [K2:r-x test.sh
+[?2004l[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ su student2
+[?2004lPassword: 
+[?2004h]0;student2@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent2@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ ./tes[K[K[K[K[Kls
+[?2004lls: cannot open directory '.': Permission denied
+[?2004h]0;student2@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent2@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ ls al[K[K-al
+[?2004lls: cannot open directory '.': Permission denied
+[?2004h]0;student2@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent2@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ su std[Kudent1
+[?2004lPassword: 
+[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ [7msetfacl -m u:student2:rx .[27msetfacl -m u:student2:rx .
+[?2004l[?2004h]0;student1@DESKTOP-2HHEQA0: ~/dev_share[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m~/dev_share[00m$ su student2
+[?2004lPassword: 
+[?2004h]0;student2@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent2@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ setfacl -, [K[K[K[K[K[K[K[K[K[K[Kls
+[?2004lreport1.hwp  [0m[01;32mtest.sh[0m
+[?2004h]0;student2@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent2@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ ./test.sh
+[?2004l==============================
+ 실행 테스트 성공
+ 실행 사용자: student2
+==============================
+[?2004h]0;student2@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent2@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ ls
+[?2004lreport1.hwp  [0m[01;32mtest.sh[0m
+[?2004h]0;student2@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent2@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ su su[Ktudent3
+[?2004lPassword: 
+You are required to change your password immediately (administrator enforced).
+Changing password for student3.
+Current password: 
+New password: 
+Retype new password: 
+[?2004h]0;student3@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent3@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ ls
+[?2004lreport1.hwp  [0m[01;32mtest.sh[0m
+[?2004h]0;student3@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent3@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ su student3
+[?2004lPassword: 
+[?2004h]0;student3@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent3@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ ls
+[?2004lreport1.hwp  [0m[01;32mtest.sh[0m
+[?2004h]0;student3@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent3@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ cat report1.hwp 
+[?2004lddd
+[?2004h]0;student3@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent3@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ ./test.sh
+[?2004lbash: ./test.sh: Permission denied
+[?2004h]0;student3@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent3@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ su su[Ktudent6
+[?2004lPassword: 
+You are required to change your password immediately (administrator enforced).
+Changing password for student6.
+Current password: 
+New password: 
+Retype new password: 
+[?2004h]0;student6@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent6@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ ls
+[?2004lls: cannot open directory '.': Permission denied
+[?2004h]0;student6@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent6@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ ssssssssssssssssssssssssssss[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksu[K[Kexit
+[?2004lexit
+[?2004h]0;student3@DESKTOP-2HHEQA0: /home/student1/dev_share[01;32mstudent3@DESKTOP-2HHEQA0[00m:[01;34m/home/student1/dev_share[00m$ cd [K[K[Ksu minseo
+[?2004lPassword: 
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-27[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-27[00m$ [7mhead 2026_20220994_week03_log.txt[27mhead 2026_20220994_week03_log.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd hmoe[K[K[K[K..
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ cd[K[K.s
+[?2004l.s: command not found
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ /s
+[?2004lbash: /s: No such file or directory
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ cd[K[Kls
+[?2004l[0m[01;34m2026-03-20[0m  [01;34m2026-03-27[0m  [01;34mweek02[0m  [01;34mweek03[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ cd 2026-03-27
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-27[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-27[00m$ ls
+[?2004lminseo_2026-03-27_session.log  minseo_2026-03-27_session.tm
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-27[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-27[00m$ cd ..
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ cd wek[Kek03
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ ^V[K[7mhead 2026_20220994_week03_log.txt[27mhead 2026_20220994_week03_log.txt
+[?2004lScript started on 2026-03-20 10:12:00+09:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="168" LINES="30"]
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-20[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-20[00m$ [7mwatch -n 1 ls -l 2026_20220994_week03_log.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwatch -n 1 ls -l 2026_20220994_week03_log.txt
+[?2004l[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m]4;8;rgb:54/54/54\]4;9;rgb:FF/54/54\]4;10;rgb:54/FF/54\]4;11;rgb:FF/FF/54\]4;12;rgb:54/54/FF\]4;13;rgb:FF/54/FF\]4;14;rgb:54/FF/FF\[39;49m(B[m[H[2JEvery 1.0s: ls -l 2026_20220994_week03_log.txt[1;128HDESKTOP-2HHEQA0: Fri Mar 20 10:12:25 2026[3;1Hls: cannot access '2026_20220994_week03_log.txt': No such file or directory[30;168H(B[m[1;163H6[30;168H[1;163H7[30;168H[1;163H8[30;168H[39;49m]104[30;1H[?1049l[23;0;0t[?1l>[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-20[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-20[00m$ ls
+[?2004lminseo_2026-03-20_session.log  minseo_2026-03-20_session.tm
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-20[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-20[00m$ cd ~.[K/linux/week03/webse[K[K_service/html
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ ㅣㄴ
+[?2004lㅣㄴ: command not found
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ ls
+[?2004labout.html  index.html
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ ls -al
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ [7mtail 2026_20220994_week03_log.txt[27mtail 2026_20220994_week03_log.txt
+[?2004l[?2004l[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m]4;8;rgb:54/54/54\]4;9;rgb:FF/54/54\]4;10;rgb:54/FF/54\]4;11;rgb:FF/FF/54\]4;12;rgb:54/54/FF\]4;13;rgb:FF/54/FF\]4;14;rgb:54/FF/FF\[39;49m(B[m[H[2JEvery 1.0s: ls -l 2026_20220994_week03_log.txt[1;128HDESKTOP-2HHEQA0: Fri Mar 20 10:12:25 2026[3;1Hls: cannot access '2026_20220994_week03_log.txt': No such file or directory[30;168H(B[m[1;163H6[30;168H[1;163H7[30;168H[1;163H8[30;168H[39;49m]104[30;1H[?1049l[23;0;0t[?1l>[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-20[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-20[00m$ ls
+[?2004lminseo_2026-03-20_session.log  minseo_2026-03-20_session.tm
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-03-20[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-03-20[00m$ cd ~.[K/linux/week03/webse[K[K_service/html
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ ㅣㄴ
+[?2004lㅣㄴ: command not found
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ ls
+[?2004labout.html  index.html
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ ls -al
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ [7mtail 2026_20220994_week03_log.txt[27mtail 2026_20220994_week03_log.txt
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ gt[Kit [K[K[K[Kcd ..
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ git sut[K[Ktt[Kut[K[Katus
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   2026-03-20/minseo_2026-03-20_session.log[m
+	[31mmodified:   2026-03-20/minseo_2026-03-20_session.tm[m
+	[31mmodified:   week03/2026_20220994_week03_log.txt[m
+	[31mmodified:   week03/t.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m2026-03-27/[m
+	[31mweek03/create_user.sh[m
+	[31mweek03/team_user.sh[m
+	[31mweek03/web_service/docker-compose[m
+	[31mweek03/web_service/docker-compose.xml[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ gid [K[Kt add .
 [?2004l

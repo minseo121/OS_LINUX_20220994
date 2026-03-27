@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  nginx-server:
+    image: nginx:1.25-alpine
+    container_name: my-web-proxy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./html:/usr/share/nginx/html
+    networks:
+      - web-net
+
+networks:
+  web-net:
+    driver: bridge

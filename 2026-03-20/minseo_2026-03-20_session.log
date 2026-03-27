@@ -1325,4 +1325,35 @@ drwxr-xr-x 2 minseo minseo 4096 Mar 20 09:29 [01;34m2026-03-20[0m
 drwxr-xr-x 3 minseo minseo 4096 Mar 20 11:49 [01;34mweek02[0m
 drwxr-xr-x 4 minseo minseo 4096 Mar 20 10:12 [01;34mweek03[0m
 [?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ ls -al[Kmv week02/.git .[6Pcd ~/linux[1Pgit add .
-[?2004l
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ git commit -m ""3"w"n"c"k"[1P"[1P"[1P"[1P"주"차 "수"업 "진"행"
+[?2004l[main a3440b6] 3주차 수업 진행
+ 16 files changed, 11687 insertions(+)
+ create mode 100644 2026-03-20/minseo_2026-03-20_session.log
+ create mode 100644 2026-03-20/minseo_2026-03-20_session.tm
+ rename 2026_20220994_week02_log.txt => week02/2026_20220994_week02_log.txt (100%)
+ rename get-docker.sh => week02/get-docker.sh (100%)
+ rename readme.md => week02/readme.md (100%)
+ rename t.txt => week02/t.txt (100%)
+ rename test.txt => week02/test.txt (100%)
+ rename test2.txt => week02/test2.txt (100%)
+ rename test3.txt => week02/test3.txt (100%)
+ rename {www => week02/www}/50x.html (100%)
+ rename {www => week02/www}/index.html (100%)
+ create mode 100644 week03/2026_20220994_week03_log.txt
+ create mode 100644 week03/t.txt
+ create mode 100644 week03/web_service/docker-compose.yml
+ create mode 100644 week03/web_service/html/about.html
+ create mode 100644 week03/web_service/html/index.html
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ git push rogiai[K[K[K[K[K[Korigin main
+[?2004lEnumerating objects: 14, done.
+Counting objects:   7% (1/14)Counting objects:  14% (2/14)Counting objects:  21% (3/14)Counting objects:  28% (4/14)Counting objects:  35% (5/14)Counting objects:  42% (6/14)Counting objects:  50% (7/14)Counting objects:  57% (8/14)Counting objects:  64% (9/14)Counting objects:  71% (10/14)Counting objects:  78% (11/14)Counting objects:  85% (12/14)Counting objects:  92% (13/14)Counting objects: 100% (14/14)Counting objects: 100% (14/14), done.
+Delta compression using up to 16 threads
+Compressing objects:   7% (1/13)Compressing objects:  15% (2/13)Compressing objects:  23% (3/13)Compressing objects:  30% (4/13)Compressing objects:  38% (5/13)Compressing objects:  46% (6/13)Compressing objects:  53% (7/13)Compressing objects:  61% (8/13)Compressing objects:  69% (9/13)Compressing objects:  76% (10/13)Compressing objects:  84% (11/13)Compressing objects:  92% (12/13)Compressing objects: 100% (13/13)Compressing objects: 100% (13/13), done.
+Writing objects:   7% (1/13)Writing objects:  15% (2/13)Writing objects:  23% (3/13)Writing objects:  38% (5/13)Writing objects:  46% (6/13)Writing objects:  53% (7/13)Writing objects:  61% (8/13)Writing objects:  69% (9/13)Writing objects:  76% (10/13)Writing objects:  84% (11/13)Writing objects:  92% (12/13)Writing objects: 100% (13/13)Writing objects: 100% (13/13), 60.33 KiB | 2.87 MiB/s, done.
+Total 13 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), done.[K
+To https://github.com/minseo121/OS_LINUX_20220994.git
+   9498251..a3440b6  main -> main
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ [?2004l
+exit
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/update-motd.d[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/update-motd.d[00m$ 
