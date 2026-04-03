@@ -1,0 +1,1143 @@
+Script started on 2026-04-03 09:31:07+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="120" LINES="30"]
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-03[00m$ lsfind ~ -name "README.md"[2Pread.md"ls[Kgit push origin mainls[Kfind ~ -name "read.md"README.md"ls[K[Kcd /[K`[K~.[K/linux/week05
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ cd ~/linux/week03/web_service
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ dorc[K[Kcker compose ps
+[?2004l[33mWARN[0m[0000] /home/minseo/linux/week03/web_service/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+NAME      IMAGE     COMMAND   SERVICE   CREATED   STATUS    PORTS
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ ls
+[?2004ldocker-compose  docker-compose.xml  docker-compose.yml  [0m[01;34mhtml[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ sysm[Ktemctl is [K-enabled docker
+[?2004lenabled
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ docker run -d --name stress-ngnix -p 8081:80[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kdco[K[Kocker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ docker ps -z
+[?2004lunknown shorthand flag: 'z' in -z
+
+Usage:  docker ps [OPTIONS]
+
+Run 'docker ps --help' for more information
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ docker ps -z[Ka
+[?2004lCONTAINER ID   IMAGE               COMMAND                  CREATED       STATUS                   PORTS     NAMES
+eb0a56f76f14   nginx:1.25-alpine   "/docker-entrypoint.…"   2 weeks ago   Exited (0) 7 days ago              my-web-proxy
+d26959af46a1   nginx:latest        "/docker-entrypoint.…"   2 weeks ago   Exited (0) 2 weeks ago             my-nginx
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ [7mdocker run -d --name stress-nginx -p 8081:80 nginx:alpine[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker run -d --name stress-nginx -p 8081:80 nginx:alpine
+[?2004lUnable to find image 'nginx:alpine' locally
+alpine: Pulling from library/nginx
+
+[1A[2K3370263bc02a: Pulling fs layer [1B
+[1A[2K589002ba0eae: Pulling fs layer [1B
+[1A[2K8892f80f46a0: Pulling fs layer [1B
+[1A[2Kc2bd5ab17727: Pulling fs layer [1B
+[1A[2K4d9d41f3822d: Pulling fs layer [1B
+[1A[2Kcf1159c696ee: Pulling fs layer [1B
+[1A[2K3f4ad4352d4f: Pulling fs layer [1B
+[1A[2K91d1c9c22f2c: Pulling fs layer [1B
+[1A[2K8f32d6edf6d2: Download complete [1B[5A[2K4d9d41f3822d: Download complete [5B[3A[2K3f4ad4352d4f: Download complete [3B[9A[2K3370263bc02a: Downloading [==>                                                ]  1.049MB/20.25MB[9B[4A[2Kcf1159c696ee: Download complete [4B[9A[2K3370263bc02a: Downloading [=====>                                             ]  2.097MB/20.25MB[9B[9A[2K3370263bc02a: Downloading [=====>                                             ]  2.097MB/20.25MB[9B[2A[2K91d1c9c22f2c: Download complete [2B[8A[2K589002ba0eae: Downloading [=============>                                     ]  1.049MB/3.862MB[8B[9A[2K3370263bc02a: Downloading [=======>                                           ]  3.146MB/20.25MB[9B[9A[2K3370263bc02a: Downloading [=======>                                           ]  3.146MB/20.25MB[9B[8A[2K589002ba0eae: Downloading [=============>                                     ]  1.049MB/3.862MB[8B[8A[2K589002ba0eae: Downloading [===========================>                       ]  2.097MB/3.862MB[8B[9A[2K3370263bc02a: Downloading [=======>                                           ]  3.146MB/20.25MB[9B[9A[2K3370263bc02a: Downloading [=======>                                           ]  3.146MB/20.25MB[9B[8A[2K589002ba0eae: Downloading [========================================>          ]  3.146MB/3.862MB[8B[9A[2K3370263bc02a: Downloading [=======>                                           ]  3.146MB/20.25MB[9B[8A[2K589002ba0eae: Downloading [========================================>          ]  3.146MB/3.862MB[8B[9A[2K3370263bc02a: Downloading [==========>                                        ]  4.194MB/20.25MB[9B[8A[2K589002ba0eae: Download complete [8B[6A[2Kc2bd5ab17727: Download complete [6B[8A[2K589002ba0eae: Extracting 1 s[8B[9A[2K3370263bc02a: Downloading [==========>                                        ]  4.194MB/20.25MB[9B[8A[2K589002ba0eae: Extracting 1 s[8B[9A[2K3370263bc02a: Downloading [===========>                                       ]  4.776MB/20.25MB[9B[8A[2K589002ba0eae: Extracting 1 s[8B
+[1A[2Kfff052d01291: Download complete [1B[10A[2K3370263bc02a: Downloading [============>                                      ]  5.243MB/20.25MB[10B[8A[2K8892f80f46a0: Downloading [============================>                      ]  1.049MB/1.87MB[8B[9A[2K589002ba0eae: Pull complete [9B[8A[2K8892f80f46a0: Downloading [============================>                      ]  1.049MB/1.87MB[8B[10A[2K3370263bc02a: Downloading [===============>                                   ]  6.291MB/20.25MB[10B[10A[2K3370263bc02a: Downloading [==================>                                ]   7.34MB/20.25MB[10B[8A[2K8892f80f46a0: Downloading [============================>                      ]  1.049MB/1.87MB[8B[8A[2K8892f80f46a0: Downloading [============================>                      ]  1.049MB/1.87MB[8B[10A[2K3370263bc02a: Downloading [==================>                                ]   7.34MB/20.25MB[10B[10A[2K3370263bc02a: Downloading [====================>                              ]  8.389MB/20.25MB[10B[8A[2K8892f80f46a0: Download complete [8B[8A[2K8892f80f46a0: Extracting 1 s[8B[10A[2K3370263bc02a: Downloading [=======================>                           ]  9.437MB/20.25MB[10B[8A[2K8892f80f46a0: Extracting 1 s[8B[10A[2K3370263bc02a: Downloading [=========================>                         ]  10.49MB/20.25MB[10B[8A[2K8892f80f46a0: Extracting 1 s[8B[10A[2K3370263bc02a: Downloading [============================>                      ]  11.53MB/20.25MB[10B[3A[2K91d1c9c22f2c: Pull complete [3B[8A[2K8892f80f46a0: Pull complete [8B[10A[2K3370263bc02a: Downloading [============================>                      ]  11.53MB/20.25MB[10B[6A[2K4d9d41f3822d: Extracting 1 s[6B[4A[2K3f4ad4352d4f: Pull complete [4B[5A[2Kcf1159c696ee: Pull complete [5B[7A[2Kc2bd5ab17727: Pull complete [7B[10A[2K3370263bc02a: Downloading [===============================>                   ]  12.58MB/20.25MB[10B[6A[2K4d9d41f3822d: Pull complete [6B[10A[2K3370263bc02a: Downloading [=================================>                 ]  13.63MB/20.25MB[10B[10A[2K3370263bc02a: Downloading [====================================>              ]  14.68MB/20.25MB[10B[10A[2K3370263bc02a: Downloading [======================================>            ]  15.73MB/20.25MB[10B[10A[2K3370263bc02a: Downloading [=========================================>         ]  16.78MB/20.25MB[10B[10A[2K3370263bc02a: Downloading [=========================================>         ]  16.78MB/20.25MB[10B[10A[2K3370263bc02a: Downloading [============================================>      ]  17.83MB/20.25MB[10B[10A[2K3370263bc02a: Downloading [==============================================>    ]  18.87MB/20.25MB[10B[10A[2K3370263bc02a: Downloading [==================================================>]  20.25MB/20.25MB[10B[10A[2K3370263bc02a: Download complete [10B[10A[2K3370263bc02a: Extracting 1 s[10B[10A[2K3370263bc02a: Extracting 1 s[10B[10A[2K3370263bc02a: Extracting 1 s[10B[10A[2K3370263bc02a: Extracting 1 s[10B[10A[2K3370263bc02a: Extracting 1 s[10B[10A[2K3370263bc02a: Extracting 1 s[10B[10A[2K3370263bc02a: Extracting 1 s[10B[10A[2K3370263bc02a: Extracting 1 s[10B[10A[2K3370263bc02a: Pull complete [10BDigest: sha256:e7257f1ef28ba17cf7c248cb8ccf6f0c6e0228ab9c315c152f9c203cd34cf6d1
+Status: Downloaded newer image for nginx:alpine
+379e1f4875994c640306633ec5da94ed70f9b8f9e300c35a72cf56ac533c8309
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ docker ps
+[?2004lCONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                                     NAMES
+379e1f487599   nginx:alpine   "/docker-entrypoint.…"   4 seconds ago   Up 3 seconds   0.0.0.0:8081->80/tcp, [::]:8081->80/tcp   stress-nginx
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ [7mdocker stop stress-nginx[27mdocker stop stress-nginx
+[?2004lstress-nginx
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ [7mdocker rm stress-nginx[27mdocker rm stress-nginx
+[?2004lstress-nginx
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ docker rm stress-nginx[2@stop[C[C[C[C[C[C[C[C[C[C[C[C[Cps[K
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ s[Kdc [K[K[Kcd /[K`[K~/linux/weei[Kk05
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ cd ~/linux/week05[8Pdocker psrm stress-nginx[2@stop[C[C[C[C[C[C[C[C[C[C[C[C[Cps[Krun -d --name stress-nginx -p 8081:80 nginx:alpine
+[?2004l8b915b050d44afee22904ff583106685effeafbc8ec46635070e01df69aaa0a9
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ docker ps
+[?2004lCONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                                     NAMES
+8b915b050d44   nginx:alpine   "/docker-entrypoint.…"   27 seconds ago   Up 26 seconds   0.0.0.0:8081->80/tcp, [::]:8081->80/tcp   stress-nginx
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ ls
+[?2004l2026_20220994_week05_log.txt  t.txt
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ ps -ef
+[?2004lUID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 09:29 ?        00:00:01 /sbin/init
+root           2       1  0 09:29 ?        00:00:00 /init
+root           7       2  0 09:29 ?        00:00:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --
+root          43       1  0 09:29 ?        00:00:00 /usr/lib/systemd/systemd-journald
+root          92       1  0 09:29 ?        00:00:00 /usr/lib/systemd/systemd-udevd
+systemd+     117       1  0 09:29 ?        00:00:00 /usr/lib/systemd/systemd-resolved
+systemd+     135       1  0 09:29 ?        00:00:00 /usr/lib/systemd/systemd-timesyncd
+root         178       1  0 09:29 ?        00:00:00 /usr/sbin/cron -f -P
+message+     179       1  0 09:29 ?        00:00:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --syst
+root         199       1  0 09:29 ?        00:00:00 /usr/lib/systemd/systemd-logind
+root         208       1  0 09:29 ?        00:00:00 /usr/libexec/wsl-pro-service
+syslog       228       1  0 09:29 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root         232       1  0 09:29 hvc0     00:00:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 115200,38400,9600 v
+root         238       1  0 09:29 ?        00:00:04 /usr/bin/containerd
+root         247       1  0 09:29 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear - linux
+root         280       1  0 09:29 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-s
+root         362       1  0 09:29 ?        00:00:02 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.so
+root         643       2  0 09:29 ?        00:00:00 /init
+root         645     643  0 09:29 ?        00:00:00 /init
+minseo       647     645  0 09:29 pts/0    00:00:00 -bash
+root         649       2  0 09:29 pts/1    00:00:00 /bin/login -f
+minseo       695       1  0 09:29 ?        00:00:00 /usr/lib/systemd/systemd --user
+minseo       696     695  0 09:29 ?        00:00:00 (sd-pam)
+minseo       719     649  0 09:29 pts/1    00:00:00 -bash
+minseo       821     719  0 09:29 pts/1    00:00:00 script -a -f -T /home/minseo/linux/2026-04-03/minseo_2026-04-03_sess
+minseo       822     821  0 09:29 pts/2    00:00:00 bash -i
+minseo       828     647  0 09:29 pts/0    00:00:00 script -a -f -T /home/minseo/linux/2026-04-03/minseo_2026-04-03_sess
+minseo       830     828  0 09:29 pts/3    00:00:00 bash -i
+minseo       884     830  0 09:31 pts/3    00:00:00 script -t=t.txt -af 2026_20220994_week05_log.txt
+minseo       885     884  0 09:31 pts/4    00:00:00 bash -i
+root        1285       1  0 09:36 ?        00:00:00 /usr/bin/containerd-shim-runc-v2 -namespace moby -id 8b915b050d44afe
+root        1309    1285  0 09:36 ?        00:00:00 nginx: master process nginx -g daemon off;
+root        1356     362  0 09:36 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8081 -c
+root        1362     362  0 09:36 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 8081 -contai
+message+    1402    1309  0 09:36 ?        00:00:00 nginx: worker process
+message+    1403    1309  0 09:36 ?        00:00:00 nginx: worker process
+message+    1404    1309  0 09:36 ?        00:00:00 nginx: worker process
+message+    1405    1309  0 09:36 ?        00:00:00 nginx: worker process
+message+    1406    1309  0 09:36 ?        00:00:00 nginx: worker process
+message+    1407    1309  0 09:36 ?        00:00:00 nginx: worker process
+message+    1408    1309  0 09:36 ?        00:00:00 nginx: worker process
+message+    1409    1309  0 09:36 ?        00:00:00 nginx: worker process
+message+    1410    1309  0 09:36 ?        00:00:00 nginx: worker process
+message+    1411    1309  0 09:36 ?        00:00:00 nginx: worker process
+message+    1412    1309  0 09:36 ?        00:00:00 nginx: worker process
+message+    1413    1309  0 09:36 ?        00:00:00 nginx: worker process
+message+    1414    1309  0 09:36 ?        00:00:00 nginx: worker process
+message+    1415    1309  0 09:36 ?        00:00:00 nginx: worker process
+message+    1416    1309  0 09:36 ?        00:00:00 nginx: worker process
+message+    1417    1309  0 09:36 ?        00:00:00 nginx: worker process
+minseo      1444     885  0 09:38 pts/4    00:00:00 ps -ef
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ pstree -p
+[?2004lsystemd(1)─┬─agetty(232)
+           ├─agetty(247)
+           ├─containerd(238)─┬─{containerd}(265)
+           │                 ├─{containerd}(266)
+           │                 ├─{containerd}(267)
+           │                 ├─{containerd}(269)
+           │                 ├─{containerd}(270)
+           │                 ├─{containerd}(324)
+           │                 ├─{containerd}(325)
+           │                 ├─{containerd}(337)
+           │                 ├─{containerd}(338)
+           │                 ├─{containerd}(349)
+           │                 ├─{containerd}(350)
+           │                 ├─{containerd}(363)
+           │                 ├─{containerd}(364)
+           │                 ├─{containerd}(401)
+           │                 ├─{containerd}(402)
+           │                 ├─{containerd}(403)
+           │                 ├─{containerd}(975)
+           │                 ├─{containerd}(992)
+           │                 ├─{containerd}(998)
+           │                 └─{containerd}(1003)
+           ├─containerd-shim(1285)─┬─nginx(1309)─┬─nginx(1402)
+           │                       │             ├─nginx(1403)
+           │                       │             ├─nginx(1404)
+           │                       │             ├─nginx(1405)
+           │                       │             ├─nginx(1406)
+           │                       │             ├─nginx(1407)
+           │                       │             ├─nginx(1408)
+           │                       │             ├─nginx(1409)
+           │                       │             ├─nginx(1410)
+           │                       │             ├─nginx(1411)
+           │                       │             ├─nginx(1412)
+           │                       │             ├─nginx(1413)
+           │                       │             ├─nginx(1414)
+           │                       │             ├─nginx(1415)
+           │                       │             ├─nginx(1416)
+           │                       │             └─nginx(1417)
+           │                       ├─{containerd-shim}(1286)
+           │                       ├─{containerd-shim}(1287)
+           │                       ├─{containerd-shim}(1288)
+           │                       ├─{containerd-shim}(1289)
+           │                       ├─{containerd-shim}(1290)
+           │                       ├─{containerd-shim}(1291)
+           │                       ├─{containerd-shim}(1292)
+           │                       ├─{containerd-shim}(1293)
+           │                       └─{containerd-shim}(1294)
+           ├─cron(178)
+           ├─dbus-daemon(179)
+           ├─dockerd(362)─┬─docker-proxy(1356)─┬─{docker-proxy}(1357)
+           │              │                    ├─{docker-proxy}(1358)
+           │              │                    ├─{docker-proxy}(1359)
+           │              │                    ├─{docker-proxy}(1360)
+           │              │                    ├─{docker-proxy}(1361)
+           │              │                    ├─{docker-proxy}(1363)
+           │              │                    └─{docker-proxy}(1364)
+           │              ├─docker-proxy(1362)─┬─{docker-proxy}(1365)
+           │              │                    ├─{docker-proxy}(1366)
+           │              │                    ├─{docker-proxy}(1367)
+           │              │                    ├─{docker-proxy}(1368)
+           │              │                    ├─{docker-proxy}(1369)
+           │              │                    ├─{docker-proxy}(1370)
+           │              │                    ├─{docker-proxy}(1371)
+           │              │                    └─{docker-proxy}(1372)
+           │              ├─{dockerd}(366)
+           │              ├─{dockerd}(367)
+           │              ├─{dockerd}(368)
+           │              ├─{dockerd}(369)
+           │              ├─{dockerd}(370)
+           │              ├─{dockerd}(376)
+           │              ├─{dockerd}(377)
+           │              ├─{dockerd}(378)
+           │              ├─{dockerd}(379)
+           │              ├─{dockerd}(380)
+           │              ├─{dockerd}(381)
+           │              ├─{dockerd}(383)
+           │              ├─{dockerd}(399)
+           │              ├─{dockerd}(400)
+           │              ├─{dockerd}(409)
+           │              ├─{dockerd}(410)
+           │              ├─{dockerd}(411)
+           │              ├─{dockerd}(610)
+           │              ├─{dockerd}(988)
+           │              ├─{dockerd}(991)
+           │              └─{dockerd}(1066)
+           ├─init-systemd(Ub(2)─┬─SessionLeader(643)───Relay(647)(645)───bash(647)───script(828)───bash(830)───script(8+
+           │                    ├─init(7)───{init}(8)
+           │                    ├─login(649)───bash(719)───script(821)───bash(822)
+           │                    └─{init-systemd(Ub}(9)
+           ├─rsyslogd(228)─┬─{rsyslogd}(272)
+           │               ├─{rsyslogd}(273)
+           │               └─{rsyslogd}(274)
+           ├─systemd(695)───(sd-pam)(696)
+           ├─systemd-journal(43)
+           ├─systemd-logind(199)
+           ├─systemd-resolve(117)
+           ├─systemd-timesyn(135)───{systemd-timesyn}(172)
+           ├─systemd-udevd(92)
+           ├─unattended-upgr(280)───{unattended-upgr}(361)
+           └─wsl-pro-service(208)─┬─{wsl-pro-service}(285)
+                                  ├─{wsl-pro-service}(286)
+                                  ├─{wsl-pro-service}(287)
+                                  ├─{wsl-pro-service}(289)
+                                  ├─{wsl-pro-service}(291)
+                                  ├─{wsl-pro-service}(313)
+                                  ├─{wsl-pro-service}(319)
+                                  └─{wsl-pro-service}(344)
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ ps -aux
+[?2004lUSER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.2  0.1  21764 12252 ?        Ss   09:29   0:01 /sbin/init
+root           2  0.0  0.0   3120  2048 ?        Sl   09:29   0:00 /init
+root           7  0.0  0.0   3120  1792 ?        Sl   09:29   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 
+root          43  0.0  0.1  99600 15312 ?        S<s  09:29   0:00 /usr/lib/systemd/systemd-journald
+root          92  0.0  0.0  24880  5888 ?        Ss   09:29   0:00 /usr/lib/systemd/systemd-udevd
+systemd+     117  0.0  0.1  21592 12800 ?        Ss   09:29   0:00 /usr/lib/systemd/systemd-resolved
+systemd+     135  0.0  0.0  91028  7680 ?        Ssl  09:29   0:00 /usr/lib/systemd/systemd-timesyncd
+root         178  0.0  0.0   4236  2560 ?        Ss   09:29   0:00 /usr/sbin/cron -f -P
+message+     179  0.0  0.0   9540  4992 ?        Ss   09:29   0:00 @dbus-daemon --system --address=systemd: --nofork --n
+root         199  0.0  0.1  17972  8320 ?        Ss   09:29   0:00 /usr/lib/systemd/systemd-logind
+root         208  0.0  0.1 1830096 12288 ?       Ssl  09:29   0:00 /usr/libexec/wsl-pro-service
+syslog       228  0.0  0.0 222508  5376 ?        Ssl  09:29   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         232  0.0  0.0   3160  1920 hvc0     Ss+  09:29   0:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 1152
+root         238  0.7  0.7 2756004 58000 ?       Ssl  09:29   0:04 /usr/bin/containerd
+root         247  0.0  0.0   3116  1792 tty1     Ss+  09:29   0:00 /sbin/agetty -o -p -- \u --noclear - linux
+root         280  0.0  0.2 107028 22528 ?        Ssl  09:29   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unatt
+root         362  0.4  1.2 2876056 95404 ?       Ssl  09:29   0:02 /usr/bin/dockerd -H fd:// --containerd=/run/container
+root         643  0.0  0.0   3136   896 ?        Ss   09:29   0:00 /init
+root         645  0.0  0.0   3136  1160 ?        S    09:29   0:00 /init
+minseo       647  0.0  0.0   6072  5120 pts/0    Ss+  09:29   0:00 -bash
+root         649  0.0  0.0   6816  4352 pts/1    Ss   09:29   0:00 /bin/login -f
+minseo       695  0.0  0.1  20332 11136 ?        Ss   09:29   0:00 /usr/lib/systemd/systemd --user
+minseo       696  0.0  0.0  21152  3516 ?        S    09:29   0:00 (sd-pam)
+minseo       719  0.0  0.0   5940  4736 pts/1    S+   09:29   0:00 -bash
+minseo       821  0.0  0.0   3144  2048 pts/1    S+   09:29   0:00 script -a -f -T /home/minseo/linux/2026-04-03/minseo_
+minseo       822  0.0  0.0   5952  4992 pts/2    Ss+  09:29   0:00 bash -i
+minseo       828  0.0  0.0   3148  1920 pts/0    S+   09:29   0:00 script -a -f -T /home/minseo/linux/2026-04-03/minseo_
+minseo       830  0.0  0.0   6084  4992 pts/3    Ss   09:29   0:00 bash -i
+minseo       884  0.0  0.0   3148  2048 pts/3    S+   09:31   0:00 script -t=t.txt -af 2026_20220994_week05_log.txt
+minseo       885  0.0  0.0   6084  4992 pts/4    Ss   09:31   0:00 bash -i
+root        1285  0.0  0.1 1235348 10492 ?       Sl   09:36   0:00 /usr/bin/containerd-shim-runc-v2 -namespace moby -id 
+root        1309  0.0  0.0  10340  6144 ?        Ss   09:36   0:00 nginx: master process nginx -g daemon off;
+root        1356  0.0  0.0 1746984 4480 ?        Sl   09:36   0:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -ho
+root        1362  0.0  0.0 1820972 4608 ?        Sl   09:36   0:00 /usr/bin/docker-proxy -proto tcp -host-ip :: -host-po
+message+    1402  0.0  0.0  10808  2924 ?        S    09:36   0:00 nginx: worker process
+message+    1403  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1404  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1405  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1406  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1407  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1408  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1409  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1410  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1411  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1412  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1413  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1414  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1415  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1416  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1417  0.0  0.0  10808  2540 ?        S    09:36   0:00 nginx: worker process
+root        1450  0.0  0.0  24884  3216 ?        S    09:39   0:00 (udev-worker)
+root        1451  0.0  0.0  24884  3216 ?        S    09:39   0:00 (udev-worker)
+minseo      1452  0.0  0.0   9584  4864 pts/4    R+   09:39   0:00 ps -aux
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [7mpstree-p $(pgrep dockerd)[27mpstree-p $(pgrep dockerd)[1P[1@ [1@-[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004ldockerd(362)─┬─docker-proxy(1356)─┬─{docker-proxy}(1357)
+             │                    ├─{docker-proxy}(1358)
+             │                    ├─{docker-proxy}(1359)
+             │                    ├─{docker-proxy}(1360)
+             │                    ├─{docker-proxy}(1361)
+             │                    ├─{docker-proxy}(1363)
+             │                    └─{docker-proxy}(1364)
+             ├─docker-proxy(1362)─┬─{docker-proxy}(1365)
+             │                    ├─{docker-proxy}(1366)
+             │                    ├─{docker-proxy}(1367)
+             │                    ├─{docker-proxy}(1368)
+             │                    ├─{docker-proxy}(1369)
+             │                    ├─{docker-proxy}(1370)
+             │                    ├─{docker-proxy}(1371)
+             │                    └─{docker-proxy}(1372)
+             ├─{dockerd}(366)
+             ├─{dockerd}(367)
+             ├─{dockerd}(368)
+             ├─{dockerd}(369)
+             ├─{dockerd}(370)
+             ├─{dockerd}(376)
+             ├─{dockerd}(377)
+             ├─{dockerd}(378)
+             ├─{dockerd}(379)
+             ├─{dockerd}(380)
+             ├─{dockerd}(381)
+             ├─{dockerd}(383)
+             ├─{dockerd}(399)
+             ├─{dockerd}(400)
+             ├─{dockerd}(409)
+             ├─{dockerd}(410)
+             ├─{dockerd}(411)
+             ├─{dockerd}(610)
+             ├─{dockerd}(988)
+             ├─{dockerd}(991)
+             └─{dockerd}(1066)
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [7m sudo ss -lnp | grep -E '629|635|1124|1131’[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C sudo ss -lnp | grep -E '629|635|1124|1131’
+[?2004l[?2004h> 
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [7msudo ss -lnp | grep -E '629|635|1124|1131’[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo ss -lnp | grep -E '629|635|1124|1131’
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [7msudo ss -lnp | grep -E '1356|1362’[27msudo ss -lnp | grep -E '1356|1362’
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [7mA[27m[K[7mA[27mA[7mA[27m[K[K[7msudo ss -lnp | grep -E '1356|1362’[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo ss -lnp | grep -E '1356|1362’
+[A
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ p[Kdocker ps
+[?2004lCONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                                     NAMES
+8b915b050d44   nginx:alpine   "/docker-entrypoint.…"   24 minutes ago   Up 24 minutes   d0.0.0.0:8081->80/tcp, [::]:8081->80/tcp   stress-nginx
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ docker exec ^V[K8b915b050d44 ps -ef
+[?2004lPID   USER     TIME  COMMAND
+    1 root      0:00 nginx: master process nginx -g daemon off;
+   30 nginx     0:00 nginx: worker process
+   31 nginx     0:00 nginx: worker process
+   32 nginx     0:00 nginx: worker process
+   33 nginx     0:00 nginx: worker process
+   34 nginx     0:00 nginx: worker process
+   35 nginx     0:00 nginx: worker process
+   36 nginx     0:00 nginx: worker process
+   37 nginx     0:00 nginx: worker process
+   38 nginx     0:00 nginx: worker process
+   39 nginx     0:00 nginx: worker process
+   40 nginx     0:00 nginx: worker process
+   41 nginx     0:00 nginx: worker process
+   42 nginx     0:00 nginx: worker process
+   43 nginx     0:00 nginx: worker process
+   44 nginx     0:00 nginx: worker process
+   45 nginx     0:00 nginx: worker process
+   46 root      0:00 ps -ef
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ ps aux
+[?2004lUSER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.1  0.1  22120 13184 ?        Ss   09:29   0:02 /usr/lib/systemd/systemd --system --deserialize=82
+root           2  0.0  0.0   3120  2048 ?        Sl   09:29   0:00 /init
+root           7  0.0  0.0   3120  1792 ?        Sl   09:29   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 
+root         178  0.0  0.0   4236  2560 ?        Ss   09:29   0:00 /usr/sbin/cron -f -P
+message+     179  0.0  0.0   9760  5248 ?        Ss   09:29   0:00 @dbus-daemon --system --address=systemd: --nofork --n
+root         199  0.0  0.1  17972  8320 ?        Ss   09:29   0:00 /usr/lib/systemd/systemd-logind
+syslog       228  0.0  0.0 222508  5376 ?        Ssl  09:29   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         232  0.0  0.0   3160  1920 hvc0     Ss+  09:29   0:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 1152
+root         238  0.3  0.6 2756004 53276 ?       Ssl  09:29   0:07 /usr/bin/containerd
+root         247  0.0  0.0   3116  1792 tty1     Ss+  09:29   0:00 /sbin/agetty -o -p -- \u --noclear - linux
+root         280  0.0  0.2 107028 22528 ?        Ssl  09:29   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unatt
+root         362  0.1  1.1 2876312 90376 ?       Ssl  09:29   0:03 /usr/bin/dockerd -H fd:// --containerd=/run/container
+root         643  0.0  0.0   3136   896 ?        Ss   09:29   0:00 /init
+root         645  0.0  0.0   3136  1160 ?        S    09:29   0:00 /init
+minseo       647  0.0  0.0   6072  5120 pts/0    Ss+  09:29   0:00 -bash
+root         649  0.0  0.0   6816  4352 pts/1    Ss   09:29   0:00 /bin/login -f
+minseo       695  0.0  0.1  20144 10880 ?        Ss   09:29   0:00 /usr/lib/systemd/systemd --user --deserialize=23
+minseo       696  0.0  0.0  21152  3516 ?        S    09:29   0:00 (sd-pam)
+minseo       719  0.0  0.0   5940  4736 pts/1    S+   09:29   0:00 -bash
+minseo       821  0.0  0.0   3144  2048 pts/1    S+   09:29   0:00 script -a -f -T /home/minseo/linux/2026-04-03/minseo_
+minseo       822  0.0  0.0   5952  4992 pts/2    Ss+  09:29   0:00 bash -i
+minseo       828  0.0  0.0   3148  1920 pts/0    S+   09:29   0:00 script -a -f -T /home/minseo/linux/2026-04-03/minseo_
+minseo       830  0.0  0.0   6084  4992 pts/3    Ss   09:29   0:00 bash -i
+minseo       884  0.0  0.0   3148  2048 pts/3    S+   09:31   0:00 script -t=t.txt -af 2026_20220994_week05_log.txt
+minseo       885  0.0  0.0   6084  4992 pts/4    Ss   09:31   0:00 bash -i
+root        1285  0.0  0.1 1235348 10488 ?       Sl   09:36   0:00 /usr/bin/containerd-shim-runc-v2 -namespace moby -id 
+root        1309  0.0  0.0  10340  6144 ?        Ss   09:36   0:00 nginx: master process nginx -g daemon off;
+root        1356  0.0  0.0 1746984 4480 ?        Sl   09:36   0:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -ho
+root        1362  0.0  0.0 1820972 4608 ?        Sl   09:36   0:00 /usr/bin/docker-proxy -proto tcp -host-ip :: -host-po
+message+    1402  0.0  0.0  10808  2924 ?        S    09:36   0:00 nginx: worker process
+message+    1403  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1404  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1405  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1406  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1407  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1408  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1409  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1410  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1411  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1412  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1413  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1414  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1415  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1416  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1417  0.0  0.0  10808  2540 ?        S    09:36   0:00 nginx: worker process
+root        1836  0.0  0.1  33944 11648 ?        S<s  09:49   0:00 /usr/lib/systemd/systemd-journald
+systemd+    1888  0.0  0.0  91028  7808 ?        Ssl  09:49   0:00 /usr/lib/systemd/systemd-timesyncd
+root        1941  0.0  0.0  24752  6016 ?        Ss   09:49   0:00 /usr/lib/systemd/systemd-udevd
+systemd+    1993  0.0  0.1  21460 12928 ?        Ss   09:49   0:00 /usr/lib/systemd/systemd-resolved
+polkitd     2031  0.0  0.0 308164  7680 ?        Ssl  09:49   0:00 /usr/lib/polkit-1/polkitd --no-debug
+root        2258  0.1  0.1 1756620 13056 ?       Ssl  10:00   0:00 /usr/libexec/wsl-pro-service
+minseo      2313  100  0.0   8284  4096 pts/4    R+   10:02   0:00 ps aux
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ sudo ss -lnp | grdp[K[Kep -E '1356|1362'
+[?2004l[sudo] password for minseo: 
+tcp   LISTEN 0      4096                                                                              0.0.0.0:8081             0.0.0.0:*    users:(("docker-proxy",pid=[01;31m[K1356[m[K,fd=8))                                                                                        
+tcp   LISTEN 0      4096                                                                                 [::]:8081                [::]:*    users:(("docker-proxy",pid=[01;31m[K1362[m[K,fd=8))                                                                                        
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ sudo ss -lnp | grep -E '1356|1362'ps aux[Kdocker exec 8b915b050d44 ps -efps[Kexec 8b915b050d44 ps -ef
+[?2004lPID   USER     TIME  COMMAND
+    1 root      0:00 nginx: master process nginx -g daemon off;
+   30 nginx     0:00 nginx: worker process
+   31 nginx     0:00 nginx: worker process
+   32 nginx     0:00 nginx: worker process
+   33 nginx     0:00 nginx: worker process
+   34 nginx     0:00 nginx: worker process
+   35 nginx     0:00 nginx: worker process
+   36 nginx     0:00 nginx: worker process
+   37 nginx     0:00 nginx: worker process
+   38 nginx     0:00 nginx: worker process
+   39 nginx     0:00 nginx: worker process
+   40 nginx     0:00 nginx: worker process
+   41 nginx     0:00 nginx: worker process
+   42 nginx     0:00 nginx: worker process
+   43 nginx     0:00 nginx: worker process
+   44 nginx     0:00 nginx: worker process
+   45 nginx     0:00 nginx: worker process
+   52 root      0:00 ps -ef
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ docker exec 8b915b050d44 ps -efsudo ss -lnp | grep -E '1356|1362'ps aux[Kdocker exec 8b915b050d44 ps -efps[K
+[?2004lCONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                                     NAMES
+8b915b050d44   nginx:alpine   "/docker-entrypoint.…"   31 minutes ago   Up 31 minutes   0.0.0.0:8081->80/tcp, [::]:8081->80/tcp   stress-nginx
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ docker psexec 8b915b050d44 ps -efsudo ss -lnp | grep -E '1356|1362'ps aux[K[K[K[K[K[K[Kpstree -p | grep nb[Kginx
+[?2004l           |-containerd-shim(1285)-+-[01;31m[Knginx[m[K(1309)-+-[01;31m[Knginx[m[K(1402)
+           |                       |             |-[01;31m[Knginx[m[K(1403)
+           |                       |             |-[01;31m[Knginx[m[K(1404)
+           |                       |             |-[01;31m[Knginx[m[K(1405)
+           |                       |             |-[01;31m[Knginx[m[K(1406)
+           |                       |             |-[01;31m[Knginx[m[K(1407)
+           |                       |             |-[01;31m[Knginx[m[K(1408)
+           |                       |             |-[01;31m[Knginx[m[K(1409)
+           |                       |             |-[01;31m[Knginx[m[K(1410)
+           |                       |             |-[01;31m[Knginx[m[K(1411)
+           |                       |             |-[01;31m[Knginx[m[K(1412)
+           |                       |             |-[01;31m[Knginx[m[K(1413)
+           |                       |             |-[01;31m[Knginx[m[K(1414)
+           |                       |             |-[01;31m[Knginx[m[K(1415)
+           |                       |             |-[01;31m[Knginx[m[K(1416)
+           |                       |             `-[01;31m[Knginx[m[K(1417)
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ ps aux
+[?2004lUSER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.1  0.1  22120 13184 ?        Ss   09:29   0:02 /usr/lib/systemd/systemd --system --deserialize=82
+root           2  0.0  0.0   3120  2048 ?        Sl   09:29   0:00 /init
+root           7  0.0  0.0   3120  1792 ?        Sl   09:29   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 
+root         178  0.0  0.0   4236  2560 ?        Ss   09:29   0:00 /usr/sbin/cron -f -P
+message+     179  0.0  0.0   9760  5248 ?        Ss   09:29   0:00 @dbus-daemon --system --address=systemd: --nofork --n
+root         199  0.0  0.1  17972  8320 ?        Ss   09:29   0:00 /usr/lib/systemd/systemd-logind
+syslog       228  0.0  0.0 222508  5376 ?        Ssl  09:29   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         232  0.0  0.0   3160  1920 hvc0     Ss+  09:29   0:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 1152
+root         238  0.3  0.6 2756004 53336 ?       Ssl  09:29   0:08 /usr/bin/containerd
+root         247  0.0  0.0   3116  1792 tty1     Ss+  09:29   0:00 /sbin/agetty -o -p -- \u --noclear - linux
+root         280  0.0  0.2 107028 22528 ?        Ssl  09:29   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unatt
+root         362  0.1  1.1 2876568 90072 ?       Ssl  09:29   0:03 /usr/bin/dockerd -H fd:// --containerd=/run/container
+root         643  0.0  0.0   3136   896 ?        Ss   09:29   0:00 /init
+root         645  0.0  0.0   3136  1160 ?        S    09:29   0:00 /init
+minseo       647  0.0  0.0   6072  5120 pts/0    Ss+  09:29   0:00 -bash
+root         649  0.0  0.0   6816  4352 pts/1    Ss   09:29   0:00 /bin/login -f
+minseo       695  0.0  0.1  20144 10880 ?        Ss   09:29   0:00 /usr/lib/systemd/systemd --user --deserialize=23
+minseo       696  0.0  0.0  21152  3516 ?        S    09:29   0:00 (sd-pam)
+minseo       719  0.0  0.0   5940  4736 pts/1    S+   09:29   0:00 -bash
+minseo       821  0.0  0.0   3144  2048 pts/1    S+   09:29   0:00 script -a -f -T /home/minseo/linux/2026-04-03/minseo_
+minseo       822  0.0  0.0   5952  4992 pts/2    Ss+  09:29   0:00 bash -i
+minseo       828  0.0  0.0   3148  1920 pts/0    S+   09:29   0:00 script -a -f -T /home/minseo/linux/2026-04-03/minseo_
+minseo       830  0.0  0.0   6084  4992 pts/3    Ss   09:29   0:00 bash -i
+minseo       884  0.0  0.0   3148  2048 pts/3    S+   09:31   0:00 script -t=t.txt -af 2026_20220994_week05_log.txt
+minseo       885  0.0  0.0   6084  4992 pts/4    Ss   09:31   0:00 bash -i
+root        1285  0.0  0.1 1235348 10616 ?       Sl   09:36   0:00 /usr/bin/containerd-shim-runc-v2 -namespace moby -id 
+root        1309  0.0  0.0  10340  6144 ?        Ss   09:36   0:00 nginx: master process nginx -g daemon off;
+root        1356  0.0  0.0 1746984 4480 ?        Sl   09:36   0:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -ho
+root        1362  0.0  0.0 1820972 4608 ?        Sl   09:36   0:00 /usr/bin/docker-proxy -proto tcp -host-ip :: -host-po
+message+    1402  0.0  0.0  10808  2924 ?        S    09:36   0:00 nginx: worker process
+message+    1403  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1404  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1405  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1406  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1407  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1408  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1409  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1410  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1411  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1412  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1413  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1414  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1415  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1416  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1417  0.0  0.0  10808  2540 ?        S    09:36   0:00 nginx: worker process
+root        1836  0.0  0.1  42136 13056 ?        S<s  09:49   0:00 /usr/lib/systemd/systemd-journald
+systemd+    1888  0.0  0.0  91028  7808 ?        Ssl  09:49   0:00 /usr/lib/systemd/systemd-timesyncd
+root        1941  0.0  0.0  24752  6016 ?        Ss   09:49   0:00 /usr/lib/systemd/systemd-udevd
+systemd+    1993  0.0  0.1  21460 12928 ?        Ss   09:49   0:00 /usr/lib/systemd/systemd-resolved
+polkitd     2031  0.0  0.0 308164  7680 ?        Ssl  09:49   0:00 /usr/lib/polkit-1/polkitd --no-debug
+root        2258  0.0  0.1 1756620 13056 ?       Ssl  10:00   0:00 /usr/libexec/wsl-pro-service
+minseo      2391  100  0.0   8284  4096 pts/4    R+   10:08   0:00 ps aux
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ ps [K[K[K[7msystemctl list-units --type=service[27msystemctl list-units --type=service
+[?2004l[?1h=[0;4m [0m[0;4m [0m[0;4mUNIT                                    [0m[0;4m [0m[0;4mLOAD  [0m[0;4m [0m[0;4mACTIVE    [0m[0;4m [0m[0;4mSUB         [0m[0;4m [0m[0;4mDESCRIPTION                                   [0m[m
+  console-getty.service                    loaded active     running      Console Getty[m
+  console-setup.service                    loaded active     exited       Set console font and keymap[m
+  containerd.service                       loaded active     running      containerd container runtime[m
+  cron.service                             loaded active     running      Regular background program processing daemon[m
+  dbus.service                             loaded active     running      D-Bus System Message Bus[m
+  docker.service                           loaded active     running      Docker Application Container Engine[m
+  getty@tty1.service                       loaded active     running      Getty on tty1[m
+  keyboard-setup.service                   loaded active     exited       Set the console keyboard layout[m
+  kmod-static-nodes.service                loaded active     exited       Create List of Static Device Nodes[m
+  polkit.service                           loaded active     running      Authorization Manager[m
+  rsyslog.service                          loaded active     running      System Logging Service[m
+  setvtrgb.service                         loaded active     exited       Set console scheme[m
+  snapd.seeded.service                     loaded active     exited       Wait until snapd is fully seeded[m
+  systemd-binfmt.service                   loaded active     exited       Set Up Additional Binary Formats[m
+  systemd-journal-flush.service            loaded active     exited       Flush Journal to Persistent Storage[m
+  systemd-journald.service                 loaded active     running      Journal Service[m
+  systemd-logind.service                   loaded active     running      User Login Management[m
+  systemd-modules-load.service             loaded active     exited       Load Kernel Modules[m
+  systemd-remount-fs.service               loaded active     exited       Remount Root and Kernel File Systems[m
+  systemd-resolved.service                 loaded active     running      Network Name Resolution[m
+  systemd-sysctl.service                   loaded active     exited       Apply Kernel Variables[m
+  systemd-timesyncd.service                loaded active     running      Network Time Synchronization[m
+  systemd-tmpfiles-setup-dev-early.service loaded active     exited       Create Static Device Nodes in /dev gracefully[m
+  systemd-tmpfiles-setup-dev.service       loaded active     exited       Create Static Device Nodes in /dev[m
+  systemd-tmpfiles-setup.service           loaded active     exited       Create Volatile Files and Directories[m
+  systemd-udev-trigger.service             loaded active     exited       Coldplug All udev Devices[m
+  systemd-udevd.service                    loaded active     running      Rule-based Manager for Device Events and Files[m
+  systemd-update-utmp.service              loaded active     exited       Record System Boot/Shutdown in UTMP[m
+[7mlines 1-29[27m[K...skipping...
+[0;4m [0m[0;4m [0m[0;4mUNIT                                    [0m[0;4m [0m[0;4mLOAD  [0m[0;4m [0m[0;4mACTIVE    [0m[0;4m [0m[0;4mSUB         [0m[0;4m [0m[0;4mDESCRIPTION                                   [0m[m
+  console-getty.service                    loaded active     running      Console Getty[m
+  console-setup.service                    loaded active     exited       Set console font and keymap[m
+  containerd.service                       loaded active     running      containerd container runtime[m
+  cron.service                             loaded active     running      Regular background program processing daemon[m
+  dbus.service                             loaded active     running      D-Bus System Message Bus[m
+  docker.service                           loaded active     running      Docker Application Container Engine[m
+  getty@tty1.service                       loaded active     running      Getty on tty1[m
+  keyboard-setup.service                   loaded active     exited       Set the console keyboard layout[m
+  kmod-static-nodes.service                loaded active     exited       Create List of Static Device Nodes[m
+  polkit.service                           loaded active     running      Authorization Manager[m
+  rsyslog.service                          loaded active     running      System Logging Service[m
+  setvtrgb.service                         loaded active     exited       Set console scheme[m
+  snapd.seeded.service                     loaded active     exited       Wait until snapd is fully seeded[m
+  systemd-binfmt.service                   loaded active     exited       Set Up Additional Binary Formats[m
+  systemd-journal-flush.service            loaded active     exited       Flush Journal to Persistent Storage[m
+  systemd-journald.service                 loaded active     running      Journal Service[m
+  systemd-logind.service                   loaded active     running      User Login Management[m
+  systemd-modules-load.service             loaded active     exited       Load Kernel Modules[m
+  systemd-remount-fs.service               loaded active     exited       Remount Root and Kernel File Systems[m
+  systemd-resolved.service                 loaded active     running      Network Name Resolution[m
+  systemd-sysctl.service                   loaded active     exited       Apply Kernel Variables[m
+  systemd-timesyncd.service                loaded active     running      Network Time Synchronization[m
+  systemd-tmpfiles-setup-dev-early.service loaded active     exited       Create Static Device Nodes in /dev gracefully[m
+  systemd-tmpfiles-setup-dev.service       loaded active     exited       Create Static Device Nodes in /dev[m
+  systemd-tmpfiles-setup.service           loaded active     exited       Create Volatile Files and Directories[m
+  systemd-udev-trigger.service             loaded active     exited       Coldplug All udev Devices[m
+  systemd-udevd.service                    loaded active     running      Rule-based Manager for Device Events and Files[m
+  systemd-update-utmp.service              loaded active     exited       Record System Boot/Shutdown in UTMP[m
+  systemd-user-sessions.service            loaded active     exited       Permit User Sessions[m
+[7mlines 1-30[27m[K...skipping...
+[0;4m [0m[0;4m [0m[0;4mUNIT                                    [0m[0;4m [0m[0;4mLOAD  [0m[0;4m [0m[0;4mACTIVE    [0m[0;4m [0m[0;4mSUB         [0m[0;4m [0m[0;4mDESCRIPTION                                   [0m[m
+  console-getty.service                    loaded active     running      Console Getty[m
+  console-setup.service                    loaded active     exited       Set console font and keymap[m
+  containerd.service                       loaded active     running      containerd container runtime[m
+  cron.service                             loaded active     running      Regular background program processing daemon[m
+  dbus.service                             loaded active     running      D-Bus System Message Bus[m
+  docker.service                           loaded active     running      Docker Application Container Engine[m
+  getty@tty1.service                       loaded active     running      Getty on tty1[m
+  keyboard-setup.service                   loaded active     exited       Set the console keyboard layout[m
+  kmod-static-nodes.service                loaded active     exited       Create List of Static Device Nodes[m
+  polkit.service                           loaded active     running      Authorization Manager[m
+  rsyslog.service                          loaded active     running      System Logging Service[m
+  setvtrgb.service                         loaded active     exited       Set console scheme[m
+  snapd.seeded.service                     loaded active     exited       Wait until snapd is fully seeded[m
+  systemd-binfmt.service                   loaded active     exited       Set Up Additional Binary Formats[m
+  systemd-journal-flush.service            loaded active     exited       Flush Journal to Persistent Storage[m
+  systemd-journald.service                 loaded active     running      Journal Service[m
+  systemd-logind.service                   loaded active     running      User Login Management[m
+  systemd-modules-load.service             loaded active     exited       Load Kernel Modules[m
+  systemd-remount-fs.service               loaded active     exited       Remount Root and Kernel File Systems[m
+  systemd-resolved.service                 loaded active     running      Network Name Resolution[m
+  systemd-sysctl.service                   loaded active     exited       Apply Kernel Variables[m
+  systemd-timesyncd.service                loaded active     running      Network Time Synchronization[m
+  systemd-tmpfiles-setup-dev-early.service loaded active     exited       Create Static Device Nodes in /dev gracefully[m
+  systemd-tmpfiles-setup-dev.service       loaded active     exited       Create Static Device Nodes in /dev[m
+  systemd-tmpfiles-setup.service           loaded active     exited       Create Volatile Files and Directories[m
+  systemd-udev-trigger.service             loaded active     exited       Coldplug All udev Devices[m
+  systemd-udevd.service                    loaded active     running      Rule-based Manager for Device Events and Files[m
+  systemd-update-utmp.service              loaded active     exited       Record System Boot/Shutdown in UTMP[m
+  systemd-user-sessions.service            loaded active     exited       Permit User Sessions[m
+  unattended-upgrades.service              loaded active     running      Unattended Upgrades Shutdown[m
+[7mlines 1-31[27m[K...skipping...
+[0;4m [0m[0;4m [0m[0;4mUNIT                                    [0m[0;4m [0m[0;4mLOAD  [0m[0;4m [0m[0;4mACTIVE    [0m[0;4m [0m[0;4mSUB         [0m[0;4m [0m[0;4mDESCRIPTION                                   [0m[m
+  console-getty.service                    loaded active     running      Console Getty[m
+  console-setup.service                    loaded active     exited       Set console font and keymap[m
+  containerd.service                       loaded active     running      containerd container runtime[m
+  cron.service                             loaded active     running      Regular background program processing daemon[m
+  dbus.service                             loaded active     running      D-Bus System Message Bus[m
+  docker.service                           loaded active     running      Docker Application Container Engine[m
+  getty@tty1.service                       loaded active     running      Getty on tty1[m
+  keyboard-setup.service                   loaded active     exited       Set the console keyboard layout[m
+  kmod-static-nodes.service                loaded active     exited       Create List of Static Device Nodes[m
+  polkit.service                           loaded active     running      Authorization Manager[m
+  rsyslog.service                          loaded active     running      System Logging Service[m
+  setvtrgb.service                         loaded active     exited       Set console scheme[m
+  snapd.seeded.service                     loaded active     exited       Wait until snapd is fully seeded[m
+  systemd-binfmt.service                   loaded active     exited       Set Up Additional Binary Formats[m
+  systemd-journal-flush.service            loaded active     exited       Flush Journal to Persistent Storage[m
+  systemd-journald.service                 loaded active     running      Journal Service[m
+  systemd-logind.service                   loaded active     running      User Login Management[m
+  systemd-modules-load.service             loaded active     exited       Load Kernel Modules[m
+  systemd-remount-fs.service               loaded active     exited       Remount Root and Kernel File Systems[m
+  systemd-resolved.service                 loaded active     running      Network Name Resolution[m
+  systemd-sysctl.service                   loaded active     exited       Apply Kernel Variables[m
+  systemd-timesyncd.service                loaded active     running      Network Time Synchronization[m
+  systemd-tmpfiles-setup-dev-early.service loaded active     exited       Create Static Device Nodes in /dev gracefully[m
+  systemd-tmpfiles-setup-dev.service       loaded active     exited       Create Static Device Nodes in /dev[m
+  systemd-tmpfiles-setup.service           loaded active     exited       Create Volatile Files and Directories[m
+  systemd-udev-trigger.service             loaded active     exited       Coldplug All udev Devices[m
+  systemd-udevd.service                    loaded active     running      Rule-based Manager for Device Events and Files[m
+  systemd-update-utmp.service              loaded active     exited       Record System Boot/Shutdown in UTMP[m
+  systemd-user-sessions.service            loaded active     exited       Permit User Sessions[m
+  unattended-upgrades.service              loaded active     running      Unattended Upgrades Shutdown[m
+  user-runtime-dir@1000.service            loaded active     exited       User Runtime Directory /run/user/1000[m
+[7mlines 1-32[27m[K...skipping...
+[0;4m [0m[0;4m [0m[0;4mUNIT                                    [0m[0;4m [0m[0;4mLOAD  [0m[0;4m [0m[0;4mACTIVE    [0m[0;4m [0m[0;4mSUB         [0m[0;4m [0m[0;4mDESCRIPTION                                   [0m[m
+  console-getty.service                    loaded active     running      Console Getty[m
+  console-setup.service                    loaded active     exited       Set console font and keymap[m
+  containerd.service                       loaded active     running      containerd container runtime[m
+  cron.service                             loaded active     running      Regular background program processing daemon[m
+  dbus.service                             loaded active     running      D-Bus System Message Bus[m
+  docker.service                           loaded active     running      Docker Application Container Engine[m
+  getty@tty1.service                       loaded active     running      Getty on tty1[m
+  keyboard-setup.service                   loaded active     exited       Set the console keyboard layout[m
+  kmod-static-nodes.service                loaded active     exited       Create List of Static Device Nodes[m
+  polkit.service                           loaded active     running      Authorization Manager[m
+  rsyslog.service                          loaded active     running      System Logging Service[m
+  setvtrgb.service                         loaded active     exited       Set console scheme[m
+  snapd.seeded.service                     loaded active     exited       Wait until snapd is fully seeded[m
+  systemd-binfmt.service                   loaded active     exited       Set Up Additional Binary Formats[m
+  systemd-journal-flush.service            loaded active     exited       Flush Journal to Persistent Storage[m
+  systemd-journald.service                 loaded active     running      Journal Service[m
+  systemd-logind.service                   loaded active     running      User Login Management[m
+  systemd-modules-load.service             loaded active     exited       Load Kernel Modules[m
+  systemd-remount-fs.service               loaded active     exited       Remount Root and Kernel File Systems[m
+  systemd-resolved.service                 loaded active     running      Network Name Resolution[m
+  systemd-sysctl.service                   loaded active     exited       Apply Kernel Variables[m
+  systemd-timesyncd.service                loaded active     running      Network Time Synchronization[m
+  systemd-tmpfiles-setup-dev-early.service loaded active     exited       Create Static Device Nodes in /dev gracefully[m
+  systemd-tmpfiles-setup-dev.service       loaded active     exited       Create Static Device Nodes in /dev[m
+  systemd-tmpfiles-setup.service           loaded active     exited       Create Volatile Files and Directories[m
+  systemd-udev-trigger.service             loaded active     exited       Coldplug All udev Devices[m
+  systemd-udevd.service                    loaded active     running      Rule-based Manager for Device Events and Files[m
+  systemd-update-utmp.service              loaded active     exited       Record System Boot/Shutdown in UTMP[m
+  systemd-user-sessions.service            loaded active     exited       Permit User Sessions[m
+  unattended-upgrades.service              loaded active     running      Unattended Upgrades Shutdown[m
+  user-runtime-dir@1000.service            loaded active     exited       User Runtime Directory /run/user/1000[m
+  user@1000.service                        loaded active     running      User Manager for UID 1000[m
+[7mlines 1-33[27m[K...skipping...
+[0;4m [0m[0;4m [0m[0;4mUNIT                                    [0m[0;4m [0m[0;4mLOAD  [0m[0;4m [0m[0;4mACTIVE    [0m[0;4m [0m[0;4mSUB         [0m[0;4m [0m[0;4mDESCRIPTION                                   [0m[m
+  console-getty.service                    loaded active     running      Console Getty[m
+  console-setup.service                    loaded active     exited       Set console font and keymap[m
+  containerd.service                       loaded active     running      containerd container runtime[m
+  cron.service                             loaded active     running      Regular background program processing daemon[m
+  dbus.service                             loaded active     running      D-Bus System Message Bus[m
+  docker.service                           loaded active     running      Docker Application Container Engine[m
+  getty@tty1.service                       loaded active     running      Getty on tty1[m
+  keyboard-setup.service                   loaded active     exited       Set the console keyboard layout[m
+  kmod-static-nodes.service                loaded active     exited       Create List of Static Device Nodes[m
+  polkit.service                           loaded active     running      Authorization Manager[m
+  rsyslog.service                          loaded active     running      System Logging Service[m
+  setvtrgb.service                         loaded active     exited       Set console scheme[m
+  snapd.seeded.service                     loaded active     exited       Wait until snapd is fully seeded[m
+  systemd-binfmt.service                   loaded active     exited       Set Up Additional Binary Formats[m
+  systemd-journal-flush.service            loaded active     exited       Flush Journal to Persistent Storage[m
+  systemd-journald.service                 loaded active     running      Journal Service[m
+  systemd-logind.service                   loaded active     running      User Login Management[m
+  systemd-modules-load.service             loaded active     exited       Load Kernel Modules[m
+  systemd-remount-fs.service               loaded active     exited       Remount Root and Kernel File Systems[m
+  systemd-resolved.service                 loaded active     running      Network Name Resolution[m
+  systemd-sysctl.service                   loaded active     exited       Apply Kernel Variables[m
+  systemd-timesyncd.service                loaded active     running      Network Time Synchronization[m
+  systemd-tmpfiles-setup-dev-early.service loaded active     exited       Create Static Device Nodes in /dev gracefully[m
+  systemd-tmpfiles-setup-dev.service       loaded active     exited       Create Static Device Nodes in /dev[m
+  systemd-tmpfiles-setup.service           loaded active     exited       Create Volatile Files and Directories[m
+  systemd-udev-trigger.service             loaded active     exited       Coldplug All udev Devices[m
+  systemd-udevd.service                    loaded active     running      Rule-based Manager for Device Events and Files[m
+  systemd-update-utmp.service              loaded active     exited       Record System Boot/Shutdown in UTMP[m
+  systemd-user-sessions.service            loaded active     exited       Permit User Sessions[m
+  unattended-upgrades.service              loaded active     running      Unattended Upgrades Shutdown[m
+  user-runtime-dir@1000.service            loaded active     exited       User Runtime Directory /run/user/1000[m
+  user@1000.service                        loaded active     running      User Manager for UID 1000[m
+  wsl-pro.service                          loaded activating auto-restart Bridge to Ubuntu Pro agent on Windows[m
+[7mlines 1-34[27m[K...skipping...
+[0;4m [0m[0;4m [0m[0;4mUNIT                                    [0m[0;4m [0m[0;4mLOAD  [0m[0;4m [0m[0;4mACTIVE    [0m[0;4m [0m[0;4mSUB         [0m[0;4m [0m[0;4mDESCRIPTION                                   [0m[m
+  console-getty.service                    loaded active     running      Console Getty[m
+  console-setup.service                    loaded active     exited       Set console font and keymap[m
+  containerd.service                       loaded active     running      containerd container runtime[m
+  cron.service                             loaded active     running      Regular background program processing daemon[m
+  dbus.service                             loaded active     running      D-Bus System Message Bus[m
+  docker.service                           loaded active     running      Docker Application Container Engine[m
+  getty@tty1.service                       loaded active     running      Getty on tty1[m
+  keyboard-setup.service                   loaded active     exited       Set the console keyboard layout[m
+  kmod-static-nodes.service                loaded active     exited       Create List of Static Device Nodes[m
+  polkit.service                           loaded active     running      Authorization Manager[m
+  rsyslog.service                          loaded active     running      System Logging Service[m
+  setvtrgb.service                         loaded active     exited       Set console scheme[m
+  snapd.seeded.service                     loaded active     exited       Wait until snapd is fully seeded[m
+  systemd-binfmt.service                   loaded active     exited       Set Up Additional Binary Formats[m
+  systemd-journal-flush.service            loaded active     exited       Flush Journal to Persistent Storage[m
+  systemd-journald.service                 loaded active     running      Journal Service[m
+  systemd-logind.service                   loaded active     running      User Login Management[m
+  systemd-modules-load.service             loaded active     exited       Load Kernel Modules[m
+  systemd-remount-fs.service               loaded active     exited       Remount Root and Kernel File Systems[m
+  systemd-resolved.service                 loaded active     running      Network Name Resolution[m
+  systemd-sysctl.service                   loaded active     exited       Apply Kernel Variables[m
+  systemd-timesyncd.service                loaded active     running      Network Time Synchronization[m
+  systemd-tmpfiles-setup-dev-early.service loaded active     exited       Create Static Device Nodes in /dev gracefully[m
+  systemd-tmpfiles-setup-dev.service       loaded active     exited       Create Static Device Nodes in /dev[m
+  systemd-tmpfiles-setup.service           loaded active     exited       Create Volatile Files and Directories[m
+  systemd-udev-trigger.service             loaded active     exited       Coldplug All udev Devices[m
+  systemd-udevd.service                    loaded active     running      Rule-based Manager for Device Events and Files[m
+  systemd-update-utmp.service              loaded active     exited       Record System Boot/Shutdown in UTMP[m
+  systemd-user-sessions.service            loaded active     exited       Permit User Sessions[m
+  unattended-upgrades.service              loaded active     running      Unattended Upgrades Shutdown[m
+  user-runtime-dir@1000.service            loaded active     exited       User Runtime Directory /run/user/1000[m
+  user@1000.service                        loaded active     running      User Manager for UID 1000[m
+  wsl-pro.service                          loaded activating auto-restart Bridge to Ubuntu Pro agent on Windows[m
+[m
+[7mlines 1-35[27m[K...skipping...
+[0;4m [0m[0;4m [0m[0;4mUNIT                                    [0m[0;4m [0m[0;4mLOAD  [0m[0;4m [0m[0;4mACTIVE    [0m[0;4m [0m[0;4mSUB         [0m[0;4m [0m[0;4mDESCRIPTION                                   [0m[m
+  console-getty.service                    loaded active     running      Console Getty[m
+  console-setup.service                    loaded active     exited       Set console font and keymap[m
+  containerd.service                       loaded active     running      containerd container runtime[m
+  cron.service                             loaded active     running      Regular background program processing daemon[m
+  dbus.service                             loaded active     running      D-Bus System Message Bus[m
+  docker.service                           loaded active     running      Docker Application Container Engine[m
+  getty@tty1.service                       loaded active     running      Getty on tty1[m
+  keyboard-setup.service                   loaded active     exited       Set the console keyboard layout[m
+  kmod-static-nodes.service                loaded active     exited       Create List of Static Device Nodes[m
+  polkit.service                           loaded active     running      Authorization Manager[m
+  rsyslog.service                          loaded active     running      System Logging Service[m
+  setvtrgb.service                         loaded active     exited       Set console scheme[m
+  snapd.seeded.service                     loaded active     exited       Wait until snapd is fully seeded[m
+  systemd-binfmt.service                   loaded active     exited       Set Up Additional Binary Formats[m
+  systemd-journal-flush.service            loaded active     exited       Flush Journal to Persistent Storage[m
+  systemd-journald.service                 loaded active     running      Journal Service[m
+  systemd-logind.service                   loaded active     running      User Login Management[m
+  systemd-modules-load.service             loaded active     exited       Load Kernel Modules[m
+  systemd-remount-fs.service               loaded active     exited       Remount Root and Kernel File Systems[m
+  systemd-resolved.service                 loaded active     running      Network Name Resolution[m
+  systemd-sysctl.service                   loaded active     exited       Apply Kernel Variables[m
+  systemd-timesyncd.service                loaded active     running      Network Time Synchronization[m
+  systemd-tmpfiles-setup-dev-early.service loaded active     exited       Create Static Device Nodes in /dev gracefully[m
+  systemd-tmpfiles-setup-dev.service       loaded active     exited       Create Static Device Nodes in /dev[m
+  systemd-tmpfiles-setup.service           loaded active     exited       Create Volatile Files and Directories[m
+  systemd-udev-trigger.service             loaded active     exited       Coldplug All udev Devices[m
+  systemd-udevd.service                    loaded active     running      Rule-based Manager for Device Events and Files[m
+  systemd-update-utmp.service              loaded active     exited       Record System Boot/Shutdown in UTMP[m
+  systemd-user-sessions.service            loaded active     exited       Permit User Sessions[m
+  unattended-upgrades.service              loaded active     running      Unattended Upgrades Shutdown[m
+  user-runtime-dir@1000.service            loaded active     exited       User Runtime Directory /run/user/1000[m
+  user@1000.service                        loaded active     running      User Manager for UID 1000[m
+  wsl-pro.service                          loaded activating auto-restart Bridge to Ubuntu Pro agent on Windows[m
+[m
+[0;38;5;245mLegend: LOAD   → Reflects whether the unit definition was properly loaded.[0m[m
+[7mlines 1-36[27m[K...skipping...
+[0;4m [0m[0;4m [0m[0;4mUNIT                                    [0m[0;4m [0m[0;4mLOAD  [0m[0;4m [0m[0;4mACTIVE    [0m[0;4m [0m[0;4mSUB         [0m[0;4m [0m[0;4mDESCRIPTION                                   [0m[m
+  console-getty.service                    loaded active     running      Console Getty[m
+  console-setup.service                    loaded active     exited       Set console font and keymap[m
+  containerd.service                       loaded active     running      containerd container runtime[m
+  cron.service                             loaded active     running      Regular background program processing daemon[m
+  dbus.service                             loaded active     running      D-Bus System Message Bus[m
+  docker.service                           loaded active     running      Docker Application Container Engine[m
+  getty@tty1.service                       loaded active     running      Getty on tty1[m
+  keyboard-setup.service                   loaded active     exited       Set the console keyboard layout[m
+  kmod-static-nodes.service                loaded active     exited       Create List of Static Device Nodes[m
+  polkit.service                           loaded active     running      Authorization Manager[m
+  rsyslog.service                          loaded active     running      System Logging Service[m
+  setvtrgb.service                         loaded active     exited       Set console scheme[m
+  snapd.seeded.service                     loaded active     exited       Wait until snapd is fully seeded[m
+  systemd-binfmt.service                   loaded active     exited       Set Up Additional Binary Formats[m
+  systemd-journal-flush.service            loaded active     exited       Flush Journal to Persistent Storage[m
+  systemd-journald.service                 loaded active     running      Journal Service[m
+  systemd-logind.service                   loaded active     running      User Login Management[m
+  systemd-modules-load.service             loaded active     exited       Load Kernel Modules[m
+  systemd-remount-fs.service               loaded active     exited       Remount Root and Kernel File Systems[m
+  systemd-resolved.service                 loaded active     running      Network Name Resolution[m
+  systemd-sysctl.service                   loaded active     exited       Apply Kernel Variables[m
+  systemd-timesyncd.service                loaded active     running      Network Time Synchronization[m
+  systemd-tmpfiles-setup-dev-early.service loaded active     exited       Create Static Device Nodes in /dev gracefully[m
+  systemd-tmpfiles-setup-dev.service       loaded active     exited       Create Static Device Nodes in /dev[m
+  systemd-tmpfiles-setup.service           loaded active     exited       Create Volatile Files and Directories[m
+  systemd-udev-trigger.service             loaded active     exited       Coldplug All udev Devices[m
+  systemd-udevd.service                    loaded active     running      Rule-based Manager for Device Events and Files[m
+  systemd-update-utmp.service              loaded active     exited       Record System Boot/Shutdown in UTMP[m
+  systemd-user-sessions.service            loaded active     exited       Permit User Sessions[m
+  unattended-upgrades.service              loaded active     running      Unattended Upgrades Shutdown[m
+  user-runtime-dir@1000.service            loaded active     exited       User Runtime Directory /run/user/1000[m
+  user@1000.service                        loaded active     running      User Manager for UID 1000[m
+  wsl-pro.service                          loaded activating auto-restart Bridge to Ubuntu Pro agent on Windows[m
+[m
+[0;38;5;245mLegend: LOAD   → Reflects whether the unit definition was properly loaded.[0m[m
+[0;38;5;245m        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.[0m[m
+[7mlines 1-37[27m[K
+[K[?1l>[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [7msystemctl status docker[27msystemctl status docker
+[?2004l[?1h=[0;1;32m●[0m docker.service - Docker Application Container Engine[m
+     Loaded: loaded (]8;;file://DESKTOP-2HHEQA0/usr/lib/systemd/system/docker.service/usr/lib/systemd/system/docker.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m
+     Active: [0;1;32mactive (running)[0m since Fri 2026-04-03 09:29:51 KST; 54min ago[m
+TriggeredBy: [0;1;32m●[0m docker.socket[m
+       Docs: ]8;;https://docs.docker.comhttps://docs.docker.com]8;;[m
+   Main PID: 362 (dockerd)[m
+      Tasks: 39[m
+     Memory: 94.8M (peak: 146.6M)[m
+        CPU: 4.034s[m
+     CGroup: /system.slice/docker.service[m
+             ├─[0;38;5;245m 362 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock[0m[m
+             ├─[0;38;5;245m1356 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8081 -container-ip 172.17.0.2 -contain[m[7m>[27m
+             └─[0;38;5;245m1362 /usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 8081 -container-ip 172.17.0.2 -container-po[m[7m>[27m
+[m
+Apr 03 09:29:50 DESKTOP-2HHEQA0 dockerd[362]: time="2026-04-03T09:29:50.993367811+09:00" level=info msg="Docker daemon"[m[7m>[27m
+Apr 03 09:29:50 DESKTOP-2HHEQA0 dockerd[362]: time="2026-04-03T09:29:50.993902496+09:00" level=info msg="Initializing b[m[7m>[27m
+Apr 03 09:29:51 DESKTOP-2HHEQA0 dockerd[362]: time="2026-04-03T09:29:51.024310085+09:00" level=info msg="Completed buil[m[7m>[27m
+Apr 03 09:29:51 DESKTOP-2HHEQA0 dockerd[362]: time="2026-04-03T09:29:51.032568188+09:00" level=info msg="Daemon has com[m[7m>[27m
+Apr 03 09:29:51 DESKTOP-2HHEQA0 dockerd[362]: time="2026-04-03T09:29:51.032725503+09:00" level=info msg="API listen on [m[7m>[27m
+Apr 03 09:29:51 DESKTOP-2HHEQA0 systemd[1]: Started docker.service - Docker Application Container Engine.[m
+Apr 03 09:34:25 DESKTOP-2HHEQA0 dockerd[362]: time="2026-04-03T09:34:25.604916313+09:00" level=info msg="image pulled" [m[7m>[27m
+Apr 03 09:34:26 DESKTOP-2HHEQA0 dockerd[362]: time="2026-04-03T09:34:26.199176398+09:00" level=info msg="sbJoin: gwep4 [m[7m>[27m
+Apr 03 09:36:21 DESKTOP-2HHEQA0 dockerd[362]: time="2026-04-03T09:36:21.958922053+09:00" level=info msg="received task-[m[7m>[27m
+Apr 03 09:36:47 DESKTOP-2HHEQA0 dockerd[362]: time="2026-04-03T09:36:47.354702659+09:00" level=info msg="sbJoin: gwep4 [m[7m>[27m
+[7mlines 1-24/24 (END)[27m[K[K[?1l>
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ systemctl status dockers [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kps -ef | grep docker
+[?2004lroot         362       1  0 09:29 ?        00:00:03 /usr/bin/[01;31m[Kdocker[m[Kd -H fd:// --containerd=/run/containerd/containerd.sock
+root        1356     362  0 09:36 ?        00:00:00 /usr/bin/[01;31m[Kdocker[m[K-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8081 -container-ip 172.17.0.2 -container-port 80 -use-listen-fd
+root        1362     362  0 09:36 ?        00:00:00 /usr/bin/[01;31m[Kdocker[m[K-proxy -proto tcp -host-ip :: -host-port 8081 -container-ip 172.17.0.2 -container-port 80 -use-listen-fd
+minseo      2429     885  0 10:29 pts/4    00:00:00 grep --color=auto [01;31m[Kdocker[m[K
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ ps -d[Kef | greip[K[Kp ni[Kginx
+[?2004lroot        1309    1285  0 09:36 ?        00:00:00 [01;31m[Knginx[m[K: master process [01;31m[Knginx[m[K -g daemon off;
+message+    1402    1309  0 09:36 ?        00:00:00 [01;31m[Knginx[m[K: worker process
+message+    1403    1309  0 09:36 ?        00:00:00 [01;31m[Knginx[m[K: worker process
+message+    1404    1309  0 09:36 ?        00:00:00 [01;31m[Knginx[m[K: worker process
+message+    1405    1309  0 09:36 ?        00:00:00 [01;31m[Knginx[m[K: worker process
+message+    1406    1309  0 09:36 ?        00:00:00 [01;31m[Knginx[m[K: worker process
+message+    1407    1309  0 09:36 ?        00:00:00 [01;31m[Knginx[m[K: worker process
+message+    1408    1309  0 09:36 ?        00:00:00 [01;31m[Knginx[m[K: worker process
+message+    1409    1309  0 09:36 ?        00:00:00 [01;31m[Knginx[m[K: worker process
+message+    1410    1309  0 09:36 ?        00:00:00 [01;31m[Knginx[m[K: worker process
+message+    1411    1309  0 09:36 ?        00:00:00 [01;31m[Knginx[m[K: worker process
+message+    1412    1309  0 09:36 ?        00:00:00 [01;31m[Knginx[m[K: worker process
+message+    1413    1309  0 09:36 ?        00:00:00 [01;31m[Knginx[m[K: worker process
+message+    1414    1309  0 09:36 ?        00:00:00 [01;31m[Knginx[m[K: worker process
+message+    1415    1309  0 09:36 ?        00:00:00 [01;31m[Knginx[m[K: worker process
+message+    1416    1309  0 09:36 ?        00:00:00 [01;31m[Knginx[m[K: worker process
+message+    1417    1309  0 09:36 ?        00:00:00 [01;31m[Knginx[m[K: worker process
+minseo      2431     885  0 10:29 pts/4    00:00:00 grep --color=auto [01;31m[Knginx[m[K
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ nproc
+[?2004l16
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ lscpu
+[?2004lArchitecture:             x86_64
+  CPU op-mode(s):         32-bit, 64-bit
+  Address sizes:          48 bits physical, 48 bits virtual
+  Byte Order:             Little Endian
+CPU(s):                   16
+  On-line CPU(s) list:    0-15
+Vendor ID:                AuthenticAMD
+  Model name:             AMD Ryzen 7 5800H with Radeon Graphics
+    CPU family:           25
+    Model:                80
+    Thread(s) per core:   2
+    Core(s) per socket:   8
+    Socket(s):            1
+    Stepping:             0
+    BogoMIPS:             6387.83
+    Flags:                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse s
+                          se2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable no
+                          nstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe po
+                          pcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalign
+                          sse 3dnowprefetch osvw topoext perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 sm
+                          ep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clz
+                          ero xsaveerptr arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter p
+                          fthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
+Virtualization features:  
+  Virtualization:         AMD-V
+  Hypervisor vendor:      Microsoft
+  Virtualization type:    full
+Caches (sum of all):      
+  L1d:                    256 KiB (8 instances)
+  L1i:                    256 KiB (8 instances)
+  L2:                     4 MiB (8 instances)
+  L3:                     16 MiB (1 instance)
+NUMA:                     
+  NUMA node(s):           1
+  NUMA node0 CPU(s):      0-15
+Vulnerabilities:          
+  Gather data sampling:   Not affected
+  Itlb multihit:          Not affected
+  L1tf:                   Not affected
+  Mds:                    Not affected
+  Meltdown:               Not affected
+  Mmio stale data:        Not affected
+  Reg file data sampling: Not affected
+  Retbleed:               Not affected
+  Spec rstack overflow:   Vulnerable: Safe RET, no microcode
+  Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+  Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+  Spectre v2:             Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP always-on; RSB filling; PBRSB-eIBRS N
+                          ot affected; BHI Not affected
+  Srbds:                  Not affected
+  Tsx async abort:        Not affected
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ docker top stress [K-nginx
+[?2004lUID                 PID                 PPID                C                   STIME               TTY                 TIME                CMD
+root                1309                1285                0                   09:36               ?                   00:00:00            nginx: master process nginx -g daemon off;
+message+            1402                1309                0                   09:36               ?                   00:00:00            nginx: worker process
+message+            1403                1309                0                   09:36               ?                   00:00:00            nginx: worker process
+message+            1404                1309                0                   09:36               ?                   00:00:00            nginx: worker process
+message+            1405                1309                0                   09:36               ?                   00:00:00            nginx: worker process
+message+            1406                1309                0                   09:36               ?                   00:00:00            nginx: worker process
+message+            1407                1309                0                   09:36               ?                   00:00:00            nginx: worker process
+message+            1408                1309                0                   09:36               ?                   00:00:00            nginx: worker process
+message+            1409                1309                0                   09:36               ?                   00:00:00            nginx: worker process
+message+            1410                1309                0                   09:36               ?                   00:00:00            nginx: worker process
+message+            1411                1309                0                   09:36               ?                   00:00:00            nginx: worker process
+message+            1412                1309                0                   09:36               ?                   00:00:00            nginx: worker process
+message+            1413                1309                0                   09:36               ?                   00:00:00            nginx: worker process
+message+            1414                1309                0                   09:36               ?                   00:00:00            nginx: worker process
+message+            1415                1309                0                   09:36               ?                   00:00:00            nginx: worker process
+message+            1416                1309                0                   09:36               ?                   00:00:00            nginx: worker process
+message+            1417                1309                0                   09:36               ?                   00:00:00            nginx: worker process
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ sudo apt update
+[?2004l[sudo] password for minseo: 
+[33m0% [Working][0m            Get:1 https://download.docker.com/linux/ubuntu noble InRelease [48.5 kB]
+[33m0% [1 InRelease 15.9 kB/48.5 kB 33%] [Connecting to archive.ubuntu.com] [Connecting to security.ubuntu.com][0m[33m                                                                                                           0% [Connecting to archive.ubuntu.com] [Connecting to security.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com (185.125.190.81)] [Connecting to security.ubuntu.com (185.125.190.83)][0m                                                                                                           Get:2 https://download.docker.com/linux/ubuntu noble/stable amd64 Packages [48.7 kB]
+[33m0% [2 Packages 15.9 kB/48.7 kB 33%] [Connecting to archive.ubuntu.com (185.125.190.81)] [Connecting to security.ubuntu.com (185.125.190.83)][0m[33m                                                                                                                                            0% [Connecting to archive.ubuntu.com (185.125.190.81)] [Connecting to security.ubuntu.com (185.125.190.83)][0m[33m0% [2 Packages store 0 B] [Connecting to archive.ubuntu.com (185.125.190.81)] [Connecting to security.ubuntu.com (185.125.190.83)][0m[33m                                                                                                                                  0% [Connecting to archive.ubuntu.com (185.125.190.81)] [Connecting to security.ubuntu.com (185.125.190.83)][0m                                                                                                           Get:3 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+[33m                                                                                                           0% [Waiting for headers] [3 InRelease 13.2 kB/126 kB 10%][0m                                                         Hit:4 http://archive.ubuntu.com/ubuntu noble InRelease
+[33m                                                         0% [3 InRelease 13.2 kB/126 kB 10%][0m[33m0% [Waiting for headers] [3 InRelease 13.2 kB/126 kB 10%][0m                                                         Get:5 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+[33m0% [5 InRelease 10.5 kB/126 kB 8%] [3 InRelease 19.9 kB/126 kB 16%][0m[33m0% [5 InRelease 44.2 kB/126 kB 35%] [3 InRelease 84.6 kB/126 kB 67%][0m[33m                                                                    0% [5 InRelease 59.0 kB/126 kB 47%][0m[33m0% [5 InRelease 80.6 kB/126 kB 64%][0m[33m                                   0% [Waiting for headers][0m                        Get:6 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1576 kB]
+[33m0% [Waiting for headers] [6 Packages 2455 B/1576 kB 0%][0m[33m0% [Waiting for headers] [6 Packages 40.2 kB/1576 kB 3%][0m                                                        Get:7 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+[33m0% [7 InRelease 2388 B/126 kB 2%] [6 Packages 124 kB/1576 kB 8%][0m[33m                                                                0% [6 Packages 224 kB/1576 kB 14%][0m[33m19% [Waiting for headers] [6 Packages 329 kB/1576 kB 21%][0m                                                         Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1873 kB]
+[33m20% [8 Packages 2455 B/1873 kB 0%] [6 Packages 544 kB/1576 kB 35%][0m[33m                                                                  27% [8 Packages 299 kB/1873 kB 16%][0m[33m27% [6 Packages store 0 B] [8 Packages 299 kB/1873 kB 16%][0m[33m                                                          29% [8 Packages 647 kB/1873 kB 35%] [Waiting for headers][0m                                                         Get:9 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [252 kB]
+[33m29% [8 Packages 649 kB/1873 kB 35%] [9 Translation-en 6501 B/252 kB 3%][0m[33m                                                                       31% [8 Packages 706 kB/1873 kB 38%] [Waiting for headers][0m                                                         Get:10 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21.5 kB]
+[33m31% [8 Packages 706 kB/1873 kB 38%] [10 Components-amd64 21.5 kB/21.5 kB 100%][0m[33m                                                                              31% [9 Translation-en store 0 B] [8 Packages 706 kB/1873 kB 38%][0m                                                                Get:11 http://security.ubuntu.com/ubuntu noble-security/main amd64 c-n-f Metadata [10.7 kB]
+[33m31% [9 Translation-en store 0 B] [8 Packages 706 kB/1873 kB 38%] [11 Commands-amd64 10.7 kB/10.7 kB 100%][0m[33m                                                                                                         31% [9 Translation-en store 0 B] [8 Packages 706 kB/1873 kB 38%] [Waiting for headers][0m                                                                                      Get:12 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1167 kB]
+[33m31% [9 Translation-en store 0 B] [8 Packages 706 kB/1873 kB 38%] [12 Packages 24.6 kB/1167 kB 2%][0m[33m                                                                                                 37% [8 Packages 814 kB/1873 kB 43%] [12 Packages 1062 kB/1167 kB 91%][0m[33m37% [10 Components-amd64 store 0 B] [8 Packages 814 kB/1873 kB 43%] [12 Packages 1062 kB/1167 kB 91%][0m[33m                                                                                                     37% [8 Packages 814 kB/1873 kB 43%] [12 Packages 1062 kB/1167 kB 91%][0m[33m37% [11 Commands-amd64 store 0 B] [8 Packages 814 kB/1873 kB 43%] [12 Packages 1062 kB/1167 kB 91%][0m[33m                                                                                                   37% [8 Packages 814 kB/1873 kB 43%] [12 Packages 1062 kB/1167 kB 91%][0m[33m                                                                     38% [8 Packages 860 kB/1873 kB 46%] [Waiting for headers][0m                                                         Get:13 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [225 kB]
+[33m38% [8 Packages 860 kB/1873 kB 46%] [13 Translation-en 16.4 kB/225 kB 7%][0m[33m38% [12 Packages store 0 B] [8 Packages 860 kB/1873 kB 46%] [13 Translation-en 33.0 kB/225 kB 15%][0m[33m                                                                                                  40% [12 Packages store 0 B] [8 Packages 927 kB/1873 kB 50%] [Waiting for headers][0m                                                                                 Get:14 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [74.2 kB]
+[33m40% [12 Packages store 0 B] [8 Packages 927 kB/1873 kB 50%] [14 Components-amd64 26.5 kB/74.2 kB 36%][0m[33m                                                                                                     40% [12 Packages store 0 B] [8 Packages 927 kB/1873 kB 50%][0m                                                           Get:15 http://security.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [22.8 kB]
+[33m40% [12 Packages store 0 B] [8 Packages 927 kB/1873 kB 50%] [15 Commands-amd64 17.6 kB/22.8 kB 77%][0m[33m                                                                                                   40% [12 Packages store 0 B] [8 Packages 927 kB/1873 kB 50%] [Waiting for headers][0m                                                                                 Get:16 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2757 kB]
+[33m40% [12 Packages store 0 B] [8 Packages 927 kB/1873 kB 50%] [16 Packages 49.2 kB/2757 kB 2%][0m[33m                                                                                            43% [8 Packages 1297 kB/1873 kB 69%] [16 Packages 214 kB/2757 kB 8%][0m[33m43% [13 Translation-en store 0 B] [8 Packages 1297 kB/1873 kB 69%] [16 Packages 214 kB/2757 kB 8%][0m[33m                                                                                                  43% [8 Packages 1297 kB/1873 kB 69%] [16 Packages 214 kB/2757 kB 8%][0m[33m43% [14 Components-amd64 store 0 B] [8 Packages 1297 kB/1873 kB 69%] [16 Packages 214 kB/2757 kB 8%][0m[33m                                                                                                    44% [8 Packages 1297 kB/1873 kB 69%] [16 Packages 214 kB/2757 kB 8%][0m[33m44% [15 Commands-amd64 store 0 B] [8 Packages 1297 kB/1873 kB 69%] [16 Packages 214 kB/2757 kB 8%][0m[33m                                                                                                  44% [8 Packages 1297 kB/1873 kB 69%] [16 Packages 214 kB/2757 kB 8%][0m[33m                                                                    48% [Waiting for headers] [16 Packages 483 kB/2757 kB 18%][0m                                                          Get:17 http://archive.ubuntu.com/ubuntu noble-updates/main Translation-en [342 kB]
+[33m48% [17 Translation-en 14.8 kB/342 kB 4%] [16 Packages 483 kB/2757 kB 18%][0m[33m48% [8 Packages store 0 B] [17 Translation-en 14.8 kB/342 kB 4%] [16 Packages 483 kB/2757 kB 18%][0m[33m                                                                                                 58% [8 Packages store 0 B] [Waiting for headers] [16 Packages 2080 kB/2757 kB 75%][0m                                                                                  Get:18 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [177 kB]
+[33m58% [8 Packages store 0 B] [18 Components-amd64 49.2 kB/177 kB 28%] [16 Packages 2080 kB/2757 kB 75%][0m[33m                                                                                                     62% [8 Packages store 0 B] [18 Components-amd64 131 kB/177 kB 74%] [Waiting for headers][0m                                                                                        Get:19 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [642 kB]
+[33m62% [8 Packages store 0 B] [18 Components-amd64 131 kB/177 kB 74%] [19 Translation-en 55.9 kB/642 kB 9%][0m[33m                                                                                                        65% [8 Packages store 0 B] [18 Components-amd64 131 kB/177 kB 74%] [Waiting for headers][0m                                                                                        Get:20 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+[33m65% [8 Packages store 0 B] [18 Components-amd64 131 kB/177 kB 74%] [Waiting for headers][0m                                                                                        Get:21 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [208 B]
+[33m                                                                                        65% [8 Packages store 0 B] [18 Components-amd64 131 kB/177 kB 74%][0m[33m                                                                  66% [8 Packages store 0 B] [Waiting for headers][0m                                                Get:22 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 c-n-f Metadata [16.9 kB]
+[33m66% [8 Packages store 0 B] [22 Commands-amd64 14.0 kB/16.9 kB 83%][0m[33m                                                                  66% [8 Packages store 0 B] [Waiting for headers][0m                                                Get:23 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1665 kB]
+[33m66% [8 Packages store 0 B] [23 Packages 3803 B/1665 kB 0%][0m[33m                                                          67% [23 Packages 139 kB/1665 kB 8%][0m[33m67% [17 Translation-en store 0 B] [23 Packages 139 kB/1665 kB 8%][0m[33m                                                                 70% [23 Packages 720 kB/1665 kB 43%][0m[33m70% [16 Packages store 0 B] [23 Packages 721 kB/1665 kB 43%][0m[33m                                                            74% [16 Packages store 0 B] [Waiting for headers][0m                                                 Get:24 http://archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [323 kB]
+[33m75% [16 Packages store 0 B] [24 Translation-en 8484 B/323 kB 3%][0m[33m                                                                76% [16 Packages store 0 B] [Waiting for headers][0m                                                 Get:25 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [387 kB]
+[33m76% [16 Packages store 0 B] [25 Components-amd64 12.3 kB/387 kB 3%][0m[33m                                                                   77% [25 Components-amd64 50.3 kB/387 kB 13%][0m[33m77% [19 Translation-en store 0 B] [25 Components-amd64 50.3 kB/387 kB 13%][0m[33m                                                                          78% [19 Translation-en store 0 B] [Waiting for headers][0m                                                       Get:26 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 c-n-f Metadata [34.2 kB]
+[33m78% [19 Translation-en store 0 B] [26 Commands-amd64 18.9 kB/34.2 kB 55%][0m[33m                                                                         78% [19 Translation-en store 0 B] [Waiting for headers][0m                                                       Get:27 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2894 kB]
+[33m78% [19 Translation-en store 0 B] [27 Packages 8687 B/2894 kB 0%][0m[33m                                                                 82% [27 Packages 650 kB/2894 kB 22%][0m[33m82% [20 Components-amd64 store 0 B] [27 Packages 650 kB/2894 kB 22%][0m[33m                                                                    82% [27 Packages 658 kB/2894 kB 23%][0m[33m82% [21 Components-amd64 store 0 B] [27 Packages 658 kB/2894 kB 23%][0m[33m                                                                    82% [27 Packages 660 kB/2894 kB 23%][0m[33m82% [18 Components-amd64 store 0 B] [27 Packages 664 kB/2894 kB 23%][0m[33m                                                                    84% [27 Packages 1016 kB/2894 kB 35%][0m[33m84% [22 Commands-amd64 store 0 B] [27 Packages 1020 kB/2894 kB 35%][0m[33m                                                                   85% [27 Packages 1036 kB/2894 kB 36%][0m[33m85% [23 Packages store 0 B] [27 Packages 1036 kB/2894 kB 36%][0m[33m                                                             91% [27 Packages 2273 kB/2894 kB 79%][0m[33m91% [24 Translation-en store 0 B] [27 Packages 2276 kB/2894 kB 79%][0m[33m                                                                   93% [27 Packages 2621 kB/2894 kB 91%][0m[33m93% [25 Components-amd64 store 0 B] [27 Packages 2626 kB/2894 kB 91%][0m[33m                                                                     94% [25 Components-amd64 store 0 B] [Waiting for headers][0m                                                         Get:28 http://archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [671 kB]
+[33m94% [25 Components-amd64 store 0 B] [28 Translation-en 21.6 kB/671 kB 3%][0m[33m97% [28 Translation-en 518 kB/671 kB 77%]                                                                                                                                                         2569 kB/s 0s[0m[33m97% [26 Commands-amd64 store 0 B] [28 Translation-en 520 kB/671 kB 77%]                                                                                                                           2569 kB/s 0s[0m[33m98% [28 Translation-en 562 kB/671 kB 84%]                                                                                                                                                         2569 kB/s 0s[0m[33m98% [27 Packages store 0 B] [28 Translation-en 563 kB/671 kB 84%]                                                                                                                                 2569 kB/s 0s[0m[33m98% [27 Packages store 0 B] [Waiting for headers]                                                                                                                                                 2569 kB/s 0s[0m                                                                                                                                                                                                              Get:29 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+[33m98% [27 Packages store 0 B] [29 Components-amd64 212 B/212 B 100%]                                                                                                                                2569 kB/s 0s[0m[33m98% [27 Packages store 0 B] [Waiting for headers]                                                                                                                                                 2569 kB/s 0s[0m                                                                                                                                                                                                              Get:30 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+[33m98% [27 Packages store 0 B] [30 Components-amd64 940 B/940 B 100%]                                                                                                                                2569 kB/s 0s[0m[33m98% [27 Packages store 0 B] [Waiting for headers]                                                                                                                                                 2569 kB/s 0s[0m                                                                                                                                                                                                              Get:31 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [7404 B]
+[33m98% [27 Packages store 0 B] [31 Components-amd64 7404 B/7404 B 100%]                                                                                                                              2569 kB/s 0s[0m[33m98% [27 Packages store 0 B] [Waiting for headers]                                                                                                                                                 2569 kB/s 0s[0m                                                                                                                                                                                                              Get:32 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [30.7 kB]
+[33m98% [27 Packages store 0 B] [32 Packages 14.6 kB/30.7 kB 48%]                                                                                                                                     2569 kB/s 0s[0m[33m98% [27 Packages store 0 B] [Waiting for headers]                                                                                                                                                 2569 kB/s 0s[0m                                                                                                                                                                                                              Get:33 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [13.2 kB]
+[33m98% [27 Packages store 0 B] [33 Components-amd64 1166 B/13.2 kB 9%]                                                                                                                               2569 kB/s 0s[0m[33m98% [27 Packages store 0 B] [Waiting for headers]                                                                                                                                                 2569 kB/s 0s[0m                                                                                                                                                                                                              Get:34 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 c-n-f Metadata [1480 B]
+[33m98% [27 Packages store 0 B] [34 Commands-amd64 1231 B/1480 B 83%]                                                                                                                                 2569 kB/s 0s[0m[33m98% [27 Packages store 0 B] [Waiting for headers]                                                                                                                                                 2569 kB/s 0s[0m                                                                                                                                                                                                              Get:35 http://archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+[33m98% [27 Packages store 0 B] [35 Components-amd64 216 B/216 B 100%]                                                                                                                                2569 kB/s 0s[0m[33m98% [27 Packages store 0 B] [Waiting for headers]                                                                                                                                                 2569 kB/s 0s[0m                                                                                                                                                                                                              Get:36 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+[33m98% [27 Packages store 0 B]                                                                                                                                                                       2569 kB/s 0s[0m[33m99% [Working]                                                                                                                                                                                     2569 kB/s 0s[0m[33m99% [28 Translation-en store 0 B]                                                                                                                                                                 2569 kB/s 0s[0m[33m99% [Working]                                                                                                                                                                                     2569 kB/s 0s[0m[33m99% [29 Components-amd64 store 0 B]                                                                                                                                                               2569 kB/s 0s[0m[33m99% [Working]                                                                                                                                                                                     2569 kB/s 0s[0m[33m99% [30 Components-amd64 store 0 B]                                                                                                                                                               2569 kB/s 0s[0m[33m99% [Working]                                                                                                                                                                                     2569 kB/s 0s[0m[33m99% [31 Components-amd64 store 0 B]                                                                                                                                                               2569 kB/s 0s[0m[33m99% [Working]                                                                                                                                                                                     2569 kB/s 0s[0m[33m99% [32 Packages store 0 B]                                                                                                                                                                       2569 kB/s 0s[0m[33m99% [Working]                                                                                                                                                                                     2569 kB/s 0s[0m[33m99% [33 Components-amd64 store 0 B]                                                                                                                                                               2569 kB/s 0s[0m[33m100% [Working]                                                                                                                                                                                    2569 kB/s 0s[0m[33m100% [34 Commands-amd64 store 0 B]                                                                                                                                                                2569 kB/s 0s[0m[33m100% [Working]                                                                                                                                                                                    2569 kB/s 0s[0m[33m100% [35 Components-amd64 store 0 B]                                                                                                                                                              2569 kB/s 0s[0m[33m100% [Working]                                                                                                                                                                                    2569 kB/s 0s[0m[33m100% [36 Components-amd64 store 0 B]                                                                                                                                                              2569 kB/s 0s[0m[33m100% [Working]                                                                                                                                                                                    2569 kB/s 0s[0m                                                                                                                                                                                                              Fetched 15.7 MB in 7s (2338 kB/s)
+sudo apt sReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 3%Reading package lists... 3%Reading package lists... 4%Reading package lists... 4% Reading package lists... 25%Reading package lists... 35%Reading package lists... 35%Reading package lists... 49%Reading package lists... 49%Reading package lists... 49%Reading package lists... 49%Reading package lists... 49%Reading package lists... 49%Reading package lists... 49%Reading package lists... 49%Reading package lists... 50%Reading package lists... 50%Reading package lists... 54%Reading package lists... 54%Reading package lists... 57%Reading package lists... 57%Reading package lists... 60%Reading package lists... 62%Reading package lists... 62%Reading package lists... 63%Reading package lists... 63%Reading package lists... 70%Reading package lists... 70%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 80%Reading package lists... 80%Reading package lists... 83%Reading package lists... 83%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 94%Reading package lists... 94%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+27 packages can be upgraded. Run 'apt list --upgradable' to see them.
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ a[Ksudo apt install htop
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  libnl-3-200 libnl-genl-3-200
+Suggested packages:
+  lm-sensors strace
+The following NEW packages will be installed:
+  htop libnl-3-200 libnl-genl-3-200
+0 upgraded, 3 newly installed, 0 to remove and 27 not upgraded.
+Need to get 238 kB of archives.
+After this operation, 665 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+[33m0% [Working][0m[33m0% [Waiting for headers][0m                        Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libnl-3-200 amd64 3.7.0-0.3build1.1 [55.7 kB]
+[33m4% [1 libnl-3-200 13.2 kB/55.7 kB 24%][0m[33m13% [1 libnl-3-200 40.1 kB/55.7 kB 72%][0m[33m                                       25% [Working][0m             Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libnl-genl-3-200 amd64 3.7.0-0.3build1.1 [12.2 kB]
+[33m26% [2 libnl-genl-3-200 2406 B/12.2 kB 20%][0m[33m                                           36% [Waiting for headers][0m                         Get:3 http://archive.ubuntu.com/ubuntu noble/main amd64 htop amd64 3.3.0-4build1 [171 kB]
+[33m36% [3 htop 666 B/171 kB 0%][0m[33m85% [3 htop 146 kB/171 kB 86%][0m[33m                              100% [Working][0m              Fetched 238 kB in 2s (115 kB/s)
+
+7[0;37r8[1ASelecting previously unselected package libnl-3-200:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 41625 files and directories currently installed.)
+Preparing to unpack .../libnl-3-200_3.7.0-0.3build1.1_amd64.deb ...
+7[38;0f[42m[30mProgress: [  0%][49m[39m [.........................................................................................................................................................................................] 87[38;0f[42m[30mProgress: [  8%][49m[39m [##############...........................................................................................................................................................................] 8Unpacking libnl-3-200:amd64 (3.7.0-0.3build1.1) ...
+7[38;0f[42m[30mProgress: [ 15%][49m[39m [############################.............................................................................................................................................................] 8Selecting previously unselected package libnl-genl-3-200:amd64.
+Preparing to unpack .../libnl-genl-3-200_3.7.0-0.3build1.1_amd64.deb ...
+7[38;0f[42m[30mProgress: [ 23%][49m[39m [##########################################...............................................................................................................................................] 8Unpacking libnl-genl-3-200:amd64 (3.7.0-0.3build1.1) ...
+7[38;0f[42m[30mProgress: [ 31%][49m[39m [########################################################.................................................................................................................................] 8Selecting previously unselected package htop.
+Preparing to unpack .../htop_3.3.0-4build1_amd64.deb ...
+7[38;0f[42m[30mProgress: [ 38%][49m[39m [#######################################################################..................................................................................................................] 8Unpacking htop (3.3.0-4build1) ...
+7[38;0f[42m[30mProgress: [ 46%][49m[39m [#####################################################################################....................................................................................................] 8Setting up libnl-3-200:amd64 (3.7.0-0.3build1.1) ...
+7[38;0f[42m[30mProgress: [ 54%][49m[39m [###################################################################################################......................................................................................] 87[38;0f[42m[30mProgress: [ 62%][49m[39m [#################################################################################################################........................................................................] 8Setting up libnl-genl-3-200:amd64 (3.7.0-0.3build1.1) ...
+7[38;0f[42m[30mProgress: [ 69%][49m[39m [################################################################################################################################.........................................................] 87[38;0f[42m[30mProgress: [ 77%][49m[39m [##############################################################################################################################################...........................................] 8Setting up htop (3.3.0-4build1) ...
+7[38;0f[42m[30mProgress: [ 85%][49m[39m [############################################################################################################################################################.............................] 87[38;0f[42m[30mProgress: [ 92%][49m[39m [##########################################################################################################################################################################...............] 8Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.7) ...
+
+7[0;38r8[1A[J[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ ps aus[Kx
+[?2004lUSER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1  22120 13312 ?        Ss   09:29   0:02 /usr/lib/systemd/systemd --system --deserialize=82
+root           2  0.0  0.0   3120  2048 ?        Sl   09:29   0:00 /init
+root           7  0.0  0.0   3120  1792 ?        Sl   09:29   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root         178  0.0  0.0   4236  2560 ?        Ss   09:29   0:00 /usr/sbin/cron -f -P
+message+     179  0.0  0.0   9848  5376 ?        Ss   09:29   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         199  0.0  0.1  17972  8320 ?        Ss   09:29   0:00 /usr/lib/systemd/systemd-logind
+syslog       228  0.0  0.0 222508  5376 ?        Ssl  09:29   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         232  0.0  0.0   3160  1920 hvc0     Ss+  09:29   0:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 115200,38400,9600 vt220
+root         238  0.2  0.6 2756004 51000 ?       Ssl  09:29   0:13 /usr/bin/containerd
+root         247  0.0  0.0   3116  1792 tty1     Ss+  09:29   0:00 /sbin/agetty -o -p -- \u --noclear - linux
+root         280  0.0  0.2 107028 22528 ?        Ssl  09:29   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         362  0.0  1.1 2876568 90072 ?       Ssl  09:29   0:03 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+root         643  0.0  0.0   3136   896 ?        Ss   09:29   0:00 /init
+root         645  0.0  0.0   3136  1160 ?        S    09:29   0:00 /init
+minseo       647  0.0  0.0   6072  5120 pts/0    Ss+  09:29   0:00 -bash
+root         649  0.0  0.0   6816  4352 pts/1    Ss   09:29   0:00 /bin/login -f
+minseo       695  0.0  0.1  20144 10880 ?        Ss   09:29   0:00 /usr/lib/systemd/systemd --user --deserialize=23
+minseo       696  0.0  0.0  21152  3516 ?        S    09:29   0:00 (sd-pam)
+minseo       719  0.0  0.0   5940  4736 pts/1    S+   09:29   0:00 -bash
+minseo       821  0.0  0.0   3144  2048 pts/1    S+   09:29   0:00 script -a -f -T /home/minseo/linux/2026-04-03/minseo_2026-04-03_session.tm /home/minseo/linux/2026-04-03/minseo_2026-04-03_session.log
+minseo       822  0.0  0.0   5952  4992 pts/2    Ss+  09:29   0:00 bash -i
+minseo       828  0.0  0.0   3148  1920 pts/0    S+   09:29   0:00 script -a -f -T /home/minseo/linux/2026-04-03/minseo_2026-04-03_session.tm /home/minseo/linux/2026-04-03/minseo_2026-04-03_session.log
+minseo       830  0.0  0.0   6084  4992 pts/3    Ss   09:29   0:00 bash -i
+minseo       884  0.0  0.0   3148  2048 pts/3    S+   09:31   0:00 script -t=t.txt -af 2026_20220994_week05_log.txt
+minseo       885  0.0  0.0   6084  4992 pts/4    Ss   09:31   0:00 bash -i
+root        1285  0.0  0.1 1235348 10848 ?       Sl   09:36   0:00 /usr/bin/containerd-shim-runc-v2 -namespace moby -id 8b915b050d44afee22904ff583106685effeafbc8ec46635070e01df69aaa0a9 -address /run/containe
+root        1309  0.0  0.0  10340  6144 ?        Ss   09:36   0:00 nginx: master process nginx -g daemon off;
+root        1356  0.0  0.0 1746984 4480 ?        Sl   09:36   0:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8081 -container-ip 172.17.0.2 -container-port 80 -use-listen-fd
+root        1362  0.0  0.0 1820972 4608 ?        Sl   09:36   0:00 /usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 8081 -container-ip 172.17.0.2 -container-port 80 -use-listen-fd
+message+    1402  0.0  0.0  10808  2924 ?        S    09:36   0:00 nginx: worker process
+message+    1403  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1404  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1405  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1406  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1407  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1408  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1409  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1410  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1411  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1412  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1413  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1414  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1415  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1416  0.0  0.0  10808  2668 ?        S    09:36   0:00 nginx: worker process
+message+    1417  0.0  0.0  10808  2540 ?        S    09:36   0:00 nginx: worker process
+root        1836  0.0  0.1  50332 13440 ?        S<s  09:49   0:00 /usr/lib/systemd/systemd-journald
+systemd+    1888  0.0  0.0  91028  7808 ?        Ssl  09:49   0:00 /usr/lib/systemd/systemd-timesyncd
+root        1941  0.0  0.0  24752  6016 ?        Ss   09:49   0:00 /usr/lib/systemd/systemd-udevd
+systemd+    1993  0.0  0.1  21460 12928 ?        Ss   09:49   0:00 /usr/lib/systemd/systemd-resolved
+polkitd     2031  0.0  0.0 308164  7680 ?        Ssl  09:49   0:00 /usr/lib/polkit-1/polkitd --no-debug
+root        2902  0.0  0.0   3136   904 ?        Ss   10:39   0:00 /init
+root        2903  0.0  0.0   3136  1168 ?        S    10:39   0:00 /init
+minseo      2909  0.0  0.0   6072  5248 pts/5    Ss+  10:39   0:00 -bash
+minseo      2926  0.0  0.0   3148  2048 pts/5    S+   10:39   0:00 script -a -f -T /home/minseo/linux/2026-04-03/minseo_2026-04-03_session.tm /home/minseo/linux/2026-04-03/minseo_2026-04-03_session.log
+minseo      2927  0.0  0.0   6084  5120 pts/6    Ss   10:39   0:00 bash -i
+minseo      2941  1.2  0.0   5808  4352 pts/6    S+   10:46   0:01 htop
+minseo      2943  100  0.0   8284  4096 pts/4    R+   10:49   0:00 ps aux
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ ls
+[?2004l2026_20220994_week05_log.txt  t.txt
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ touch
+[?2004ltouch: missing file operand
+Try 'touch --help' for more information.
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ touch mka[Kz[K[K[K[Kn[K nkz.c
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ code nkz.c
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ docker cp make[K[K[K[Knkz.c stress-g[Kngnix:/tmp/ma[K[Knkz.c
+[?2004lSuccessfully copied 2.56kB to stress-ngnix:/tmp/nkz.c
+Error response from daemon: No such container: stress-ngnix
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ docker cp nkz.c stress-ngnix:/tmp/nkz.c[1P:/tmp/nkz.c[1P:/tmp/nkz.c[1P:/tmp/nkz.ci:/tmp/nkz.cn:/tmp/nkz.cx:/tmp/nkz.c
+[?2004lSuccessfully copied 2.56kB to stress-nginx:/tmp/nkz.c
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ docker exec -it steres[K[K[K[Kress-nginx sh
+[?2004l/ # [6n
+/ # [6nf[Jcd tm;[Jp /
+/tmp # [6nls -al
+total 12
+drwxrwxrwt    1 root     root          4096 Apr  3 02:17 [1;34m.[m
+drwxr-xr-x    1 root     root          4096 Apr  3 02:17 [1;34m..[m
+-rw-r--r--    1 1000     1000           639 Apr  3 02:15 [0;0mnkz.c[m
+/tmp # [6nchmod +x /tmp/mak[J[J[Jnkz.c
+/tmp # [6nls -al
+total 12
+drwxrwxrwt    1 root     root          4096 Apr  3 02:17 [1;34m.[m
+drwxr-xr-x    1 root     root          4096 Apr  3 02:17 [1;34m..[m
+-rwxr-xr-x    1 1000     1000           639 Apr  3 02:15 [1;32mnkz.c[m
+/tmp # [6n/tmp # [J/tmp # [J/tmp # [J/tmp # [J/tmp # [J/tmp # [J/tmp # [J/tmp # [J/tmp # [J/tmp # [J/tmp # [J/tmp # [J/tmp # [J/tmp # [J/tmp # [J/tmp # [J/tmp # [J/tmp # [J/tmp # [J/tmp # [J/tmp # [J/tmp # [J/tmp # [Ja[[J[Japk update
+7[fetch https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/APKINDEX.tar.gz]8[0K7[fetch https://dl-cdn.alpinelinux.org/alpine/v3.23/community/x86_64/APKINDEX.tar.gz]8[0Kv3.23.3-416-g8c06514a428 [https://dl-cdn.alpinelinux.org/alpine/v3.23/main]
+v3.23.3-418-g9009c2e1ef6 [https://dl-cdn.alpinelinux.org/alpine/v3.23/community]
+OK: 27590 distinct packages available
+/tmp # [6napk d[Jadd gcc musl-dev
+( 1/10) Installing jansson (2.14.1-r0)
+7  0%                                                                                                                         8[0K( 2/10) Installing binutils (2.45.1-r0)
+7  0%                                                                                                                         8[0K7  0% #                                                                                                                       8[0K7  1% #                                                                                                                       8[0K7  1% ##                                                                                                                      8[0K7  2% ##                                                                                                                      8[0K7  2% ###                                                                                                                     8[0K7  3% ###                                                                                                                     8[0K7  3% ####                                                                                                                    8[0K7  4% #####                                                                                                                   8[0K( 3/10) Installing libgomp (15.2.0-r2)
+7  4% #####                                                                                                                   8[0K( 4/10) Installing libatomic (15.2.0-r2)
+7  4% #####                                                                                                                   8[0K7  5% ######                                                                                                                  8[0K( 5/10) Installing gmp (6.3.0-r4)
+7  5% ######                                                                                                                  8[0K( 6/10) Installing isl26 (0.26-r1)
+7  5% ######                                                                                                                  8[0K7  5% #######                                                                                                                 8[0K7  6% #######                                                                                                                 8[0K7  6% ########                                                                                                                8[0K( 7/10) Installing mpfr4 (4.2.2-r0)
+7  6% ########                                                                                                                8[0K7  7% ########                                                                                                                8[0K( 8/10) Installing mpc1 (1.3.1-r1)
+7  7% ########                                                                                                                8[0K7  7% #########                                                                                                               8[0K( 9/10) Installing gcc (15.2.0-r2)
+7  7% #########                                                                                                               8[0K7  8% #########                                                                                                               8[0K7  8% ##########                                                                                                              8[0K7  9% ##########                                                                                                              8[0K7  9% ###########                                                                                                             8[0K7 10% ############                                                                                                            8[0K7 10% #############                                                                                                           8[0K7 11% #############                                                                                                           8[0K7 11% ##############                                                                                                          8[0K7 12% ##############                                                                                                          8[0K7 12% ###############                                                                                                         8[0K7 13% ###############                                                                                                         8[0K7 13% ################                                                                                                        8[0K7 14% ################                                                                                                        8[0K7 14% #################                                                                                                       8[0K7 15% ##################                                                                                                      8[0K7 15% ###################                                                                                                     8[0K7 16% ###################                                                                                                     8[0K7 16% ####################                                                                                                    8[0K7 17% ####################                                                                                                    8[0K7 17% #####################                                                                                                   8[0K7 18% #####################                                                                                                   8[0K7 18% ######################                                                                                                  8[0K7 19% ######################                                                                                                  8[0K7 19% #######################                                                                                                 8[0K7 20% ########################                                                                                                8[0K7 20% #########################                                                                                               8[0K7 21% #########################                                                                                               8[0K7 21% ##########################                                                                                              8[0K7 22% ##########################                                                                                              8[0K7 22% ###########################                                                                                             8[0K7 23% ###########################                                                                                             8[0K7 23% ############################                                                                                            8[0K7 24% ############################                                                                                            8[0K7 24% #############################                                                                                           8[0K7 25% ##############################                                                                                          8[0K7 25% ###############################                                                                                         8[0K7 26% ###############################                                                                                         8[0K7 26% ################################                                                                                        8[0K7 27% ################################                                                                                        8[0K7 27% #################################                                                                                       8[0K7 28% #################################                                                                                       8[0K7 28% ##################################                                                                                      8[0K7 29% ###################################                                                                                     8[0K7 30% ####################################                                                                                    8[0K7 30% #####################################                                                                                   8[0K7 31% #####################################                                                                                   8[0K7 31% ######################################                                                                                  8[0K7 32% ######################################                                                                                  8[0K7 32% #######################################                                                                                 8[0K7 33% #######################################                                                                                 8[0K7 33% ########################################                                                                                8[0K7 34% ########################################                                                                                8[0K7 34% #########################################                                                                               8[0K7 35% ##########################################                                                                              8[0K7 35% ###########################################                                                                             8[0K7 36% ###########################################                                                                             8[0K7 36% ############################################                                                                            8[0K7 37% ############################################                                                                            8[0K7 37% #############################################                                                                           8[0K7 38% #############################################                                                                           8[0K7 38% ##############################################                                                                          8[0K7 39% ##############################################                                                                          8[0K7 39% ###############################################                                                                         8[0K7 40% ################################################                                                                        8[0K7 40% #################################################                                                                       8[0K7 41% #################################################                                                                       8[0K7 41% ##################################################                                                                      8[0K7 42% ##################################################                                                                      8[0K7 42% ###################################################                                                                     8[0K7 43% ###################################################                                                                     8[0K7 43% ####################################################                                                                    8[0K7 44% ####################################################                                                                    8[0K7 44% #####################################################                                                                   8[0K7 45% ######################################################                                                                  8[0K7 45% #######################################################                                                                 8[0K7 46% #######################################################                                                                 8[0K7 46% ########################################################                                                                8[0K7 47% ########################################################                                                                8[0K7 47% #########################################################                                                               8[0K7 48% #########################################################                                                               8[0K7 48% ##########################################################                                                              8[0K7 49% ##########################################################                                                              8[0K7 49% ###########################################################                                                             8[0K7 50% ############################################################                                                            8[0K7 50% #############################################################                                                           8[0K7 51% #############################################################                                                           8[0K7 51% ##############################################################                                                          8[0K7 52% ##############################################################                                                          8[0K7 52% ###############################################################                                                         8[0K7 53% ###############################################################                                                         8[0K7 53% ################################################################                                                        8[0K7 54% ################################################################                                                        8[0K7 54% #################################################################                                                       8[0K7 55% ##################################################################                                                      8[0K7 55% ###################################################################                                                     8[0K7 56% ###################################################################                                                     8[0K7 56% ####################################################################                                                    8[0K7 57% ####################################################################                                                    8[0K7 57% #####################################################################                                                   8[0K7 58% #####################################################################                                                   8[0K7 58% ######################################################################                                                  8[0K7 59% ######################################################################                                                  8[0K7 59% #######################################################################                                                 8[0K7 60% ########################################################################                                                8[0K7 60% #########################################################################                                               8[0K7 61% #########################################################################                                               8[0K7 61% ##########################################################################                                              8[0K7 62% ##########################################################################                                              8[0K7 62% ###########################################################################                                             8[0K7 63% ###########################################################################                                             8[0K7 63% ############################################################################                                            8[0K7 64% ############################################################################                                            8[0K7 64% #############################################################################                                           8[0K7 65% ##############################################################################                                          8[0K7 65% ###############################################################################                                         8[0K7 66% ###############################################################################                                         8[0K7 66% ################################################################################                                        8[0K7 67% ################################################################################                                        8[0K7 67% #################################################################################                                       8[0K7 68% #################################################################################                                       8[0K7 68% ##################################################################################                                      8[0K7 69% ###################################################################################                                     8[0K7 70% ####################################################################################                                    8[0K7 71% #####################################################################################                                   8[0K7 71% ######################################################################################                                  8[0K7 72% ######################################################################################                                  8[0K7 72% #######################################################################################                                 8[0K7 73% #######################################################################################                                 8[0K7 73% ########################################################################################                                8[0K7 74% ########################################################################################                                8[0K7 74% #########################################################################################                               8[0K7 75% ##########################################################################################                              8[0K7 75% ###########################################################################################                             8[0K7 76% ###########################################################################################                             8[0K7 76% ############################################################################################                            8[0K7 77% ############################################################################################                            8[0K7 77% #############################################################################################                           8[0K7 78% #############################################################################################                           8[0K7 78% ##############################################################################################                          8[0K7 79% ##############################################################################################                          8[0K7 79% ###############################################################################################                         8[0K7 80% ################################################################################################                        8[0K7 80% #################################################################################################                       8[0K7 81% #################################################################################################                       8[0K7 81% ##################################################################################################                      8[0K7 82% ##################################################################################################                      8[0K7 82% ###################################################################################################                     8[0K7 83% ###################################################################################################                     8[0K7 83% ####################################################################################################                    8[0K7 84% ####################################################################################################                    8[0K7 84% #####################################################################################################                   8[0K7 85% ######################################################################################################                  8[0K7 85% #######################################################################################################                 8[0K7 86% #######################################################################################################                 8[0K7 86% ########################################################################################################                8[0K7 87% ########################################################################################################                8[0K7 87% #########################################################################################################               8[0K7 88% #########################################################################################################               8[0K7 88% ##########################################################################################################              8[0K7 89% ##########################################################################################################              8[0K7 89% ###########################################################################################################             8[0K7 90% ############################################################################################################            8[0K7 90% #############################################################################################################           8[0K7 91% #############################################################################################################           8[0K7 91% ##############################################################################################################          8[0K7 92% ##############################################################################################################          8[0K7 92% ###############################################################################################################         8[0K7 93% ###############################################################################################################         8[0K7 93% ################################################################################################################        8[0K7 94% ################################################################################################################        8[0K7 94% #################################################################################################################       8[0K7 95% ##################################################################################################################      8[0K(10/10) Installing musl-dev (1.2.5-r21)
+7 95% ##################################################################################################################      8[0K7 95% ###################################################################################################################     8[0K7 96% ###################################################################################################################     8[0K7 96% ####################################################################################################################    8[0K7 97% ####################################################################################################################    8[0K7 97% #####################################################################################################################   8[0K7 98% #####################################################################################################################   8[0K7 98% ######################################################################################################################  8[0K7 99% ######################################################################################################################  8[0K7 99% ####################################################################################################################### 8[0K7100% ########################################################################################################################8[0KExecuting busybox-1.37.0-r30.trigger
+OK: 245.2 MiB in 82 packages
+/tmp # [6ngcc z[Jn[Jnzk.c -p[J[J[J[J[J[J[J[Jnkz -[J[J.c -o zombie
+/tmp # [6n./zombie &
+/tmp # [6n부모 PID 76: 자식 77 생성함
+부모는 wait() 하지 않고 무한 대기 중...
+자식 PID 77: 3초 후 종료합니다
+자식 종료
+
+/tmp # [6nps -o pic[Jd [J,user,comm,stat |gre[J[J[J grep Z
+   77 root     zombie           Z  
+/tmp # [6nls -al
+total 32
+drwxrwxrwt    1 root     root          4096 Apr  3 02:23 [1;34m.[m
+drwxr-xr-x    1 root     root          4096 Apr  3 02:17 [1;34m..[m
+-rwxr-xr-x    1 1000     1000           639 Apr  3 02:15 [1;32mnkz.c[m
+-rwxr-xr-x    1 root     root         18560 Apr  3 02:23 [1;32mzombie[m
+/tmp # [6njobs -l
+[1]+  76 Running                 ./zombie
+/tmp # [6nkill -zdyop[J[J[J[J[JSTOP %1
+/tmp # [6nbg %1
+[1] ./zombie
+/tmp # [6njobs -l
+[1]+  76 Running                 ./zombie
+/tmp # [6nfg [J[J[J/tmp # jobs -l[J/tmp # bg %1[J/tmp # kill -STOP %1[J
+/tmp # [6nbg %1
+[1] ./zombie
+/tmp # [6n/tmp # bg %1[J/tmp # kill -STOP %1[J/tmp # jobs -l[J/tmp # bg %1[J/tmp # kill -STOP %1[J/tmp # jobs -l[J/tmp # ls -al[J/tmp # ps -o pid,user,comm,stat | grep Z[J
+   77 root     zombie           Z  
+/tmp # [6nfg %1
+./zombie
+pkill       ^C
+/tmp # [6njoi[Jbs
+/tmp # [6njob [Js- l[J[J[J -l
+/tmp # [6nel[Jsit[J[J[Jxit
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ 
