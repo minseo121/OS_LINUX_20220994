@@ -1,0 +1,727 @@
+Script started on 2026-04-10 09:44:37+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="68" LINES="30"]
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-10[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-10[00m$ [7mwatch -n 1 ls -l 2026_202[27m[7m2[27m[7m0994_week06_log.txt[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-10[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-10[00m$ watch -n 1 ls -l 2026_20220994_week06_log.txt
+[?2004l[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m]4;8;rgb:54/54/54\]4;9;rgb:FF/54/54\]4;10;rgb:54/FF/54\]4;11;rgb:FF/FF/54\]4;12;rgb:54/54/FF\]4;13;rgb:FF/54/FF\]4;14;rgb:54/FF/FF\[39;49m(B[m[H[2JEvery 1.0s: ls -l 2026...  DESKTOP-2HHEQA0: Fri Apr 10 09:44:52 2026[3;1Hls: cannot access '2026_20220994_week06_log.txt': No such file or di[4;1Hrectory[30;68H(B[m[1;63H3[30;68H[1;63H4[30;68H[1;63H5[30;68H[1;63H6[30;68H[1;63H7[30;68H[39;49m]104[30;1H[?1049l[23;0;0t[?1l>[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-10[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-10[00m$ [7mps –a[27mps –a
+[?2004lerror: garbage option
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-10[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-10[00m$ ps a[K-al
+[?2004lF S   UID     PID    PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+4 S  1000     650     577  0  80   0 -  1485 do_wai pts/1    00:00:00 bash
+0 S  1000     692     650  0  80   0 -   786 do_sys pts/1    00:00:00 script
+0 S  1000     698     576  0  80   0 -   787 do_sys pts/0    00:00:00 script
+0 S  1000     715     700  0  80   0 -   787 do_sys pts/3    00:00:00 script
+0 R  1000     751     716 99  80   0 -  2079 -      pts/4    00:00:00 ps
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-10[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-10[00m$ [7mtop[27mtop
+[?2004l[?1h=[?25l[H[2J(B[mtop - 09:45:29 up 24 min,  1 user,  load average: 0.03, 0.20, 0.39(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m  31 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m  30 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.6 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.4 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   7638.2 (B[m[39;49mtotal,(B[m[39;49m[1m   6725.4 (B[m[39;49mfree,(B[m[39;49m[1m    573.3 (B[m[39;49mused,(B[m[39;49m[1m    492.0 (B[m[39;49mbuf(B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   2048.0 (B[m[39;49mtotal,(B[m[39;49m[1m   2048.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   7064.9 (B[m[39;49mava(B[m[39;49m(B[m[39;49m[K
+[K
+[7m    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM (B[m[39;49m[K
+(B[m      1 root      20   0   21772  12140   9196 S   0.0   0.2 (B[m[39;49m[K
+(B[m      2 root      20   0    3120   2176   2048 S   0.0   0.0 (B[m[39;49m[K
+(B[m      7 root      20   0    3120   1792   1792 S   0.0   0.0 (B[m[39;49m[K
+(B[m     46 root      19  -1   50440  16912  16016 S   0.0   0.2 (B[m[39;49m[K
+(B[m     98 root      20   0   25264   6272   4864 S   0.0   0.1 (B[m[39;49m[K
+(B[m    169 systemd+  20   0   21460  12672  10496 S   0.0   0.2 (B[m[39;49m[K
+(B[m    172 systemd+  20   0   91028   7680   6784 S   0.0   0.1 (B[m[39;49m[K
+(B[m    186 root      20   0    4236   2432   2304 S   0.0   0.0 (B[m[39;49m[K
+(B[m    187 message+  20   0    9592   4864   4480 S   0.0   0.1 (B[m[39;49m[K
+(B[m    194 root      20   0   17964   8448   7552 S   0.0   0.1 (B[m[39;49m[K
+(B[m    196 root      20   0 1756620  12800  10752 S   0.0   0.2 (B[m[39;49m[K
+(B[m    202 root      20   0    3160   1920   1792 S   0.0   0.0 (B[m[39;49m[K
+(B[m    218 syslog    20   0  222508   5120   4480 S   0.0   0.1 (B[m[39;49m[K
+(B[m    223 root      20   0 2237832  44160  30336 S   0.0   0.6 (B[m[39;49m[K
+(B[m    225 root      20   0    3116   1792   1664 S   0.0   0.0 (B[m[39;49m[K
+(B[m    226 root      20   0  107028  22648  13312 S   0.0   0.3 (B[m[39;49m[K
+(B[m    254 root      20   0 2579848  80768  55680 S   0.0   1.0 (B[m[39;49m[K
+(B[m    574 root      20   0    3136    896    768 S   0.0   0.0 (B[m[39;49m[K
+(B[m    575 root      20   0    3136   1160   1024 S   0.0   0.0 (B[m[39;49m[K
+(B[m    576 minseo    20   0    6072   5248   3584 S   0.0   0.1 (B[m[39;49m[K
+(B[m    577 root      20   0    6820   4608   3840 S   0.0   0.1 (B[m[39;49m[K
+(B[m    625 minseo    20   0   20328  11136   9216 S   0.0   0.1 (B[m[39;49m[K
+(B[m    626 minseo    20   0   21152   3516   1792 S   0.0   0.0 (B[m[39;49m[K[H(B[mtop - 09:45:32 up 24 min,  1 user,  load average: 0.03, 0.20, 0.39(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m  33 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m  32 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.1 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.9 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   7638.2 (B[m[39;49mtotal,(B[m[39;49m[1m   6724.4 (B[m[39;49mfree,(B[m[39;49m[1m    574.4 (B[m[39;49mused,(B[m[39;49m[1m    492.0 (B[m[39;49mbuf(B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   2048.0 (B[m[39;49mtotal,(B[m[39;49m[1m   2048.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   7063.8 (B[m[39;49mava(B[m[39;49m(B[m[39;49m[K
+[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[H(B[mtop - 09:45:35 up 24 min,  1 user,  load average: 0.03, 0.20, 0.38(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m  31 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m  30 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.9 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   7638.2 (B[m[39;49mtotal,(B[m[39;49m[1m   6725.5 (B[m[39;49mfree,(B[m[39;49m[1m    573.2 (B[m[39;49mused,(B[m[39;49m[1m    492.0 (B[m[39;49mbuf(B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   2048.0 (B[m[39;49mtotal,(B[m[39;49m[1m   2048.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   7065.0 (B[m[39;49mava(B[m[39;49m(B[m[39;49m[K
+[K
+
+(B[m    223 root      20   0 2238088  44416  30336 S   0.7   0.6 (B[m[39;49m[K
+(B[m     98 root      20   0   25264   6272   4864 S   0.3   0.1 (B[m[39;49m[K
+(B[m[1m    752 minseo    20   0    9276   5376   3328 R   0.3   0.1 (B[m[39;49m[K
+(B[m      1 root      20   0   21772  12140   9196 S   0.0   0.2 (B[m[39;49m[K
+(B[m      2 root      20   0    3120   2176   2048 S   0.0   0.0 (B[m[39;49m[K
+(B[m      7 root      20   0    3120   1792   1792 S   0.0   0.0 (B[m[39;49m[K
+(B[m     46 root      19  -1   50440  16912  16016 S   0.0   0.2 (B[m[39;49m[K
+(B[m    169 systemd+  20   0   21460  12672  10496 S   0.0   0.2 (B[m[39;49m[K
+(B[m    172 systemd+  20   0   91028   7680   6784 S   0.0   0.1 (B[m[39;49m[K
+(B[m    186 root      20   0    4236   2432   2304 S   0.0   0.0 (B[m[39;49m[K
+(B[m    187 message+  20   0    9592   4864   4480 S   0.0   0.1 (B[m[39;49m[K
+(B[m    194 root      20   0   17964   8448   7552 S   0.0   0.1 (B[m[39;49m[K
+(B[m    196 root      20   0 1756620  12800  10752 S   0.0   0.2 (B[m[39;49m[K
+(B[m    202 root      20   0    3160   1920   1792 S   0.0   0.0 (B[m[39;49m[K
+(B[m    218 syslog    20   0  222508   5120   4480 S   0.0   0.1 (B[m[39;49m[K
+(B[m    225 root      20   0    3116   1792   1664 S   0.0   0.0 (B[m[39;49m[K
+(B[m    226 root      20   0  107028  22648  13312 S   0.0   0.3 (B[m[39;49m[K
+(B[m    254 root      20   0 2579848  80768  55680 S   0.0   1.0 (B[m[39;49m[K
+(B[m    574 root      20   0    3136    896    768 S   0.0   0.0 (B[m[39;49m[K
+(B[m    575 root      20   0    3136   1160   1024 S   0.0   0.0 (B[m[39;49m[K
+(B[m    576 minseo    20   0    6072   5248   3584 S   0.0   0.1 (B[m[39;49m[K
+(B[m    577 root      20   0    6820   4608   3840 S   0.0   0.1 (B[m[39;49m[K
+(B[m    625 minseo    20   0   20328  11136   9216 S   0.0   0.1 (B[m[39;49m[K[H(B[mtop - 09:45:38 up 24 min,  1 user,  load average: 0.03, 0.20, 0.38(B[m[39;49m(B[m[39;49m[K
+
+
+MiB Mem :(B[m[39;49m[1m   7638.2 (B[m[39;49mtotal,(B[m[39;49m[1m   6727.0 (B[m[39;49mfree,(B[m[39;49m[1m    571.7 (B[m[39;49mused,(B[m[39;49m[1m    492.0 (B[m[39;49mbuf(B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   2048.0 (B[m[39;49mtotal,(B[m[39;49m[1m   2048.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   7066.5 (B[m[39;49mava(B[m[39;49m(B[m[39;49m[K
+[K
+
+(B[m    254 root      20   0 2579848  80768  55680 S   0.3   1.0 (B[m[39;49m[K
+(B[m      1 root      20   0   21772  12140   9196 S   0.0   0.2 (B[m[39;49m[K
+(B[m      2 root      20   0    3120   2176   2048 S   0.0   0.0 (B[m[39;49m[K
+(B[m      7 root      20   0    3120   1792   1792 S   0.0   0.0 (B[m[39;49m[K
+(B[m     46 root      19  -1   50440  16912  16016 S   0.0   0.2 (B[m[39;49m[K
+(B[m     98 root      20   0   25264   6272   4864 S   0.0   0.1 (B[m[39;49m[K
+(B[m    169 systemd+  20   0   21460  12672  10496 S   0.0   0.2 (B[m[39;49m[K
+(B[m    172 systemd+  20   0   91028   7680   6784 S   0.0   0.1 (B[m[39;49m[K
+(B[m    186 root      20   0    4236   2432   2304 S   0.0   0.0 (B[m[39;49m[K
+(B[m    187 message+  20   0    9592   4864   4480 S   0.0   0.1 (B[m[39;49m[K
+(B[m    194 root      20   0   17964   8448   7552 S   0.0   0.1 (B[m[39;49m[K
+(B[m    196 root      20   0 1756620  12800  10752 S   0.0   0.2 (B[m[39;49m[K
+(B[m    202 root      20   0    3160   1920   1792 S   0.0   0.0 (B[m[39;49m[K
+(B[m    218 syslog    20   0  222508   5120   4480 S   0.0   0.1 (B[m[39;49m[K
+(B[m    223 root      20   0 2238088  44416  30336 S   0.0   0.6 (B[m[39;49m[K
+
+
+(B[m    574 root      20   0    3136    896    768 S   0.0   0.0 (B[m[39;49m[K
+(B[m    575 root      20   0    3136   1160   1024 S   0.0   0.0 (B[m[39;49m[K
+(B[m    576 minseo    20   0    6072   5248   3584 S   0.0   0.1 (B[m[39;49m[K
+(B[m    577 root      20   0    6820   4608   3840 S   0.0   0.1 (B[m[39;49m[K
+(B[m    625 minseo    20   0   20328  11136   9216 S   0.0   0.1 (B[m[39;49m[K
+(B[m    626 minseo    20   0   21152   3516   1792 S   0.0   0.0 (B[m[39;49m[K[?1l>[31;1H
+[?12l[?25h[K[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-10[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-10[00m$ cd ~/linux/week06
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mnice -n 15 sleep 300 &[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnice -n 15 sleep 300 &
+[A
+[?2004l[1] 757
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mps –al[27mps –al
+[?2004lerror: garbage option
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ ps -al
+[?2004lF S   UID     PID    PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+4 S  1000     650     577  0  80   0 -  1485 do_wai pts/1    00:00:00 bash
+0 S  1000     692     650  0  80   0 -   786 do_sys pts/1    00:00:00 script
+0 S  1000     698     576  0  80   0 -   787 do_sys pts/0    00:00:00 script
+0 S  1000     715     700  0  80   0 -   787 do_sys pts/3    00:00:00 script
+0 S  1000     757     716  0  95  15 -   782 hrtime pts/4    00:00:00 sleep
+0 R  1000     759     716  0  80   0 -  2079 -      pts/4    00:00:00 ps
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ top
+[?2004l[?1h=[?25l[H[2J(B[mtop - 09:46:51 up 25 min,  1 user,  load average: 0.01, 0.15, 0.35(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m  32 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m  31 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.6 (B[m[39;49mus,(B[m[39;49m[1m  0.6 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 98.8 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m (B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   7638.2 (B[m[39;49mtotal,(B[m[39;49m[1m   6725.7 (B[m[39;49mfree,(B[m[39;49m[1m    573.0 (B[m[39;49mused,(B[m[39;49m[1m    492.1 (B[m[39;49mbuff/cache(B[m[39;49m(B[m (B[m[39;49m(B[m    (B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   2048.0 (B[m[39;49mtotal,(B[m[39;49m[1m   2048.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   7065.2 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+[7m    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND             (B[m[39;49m[K
+(B[m      1 root      20   0   21772  12140   9196 S   0.0   0.2   0:01.07 systemd             (B[m[39;49m[K
+(B[m      2 root      20   0    3120   2176   2048 S   0.0   0.0   0:00.02 init-systemd(Ub     (B[m[39;49m[K
+(B[m      7 root      20   0    3120   1792   1792 S   0.0   0.0   0:00.00 init                (B[m[39;49m[K
+(B[m     46 root      19  -1   50440  16912  16016 S   0.0   0.2   0:00.47 systemd-journal     (B[m[39;49m[K
+(B[m     98 root      20   0   25264   6272   4864 S   0.0   0.1   0:00.37 systemd-udevd       (B[m[39;49m[K
+(B[m    169 systemd+  20   0   21460  12672  10496 S   0.0   0.2   0:00.18 systemd-resolve     (B[m[39;49m[K
+(B[m    172 systemd+  20   0   91028   7680   6784 S   0.0   0.1   0:00.11 systemd-timesyn     (B[m[39;49m[K
+(B[m    186 root      20   0    4236   2432   2304 S   0.0   0.0   0:00.01 cron                (B[m[39;49m[K
+(B[m    187 message+  20   0    9592   4864   4480 S   0.0   0.1   0:00.09 dbus-daemon         (B[m[39;49m[K
+(B[m    194 root      20   0   17964   8448   7552 S   0.0   0.1   0:00.14 systemd-logind      (B[m[39;49m[K
+(B[m    196 root      20   0 1756620  12800  10752 S   0.0   0.2   0:00.19 wsl-pro-service     (B[m[39;49m[K
+(B[m    202 root      20   0    3160   1920   1792 S   0.0   0.0   0:00.02 agetty              (B[m[39;49m[K
+(B[m    218 syslog    20   0  222508   5120   4480 S   0.0   0.1   0:00.11 rsyslogd            (B[m[39;49m[K
+(B[m    223 root      20   0 2238088  44416  30336 S   0.0   0.6   0:00.50 containerd          (B[m[39;49m[K
+(B[m    225 root      20   0    3116   1792   1664 S   0.0   0.0   0:00.02 agetty              (B[m[39;49m[K
+(B[m    226 root      20   0  107028  22648  13312 S   0.0   0.3   0:00.18 unattended-upgr     (B[m[39;49m[K
+(B[m    254 root      20   0 2579848  80768  55680 S   0.0   1.0   0:00.78 dockerd             (B[m[39;49m[K
+(B[m    574 root      20   0    3136    896    768 S   0.0   0.0   0:00.00 SessionLeader       (B[m[39;49m[K
+(B[m    575 root      20   0    3136   1160   1024 S   0.0   0.0   0:00.04 Relay(576)          (B[m[39;49m[K
+(B[m    576 minseo    20   0    6072   5248   3584 S   0.0   0.1   0:00.09 bash                (B[m[39;49m[K
+(B[m    577 root      20   0    6820   4608   3840 S   0.0   0.1   0:00.02 login               (B[m[39;49m[K
+(B[m    625 minseo    20   0   20328  11136   9216 S   0.0   0.1   0:00.22 systemd             (B[m[39;49m[K
+(B[m    626 minseo    20   0   21152   3516   1792 S   0.0   0.0   0:00.00 (sd-pam)            (B[m[39;49m[K[H(B[mtop - 09:46:54 up 25 min,  1 user,  load average: 0.01, 0.15, 0.35(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m100.0 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m (B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   7638.2 (B[m[39;49mtotal,(B[m[39;49m[1m   6725.7 (B[m[39;49mfree,(B[m[39;49m[1m    572.9 (B[m[39;49mused,(B[m[39;49m[1m    492.1 (B[m[39;49mbuff/cache(B[m[39;49m(B[m (B[m[39;49m(B[m    (B[m[39;49m(B[m[39;49m[K
+
+[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[H(B[mtop - 09:46:57 up 25 min,  1 user,  load average: 0.01, 0.15, 0.35(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m  34 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m  33 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.1 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.9 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m (B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   7638.2 (B[m[39;49mtotal,(B[m[39;49m[1m   6725.4 (B[m[39;49mfree,(B[m[39;49m[1m    573.2 (B[m[39;49mused,(B[m[39;49m[1m    492.1 (B[m[39;49mbuff/cache(B[m[39;49m(B[m (B[m[39;49m(B[m    (B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   2048.0 (B[m[39;49mtotal,(B[m[39;49m[1m   2048.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   7065.0 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[H(B[mtop - 09:47:00 up 26 min,  1 user,  load average: 0.01, 0.15, 0.35(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m100.0 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m (B[m[39;49m(B[m[39;49m[K
+
+
+[K
+
+(B[m    223 root      20   0 2238088  44416  30336 S   0.3   0.6   0:00.51 containerd          (B[m[39;49m[K
+(B[m[1m    762 minseo    20   0    9276   5376   3328 R   0.3   0.1   0:00.02 top                 (B[m[39;49m[K
+(B[m      1 root      20   0   21772  12140   9196 S   0.0   0.2   0:01.07 systemd             (B[m[39;49m[K
+(B[m      2 root      20   0    3120   2176   2048 S   0.0   0.0   0:00.02 init-systemd(Ub     (B[m[39;49m[K
+(B[m      7 root      20   0    3120   1792   1792 S   0.0   0.0   0:00.00 init                (B[m[39;49m[K
+(B[m     46 root      19  -1   50440  16912  16016 S   0.0   0.2   0:00.47 systemd-journal     (B[m[39;49m[K
+(B[m     98 root      20   0   25264   6272   4864 S   0.0   0.1   0:00.37 systemd-udevd       (B[m[39;49m[K
+(B[m    169 systemd+  20   0   21460  12672  10496 S   0.0   0.2   0:00.18 systemd-resolve     (B[m[39;49m[K
+(B[m    172 systemd+  20   0   91028   7680   6784 S   0.0   0.1   0:00.11 systemd-timesyn     (B[m[39;49m[K
+(B[m    186 root      20   0    4236   2432   2304 S   0.0   0.0   0:00.01 cron                (B[m[39;49m[K
+(B[m    187 message+  20   0    9592   4864   4480 S   0.0   0.1   0:00.09 dbus-daemon         (B[m[39;49m[K
+(B[m    194 root      20   0   17964   8448   7552 S   0.0   0.1   0:00.14 systemd-logind      (B[m[39;49m[K
+(B[m    196 root      20   0 1756620  12800  10752 S   0.0   0.2   0:00.19 wsl-pro-service     (B[m[39;49m[K
+(B[m    202 root      20   0    3160   1920   1792 S   0.0   0.0   0:00.02 agetty              (B[m[39;49m[K
+(B[m    218 syslog    20   0  222508   5120   4480 S   0.0   0.1   0:00.11 rsyslogd            (B[m[39;49m[K
+(B[m    225 root      20   0    3116   1792   1664 S   0.0   0.0   0:00.02 agetty              (B[m[39;49m[K
+(B[m    226 root      20   0  107028  22648  13312 S   0.0   0.3   0:00.18 unattended-upgr     (B[m[39;49m[K
+(B[m    254 root      20   0 2579848  80768  55680 S   0.0   1.0   0:00.78 dockerd             (B[m[39;49m[K
+(B[m    574 root      20   0    3136    896    768 S   0.0   0.0   0:00.00 SessionLeader       (B[m[39;49m[K
+(B[m    575 root      20   0    3136   1160   1024 S   0.0   0.0   0:00.04 Relay(576)          (B[m[39;49m[K
+(B[m    576 minseo    20   0    6072   5248   3584 S   0.0   0.1   0:00.09 bash                (B[m[39;49m[K
+(B[m    577 root      20   0    6820   4608   3840 S   0.0   0.1   0:00.02 login               (B[m[39;49m[K
+(B[m    625 minseo    20   0   20328  11136   9216 S   0.0   0.1   0:00.22 systemd             (B[m[39;49m[K[H(B[mtop - 09:47:03 up 26 min,  1 user,  load average: 0.00, 0.14, 0.35(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m  32 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m  31 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.1 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.9 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m (B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   7638.2 (B[m[39;49mtotal,(B[m[39;49m[1m   6724.8 (B[m[39;49mfree,(B[m[39;49m[1m    573.7 (B[m[39;49mused,(B[m[39;49m[1m    492.2 (B[m[39;49mbuff/cache(B[m[39;49m(B[m (B[m[39;49m(B[m    (B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   2048.0 (B[m[39;49mtotal,(B[m[39;49m[1m   2048.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   7064.5 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+(B[m    223 root      20   0 2238088  44416  30336 S   0.3   0.6   0:00.52 containerd          (B[m[39;49m[K
+(B[m      1 root      20   0   21772  12140   9196 S   0.0   0.2   0:01.07 systemd             (B[m[39;49m[K
+(B[m      2 root      20   0    3120   2176   2048 S   0.0   0.0   0:00.02 init-systemd(Ub     (B[m[39;49m[K
+(B[m      7 root      20   0    3120   1792   1792 S   0.0   0.0   0:00.00 init                (B[m[39;49m[K
+(B[m     46 root      19  -1   50440  16912  16016 S   0.0   0.2   0:00.47 systemd-journal     (B[m[39;49m[K
+(B[m     98 root      20   0   25264   6272   4864 S   0.0   0.1   0:00.37 systemd-udevd       (B[m[39;49m[K
+(B[m    169 systemd+  20   0   21460  12672  10496 S   0.0   0.2   0:00.18 systemd-resolve     (B[m[39;49m[K
+(B[m    172 systemd+  20   0   91028   7680   6784 S   0.0   0.1   0:00.11 systemd-timesyn     (B[m[39;49m[K
+(B[m    186 root      20   0    4236   2432   2304 S   0.0   0.0   0:00.01 cron                (B[m[39;49m[K
+(B[m    187 message+  20   0    9592   4864   4480 S   0.0   0.1   0:00.09 dbus-daemon         (B[m[39;49m[K
+(B[m    194 root      20   0   17964   8448   7552 S   0.0   0.1   0:00.14 systemd-logind      (B[m[39;49m[K
+(B[m    196 root      20   0 1756620  12800  10752 S   0.0   0.2   0:00.19 wsl-pro-service     (B[m[39;49m[K
+(B[m    202 root      20   0    3160   1920   1792 S   0.0   0.0   0:00.02 agetty              (B[m[39;49m[K
+(B[m    218 syslog    20   0  222508   5120   4480 S   0.0   0.1   0:00.11 rsyslogd            (B[m[39;49m[K
+(B[m    225 root      20   0    3116   1792   1664 S   0.0   0.0   0:00.02 agetty              (B[m[39;49m[K
+(B[m    226 root      20   0  107028  22648  13312 S   0.0   0.3   0:00.18 unattended-upgr     (B[m[39;49m[K
+(B[m    254 root      20   0 2579848  80768  55680 S   0.0   1.0   0:00.78 dockerd             (B[m[39;49m[K
+(B[m    574 root      20   0    3136    896    768 S   0.0   0.0   0:00.00 SessionLeader       (B[m[39;49m[K
+(B[m    575 root      20   0    3136   1160   1024 S   0.0   0.0   0:00.04 Relay(576)          (B[m[39;49m[K
+(B[m    576 minseo    20   0    6072   5248   3584 S   0.0   0.1   0:00.09 bash                (B[m[39;49m[K
+(B[m    577 root      20   0    6820   4608   3840 S   0.0   0.1   0:00.02 login               (B[m[39;49m[K
+(B[m    625 minseo    20   0   20328  11136   9216 S   0.0   0.1   0:00.22 systemd             (B[m[39;49m[K
+(B[m    626 minseo    20   0   21152   3516   1792 S   0.0   0.0   0:00.00 (sd-pam)            (B[m[39;49m[K[?1l>[31;1H
+[?12l[?25h[K[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mdocker ps[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker ps
+[A
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mdocker stop[27mdocker stop
+[?2004ldocker: 'docker stop' requires at least 1 argument
+
+Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]
+
+See 'docker stop --help' for more information
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mrm stress-nginx[27mrm stress-nginx
+[?2004lrm: cannot remove 'stress-nginx': No such file or directory
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ v^?[K[K[7mdocker exec stress-nginx apk add --no-cache stress-n[27m[7mg[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ docker exec stress-nginx apk add --no-cache stress-ng
+[?2004lError response from daemon: container 8b915b050d44afee22904ff583106685effeafbc8ec46635070e01df69aaa0a9 is not running
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mdocker ps -a[27mdocker ps -a
+[?2004lCONTAINER ID   IMAGE               COMMAND                  CREATED       STATUS                     PORTS     NAMES
+8b915b050d44   nginx:alpine        "/docker-entrypoint.…"   7 days ago    Exited (0) 5 minutes ago             stress-nginx
+eb0a56f76f14   nginx:1.25-alpine   "/docker-entrypoint.…"   3 weeks ago   Exited (0) 2 weeks ago               my-web-proxy
+d26959af46a1   nginx:latest        "/docker-entrypoint.…"   3 weeks ago   Exited (0) 3 weeks ago               my-nginx
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mdocker start stress-nginx[27mdocker start stress-nginx
+[?2004lstress-nginx
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mdocker ps[27mdocker ps
+[?2004lCONTAINER ID   IMAGE          COMMAND                  CREATED      STATUS         PORTS                                     NAMES
+8b915b050d44   nginx:alpine   "/docker-entrypoint.…"   7 days ago   Up 4 seconds   0.0.0.0:8081->80/tcp, [::]:8081->80/tcp   stress-nginx
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mdocker stop[27mdocker stop
+[?2004ldocker: 'docker stop' requires at least 1 argument
+
+Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]
+
+See 'docker stop --help' for more information
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mrm stress-nginx[27mrm stress-nginx
+[?2004lrm: cannot remove 'stress-nginx': No such file or directory
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mdocker stop stress-nginx[27mdocker stop stress-nginx
+[?2004lstress-nginx
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ docker stop stress-nginx[9Prm[C[C[C[C[C[C[C[C[C[C[C[C[C[1@d[1@o[1@c[1@k[1@e[C[1@r[1@ 
+[?2004lstress-nginx
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mdocker exec stress-nginx apk add --no-cache stress-n[27m[7mg[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ docker exec stress-nginx apk add --no-cache stress-ng
+[?2004lError response from daemon: No such container: stress-nginx
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mdocker run -d -p 8081:80 --name stress-nginx nginx:a[27m[7ml[27m[7mpine[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ docker run -d -p 8081:80 --name stress-nginx nginx:alpine
+[?2004l7426e634024aab37b3691ed97864e941202ca1eb414f459e4c087040fd63bb74
+[1]+  Done                    nice -n 15 sleep 300
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mdocker exec stress-nginx apk add --no-cache stress-n[27m[7mg[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ docker exec stress-nginx apk add --no-cache stress-ng
+[?2004l(1/3) Installing judy (1.0.5-r1)
+(2/3) Installing liblksctp (1.0.19-r5)
+(3/3) Installing stress-ng (0.19.03-r0)
+Executing busybox-1.37.0-r30.trigger
+OK: 64.3 MiB in 75 packages
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mdocker exec stress-nginx stress-ng --version[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec stress-nginx stress-ng --version
+[?2004lstress-ng, version 0.19.03 (musl-gcc 15.2.0, x86_64 Linux 6.6.87.2-microsoft-standard-WSL2)
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mdocker exec stress-nginx nice -n 0 stress-ng --cpu 1[27m[7m [27m[7m--timeout 60 &[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ docker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 60 &
+[?2004l[1] 1392
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ stress-ng: info:  [60] setting to a 1 min run per stressor
+stress-ng: info:  [60] dispatching hogs: 1 cpu
+^C[?2004l[?2004h[?2004l
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mdocker exec stress-nginx nice -n 10 stress-ng --cpu [27m[7m1[27m[7m --timeout 60 &[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ docker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60 &
+[?2004l[2] 1596
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ stress-ng: info:  [67] setting to a 1 min run per stressor
+stress-ng: info:  [67] dispatching hogs: 1 cpu
+stress-ng: info:  [60] skipped: 0
+stress-ng: info:  [60] passed: 1: cpu (1)
+stress-ng: info:  [60] failed: 0
+stress-ng: info:  [60] metrics untrustworthy: 0
+stress-ng: info:  [60] successful run completed in 1 min
+stress-ng: info:  [67] skipped: 0
+stress-ng: info:  [67] passed: 1: cpu (1)
+stress-ng: info:  [67] failed: 0
+stress-ng: info:  [67] metrics untrustworthy: 0
+stress-ng: info:  [67] successful run completed in 1 min
+docker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[3] 2100
+[1]   Done                    docker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 60
+[2]   Done                    docker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ stress-ng: info:  [74] setting to a 1 min run per stressor
+stress-ng: info:  [74] dispatching hogs: 1 cpu
+docker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pstress-ng --version
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnice -n 0 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[4] 2300
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ stress-ng: info:  [81] setting to a 1 min run per stressor
+stress-ng: info:  [81] dispatching hogs: 1 cpu
+stress-ng: info:  [74] skipped: 0
+stress-ng: info:  [74] passed: 1: cpu (1)
+stress-ng: info:  [74] failed: 0
+stress-ng: info:  [74] metrics untrustworthy: 0
+stress-ng: info:  [74] successful run completed in 1 min
+stress-ng: info:  [81] skipped: 0
+stress-ng: info:  [81] passed: 1: cpu (1)
+stress-ng: info:  [81] failed: 0
+stress-ng: info:  [81] metrics untrustworthy: 0
+stress-ng: info:  [81] successful run completed in 1 min
+docker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[5] 2759
+[3]   Done                    docker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60
+[4]   Done                    docker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 60
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ stress-ng: info:  [88] setting to a 1 min run per stressor
+stress-ng: info:  [88] dispatching hogs: 1 cpu
+docker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pstress-ng --version
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnice -n 0 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[6] 2977
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ stress-ng: info:  [95] setting to a 1 min run per stressor
+stress-ng: info:  [95] dispatching hogs: 1 cpu
+stress-ng: info:  [88] skipped: 0
+stress-ng: info:  [88] passed: 1: cpu (1)
+stress-ng: info:  [88] failed: 0
+stress-ng: info:  [88] metrics untrustworthy: 0
+stress-ng: info:  [88] successful run completed in 1 min
+docker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[7] 3206
+[5]   Done                    docker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ stress-ng: info:  [102] setting to a 1 min run per stressor
+stress-ng: info:  [102] dispatching hogs: 1 cpu
+stress-ng: info:  [95] skipped: 0
+stress-ng: info:  [95] passed: 1: cpu (1)
+stress-ng: info:  [95] failed: 0
+stress-ng: info:  [95] metrics untrustworthy: 0
+stress-ng: info:  [95] successful run completed in 1 min
+stress-ng: info:  [102] skipped: 0
+stress-ng: info:  [102] passed: 1: cpu (1)
+stress-ng: info:  [102] failed: 0
+stress-ng: info:  [102] metrics untrustworthy: 0
+stress-ng: info:  [102] successful run completed in 1 min
+docker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[8] 3661
+[6]   Done                    docker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 60
+[7]   Done                    docker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ stress-ng: info:  [109] setting to a 1 min run per stressor
+stress-ng: info:  [109] dispatching hogs: 1 cpu
+docker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pstress-ng --version
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Capk add --no-cache stress-ng[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[Crun -d -p 8081:80 --name stress-nginx nginx:alpine[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[Cexec stress-nginx apk add --no-cache stress-ng[K[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pstress-ng --version
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnice -n 0 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[9] 3744
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ stress-ng: info:  [116] setting to a 1 min run per stressor
+stress-ng: info:  [116] dispatching hogs: 1 cpu
+docker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[10] 3800
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ stress-ng: info:  [124] setting to a 1 min run per stressor
+stress-ng: info:  [124] dispatching hogs: 1 cpu
+docker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[11] 3845
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ stress-ng: info:  [131] setting to a 1 min run per stressor
+stress-ng: info:  [131] dispatching hogs: 1 cpu
+docker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[12] 3889
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ stress-ng: info:  [138] setting to a 1 min run per stressor
+stress-ng: info:  [138] dispatching hogs: 1 cpu
+stress-ng: info:  [109] skipped: 0
+stress-ng: info:  [109] passed: 1: cpu (1)
+stress-ng: info:  [109] failed: 0
+stress-ng: info:  [109] metrics untrustworthy: 0
+stress-ng: info:  [109] successful run completed in 1 min
+stress-ng: info:  [116] skipped: 0
+stress-ng: info:  [116] passed: 1: cpu (1)
+stress-ng: info:  [116] failed: 0
+stress-ng: info:  [116] metrics untrustworthy: 0
+stress-ng: info:  [116] successful run completed in 1 min
+stress-ng: info:  [124] skipped: 0
+stress-ng: info:  [124] passed: 1: cpu (1)
+stress-ng: info:  [124] failed: 0
+stress-ng: info:  [124] metrics untrustworthy: 0
+stress-ng: info:  [124] successful run completed in 1 min
+stress-ng: info:  [131] skipped: 0
+stress-ng: info:  [131] passed: 1: cpu (1)
+stress-ng: info:  [131] failed: 0
+stress-ng: info:  [131] metrics untrustworthy: 0
+stress-ng: info:  [131] successful run completed in 1 min
+stress-ng: info:  [138] skipped: 0
+stress-ng: info:  [138] passed: 1: cpu (1)
+stress-ng: info:  [138] failed: 0
+stress-ng: info:  [138] metrics untrustworthy: 0
+stress-ng: info:  [138] successful run completed in 1 min
+docker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker ps
+[?2004lCONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                                     NAMES
+7426e634024a   nginx:alpine   "/docker-entrypoint.…"   13 minutes ago   Up 13 minutes   0.0.0.0:8081->80/tcp, [::]:8081->80/tcp   stress-nginx
+[8]   Done                    docker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 60
+[9]   Done                    docker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60
+[10]   Done                    docker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60
+[11]-  Done                    docker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 60
+[12]+  Done                    docker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 60
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ dok[Kcker stop
+[?2004ldocker: 'docker stop' requires at least 1 argument
+
+Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]
+
+See 'docker stop --help' for more information
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ docker stor[Kp stress-ngnix
+[?2004lError response from daemon: No such container: stress-ngnix
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ docker stop stress-ngnix[K[K[Kixn
+[?2004lError response from daemon: No such container: stress-ngixn
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ docker stop stress-ngixn[K[Knx
+[?2004lstress-nginx
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ docker rm stress-gn[K[Knginx
+[?2004lstress-nginx
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mdocker run -d --name stress-nginx \[27m
+[7m --cpuset-cpus="0" \[27m
+[7m -p 8081:80 \[27m
+[7m nginx:alpin[27m[A[A[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ docker run -d --name stress-nginx \
+ --cpuset-cpus="0" \
+ -p 8081:80 \
+ nginx:alpin
+[?2004lUnable to find image 'nginx:alpin' locally
+docker: Error response from daemon: failed to resolve reference "docker.io/library/nginx:alpin": docker.io/library/nginx:alpin: not found
+
+Run 'docker run --help' for more information
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mdocker run -d --name stress-nginx \[27m
+[7m  --cpuset-cpus="0" \[27m
+[7m  -p 8081:80 \[27m
+[7m  nginx:alpine[27m[A[A[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ docker run -d --name stress-nginx \
+  --cpuset-cpus="0" \
+  -p 8081:80 \
+  nginx:alpine
+[?2004l3d9e3ecf5d1d9e65e4811ca427536bcf14f3609208465f9ecac9461f9f380381
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mdocker exec stress-nginx apk add --no-cache stress-n[27m[7mg[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ docker exec stress-nginx apk add --no-cache stress-ng
+[?2004l(1/3) Installing judy (1.0.5-r1)
+(2/3) Installing liblksctp (1.0.19-r5)
+(3/3) Installing stress-ng (0.19.03-r0)
+Executing busybox-1.37.0-r30.trigger
+OK: 64.3 MiB in 75 packages
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mdocker exec stress-nginx stress-ng --version[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec stress-nginx stress-ng --version
+[?2004lstress-ng, version 0.19.03 (musl-gcc 15.2.0, x86_64 Linux 6.6.87.2-microsoft-standard-WSL2)
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mwatch -n 1 'ps -eo pid,ni,pcpu,comm --sort=-pcpu | g[27m[7mr[27m[7mep stress | head -10'[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ watch -n 1 'ps -eo pid,ni,pcpu,comm --sort=-pcpu | grep stress | head -10'
+[?2004l[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m]4;8;rgb:54/54/54\]4;9;rgb:FF/54/54\]4;10;rgb:54/FF/54\]4;11;rgb:FF/FF/54\]4;12;rgb:54/54/FF\]4;13;rgb:FF/54/FF\]4;14;rgb:54/FF/FF\[39;49m(B[m[H[2JEvery 1.0s: ps -eo pid,ni,pcpu,comm --sort=-p...  DESKTOP-2HHEQA0: Fri Apr 10 10:06:34 2026[30;91H[1;86H5[30;91H[1;86H6[30;91H[1;86H7[30;91H[1;86H8[30;91H[1;86H9[30;91H[1;85H40[30;91H[1;86H1[30;91H[1;86H2[30;91H[1;86H3[30;91H[1;86H4[30;91H[1;86H5[30;91H[1;86H6[30;91H[1;86H7[30;91H[1;86H8[30;91H[1;86H9[30;91H[39;49m]104[30;1H[?1049l[23;0;0t[?1l>[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mdocker exec stress-nginx nice -n 0 stress-ng --cpu 1[27m[7m [27m[7m--timeout 60 &[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ docker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 60 &
+[?2004l[1] 5780
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ stress-ng: info:  [44] setting to a 1 min run per stressor
+stress-ng: info:  [44] dispatching hogs: 1 cpu
+docker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ watch -n 1 'ps -eo pid,ni,pcpu,comm --sort=-pcpu | grep stress | head -10'[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ docker exec stress-nginx nice -n 0 stress-ng --cpu 1 [7P--timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C^V[7mdocker exec stress-nginx nice -n 10 stress-ng --cp[27m[7mu[27m[7m 1 --timeout 60 &[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[Cdocker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60 &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec stress-nginx nice -n 10 stress-ng --cpu 1[C[2P[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ 
+
+[?2004l[2] 5909
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ stress-ng: info:  [51] setting to a 1 min run per stressor
+stress-ng: info:  [51] dispatching hogs: 1 cpu
+stress-ng: info:  [44] skipped: 0
+stress-ng: info:  [44] passed: 1: cpu (1)
+stress-ng: info:  [44] failed: 0
+stress-ng: info:  [44] metrics untrustworthy: 0
+stress-ng: info:  [44] successful run completed in 1 min
+stress-ng: info:  [51] skipped: 0
+stress-ng: info:  [51] passed: 1: cpu (1)
+stress-ng: info:  [51] failed: 0
+stress-ng: info:  [51] metrics untrustworthy: 0
+stress-ng: info:  [51] successful run completed in 1 min
+docker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ watch -n 1 'ps -eo pid,ni,pcpu,comm --sort=-pcpu | grep stress | head -10'[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ docker exec stress-nginx nice -n 0 stress-ng --cpu 1 [7P--timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[3] 7258
+[1]   Done                    docker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 60
+[2]   Done                    docker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ docker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 60 &stress-ng: info:  [58] setting to a 1 min run per stressor
+stress-ng: info:  [58] dispatching hogs: 1 cpu
+[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ watch -n 1 'ps -eo pid,ni,pcpu,comm --sort=-pcpu | grep stress | head -10'[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ docker exec stress-nginx nice -n 0 stress-ng --cpu 1 [7P--timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[4] 7317
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ stress-ng: info:  [65] setting to a 1 min run per stressor
+stress-ng: info:  [65] dispatching hogs: 1 cpu
+stress-ng: info:  [58] skipped: 0
+stress-ng: info:  [58] passed: 1: cpu (1)
+stress-ng: info:  [58] failed: 0
+stress-ng: info:  [58] metrics untrustworthy: 0
+stress-ng: info:  [58] successful run completed in 1 min
+stress-ng: info:  [65] skipped: 0
+stress-ng: info:  [65] passed: 1: cpu (1)
+stress-ng: info:  [65] failed: 0
+stress-ng: info:  [65] metrics untrustworthy: 0
+stress-ng: info:  [65] successful run completed in 1 min
+docker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60 &[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 stress-ng --cpu 1 [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C10 stress-ng --cpu 1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cchar[K[Krt -[K-p $$
+[?2004lpid 716's current scheduling policy: SCHED_OTHER
+pid 716's current scheduling priority: 0
+[3]-  Done                    docker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 60
+[4]+  Done                    docker exec stress-nginx nice -n 10 stress-ng --cpu 1 --timeout 60
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mps -eo pid,class,rtprio,ni,pri,comm | head -30[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps -eo pid,class,rtprio,ni,pri,comm | head -30
+[?2004l    PID CLS RTPRIO  NI PRI COMMAND
+      1 TS       -   0  19 systemd
+      2 TS       -   0  19 init-systemd(Ub
+      7 TS       -   0  19 init
+     46 TS       -  -1  20 systemd-journal
+     98 TS       -   0  19 systemd-udevd
+    169 TS       -   0  19 systemd-resolve
+    172 TS       -   0  19 systemd-timesyn
+    186 TS       -   0  19 cron
+    187 TS       -   0  19 dbus-daemon
+    194 TS       -   0  19 systemd-logind
+    202 TS       -   0  19 agetty
+    218 TS       -   0  19 rsyslogd
+    223 TS       -   0  19 containerd
+    225 TS       -   0  19 agetty
+    226 TS       -   0  19 unattended-upgr
+    254 TS       -   0  19 dockerd
+    574 TS       -   0  19 SessionLeader
+    575 TS       -   0  19 Relay(576)
+    576 TS       -   0  19 bash
+    577 TS       -   0  19 login
+    625 TS       -   0  19 systemd
+    626 TS       -   0  19 (sd-pam)
+    650 TS       -   0  19 bash
+    692 TS       -   0  19 script
+    693 TS       -   0  19 bash
+    698 TS       -   0  19 script
+    700 TS       -   0  19 bash
+    715 TS       -   0  19 script
+    716 TS       -   0  19 bash
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ ulin[Kmit -a
+[?2004lreal-time non-blocking time  (microseconds, -R) unlimited
+core file size              (blocks, -c) 0
+data seg size               (kbytes, -d) unlimited
+scheduling priority                 (-e) 0
+file size                   (blocks, -f) unlimited
+pending signals                     (-i) 30513
+max locked memory           (kbytes, -l) 65536
+max memory size             (kbytes, -m) unlimited
+open files                          (-n) 10240
+pipe size                (512 bytes, -p) 8
+POSIX message queues         (bytes, -q) 819200
+real-time priority                  (-r) 0
+stack size                  (kbytes, -s) 8192
+cpu time                   (seconds, -t) unlimited
+max user processes                  (-u) 30513
+virtual memory              (kbytes, -v) unlimited
+file locks                          (-x) unlimited
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ limit
+[?2004lCommand 'limit' not found, did you mean:
+  command 'slimit' from deb slimit (0.8.1-6)
+Try: sudo apt install <deb name>
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ n[Kunlimitt[K -u
+[?2004lunlimit: command not found
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ unlimit -u[5Plimitulimit -aps -eo pid,class,rtprio,ni,pri,comm | head -30
+[?2004l    PID CLS RTPRIO  NI PRI COMMAND
+      1 TS       -   0  19 systemd
+      2 TS       -   0  19 init-systemd(Ub
+      7 TS       -   0  19 init
+     46 TS       -  -1  20 systemd-journal
+     98 TS       -   0  19 systemd-udevd
+    169 TS       -   0  19 systemd-resolve
+    172 TS       -   0  19 systemd-timesyn
+    186 TS       -   0  19 cron
+    187 TS       -   0  19 dbus-daemon
+    194 TS       -   0  19 systemd-logind
+    202 TS       -   0  19 agetty
+    218 TS       -   0  19 rsyslogd
+    223 TS       -   0  19 containerd
+    225 TS       -   0  19 agetty
+    226 TS       -   0  19 unattended-upgr
+    254 TS       -   0  19 dockerd
+    574 TS       -   0  19 SessionLeader
+    575 TS       -   0  19 Relay(576)
+    576 TS       -   0  19 bash
+    577 TS       -   0  19 login
+    625 TS       -   0  19 systemd
+    626 TS       -   0  19 (sd-pam)
+    650 TS       -   0  19 bash
+    692 TS       -   0  19 script
+    693 TS       -   0  19 bash
+    698 TS       -   0  19 script
+    700 TS       -   0  19 bash
+    715 TS       -   0  19 script
+    716 TS       -   0  19 bash
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7mwatch -n 1 'ps -eo pid,ni,pcpu,comm --sort=-pcpu | g[27m[7mr[27m[7mep stress | head -10'watch -n 1 'ps-u student1 -o pid,ppid,stat,pcpu,comm; echo "---"; ps-[27m[7mu[27m[7m student1 --no [27m
+[7mheader | wc-l'[27m
+[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwatch -n 1 'ps -eo pid,ni,pcpu,comm --sort=-pcpu | grep stress | head -10'watch -n 1 'ps-u student1 -o pid,ppid,stat,pcpu,comm; echo "---"; ps-u student1 --no
+header | wc-l'
+[A
+[?2004l[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m]4;8;rgb:54/54/54\]4;9;rgb:FF/54/54\]4;10;rgb:54/FF/54\]4;11;rgb:FF/FF/54\]4;12;rgb:54/54/FF\]4;13;rgb:FF/54/FF\]4;14;rgb:54/FF/FF\[39;49m(B[m[H[2JEvery 1.0s: ps -eo pid,ni,pcpu,comm --sort=-pcpu |DESKTOP-2HHEQA0: Fri Apr 10 10:37:10 2026[3;1Hhead: invalid trailing option -- w[4dTry 'head --help' for more information.[5d---[6dsh: 1: ps-u: not found[7dsh: 2: wc-l: not found[8dsh: 2: header: not found[30;91H(B[m[1;86H2[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H4[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H6[30;91H[1;86H7[30;91H[1;86H9[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;85H21[30;91H[1;86H3[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H4[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H6[30;91H[1;86H8[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;85H30[30;91H[1;86H1[30;91H[1;86H3[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H5[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H6[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H8[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;85H40[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H2[30;91H[1;86H3[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H5[30;91H[1;86H7[30;91H[1;86H8[30;91H[1;85H50[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H2[30;91H[1;86H4[30;91H[1;86H5[30;91H[1;86H7[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H9[30;91H[1;83H8:01[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H2[30;91H[1;86H4[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H6[30;91H[1;86H8[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H9[30;91H[1;85H11[30;91H[1;86H3[30;91H[1;86H4[30;91H[1;86H6[30;91H[1;86H8[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;85H20[30;91H[1;86H1[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H3[30;91H[1;86H5[30;91H[1;86H6[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H8[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;85H30[30;91H[1;86H2[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H3[30;91H[1;86H5[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H7[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H9[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;85H40[30;91H[1;86H2[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H4[30;91H[1;86H6[30;91H[1;86H7[30;91H[1;86H9[30;91H[1;85H51[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H2[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H4[30;91H[1;86H6[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H8[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H9[30;91H[1;83H9:01[30;91H[1;86H3[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H5[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H6[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H8[30;91H[1;85H10[30;91H[1;86H1[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H3[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H5[30;91H[1;86H7[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H8[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;85H20[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H2[30;91H[1;86H3[30;91H[1;86H5[30;91H[1;86H7[30;91H[1;86H9[30;91H[1;85H30[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H2[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H4[30;91H[1;86H6[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H7[30;91H[1;86H9[30;91H[1;85H41[30;91H[1;86H2[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H4[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H6[30;91H[1;86H8[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H9[30;91H[1;85H51[30;91H[1;86H3[30;91H[1;86H4[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H6[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H8[30;91H[1;82H40:00[30;91H[1;86H1[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H3[30;91H[1;86H5[30;91H[1;86H7[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H8[30;91H[1;85H10[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H2[30;91H[1;86H3[30;91H[1;86H5[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H7[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H9[30;91H[1;85H20[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H2[30;91H[1;86H4[30;91H[1;86H6[30;91H[1;86H7[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H9[30;91H[1;85H31[30;91H[1;86H2[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H4[30;91H[1;86H6[30;91H[1;86H7[30;91H[1;86H9[30;91H[1;85H41[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H3[30;91H[1;86H4[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H6[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H8[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;85H50[30;91H[1;86H1[30;91H[1;86H3[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H5[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H6[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H8[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;83H1:00[30;91H[1;86H2[30;91H[1;86H3[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H5[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H7[30;91H[1;86H8[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;85H10[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H2[30;91H[1;86H4[30;91H[1;86H5[30;91H[1;86H7[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H9[30;91H[1;85H20[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H2[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H4[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H6[30;91H[1;86H7[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H9[30;91H[1;85H30[30;91H[1;83H2:25[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H6[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H8[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;85H30[30;91H[1;86H1[30;91H[1;86H3[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H5[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H7[30;91H[1;86H8[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;85H40[30;91H[1;86H2[30;91H[1;86H4[30;91H[1;86H5[30;91H[1;86H7[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H9[30;91H[1;85H51[30;91H[1;86H2[30;91H[1;86H4[30;91H[1;86H6[30;91H[1;86H7[30;91H[1;86H9[30;91H[1;83H3:01[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H3[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H4[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H6[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H8[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H9[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;85H11[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H3[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H4[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H6[30;91H[1;86H8[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;85H20[30;91H[1;86H1[30;91H[1;86H3[30;91H[1;86H5[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H7[30;91H[1;86H8[30;91H[1;85H30[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H2[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H3[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H5[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H7[30;91H[1;86H9[30;91H[1;85H40[30;91H[1;86H2[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H4[30;91H[1;86H5[30;91H[1;86H7[30;91H[1;86H9[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;85H51[30;91H[1;86H2[30;91H[1;86H4[30;91H[1;86H6[30;91H[1;86H7[30;91H[1;86H9[30;91H[1;83H4:01[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H3[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H4[30;91H[1;86H6[30;91H[1;86H8[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;85H10[30;91H[1;86H1[30;91H[1;86H3[30;91H[1;86H5[30;91H[1;86H6[30;91H[1;86H8[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;85H20[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H2[30;91H[1;86H3[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H5[30;91H[1;86H7[30;91H[1;86H9[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;85H30[30;91H[1;86H2[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H4[30;91H[1;86H6[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H7[30;91H[1;86H9[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;85H41[30;91H[1;86H3[30;91H[1;86H4[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H6[30;91H[1;86H8[30;91H[1;85H50[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H1[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H3[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H5[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H7[30;91H[1;86H8[30;91H[1;83H5:00[30;91H[1;86H2[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H4[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H5[30;91H[1;86H7[30;91H[1;86H9[30;91H[1;85H10[30;91H[1;86H2[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H4[30;91H[1;86H6[30;91H[1;86H7[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H9[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;85H21[30;91H[1;86H2[30;91H[1;86H4[30;91H[1;86H6[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H7[30;91H[1;86H9[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;85H31[30;91H[1;86H4[30;91H[1;86H6[30;91H[1;86H7[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H9[30;91H[1;85H41[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H3[30;91H[1;86H4[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H6[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H8[30;91H[1;86H9[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;85H51[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H3[30;91H[1;86H5[30;91H[1;86H6[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H8[30;91H[1;83H6:00[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H1[30;91H[1;86H3[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H5[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H7[30;91H[1;86H8[30;91H[1;85H10[30;91H[1;86H2[30;91H[1;86H3[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H5[30;91H[1;86H7[30;91H[1;86H9[30;91H[1;85H20[30;91H[1;86H2[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H4[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H5[30;91H[1;86H7[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H9[30;91H[1;85H31[30;91H[1;86H2[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H4[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H6[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H7[30;91H[1;86H9[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;85H41[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H3[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H4[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H6[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[1;86H8[30;91H[1;85H50[7;8Hwc-l: not found(B[m[K[8;8Hheader: not found[30;91H(B[m[1;86H1[7;8Hheader: not found[8;8Hwc-l: not found(B[m[K[30;91H[39;49m]104[30;1H[?1049l[23;0;0t[?1l>[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ [7msu student1[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csu student1
+[A
+[?2004lPassword: 
+[?2004h]0;student1@DESKTOP-2HHEQA0: /home/minseo/linux/week06[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week06[00m$ [7mcat report1.hwp | sleep 10 &[27mcat report1.hwp | sleep 10 &
+[?2004l[1] 19142
+[?2004h]0;student1@DESKTOP-2HHEQA0: /home/minseo/linux/week06[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week06[00m$ cat: report1.hwp: No such file or directory
+A
+[?2004lA: command not found
+[1]+  Done                    cat report1.hwp | sleep 10
+[?2004h]0;student1@DESKTOP-2HHEQA0: /home/minseo/linux/week06[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week06[00m$ [7ms[27ms[7ms[27m[K[K[7ms[27m[K[7mps -u $USER --no-header | wc –l[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps -u $USER --no-header | wc –l
+[A
+[?2004lwc: –l: No such file or directory
+[?2004h]0;student1@DESKTOP-2HHEQA0: /home/minseo/linux/week06[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week06[00m$ ulimit -u
+[?2004l30513
+[?2004h]0;student1@DESKTOP-2HHEQA0: /home/minseo/linux/week06[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week06[00m$ ulimit -ups -u $USER --no-header | wc –lA[Kps -u $USER --no-header | wc –l
+[?2004lwc: –l: No such file or directory
+[?2004h]0;student1@DESKTOP-2HHEQA0: /home/minseo/linux/week06[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week06[00m$ ps -u $USER --no-header | wc –l[1Pl-l
+[?2004l7
+[?2004h]0;student1@DESKTOP-2HHEQA0: /home/minseo/linux/week06[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week06[00m$ [7mulimit –u 30[27mulimit –u 30
+[?2004lbash: ulimit: –u: invalid number
+[?2004h]0;student1@DESKTOP-2HHEQA0: /home/minseo/linux/week06[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week06[00m$ [7mulimit –u 30[27mulimit –u 30[1P[1@-
+[?2004l[?2004h]0;student1@DESKTOP-2HHEQA0: /home/minseo/linux/week06[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week06[00m$ jobs
+[?2004l[?2004h]0;student1@DESKTOP-2HHEQA0: /home/minseo/linux/week06[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week06[00m$ ulimin[Kt =[K-u
+[?2004l30
+[?2004h]0;student1@DESKTOP-2HHEQA0: /home/minseo/linux/week06[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week06[00m$ [7mulimit –u[27mulimit –u
+[?2004lbash: ulimit: –u: invalid number
+[?2004h]0;student1@DESKTOP-2HHEQA0: /home/minseo/linux/week06[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week06[00m$ [7mulimit –u[27mulimit –u[1Pu-u
+[?2004l30
+[?2004h]0;student1@DESKTOP-2HHEQA0: /home/minseo/linux/week06[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week06[00m$ [7mulimit –u[27m[1Pulimit –[K[K[K[K[K[K[K[Kdc [K[K[Kcd /etc/security
+[?2004l[?2004h]0;student1@DESKTOP-2HHEQA0: /etc/security[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ su minseo
+[?2004lPassword: 
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-10[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-10[00m$ sudo nano limits.cm[Komf[K[Knf
+[?2004l[sudo] password for minseo: 
+[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;40H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2                            limits.conf                                      [1;90H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line[2d[?12l[?25h[?25l[28d[K[1;55H(B[0;7m*[90G(B[m[2dor i in $(seq 1 35); do[3d sleep 300 &[4d echo "생성 $i : PID=$!"[5ddone[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[3;13H[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[?25l[?12l[?25hfor i in $(seq 1 35); dof[?25l[28;39H(B[0;7m[ Writing... ](B[m[1;55H(B[0;7m [90G(B[m[28;38H(B[0;7m[ Wrote 4 lines ](B[m[?12l[?25h[2df[?25l[28;19H(B[0;7m[ line  1/5 (20%), col  2/25 (  8%), char  1/66 ( 1%) ](B[m[?12l[?25h[2df[?25l[28;74H[?12l[?25h[2df[?25l[1;55H(B[0;7m*[90G(B[m[?12l[?25h[2dfqor i in $(seq 1 35); dofq[?25l[29;16H   (B[0;7mM-C(B[m Case Sens     (B[0;7mM-B(B[m Backwards     (B[0;7m^P(B[m Older          (B[0;7m^T(B[m Go To Line[K[30;2H(B[0;7mC(B[m Cancel[16G   (B[0;7mM-R(B[m Reg.exp.      (B[0;7m^R(B[m Replace        (B[0;7m^N(B[m Newer[K[29;86H[A(B[0;7mSearch [Backwards]:                                                                        [28;21H(B[m[?12l[?25h[?25l[28;39H[1K (B[0;7m[ Cancelled ](B[m[K[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut         (B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[30;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line[?12l[?25h[2;3H[?25l[28d(B[0;7mSave modified buffer?                                                                      [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;23H(B[0;7mM-D(B[m DOS Format[29;45H(B[0;7mM-A(B[m Append[29;67H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G      (B[0;7mM-M(B[m Mac Format[30;45H(B[0;7mM-P(B[m Prepend[30;67H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: limits.conf(B[m[?12l[?25h[?25l[?12l[?25h[?25l[39G[1K (B[0;7m[ Cancelled ](B[m[K[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut   [61G(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[30;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line[?12l[?25h[2;3H[?25l[28d(B[0;7mSave modified buffer?                                                                      [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;23H(B[0;7mM-D(B[m DOS Format[29;45H(B[0;7mM-A(B[m Append[29;67H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G      (B[0;7mM-M(B[m Mac Format[30;45H(B[0;7mM-P(B[m Prepend[30;67H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: limits.conf(B[m[?12l[?25h[?25l[39G[1K (B[0;7m[ Cancelled ](B[m[K[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut   [61G(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[30;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line[?12l[?25h[2;3H[?25l[28;19H(B[0;7m[ line  1/5 (20%), col  3/26 ( 11%), char  2/67 ( 2%) ](B[m[?12l[?25h[2;3H[?25l[28d(B[0;7mSave modified buffer?                                                                      [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;23H(B[0;7mM-D(B[m DOS Format[29;45H(B[0;7mM-A(B[m Append[29;67H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G      (B[0;7mM-M(B[m Mac Format[30;45H(B[0;7mM-P(B[m Prepend[30;67H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: limits.conf(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[39G[1K (B[0;7m[ Cancelled ](B[m[K[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut   [61G(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[30;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line[?12l[?25h[2;3H[?25l[28;19H(B[0;7m[ line  1/5 (20%), col  3/26 ( 11%), char  2/67 ( 2%) ](B[m[?12l[?25h[2;3H[?25l[28;74H[?12l[?25h[2;3H[?25l[28;74H[?12l[?25h[2;3H[?25l[28;74H[?12l[?25h[2;3H[?25l[?12l[?25h[2;26H[?25l[29;16H   (B[0;7mM-C(B[m Case Sens     (B[0;7mM-B(B[m Backwards     (B[0;7m^P(B[m Older          (B[0;7m^T(B[m Go To Line[K[30;2H(B[0;7mC(B[m Cancel[16G   (B[0;7mM-R(B[m Reg.exp.      (B[0;7m^R(B[m Replace        (B[0;7m^N(B[m Newer[K[29;86H[A(B[0;7mSearch [Backwards]:                                                                        [28;21H(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[28;39H[1K (B[0;7m[ Cancelled ](B[m[K[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut         (B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[30;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line[?12l[?25h[2;26H[?25l[28;39H(B[0;7m[ Writing... ](B[m[1;55H(B[0;7m [90G(B[m[28;38H(B[0;7m[ Wrote 4 lines ](B[m[?12l[?25h[2;26H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-10[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-10[00m$ su stud[K[K[K[K[K[K[K[7mps -u student1 --no-header | wc –l[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps -u student1 --no-header | wc –l
+[A
+[?2004lwc: –l: No such file or directory
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-10[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-10[00m$ [7mps -u student1 --no-header | wc –l[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps -u student1 --no-header | wc –l[1Pl-l
+[?2004l5
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-10[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-10[00m$ jobs
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-10[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-10[00m$ kill [K[K[K[K[Kgit pu[K[Kadd .
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-10[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-10[00m$ exot[K[Kt[Kt[K9t++[K[K[K[Kit
+[?2004lexit
+[?2004h]0;student1@DESKTOP-2HHEQA0: /etc/security[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ git add .
+[?2004lfatal: not a git repository (or any of the parent directories): .git
+[?2004h]0;student1@DESKTOP-2HHEQA0: /etc/security[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ gi[K[Ks[Ksu[K[Kexit
+[?2004lexit
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week06[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week06[00m$ git add .
+[?2004l
