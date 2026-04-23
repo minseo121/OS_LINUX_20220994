@@ -1140,4 +1140,7 @@ pkill       ^C
 /tmp # [6njoi[Jbs
 /tmp # [6njob [Js- l[J[J[J -l
 /tmp # [6nel[Jsit[J[J[Jxit
-[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ 
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [?2004l
+exit
+
+Script done on 2026-04-03 11:40:27+09:00 [COMMAND_EXIT_CODE="0"]
