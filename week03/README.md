@@ -91,3 +91,59 @@ sudo gpasswd -d student3 dev_team1  # 탈퇴
 sudo gpasswd -d student4 dev_team1
 grep "dev_team1" /etc/group  # 확인
 ```
+
+---
+
+## 실습 문제
+
+### 권한 변경 - web_min 실행 권한만 부여
+
+```bash
+sudo visudo
+# web_min ALL=(ALL) NOPASSWD: /usr/bin/docker-compose start
+# start만 명시 → restart, stop은 자동으로 제한됨
+```
+
+### 계정 삭제 (6~20번)
+
+```bash
+sudo nano delete_user.sh
+```
+
+```bash
+#!/bin/bash
+for i in {6..20}
+do
+    userdel -r "student$i"
+done
+```
+
+```bash
+sudo chmod +x delete_user.sh
+sudo ./delete_user.sh
+# student13은 사용 중이라 별도 삭제 필요
+# sudo userdel -r student13
+```
+
+### 웹서비스 폴더 설정
+
+```bash
+# 1. student 1~5 그룹 추가
+sudo usermod -aG dev_team1 student1
+sudo usermod -aG dev_team1 student2
+sudo usermod -aG dev_team1 student3
+sudo usermod -aG dev_team1 student4
+sudo usermod -aG dev_team1 student5
+
+# 2. 폴더 소유 그룹 변경 + 외부인 접근 차단
+sudo chgrp dev_team1 /home/minseo/linux/week03/web_service/html
+sudo chmod 770 /home/minseo/linux/week03/web_service/html
+
+# 3. 3, 4번 탈퇴
+sudo gpasswd -d student3 dev_team1
+sudo gpasswd -d student4 dev_team1
+
+# 4. 확인
+grep "dev_team1" /etc/group
+# dev_team1:x:1025:student1,student2,student5
+```
