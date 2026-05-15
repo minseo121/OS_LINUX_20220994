@@ -695,4 +695,30 @@ eit[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-17[01;32mminseo@DESKTOP
 Script done on 2026-04-17 10:55:49+09:00 [COMMAND_EXIT_CODE="0"]
 Script started on 2026-04-17 10:56:01+09:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="106" LINES="30"]
 [?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-17[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-17[00m$ gi [Kt add .
-[?2004l
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-17[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-17[00m$ git commit -m "[Cdlr[K[K[K이건 무슨 log인지 모르겠는데 일단 업로드"
+[?2004l[main 03b9a40] 이건 무슨 log인지 모르겠는데 일단 업로드
+ 2 files changed, 711 insertions(+)
+ create mode 100644 2026-04-17/minseo_2026-04-17_session.log
+ create mode 100644 2026-04-17/minseo_2026-04-17_session.tm
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-17[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-17[00m$ git push origin main
+[?2004lEnumerating objects: 6, done.
+Counting objects:  16% (1/6)Counting objects:  33% (2/6)Counting objects:  50% (3/6)Counting objects:  66% (4/6)Counting objects:  83% (5/6)Counting objects: 100% (6/6)Counting objects: 100% (6/6), done.
+Delta compression using up to 16 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 7.80 KiB | 2.60 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/minseo121/OS_LINUX_20220994.git
+   66565c2..03b9a40  main -> main
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-17[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-17[00m$ exit
+[?2004lexit
+
+Script done on 2026-04-17 10:56:24+09:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-04-17 10:56:26+09:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="106" LINES="30"]
+exit
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-17[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-17[00m$ exit
+[?2004lexit
+
+Script done on 2026-04-17 10:56:26+09:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-04-17 10:56:46+09:00 [TTY="/dev/pts/1" COLUMNS="-1" LINES="-1"]
+minseo@DESKTOP-2HHEQA0:~/linux/2026-04-17$ 

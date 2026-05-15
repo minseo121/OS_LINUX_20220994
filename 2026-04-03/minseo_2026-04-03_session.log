@@ -1289,4 +1289,88 @@ Script started on 2026-04-03 11:37:02+09:00 [TERM="xterm-256color" TTY="/dev/pts
 ^[[33;8R[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-03[00m$ ;8R
 [?2004lbash: syntax error near unexpected token `;'
 [?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-03[00m$ git add .
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-03[00m$ git commit -m ""5"w"n"c"k"[1P"[1P"[1P"[1P"주"차 "강"의"
+[?2004l[main 87b3ba1] 5주차 강의
+ 2 files changed, 1306 insertions(+)
+ create mode 100644 2026-04-03/minseo_2026-04-03_session.log
+ create mode 100644 2026-04-03/minseo_2026-04-03_session.tm
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-03[00m$ git push r[Korigin main
+[?2004lEnumerating objects: 6, done.
+Counting objects:  16% (1/6)Counting objects:  33% (2/6)Counting objects:  50% (3/6)Counting objects:  66% (4/6)Counting objects:  83% (5/6)Counting objects: 100% (6/6)Counting objects: 100% (6/6), done.
+Delta compression using up to 16 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 117.58 KiB | 2.61 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/minseo121/OS_LINUX_20220994.git
+   6456b67..87b3ba1  main -> main
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-03[00m$ hed[Kad 2023[K6_[K[K[K[K[K[K[K[K[K[K[7mhead 2026_20220994_week05_log.txt[27mhead 2026_20220994_week05_log.txt
+[?2004lhead: cannot open '2026_20220994_week05_log.txt' for reading: No such file or directory
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-03[00m$ /[Kcd /[K~/linus[Kx/week05
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [7mhead 2026_20220994_week05_log.txt[27mhead 2026_20220994_week05_log.txt
+[?2004lScript started on 2026-04-03 09:31:07+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="120" LINES="30"]
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-03[00m$ lsfind ~ -name "README.md"[2Pread.md"ls[Kgit push origin mainls[Kfind ~ -name "read.md"README.md"ls[K[Kcd /[K`[K~.[K/linux/week05
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ cd ~/linux/week03/web_service
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ dorc[K[Kcker compose ps
+[?2004l[33mWARN[0m[0000] /home/minseo/linux/week03/web_service/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+NAME      IMAGE     COMMAND   SERVICE   CREATED   STATUS    PORTS
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ ls
+[?2004ldocker-compose  docker-compose.xml  docker-compose.yml  [0m[01;34mhtml[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ sysm[Ktemctl is [K-enabled docker
+[?2004lenabled
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [7mtail 2026_20220994_week05_log.txt[27mtail 2026_20220994_week05_log.txt
+[?2004l[1] ./zombie
+/tmp # [6n/tmp # bg %1[J/tmp # kill -STOP %1[J/tmp # jobs -l[J/tmp # bg %1[J/tmp # kill -STOP %1[J/tmp # jobs -l[J/tmp # ls -al[J/tmp # ps -o pid,user,comm,stat | grep Z[J
+   77 root     zombie           Z  
+/tmp # [6nfg %1
+./zombie
+pkill       ^C
+/tmp # [6njoi[Jbs
+/tmp # [6njob [Js- l[J[J[J -l
+/tmp # [6nel[Jsit[J[J[Jxit
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ ;8R;8R;8R;8R;8R
+[?2004lbash: syntax error near unexpected token `;'
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ ;8R;8R;8R;8R;8R[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgi [Kt a[Kstatus
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   ../2026-03-27/minseo_2026-03-27_session.log[m
+	[31mmodified:   ../2026-03-27/minseo_2026-03-27_session.tm[m
+	[31mmodified:   ../2026-04-03/minseo_2026-04-03_session.log[m
+	[31mmodified:   ../2026-04-03/minseo_2026-04-03_session.tm[m
+	[31mmodified:   ../week03/2026_20220994_week03_log.txt[m
+	[31mmodified:   ../week03/t.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m./[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ tis[K[K[Kgit add .
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ git commit -m ""5"w"n"c"k"[1P"[1P"[1P"[1P"주"차 "강"의 "깃"허"브 "추"가 "업"로"드"
+[?2004l[main a962ea3] 5주차 강의 깃허브 추가 업로드
+ 3 files changed, 3384 insertions(+)
+ create mode 100644 week05/2026_20220994_week05_log.txt
+ create mode 100644 week05/nkz.c
+ create mode 100644 week05/t.txt
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ git push origin main
+[?2004lEnumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects:  16% (1/6)Compressing objects:  33% (2/6)Compressing objects:  50% (3/6)Compressing objects:  66% (4/6)Compressing objects:  83% (5/6)Compressing objects: 100% (6/6)Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)Writing objects:  33% (2/6)Writing objects:  50% (3/6)Writing objects:  66% (4/6)Writing objects:  83% (5/6)Writing objects: 100% (6/6)Writing objects: 100% (6/6), 26.63 KiB | 3.33 MiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/minseo121/OS_LINUX_20220994.git
+   87b3ba1..a962ea3  main -> main
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ [?2004l
+exit
+
+Script done on 2026-04-03 11:39:05+09:00 [COMMAND_EXIT_CODE="0"]
 [?2004l
+exit
+Script done.
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week05[00m$ 

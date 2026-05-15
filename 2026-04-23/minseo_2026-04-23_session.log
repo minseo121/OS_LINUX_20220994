@@ -1,0 +1,532 @@
+Script started on 2026-04-23 20:38:11+09:00 [TTY="/dev/pts/1" COLUMNS="-1" LINES="-1"]
+minseo@DESKTOP-2HHEQA0:~/linux/2026-04-23$ Script started on 2026-04-23 20:38:13+09:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-23[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-23[00m$ cd ..
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ cd[K[Kls
+[?2004l[0m[01;34m2026-03-20[0m  [01;34m2026-03-27[0m  [01;34m2026-04-03[0m  [01;34m2026-04-10[0m  [01;34m2026-04-17[0m  [01;34m2026-04-23[0m  [01;34mweek02[0m  [01;34mweek03[0m  [01;34mweek05[0m  [01;34mweek06[0m  [01;34mweek07[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ cd weeko[K03
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ ls
+[?2004l2026_20220994_week03_log.txt  [0m[01;32mcreate_user.sh[0m  t.txt  [01;32mteam_user.sh[0m  [01;34mweb_service[0m  [01;34m–p[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ cd web_service/
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ ls
+[?2004ldocker-compose  docker-compose.xml  docker-compose.yml  [0m[01;34mhtml[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ cod[K[K[Kc[Kcode docker-compose.yml
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ ps
+[?2004l    PID TTY          TIME CMD
+    974 pts/3    00:00:00 bash
+   1028 pts/3    00:00:00 ps
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ ps -al
+[?2004lF S   UID     PID    PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+4 S  1000     835     754  0  80   0 -  1485 do_wai pts/1    00:00:00 bash
+0 S  1000     925     835  0  80   0 -   786 do_sys pts/1    00:00:00 script
+0 S  1000     973     750  0  80   0 -   787 do_sys pts/0    00:00:00 script
+0 R  1000    1029     974 99  80   0 -  2079 -      pts/3    00:00:00 ps
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ docker -[Kps
+[?2004lCONTAINER ID   IMAGE               COMMAND                  CREATED       STATUS         PORTS                                 NAMES
+eb0a56f76f14   nginx:1.25-alpine   "/docker-entrypoint.…"   4 weeks ago   Up 3 minutes   0.0.0.0:80->80/tcp, [::]:80->80/tcp   my-web-proxy
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ docker ps -al
+[?2004lCONTAINER ID   IMAGE          COMMAND                  CREATED       STATUS                  PORTS     NAMES
+3d9e3ecf5d1d   nginx:alpine   "/docker-entrypoint.…"   13 days ago   Exited (0) 6 days ago             stress-nginx
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ docker ps -al[K
+[?2004lCONTAINER ID   IMAGE               COMMAND                  CREATED       STATUS                   PORTS                                 NAMES
+3d9e3ecf5d1d   nginx:alpine        "/docker-entrypoint.…"   13 days ago   Exited (0) 6 days ago                                          stress-nginx
+eb0a56f76f14   nginx:1.25-alpine   "/docker-entrypoint.…"   4 weeks ago   Up 3 minutes             0.0.0.0:80->80/tcp, [::]:80->80/tcp   my-web-proxy
+d26959af46a1   nginx:latest        "/docker-entrypoint.…"   4 weeks ago   Exited (0) 4 weeks ago                                         my-nginx
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ docker volume ls
+[?2004lDRIVER    VOLUME NAME
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ mkdir psd[K[Kds
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ rmdir psd[K[Kds
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ ls
+[?2004ldocker-compose  docker-compose.xml  docker-compose.yml  [0m[01;34mhtml[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ /[Kcd /html
+[?2004lbash: cd: /html: No such file or directory
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service[00m$ cd html
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ ls
+[?2004labout.html  index.html  [0m[01;34mpds[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ cd pds
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html/pds[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html/pds[00m$ stat ps[Kds
+[?2004lstat: cannot statx 'pds': No such file or directory
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html/pds[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html/pds[00m$ cd ..
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ stat pds
+[?2004l  File: pds
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,48	Inode: 47619       Links: 2
+Access: (0770/drwxrwx---)  Uid: ( 1000/  minseo)   Gid: (   33/www-data)
+Access: 2026-04-17 10:55:26.635091090 +0900
+Modify: 2026-03-20 10:14:14.800777858 +0900
+Change: 2026-03-27 09:33:27.523692779 +0900
+ Birth: 2026-03-20 10:14:14.800777858 +0900
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ mki[Kdir testpds
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ stat testpds
+[?2004l  File: testpds
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,48	Inode: 11702       Links: 2
+Access: (0755/drwxr-xr-x)  Uid: ( 1000/  minseo)   Gid: ( 1000/  minseo)
+Access: 2026-04-23 21:33:13.569712522 +0900
+Modify: 2026-04-23 21:33:13.569712522 +0900
+Change: 2026-04-23 21:33:13.569712522 +0900
+ Birth: 2026-04-23 21:33:13.569712522 +0900
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ gen[Ktnet[K[K[Kent group
+[?2004lroot:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,minseo
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:minseo
+floppy:x:25:
+tape:x:26:
+sudo:x:27:minseo
+audio:x:29:
+dip:x:30:minseo
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:minseo
+staff:x:50:
+games:x:60:
+users:x:100:minseo,guest,web_ad,guest2
+nogroup:x:65534:
+systemd-journal:x:999:
+systemd-network:x:998:
+crontab:x:997:
+systemd-timesync:x:996:
+input:x:995:
+sgx:x:994:
+kvm:x:993:
+render:x:992:
+messagebus:x:101:
+syslog:x:102:
+systemd-resolve:x:991:
+uuidd:x:103:
+_ssh:x:104:
+landscape:x:105:
+polkitd:x:990:
+admin:x:106:
+netdev:x:107:
+minseo:x:1000:
+docker:x:989:minseo
+guest:x:1001:
+web_admin:x:1002:
+web_ad:x:1003:
+guest2:x:1004:
+student1:x:1005:
+student2:x:1006:
+student3:x:1007:
+student4:x:1008:
+student5:x:1009:
+student6:x:1010:
+student7:x:1011:
+student8:x:1012:
+student9:x:1013:
+student10:x:1014:
+student11:x:1015:
+student12:x:1016:
+student13:x:1017:
+student14:x:1018:
+student15:x:1019:
+student16:x:1020:
+student17:x:1021:
+student18:x:1022:
+student19:x:1023:
+student20:x:1024:
+dev_team1:x:1025:student1,student2,student3,student4,student5
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ getnet[K[K[Kente[K group www-data
+[?2004lwww-data:x:33:
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ sudo g[Kchgrp www-data html/ts[Kestpds
+[?2004l[sudo] password for minseo: 
+chgrp: cannot access 'html/testpds': No such file or directory
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ ls
+[?2004labout.html  index.html  [0m[01;34mpds[0m  [01;34mtestpds[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ sudo chgrp www-data ts[Kestpds
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ sudo chmod 755 t[Kh[Ktestpds
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ g[Kstat testpds
+[?2004l  File: testpds
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,48	Inode: 11702       Links: 2
+Access: (0755/drwxr-xr-x)  Uid: ( 1000/  minseo)   Gid: (   33/www-data)
+Access: 2026-04-23 21:33:13.569712522 +0900
+Modify: 2026-04-23 21:33:13.569712522 +0900
+Change: 2026-04-23 21:48:43.732411715 +0900
+ Birth: 2026-04-23 21:33:13.569712522 +0900
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ sudo adduser pre[K[Kerson
+[?2004linfo: Adding user `person' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `person' (1026) ...
+info: Adding new user `person' (1026) with group `person (1026)' ...
+info: Creating home directory `/home/person' ...
+info: Copying files from `/etc/skel' ...
+New password: 
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for person
+Enter the new value, or press ENTER for the default
+	Full Name []: 
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+Is the information correct? [Y/n] y
+info: Adding new user `person' to supplemental / extra groups `users' ...
+info: Adding user `person' to group `users' ...
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ sudo chmod 770 pds
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ su g[Kch[K[K[Kdo chmod 770 pds[K[K[Ktestpds
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ su person
+[?2004lPassword: 
+[?2004h]0;person@DESKTOP-2HHEQA0: /home/minseo/linux/week03/web_service/html[01;32mperson@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week03/web_service/html[00m$ cd testpds
+[?2004lbash: cd: testpds: Permission denied
+[?2004h]0;person@DESKTOP-2HHEQA0: /home/minseo/linux/week03/web_service/html[01;32mperson@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week03/web_service/html[00m$ su minseo
+[?2004lPassword: 
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-23[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-23[00m$ cd ~/linus[Kx/week03/webs[K_service/html
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ cat /t[Ketc/passwd
+[?2004lroot:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+_apt:x:42:65534::/nonexistent:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+systemd-timesync:x:996:996:systemd Time Synchronization:/:/usr/sbin/nologin
+dhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false
+messagebus:x:101:101::/nonexistent:/usr/sbin/nologin
+syslog:x:102:102::/nonexistent:/usr/sbin/nologin
+systemd-resolve:x:991:991:systemd Resolver:/:/usr/sbin/nologin
+uuidd:x:103:103::/run/uuidd:/usr/sbin/nologin
+landscape:x:104:105::/var/lib/landscape:/usr/sbin/nologin
+polkitd:x:990:990:User for polkitd:/:/usr/sbin/nologin
+minseo:x:1000:1000:,,,:/home/minseo:/bin/bash
+guest:x:1001:1001:minseo,0000,,:/home/guest:/bin/bash
+web_admin:x:1002:1002::/home/web_admin:/bin/bash
+web_ad:x:1003:1003:,,,:/home/web_ad:/bin/bash
+guest2:x:1004:1004:,,,:/home/guest2:/bin/bash
+student1:x:1005:1005::/home/student1:/bin/bash
+student2:x:1006:1006::/home/student2:/bin/bash
+student3:x:1007:1007::/home/student3:/bin/bash
+student4:x:1008:1008::/home/student4:/bin/bash
+student5:x:1009:1009::/home/student5:/bin/bash
+student6:x:1010:1010::/home/student6:/bin/bash
+student7:x:1011:1011::/home/student7:/bin/bash
+student8:x:1012:1012::/home/student8:/bin/bash
+student9:x:1013:1013::/home/student9:/bin/bash
+student10:x:1014:1014::/home/student10:/bin/bash
+student11:x:1015:1015::/home/student11:/bin/bash
+student12:x:1016:1016::/home/student12:/bin/bash
+student13:x:1017:1017::/home/student13:/bin/bash
+student14:x:1018:1018::/home/student14:/bin/bash
+student15:x:1019:1019::/home/student15:/bin/bash
+student16:x:1020:1020::/home/student16:/bin/bash
+student17:x:1021:1021::/home/student17:/bin/bash
+student18:x:1022:1022::/home/student18:/bin/bash
+student19:x:1023:1023::/home/student19:/bin/bash
+student20:x:1024:1024::/home/student20:/bin/bash
+person:x:1026:1026:,,,:/home/person:/bin/bash
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ sudo adduser web_ad
+[?2004lfatal: The user `web_ad' already exists.
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ sudo adduser web_min
+[?2004linfo: Adding user `web_min' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `web_min' (1027) ...
+info: Adding new user `web_min' (1027) with group `web_min (1027)' ...
+info: Creating home directory `/home/web_min' ...
+info: Copying files from `/etc/skel' ...
+New password: 
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for web_min
+Enter the new value, or press ENTER for the default
+	Full Name []: 
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+Is the information correct? [Y/n] y
+info: Adding new user `web_min' to supplemental / extra groups `users' ...
+info: Adding user `web_min' to group `users' ...
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ sudo passwd web_mn[Kin
+[?2004lNew password: 
+Retype new password: 
+passwd: password updated successfully
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ sudo passwd web_min
+[?2004lNew password: 
+Retype new password: 
+passwd: password updated successfully
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ sudo cat /etc.[K/shadow
+[?2004lroot:*:20494:0:99999:7:::
+daemon:*:20494:0:99999:7:::
+bin:*:20494:0:99999:7:::
+sys:*:20494:0:99999:7:::
+sync:*:20494:0:99999:7:::
+games:*:20494:0:99999:7:::
+man:*:20494:0:99999:7:::
+lp:*:20494:0:99999:7:::
+mail:*:20494:0:99999:7:::
+news:*:20494:0:99999:7:::
+uucp:*:20494:0:99999:7:::
+proxy:*:20494:0:99999:7:::
+www-data:*:20494:0:99999:7:::
+backup:*:20494:0:99999:7:::
+list:*:20494:0:99999:7:::
+irc:*:20494:0:99999:7:::
+_apt:*:20494:0:99999:7:::
+nobody:*:20494:0:99999:7:::
+systemd-network:!*:20494::::::
+systemd-timesync:!*:20494::::::
+dhcpcd:!:20494::::::
+messagebus:!:20494::::::
+syslog:!:20494::::::
+systemd-resolve:!*:20494::::::
+uuidd:!:20494::::::
+landscape:!:20494::::::
+polkitd:!*:20494::::::
+minseo:$y$j9T$C9wUvZFrLIlIklgB4Xu7L/$v3Kyhdl9yFWjao5TH0JWxzOauHssKLhOTbQJXez25W0:20531:0:99999:7:::
+guest:$y$j9T$AG7vLISlRfu44ePkvbUWz0$XU5sYbcruDxxtR6yZaFO8HJlLHFJmZ9RDJxr77iEzg/:20532:0:99999:7:::
+web_admin:!:20532:0:99999:7:::
+web_ad:$y$j9T$vaf21OCieOA6zKiky7Or71$WKT6HFr7UVtvClNBHprXXf5h4tWlZSJdXMqFRLrH7Z.:20532:0:99999:7:::
+guest2:$y$j9T$wnBhvNf9Omck1Y8zmrQUN.$JaOKvUI9Sy941HPe/T5F4Wlg16CVKDyvIZeTN422XR.:20532:0:99999:7:::
+student1:$y$j9T$20DzN1qcL0WUqk9VR4LsG.$g5.rT.XZavglBIgNGQGhtpdO2R5jYX2gdt.qJpEo1N8:20539:0:99999:7:::
+student2:$y$j9T$w6L7hlnGuyFRSOLYzp7.V.$6rFuQBnZ/TlQxPvr6pGFO8qk7ky3YjA/NHIpVAentM2:20539:0:99999:7:::
+student3:$y$j9T$zxhqwJY7NYdoE8STNy7P9.$LxxSzh8nRfoXeWHQZUJqSo6N1A06VXpMH0ZrsAuUiQ7:20539:0:99999:7:::
+student4:$y$j9T$wChvPSzK6EF2Qx.dxVppq/$Ztrq1qTW16dMJy4ao4rA9uGSrbxZu5XRoV8aSlJFzY1:0:0:99999:7:::
+student5:$y$j9T$fsDP3qbH90Iz.lGQwGto31$vN5Q1WMqU7R30aO4ltEqJurdnSDbsQh09lX9NPixxm6:0:0:99999:7:::
+student6:$y$j9T$kFaQshr0Y1DtgUaDHEJrK1$vt/C1./Yw6eTvN7Ib4E.G12ya4tfHrKlV2DpaJUB6N0:20539:0:99999:7:::
+student7:$y$j9T$VriDRq9FNetKEdoXeikhf0$akAdrUc9kXKmrq6HRBE.VTpLkolf5qFsEZroZPCyF06:0:0:99999:7:::
+student8:$y$j9T$sp0ro7I1QI.n4UkJABoN70$fTYr5vAgK.KAwPtedX8nTvTUZEpW7FhCe58g.IaF8M6:20539:0:99999:7:::
+student9:$y$j9T$NjdNiEFiTlrI3R.beMVHu1$xQoiKWj4qF65mLjOim7mLb.o3cwkSi9kTG17RDiXiT7:20539:0:99999:7:::
+student10:$y$j9T$n9ytVBLeDYmipXhHdISmS0$rWgZVKnWQW3F4Qp0LJMBZ4mvW1OvAI3mq17Vtdha0jC:0:0:99999:7:::
+student11:$y$j9T$ChNGWt37r3f/KJnx2omM91$0coaFwNLvbZ5TrhLRZPmERNRJ8qWQZY0qd0rLZnwZQD:0:0:99999:7:::
+student12:$y$j9T$p4gWmnt0X53AP7ewFzRt//$KyHzBH1C0L168rF7S74fAog28D.X2hPlhFdGgDSllp4:0:0:99999:7:::
+student13:$y$j9T$GcBaszz6JkCL2jIMsRvb2/$smskxag4QCSVZbNNpekfHd3cDLAn/WOKipDrER8Mxn0:0:0:99999:7:::
+student14:$y$j9T$6ATCBmEXfs0UyEqN3gA8d.$es7wx7gtebN83gOhMlZJlNRxXQaGG/fHHWbOjgNTaTB:0:0:99999:7:::
+student15:$y$j9T$qln3ZX5J6D7wwhdbHKG7e1$QULJw97QajAMF5Qj6B/9zgMzxin8necHXSzI1o.WV7/:0:0:99999:7:::
+student16:$y$j9T$SUEX2QLqfsCKQRIZFJMwe/$hmadXrLxEcDsTAE/GCplj7LhX56qnnb1bMsqIAe3Wm8:0:0:99999:7:::
+student17:$y$j9T$xTnffaAufz2tc9NsYaZ0d1$FU2W.AH2nbZrnYsFETm.QU/eDs.1wwOGoy1bFbPkDg9:0:0:99999:7:::
+student18:$y$j9T$re5fyyDWVcjx02n2QXxNR/$Sr6AHduWnjCSyFr6nXjv9IFFGnWrKMl7BCO8JzVA8t/:0:0:99999:7:::
+student19:$y$j9T$oN0D.TpEmDgHUjc/mD0m00$uICpAlujpdMW.bsWo.gWn7jPSz7dPsRiGZl5Jy/4qG8:0:0:99999:7:::
+student20:$y$j9T$nZus5Lfum1JYiDl.aoALb0$E55WeKelmewJ3WttoT6tGuDmF9l5tbkFWSuJzMo2GO4:0:0:99999:7:::
+person:$y$j9T$m2miYFZa0nRc1UEO4uNt4/$XRTvCJ/kORQIFN9OWl7/kW8xoxKam4v0US85tUQvVG7:20566:0:99999:7:::
+web_min:$y$j9T$ySLGfyihMkFm9eQ5dinld1$EtBxXAmT3bWyxSfhyNZifgcO.bS3NIh2LJ6mDnKWm1A:20566:0:99999:7:::
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ sudo visudo
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;52H(B[0;7m[ Read 58 lines ](B[m[H(B[0;7m  GNU nano 7.2                                        /etc/sudoers.tmp                                                  [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[36m#[3d# This file MUST be edited with the 'visudo' command as root.[4d#[5d# Please consider adding local content in /etc/sudoers.d/ instead of[6d# directly modifying this file.[7d#[8d# See the man page for details on how to write a sudoers file.[9d#[10d[39m(B[mDefaults[38;5;208m        [39m(B[menv_reset[11dDefaults[38;5;208m        [39m(B[mmail_badpass[12dDefaults[38;5;208m        [39m(B[msecure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"[14d[36m# This fixes CVE-2005-4890 and possibly breaks some versions of kdesu[15d# (#1011624, https://bugs.kde.org/show_bug.cgi?id=452532)[16d[39m(B[mDefaults[38;5;208m        [39m(B[muse_pty[18d[36m# This preserves proxy settings from user environments of root[19d# equivalent users (group sudo)[20d#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"[22d# This allows running arbitrary commands, but so does ALL, and it means[23d# different sudoers have their choice of editor respected.[24d#Defaults:%sudo env_keep += "EDITOR"[26d# Completely harmless preservation of a user preference.[27d#Defaults:%sudo env_keep += "GREP_COLOR"[2d[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[16d[?25l[?12l[?25h[17d[?25l[?12l[?25h[18d[?25l[?12l[?25h[19d[?25l[28d[K[?12l[?25h[20d[?25l[?12l[?25h[21d[?25l[?12l[?25h[22d[?25l[?12l[?25h[23d[?25l[?12l[?25h[24d[?25l[?12l[?25h[25d[?25l[?12l[?25h[26d[?25l[?12l[?25h[27d[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# While you shouldn't normally run git as root, you need to with etckeeper[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# Per-user preferences; root won't have sensible values for them.[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# "sudo scp" or "sudo rsync" should be able to use your SSH agent.[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# Ditto for GPG agent[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#Defaults:%sudo env_keep += "GPG_AGENT_INFO"[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# Host alias specification[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# User alias specification[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# Cmnd alias specification[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# User privilege specification[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hroot[38;5;208m    [39m(B[mALL=(ALL:ALL) ALL[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# Members of the admin group may gain root privileges[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H%admin ALL=(ALL) ALL[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# Allow members of group sudo to execute any command[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H%sudo[38;5;208m   [39m(B[mALL=(ALL:ALL) ALL[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hweb_ad ALL=(ALL) NOPASSWD: /usr/bin/docker-compose restart[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# See sudoers(5) for more information on "@include" directives:[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H@includedir /etc/sudoers.d[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[29d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004lvisudo: /etc/sudoers.tmp unchanged
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ sudo visudo
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;52H(B[0;7m[ Read 58 lines ](B[m[H(B[0;7m  GNU nano 7.2                                        /etc/sudoers.tmp                                                  [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[36m#[3d# This file MUST be edited with the 'visudo' command as root.[4d#[5d# Please consider adding local content in /etc/sudoers.d/ instead of[6d# directly modifying this file.[7d#[8d# See the man page for details on how to write a sudoers file.[9d#[10d[39m(B[mDefaults[38;5;208m        [39m(B[menv_reset[11dDefaults[38;5;208m        [39m(B[mmail_badpass[12dDefaults[38;5;208m        [39m(B[msecure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"[14d[36m# This fixes CVE-2005-4890 and possibly breaks some versions of kdesu[15d# (#1011624, https://bugs.kde.org/show_bug.cgi?id=452532)[16d[39m(B[mDefaults[38;5;208m        [39m(B[muse_pty[18d[36m# This preserves proxy settings from user environments of root[19d# equivalent users (group sudo)[20d#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"[22d# This allows running arbitrary commands, but so does ALL, and it means[23d# different sudoers have their choice of editor respected.[24d#Defaults:%sudo env_keep += "EDITOR"[26d# Completely harmless preservation of a user preference.[27d#Defaults:%sudo env_keep += "GREP_COLOR"[2d[39m(B[m[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[16d[?25l[?12l[?25h[17d[?25l[?12l[?25h[18d[?25l[?12l[?25h[19d[?25l[?12l[?25h[20d[?25l[?12l[?25h[21d[?25l[28d[K[?12l[?25h[22d[?25l[?12l[?25h[23d[?25l[?12l[?25h[24d[?25l[?12l[?25h[25d[?25l[?12l[?25h[26d[?25l[?12l[?25h[27d[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# While you shouldn't normally run git as root, you need to with etckeeper[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# Per-user preferences; root won't have sensible values for them.[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# "sudo scp" or "sudo rsync" should be able to use your SSH agent.[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# Ditto for GPG agent[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#Defaults:%sudo env_keep += "GPG_AGENT_INFO"[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# Host alias specification[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# User alias specification[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# Cmnd alias specification[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# User privilege specification[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hroot[38;5;208m    [39m(B[mALL=(ALL:ALL) ALL[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# Members of the admin group may gain root privileges[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H%admin ALL=(ALL) ALL[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# Allow members of group sudo to execute any command[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H%sudo[38;5;208m   [39m(B[mALL=(ALL:ALL) ALL[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hweb_ad ALL=(ALL) NOPASSWD: /usr/bin/docker-compose restart[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# See sudoers(5) for more information on "@include" directives:[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H@includedir /etc/sudoers.d[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[25d[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25hw[?25l[?12l[?25he[?25l[?12l[?25hb[?25l[?12l[?25h_[?25l[?12l[?25ha[?25l[?12l[?25hd[?25l[1;72H(B[0;7m*[119G(B[m[?12l[?25h[23;6H[1P[?25l[?12l[?25h[1P[?25l[?12l[?25hm ALL=(ALL) NOPASSWD: /usr/bin/docker-compose restart[6G[?25l[?12l[?25hi ALL=(ALL) NOPASSWD: /usr/bin/docker-compose restart[7G[?25l[?12l[?25hn ALL=(ALL) NOPASSWD: /usr/bin/docker-compose restart[8G[?25l[28;54H(B[0;7m[ Writing... ](B[m[1;72H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 58 lines ](B[m[?12l[?25h[23;8H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$ su web_min
+[?2004lPassword: 
+[?2004h]0;web_min@DESKTOP-2HHEQA0: /home/minseo/linux/week03/web_service/html[01;32mweb_min@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week03/web_service/html[00m$ sudo docker [K-compose stap[K[Kop nginx
+[?2004l[sudo] password for web_min: 
+Sorry, user web_min is not allowed to execute '/usr/bin/docker-compose stop nginx' as root on DESKTOP-2HHEQA0.localdomain.
+[?2004h]0;web_min@DESKTOP-2HHEQA0: /home/minseo/linux/week03/web_service/html[01;32mweb_min@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week03/web_service/html[00m$ sudo c[Kdocker=[K0[K-compose restart
+[?2004lRestarting my-web-proxy ... 
+[1A[2KRestarting my-web-proxy ... [32mdone[0m[1B[?2004h]0;web_min@DESKTOP-2HHEQA0: /home/minseo/linux/week03/web_service/html[01;32mweb_min@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week03/web_service/html[00m$ su minseo
+[?2004lPassword: 
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-23[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-23[00m$ cd ..[K[K~linux/week03
+[?2004lbash: cd: ~linux/week03: No such file or directory
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-04-23[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-04-23[00m$ cd ~linux/week03[1Plinux/week03/linux/week03~/linux/week03
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03[00m$ cd ~
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ cd /te[K[Ketc/skel
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ ls -al
+[?2004ltotal 24
+drwxr-xr-x  2 root root 4096 Mar 27 10:25 [0m[01;34m.[0m
+drwxr-xr-x 91 root root 4096 Apr 23 22:20 [01;34m..[0m
+-rw-r--r--  1 root root  220 Mar 31  2024 .bash_logout
+-rw-r--r--  1 root root 3817 Mar 27 09:38 .bashrc
+-rw-r--r--  1 root root  806 Mar 20 11:32 .profile
+-rw-r--r--  1 root root   24 Mar 27 09:39 readme.txt
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ code rea`[Kdme.txt 
+[?2004lCommand 'code' not found, but can be installed with:
+sudo snap install code
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ nano readme.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;44H(B[0;1m[37m[41m[ Directory '.' is not writable ][39;49m(B[m[28;43H(B[0;1m[37m[41m[ File 'readme.txt' is unwritable ][39;49m(B[m[H(B[0;7m  GNU nano 7.2                                           readme.txt                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2dHello student![3dwelcome![A[?12l[?25h[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ cd /etc/update-motd.d
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/update-motd.d[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/update-motd.d[00m$ ls
+[?2004l[0m[01;32m00-header[0m     [01;36m50-landscape-sysinfo[0m  [01;32m91-contract-ua-esm-status[0m  [01;32m92-unattended-upgrades[0m
+[01;32m10-help-text[0m  [01;32m50-motd-news[0m          [01;32m91-release-upgrade[0m         [01;32m99-wsl[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/update-motd.d[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/update-motd.d[00m$ ns[K[Ksudo nano -[K00 [K-header
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;52H(B[0;7m[ Read 29 lines ](B[m[H(B[0;7m  GNU nano 7.2                                            00-header                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[36m#!/bin/sh[3d#[4d#    00-header - create the header of the MOTD[5d#    Copyright (C) 2009-2010 Canonical Ltd.[6d#[7d#    Authors: Dustin Kirkland <kirkland@canonical.com>[8d#[9d#    This program is free software; you can redistribute it and/or modify[10d#    it under the terms of the GNU General Public License as published by[11d#    the Free Software Foundation; either version 2 of the License, or[12d#    (at your option) any later version.[13d#[14d#    This program is distributed in the hope that it will be useful,[15d#    but WITHOUT ANY WARRANTY; without even the implied warranty of[16d#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the[17d#    GNU General Public License for more details.[18d#[19d#    You should have received a copy of the GNU General Public License along[20d#    with this program; if not, write to the Free Software Foundation, Inc.,[21d#    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.[23d[32m[(B[0;1m[35m -r[39m(B[m /etc/lsb-release [32m][39m(B[m [32m&&[39m(B[m . /etc/lsb-release[25d[32mif[39m(B[m [32m[(B[0;1m[35m -z[39m(B[m (B[0;1m[33m"$DISTRIB_DESCRIPTION"[39m(B[m [32m][39m(B[m [32m&&[39m(B[m [32m[(B[0;1m[35m -x[39m(B[m /usr/bin/lsb_release [32m];[39m(B[m [32mthen[26;8H[36m[1K # Fall back to using the very slow lsb_release utility[27;9H[39m(B[mDISTRIB_DESCRIPTION[32m=$([39m(B[mlsb_release(B[0;1m[35m -s -d(B[0m[32m)[2d[39m(B[m[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[16d[?25l[?12l[?25h[17d[?25l[?12l[?25h[18d[?25l[?12l[?25h[19d[?25l[?12l[?25h[20d[?25l[?12l[?25h[21d[?25l[28d[K[?12l[?25h[22d[?25l[?12l[?25h[23d[?25l[?12l[?25h[24d[?25l[?12l[?25h[25d[?25l[?12l[?25h[26d[?25l[?12l[?25h[27d[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[32mfi[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[34mprintf[39m(B[m (B[0;1m[33m"반갑습니다 to %s (%s %s %s)\n"[39m(B[m (B[0;1m[33m"$DISTRIB_DESCRIPTION"[39m(B[m (B[0;1m[33m"$(uname -o)"[39m(B[m (B[0;1m[33m"$(uname -r)"[39m(B[m (B[0;1m[33m"$(uname -m)"[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[29d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/update-motd.d[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/update-motd.d[00m$ run [K-parts /etc/update-motd.d
+[?2004l반갑습니다 to Ubuntu 24.04.4 LTS (GNU/Linux 6.6.87.2-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Thu Apr 23 22:31:18 KST 2026
+
+  System load:  0.08                Processes:             61
+  Usage of /:   0.3% of 1006.85GB   Users logged in:       1
+  Memory usage: 6%                  IPv4 address for eth0: 172.21.174.24
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/update-motd.d[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/update-motd.d[00m$ d[Kcd /t[Ketc/skel
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ cat .profile
+[?2004l# ~/.profile: executed by the command interpreter for login shells.
+# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
+# exists.
+# see /usr/share/doc/bash/examples/startup-files for examples.
+# the files are located in the bash-doc package.
+
+# the default umask is set in /etc/profile; for setting the umask
+# for ssh logins, install and configure the libpam-umask package.
+umask 077
+
+# if running bash
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+	. "$HOME/.bashrc"
+    fi
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ ls
+[?2004lreadme.txt
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ nano readme.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;44H(B[0;1m[37m[41m[ Directory '.' is not writable ][39;49m(B[m[28;43H(B[0;1m[37m[41m[ File 'readme.txt' is unwritable ][39;49m(B[m[H(B[0;7m  GNU nano 7.2                                           readme.txt                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2dHello student![3dwelcome![A[?12l[?25h[?25l[28;33H(B[0;7m[ line  1/3 (33%), col  1/15 (  6%), char  0/24 ( 0%) ](B[m[?12l[?25h[2d[?25l[28;88H[?12l[?25h[2d[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ ls -al
+[?2004ltotal 24
+drwxr-xr-x  2 root root 4096 Mar 27 10:25 [0m[01;34m.[0m
+drwxr-xr-x 91 root root 4096 Apr 23 22:20 [01;34m..[0m
+-rw-r--r--  1 root root  220 Mar 31  2024 .bash_logout
+-rw-r--r--  1 root root 3817 Mar 27 09:38 .bashrc
+-rw-r--r--  1 root root  806 Mar 20 11:32 .profile
+-rw-r--r--  1 root root   24 Mar 27 09:39 readme.txt
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/skel[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/skel[00m$ cd /home/minseo
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;32mSCRIPT.sh[0m  [01;34mlinux[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ c[Kcd ?[K[K[K[Kcd /m[Khomoe[K[Ke
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ ls
+[?2004l[0m[01;34mguest[0m   [01;34mperson[0m     [01;34mstudent11[0m  [01;34mstudent14[0m  [01;34mstudent17[0m  [01;34mstudent2[0m   [01;34mstudent4[0m  [01;34mstudent7[0m  [01;34mweb_ad[0m
+[01;34mguest2[0m  [01;34mstudent1[0m   [01;34mstudent12[0m  [01;34mstudent15[0m  [01;34mstudent18[0m  [01;34mstudent20[0m  [01;34mstudent5[0m  [01;34mstudent8[0m  [01;34mweb_admin[0m
+[01;34mminseo[0m  [01;34mstudent10[0m  [01;34mstudent13[0m  [01;34mstudent16[0m  [01;34mstudent19[0m  [01;34mstudent3[0m   [01;34mstudent6[0m  [01;34mstudent9[0m  [01;34mweb_min[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ /hno[K[Kome/person
+[?2004lbash: /home/person: Is a directory
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ /ho[K[K[Kcd /home/person
+[?2004lbash: cd: /home/person: Permission denied
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ cd /homo[Ke ge[Kuset[K[K[Kest /[K[K[K[K[K[K[K[K/guest
+[?2004lbash: cd: /home/guest: Permission denied
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ cd ?h[K[K.h[K[K/hme[K[Kome/web_min
+[?2004lbash: cd: /home/web_min: Permission denied
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ sudo cd /hmoe[K[K[Kome/person
+[?2004l[sudo] password for minseo: 
+sudo: cd: command not found
+sudo: "cd" is a shell built-in command, it cannot be run directly.
+sudo: the -s option may be used to run a privileged shell.
+sudo: the -D option may be used to run a command in a specific directory.
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /home[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/home[00m$ [?2004l
+exit
+[?2004h]0;web_min@DESKTOP-2HHEQA0: /home/minseo/linux/week03/web_service/html[01;32mweb_min@DESKTOP-2HHEQA0[00m:[01;34m/home/minseo/linux/week03/web_service/html[00m$ 
+Session terminated, killing shell...[?2004l[?2004h[?2004l
+
+Session terminated, killing shell...
+Session terminated, killing shell... ...killed.
+ ...killed.
+Terminated
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week03/web_service/html[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week03/web_service/html[00m$  ...killed.
+Script started on 2026-04-23 22:56:42+09:00 [TTY="/dev/pts/1" COLUMNS="-1" LINES="-1"]
+minseo@DESKTOP-2HHEQA0:~/linux/2026-04-23$ 

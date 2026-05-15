@@ -1,0 +1,26 @@
+services:
+  wordpress:
+    image: wordpress:php8.2-fpm
+    container_name: wp_app
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file: .env
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: ${MYSQL_DATABASE}
+      WORDPRESS_DB_USER: ${MYSQL_USER}
+      WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - wp_data:/var/www/html
+    networks:
+      - wp_net
+    restart: unless-stopped
+
+volumes:
+  wp_data:
+    external: false
+
+networks:
+  wp_net:
+    external: false

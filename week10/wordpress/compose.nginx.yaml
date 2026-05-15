@@ -1,0 +1,23 @@
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: wp_nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - wp_data:/var/www/html:ro
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./logs:/var/log/nginx
+    depends_on:
+      - wordpress
+    networks:
+      - wp_net
+    restart: unless-stopped
+
+volumes:
+  wp_data:
+    external: false
+
+networks:
+  wp_net:
+    external: false
