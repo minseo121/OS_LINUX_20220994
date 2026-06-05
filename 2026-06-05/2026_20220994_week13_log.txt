@@ -1,0 +1,260 @@
+Script started on 2026-06-05 10:12:02+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="109" LINES="49"]
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-05[00m$ [7mcat ~/linux/week10/wordpress/docker-compose.yml[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat ~/linux/week10/wordpress/docker-compose.yml
+[?2004lcat: /home/minseo/linux/week10/wordpress/docker-compose.yml: No such file or directory
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-05[00m$ cd ~/linux/week10/wordpress.[K/docker-compose.yml
+[?2004lbash: cd: /home/minseo/linux/week10/wordpress/docker-compose.yml: No such file or directory
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-05[00m$ cd ~/linux/week10/wordpress/docker-compose.yml[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ [7mcat ~/linux/week10/wordpress/docker-compose.yml[27mcat ~/linux/week10/wordpress/docker-compose.yml
+[?2004lcat: /home/minseo/linux/week10/wordpress/docker-compose.yml: No such file or directory
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ ls
+[?2004lcompose.db.yaml  compose.nginx.yaml  compose.wordpress.yaml  [0m[01;34mlogs[0m  [01;34mnginx[0m  [01;32msetup_docker.sh[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ ls [K 0[K-al
+[?2004ltotal 40
+drwxr-xr-x 4 minseo minseo 4096 May 29 10:23 [0m[01;34m.[0m
+drwxr-xr-x 3 minseo minseo 4096 May 15 09:48 [01;34m..[0m
+-rw-r--r-- 1 root   root    167 May 15 10:32 .env
+-rw-r--r-- 1 root   root     83 May 15 10:32 .gitignore
+-rw-r--r-- 1 minseo minseo  643 May 15 10:37 compose.db.yaml
+-rw-r--r-- 1 root   root    474 May 29 10:23 compose.nginx.yaml
+-rw-r--r-- 1 root   root    523 May 15 10:40 compose.wordpress.yaml
+drwxr-xr-x 2 minseo minseo 4096 May 15 10:51 [01;34mlogs[0m
+drwxr-xr-x 3 minseo minseo 4096 May 29 10:18 [01;34mnginx[0m
+-rwxr-xr-x 1 minseo minseo 1443 May 29 09:22 [01;32msetup_docker.sh[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ [7mcat ~/linux/week10/wordpress/.env[27mcat ~/linux/week10/wordpress/.env
+[?2004l# MySQL 설정
+MYSQL_ROOT_PASSWORD=rootpass_2026!
+MYSQL_DATABASE=wordpress
+MYSQL_USER=wpuser
+MYSQL_PASSWORD=wppass_2026!
+# WordPress 설정
+WORDPRESS_TABLE_PREFIX=wp_
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ [7mcat ~/linux/week10/wordpress/compose.wordpress.yaml[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat ~/linux/week10/wordpress/compose.wordpress.yaml
+[?2004lservices:
+  wordpress:
+    image: wordpress:php8.2-fpm
+    container_name: wp_app
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file: .env
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: ${MYSQL_DATABASE}
+      WORDPRESS_DB_USER: ${MYSQL_USER}
+      WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - wp_data:/var/www/html
+    networks:
+      - wp_net
+    restart: unless-stopped
+
+volumes:
+  wp_data:
+    external: false
+
+networks:
+  wp_net:
+    external: false
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ [7m    container_name: wp_app[27m
+[7m    depends_on:[27m
+[7m      db:[27m
+[7m        condition: service_healthy[27m
+[7m    env_file: .env[27m
+[7m    environment:[27m
+[7m      WORDPRESS_DB_HOST: db:3306[27m
+[7m      WORDPRESS_DB_NAME: ${MYSQL_DATABASE}[27m
+[7m      WORDPRESS_DB_USER: ${MYSQL_USER}[27m
+[7m      WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD}[27m
+[7m    volumes:[27m
+[7m      - wp_data:/var/www/html[27m
+[7m    networks:[27m
+[7m      - wp_net[27m
+[7m    restart: unless-stopped[27m
+
+[7mvolumes:[27m
+[7m  wp_data:[27m
+[7m    external: false[27m
+
+[7mnetworks:[27m
+[7m  wp_net:[27m
+[7m    external: false[27m[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$     container_name: wp_app
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file: .env
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: ${MYSQL_DATABASE}
+      WORDPRESS_DB_USER: ${MYSQL_USER}
+      WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - wp_data:/var/www/html
+    networks:
+      - wp_net
+    restart: unless-stopped
+
+volumes:
+  wp_data:
+    external: false
+
+networks:
+  wp_net:
+[1P    external: fals[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[A[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[A[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mdocker exec wp_db mysql -u wpuser -pwppass_2026! wordpress -[27m[7me[27m[7m "SELECT user_login, user_email FROM wp_users;"[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ docker exec wp_db mysql -u wpuser -pwppass_2026! wordpress -e "SELECT user_login, user_email FROM wp_users;"
+[?2004lmysql: [Warning] Using a password on the command line interface can be insecure.
+user_login	user_email
+minseo	guest@naver.com
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ [7mcd ~/linux/week13[27mcd ~/linux/week13
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ [7msudo restic -r ~/linux/week13/restic-repo backup \[27m
+[7m/var/lib/docker/volumes/wordpress_wp_data/_data \[27m
+[7m--tag wp_files[27m[A[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ sudo restic -r ~/linux/week13/restic-repo backup \
+/var/lib/docker/volumes/wordpress_wp_data/_data \
+--tag wp_files
+[?2004l[sudo] password for minseo: 
+enter password for repository: 
+[2Krepository 374db624 opened (version 2, compression level auto)
+[2Kusing parent snapshot fd25fe69
+[2K[0:00] 0.00%  0 / 1 index files loaded
+[2K[0:00] 100.00%  1 / 1 index files loaded[2K[0:00] 41 files 469.263 KiB, total 367 files 6.279 MiB, 0 errors[2K[0:00] 364 files 6.269 MiB, total 666 files 14.050 MiB, 0 errors[2K[0:00] 628 files 9.491 MiB, total 968 files 20.396 MiB, 0 errors[2K[0:00] 862 files 17.404 MiB, total 1115 files 27.831 MiB, 0 errors[2K[0:00] 1024 files 26.143 MiB, total 1210 files 28.642 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/uploads/2026/06/12-150x150.jpg
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/uploads/2026/06/12-300x198.jpg[1A[1A[2K[0:00] 1024 files 26.152 MiB, total 1348 files 29.406 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/uploads/2026/06/12-150x150.jpg
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/uploads/2026/06/12-300x198.jpg[1A[1A[2K[0:00] 1061 files 27.664 MiB, total 1549 files 29.771 MiB, 0 errors
+[2K
+[2K[1A[1A[2K[0:00] 1210 files 28.642 MiB, total 1731 files 30.203 MiB, 0 errors[2K[0:00] 1364 files 29.424 MiB, total 1955 files 30.530 MiB, 0 errors[2K[0:00] 1591 files 29.887 MiB, total 2289 files 35.885 MiB, 0 errors[2K[0:00] 1775 files 30.278 MiB, total 2556 files 40.437 MiB, 0 errors[2K[0:00] 1939 files 30.457 MiB, total 2906 files 66.112 MiB, 0 errors[2K[0:00] 2196 files 33.380 MiB, total 2976 files 67.263 MiB, 0 errors[2K[0:00] 2376 files 37.908 MiB, total 3209 files 73.817 MiB, 0 errors[2K[0:00] 2588 files 41.931 MiB, total 3360 files 76.047 MiB, 0 errors[2K[0:00] 2885 files 64.955 MiB, total 3360 files 76.047 MiB, 0 errors[2K[0:00] 3015 files 67.538 MiB, total 3360 files 76.047 MiB, 0 errors[2K[0:00] 3270 files 74.500 MiB, total 3360 files 76.047 MiB, 0 errors[2K[0:00] 3360 files 76.047 MiB, total 3360 files 76.047 MiB, 0 errors[2K[0:00] 3360 files 76.047 MiB, total 3360 files 76.047 MiB, 0 errors[2K[2K
+[2K[2KFiles:           3 new,     0 changed,  3357 unmodified
+[2K[2KDirs:            1 new,     9 changed,   360 unmodified
+[2K[2KAdded to the repository: 194.217 KiB (185.923 KiB stored)
+[2K[2K
+[2K[2Kprocessed 3360 files, 76.047 MiB in 0:00
+[2K[2Ksnapshot 2b639d70 saved
+[2K[2K
+[1A[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ [7mdocker exec wp_db mysqldump \[27m
+[7m--no-tablespaces \[27m
+[7m-u wpuser -pwppass_2026! wordpress \[27m
+[7m| gzip \[27m
+[7m> ~/linux/week13/backup/db/db_$(date +%F).sql.gz[27m[A[A[A[Adocker exec wp_db mysqldump \
+--no-tablespaces \
+-u wpuser -pwppass_2026! wordpress \
+| gzip \
+> ~/linux/week13/backup/db/db_$(date +%F).sql.gz
+[?2004lmysqldump: [Warning] Using a password on the command line interface can be insecure.
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ ^[[200~ls ~/linux/week13/backup/db/~[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mls ~/linux/week13/backup/db/[27mls ~/linux/week13/backup/db/
+[?2004l[0m[01;31mdb_2026-06-05.sql.gz[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ [7mgunzip -c ~/linux/week13/backup/db/db_$(date +%F).sql.gz | grep "^CREA[27m[7mT[27m[7mE TABLE"[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ gunzip -c ~/linux/week13/backup/db/db_$(date +%F).sql.gz | grep "^CREATE TABLE"
+[?2004l[01;31m[KCREATE TABLE[m[K `wp_commentmeta` (
+[01;31m[KCREATE TABLE[m[K `wp_comments` (
+[01;31m[KCREATE TABLE[m[K `wp_links` (
+[01;31m[KCREATE TABLE[m[K `wp_options` (
+[01;31m[KCREATE TABLE[m[K `wp_postmeta` (
+[01;31m[KCREATE TABLE[m[K `wp_posts` (
+[01;31m[KCREATE TABLE[m[K `wp_term_relationships` (
+[01;31m[KCREATE TABLE[m[K `wp_term_taxonomy` (
+[01;31m[KCREATE TABLE[m[K `wp_termmeta` (
+[01;31m[KCREATE TABLE[m[K `wp_terms` (
+[01;31m[KCREATE TABLE[m[K `wp_usermeta` (
+[01;31m[KCREATE TABLE[m[K `wp_users` (
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ [7msudo restic -r ~/linux/week13/restic-repo backup ~/linux/week13/backup[27m[7m/[27m[7mdb/ --tag db_backup --tag $(date +%F)[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ sudo restic -r ~/linux/week13/restic-repo backup ~/linux/week13/backup/db/ --tag db_backup --tag $(date +%F)
+[?2004lenter password for repository: 
+[2Krepository 374db624 opened (version 2, compression level auto)
+[2Kno parent snapshot found, will read all files
+[2K[0:00] 100.00%  2 / 2 index files loaded
+[2K[0:00] 100.00%  2 / 2 index files loaded[2K[0:00] 0 files 0 B, total 1 files 338.030 KiB, 0 errors
+[2K/home/minseo/linux/week13/backup/db/db_2026-06-05.sql.gz[1A[2K[0:00] 1 files 338.030 KiB, total 1 files 338.030 KiB, 0 errors
+[2K[1A[2K[0:00] 1 files 338.030 KiB, total 1 files 338.030 KiB, 0 errors[2K[0:00] 1 files 338.030 KiB, total 1 files 338.030 KiB, 0 errors[2K[2K
+[2K[2KFiles:           1 new,     0 changed,     0 unmodified
+[2K[2KDirs:            6 new,     0 changed,     0 unmodified
+[2K[2KAdded to the repository: 340.602 KiB (340.144 KiB stored)
+[2K[2K
+[2K[2Kprocessed 1 files, 338.030 KiB in 0:00
+[2K[2Ksnapshot 049fa5f8 saved
+[2K[2K
+[1A[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ [7msudo restic -r ~/linux/week13/restic-repo snapshots[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo restic -r ~/linux/week13/restic-repo snapshots
+[?2004lenter password for repository: 
+wrong password or no key found. Try again
+enter password for repository: 
+repository 374db624 opened (version 2, compression level auto)
+ID        Time                 Host             Tags                  Paths
+---------------------------------------------------------------------------------------------------------------------
+fd25fe69  2026-06-05 09:42:38  DESKTOP-2HHEQA0  wp_files,week13       /var/lib/docker/volumes/wordpress_wp_data/_data
+2b639d70  2026-06-05 10:17:14  DESKTOP-2HHEQA0  wp_files              /var/lib/docker/volumes/wordpress_wp_data/_data
+049fa5f8  2026-06-05 10:22:36  DESKTOP-2HHEQA0  db_backup,2026-06-05  /home/minseo/linux/week13/backup/db
+---------------------------------------------------------------------------------------------------------------------
+3 snapshots
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ [7msudo restic -r ~/linux/week13/restic-repo diff fd25fe69 2b639d70[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo restic -r ~/linux/week13/restic-repo diff fd25fe69 2b639d70
+[?2004lenter password for repository: 
+repository 374db624 opened (version 2, compression level auto)
+comparing snapshot fd25fe69 to 2b639d70:
+
+[2K[0:00] 66.67%  2 / 3 index files loaded[2K[0:00] 100.00%  3 / 3 index files loaded
++    /var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/uploads/2026/06/
++    /var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/uploads/2026/06/12-150x150.jpg
++    /var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/uploads/2026/06/12-300x198.jpg
++    /var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/uploads/2026/06/12.jpg
+
+Files:           3 new,     0 removed,     0 changed
+Dirs:            1 new,     0 removed
+Others:          0 new,     0 removed
+Data Blobs:      3 new,     0 removed
+Tree Blobs:     11 new,    10 removed
+  Added:   194.217 KiB
+  Removed: 12.384 KiB
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ [7msudo restic -r ~/linux/week13/restic-repo check[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo restic -r ~/linux/week13/restic-repo check
+[?2004lusing temporary cache in /tmp/restic-check-cache-3807938921
+enter password for repository: 
+repository 374db624 opened (version 2, compression level auto)
+created new cache in /tmp/restic-check-cache-3807938921
+create exclusive lock for repository
+load indexes
+[2K[0:00] 66.67%  2 / 3 index files loaded[2K[0:00] 100.00%  3 / 3 index files loaded[2K[0:00] 100.00%  3 / 3 index files loaded
+check all packs
+check snapshots, trees and blobs
+[2K[0:00] 66.67%  2 / 3 snapshots[2K[0:00] 66.67%  2 / 3 snapshots[2K[0:00] 100.00%  3 / 3 snapshots
+no errors were found
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ [7mdocker exec wp_db mysql -u wpuser -pwppass_2026! wordpress -e "SELECT [27m[7mC[27m[7mOUNT(*) FROM wp_posts;"[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ docker exec wp_db mysql -u wpuser -pwppass_2026! wordpress -e "SELECT COUNT(*) FROM wp_posts;"
+[?2004lmysql: [Warning] Using a password on the command line interface can be insecure.
+COUNT(*)
+12
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ [7m sudorestic-r ~/week13/restic-repo snapshots[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C sudorestic-r ~/week13/restic-repo snapshots
+[?2004lsudorestic-r: command not found
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ [7msudorestic-r ~/week13/restic-repo snapshots[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudorestic-r ~/week13/restic-repo snapshots[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lsudo: restic-r: command not found
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ [7msudorestic-r ~/week13/restic-repo snapshots[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudorestic-r ~/week13/restic-repo snapshots[1@ 
+[?2004lsudorestic: command not found
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ [7msudorestic-r ~/week13/restic-repo snapshots[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudorestic-r ~/week13/restic-repo snapshots[C[C[1@ [C[C[C[C[C[C[1@ 
+[?2004lFatal: unable to open config file: stat /home/minseo/week13/restic-repo/config: no such file or directory
+Is there a repository at the following location?
+/home/minseo/week13/restic-repo
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ [7mdocker exec wp_db mysql -u wpuser -pwppass_2026! wordpress -e "DELETE [27m[7mF[27m[7mROM wp_posts;"[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ docker exec wp_db mysql -u wpuser -pwppass_2026! wordpress -e "DELETE FROM wp_posts;"
+[?2004lmysql: [Warning] Using a password on the command line interface can be insecure.
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ [7mdocker exec wp_db mysql -u wpuser -pwppass_2026! wordpress -e "SELECT [27m[7mC[27m[7mOUNT(*) FROM wp_posts;"[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ docker exec wp_db mysql -u wpuser -pwppass_2026! wordpress -e "SELECT COUNT(*) FROM wp_posts;"
+[?2004lmysql: [Warning] Using a password on the command line interface can be insecure.
+COUNT(*)
+0
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ [7msudo restic -r ~/linux/week13/restic-repo snapshots --tag db_backup[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo restic -r ~/linux/week13/restic-repo snapshots --tag db_backup
+[?2004lenter password for repository: 
+repository 374db624 opened (version 2, compression level auto)
+ID        Time                 Host             Tags                  Paths
+---------------------------------------------------------------------------------------------------------
+049fa5f8  2026-06-05 10:22:36  DESKTOP-2HHEQA0  db_backup,2026-06-05  /home/minseo/linux/week13/backup/db
+---------------------------------------------------------------------------------------------------------
+1 snapshots
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ [7msudo restic -r ~/linux/week13/restic-repo restore 049fa5f8 --target ~/[27m[7ml[27m[7minux/week13/restore/[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ sudo restic -r ~/linux/week13/restic-repo restore 049fa5f8 --target ~/linux/week13/restore/
+[?2004lenter password for repository: 
+[2Krepository 374db624 opened (version 2, compression level auto)
+[2K[0:00] 100.00%  3 / 3 index files loaded
+[2K[0:00] 100.00%  3 / 3 index files loaded[2Krestoring <Snapshot 049fa5f8 of [/home/minseo/linux/week13/backup/db] at 2026-06-05 10:22:36.502284812 +0900 KST by root@DESKTOP-2HHEQA0> to /home/minseo/linux/week13/restore/
+[2K[0:00] 100.00%  3 / 3 index files loaded[2K[0:00]   0 files/dirs 0 B, total 6 files/dirs 0 B[2KSummary: Restored 7 files/dirs (338.030 KiB) in 0:00
+[2K[0:00]   0 files/dirs 0 B, total 6 files/dirs 0 B[2K
+[1A[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13[00m$ [7mcd ~/linux/week13/backup/db[27mcd ~/linux/week13/backup/db
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13/backup/db[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13/backup/db[00m$ [7msudo gunzip -c db_2026-06-05.sql.gz | docker exec -i wp_db m[27m[7my[27m[7msql -u wpuser -pwppass_2026! wordpress[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13/backup/db[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13/backup/db[00m$ sudo gunzip -c db_2026-06-05.sql.gz | docker exec -i wp_db mysql -u wpuser -pwppass_2026! wordpress
+[?2004lmysql: [Warning] Using a password on the command line interface can be insecure.
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13/backup/db[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13/backup/db[00m$ ^V[K[7mdocker exec wp_db mysql -u wpuser -pwppass_2026! wordpress -[27m[7me[27m[7m "SELECT COUNT(*) FROM wp_posts;"[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13/backup/db[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13/backup/db[00m$ docker exec wp_db mysql -u wpuser -pwppass_2026! wordpress -e "SELECT COUNT(*) FROM wp_posts;"
+[?2004lmysql: [Warning] Using a password on the command line interface can be insecure.
+COUNT(*)
+12
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13/backup/db[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13/backup/db[00m$ exi
+[?2004lCommand 'exi' not found, but there are 16 similar ones.
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week13/backup/db[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week13/backup/db[00m$ exit
+[?2004lexit
+
+Script done on 2026-06-05 10:48:26+09:00 [COMMAND_EXIT_CODE="127"]
