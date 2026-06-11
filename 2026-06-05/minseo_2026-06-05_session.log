@@ -1395,4 +1395,24 @@ Untracked files:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 [?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-05[00m$ git add .
-[?2004l
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-05[00m$ git commit -m "ㅈ[Kweek13 완료"
+[?2004l[main 4a175bb] week13 완료
+ 4 files changed, 3628 insertions(+)
+ create mode 100644 2026-06-05/2026_20220994_week13_log.txt
+ create mode 100644 2026-06-05/minseo_2026-06-05_session.log
+ create mode 100644 2026-06-05/minseo_2026-06-05_session.tm
+ create mode 100644 2026-06-05/t.txt
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-05[00m$ git push origin main
+[?2004lEnumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 16 threads
+Compressing objects:  14% (1/7)Compressing objects:  28% (2/7)Compressing objects:  42% (3/7)Compressing objects:  57% (4/7)Compressing objects:  71% (5/7)Compressing objects:  85% (6/7)Compressing objects: 100% (7/7)Compressing objects: 100% (7/7), done.
+Writing objects:  14% (1/7)Writing objects:  28% (2/7)Writing objects:  42% (3/7)Writing objects:  57% (4/7)Writing objects:  71% (5/7)Writing objects:  85% (6/7)Writing objects: 100% (7/7)Writing objects: 100% (7/7), 32.33 KiB | 2.69 MiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/minseo121/OS_LINUX_20220994.git
+   bf38434..4a175bb  main -> main
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-05[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-05[00m$ [?2004l
+exit
+
+Script done on 2026-06-05 10:51:08+09:00 [COMMAND_EXIT_CODE="0"]

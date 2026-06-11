@@ -1,0 +1,411 @@
+Script started on 2026-06-11 19:36:12+09:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="120" LINES="30"]
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ chr[K[K[Kcd ..
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ chrt -p $$
+[?2004lpid 11755's current scheduling policy: SCHED_OTHER
+pid 11755's current scheduling priority: 0
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ [7mps -eo pid,class,rtprio,ni,pri,comm | head -30[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps -eo pid,class,rtprio,ni,pri,comm | head -30
+[?2004l    PID CLS RTPRIO  NI PRI COMMAND
+      1 TS       -   0  19 systemd
+      2 TS       -   0  19 init-systemd(Ub
+      7 TS       -   0  19 init
+     55 TS       -  -1  20 systemd-journal
+    103 TS       -   0  19 systemd-udevd
+    250 TS       -   0  19 SessionLeader
+    251 TS       -   0  19 Relay(257)
+    257 TS       -   0  19 bash
+    258 TS       -   0  19 login
+    326 TS       -   0  19 bash
+    374 TS       -   0  19 script
+    376 TS       -   0  19 bash
+    470 TS       -   0  19 script
+    471 TS       -   0  19 bash
+    490 TS       -   0  19 dbus-daemon
+    503 TS       -   0  19 systemd-resolve
+    504 TS       -   0  19 systemd-timesyn
+   1376 TS       -   0  19 script
+   1377 TS       -   0  19 bash
+   1492 TS       -   0  19 sudo
+   1493 TS       -   0  19 sudo
+   1494 TS       -   0  19 dockerd
+   1507 TS       -   0  19 containerd
+   1752 TS       -   0  19 systemd-sulogin
+   1753 TS       -   0  19 sulogin
+   1795 TS       -   0  19 containerd-shim
+   1820 TS       -   0  19 nginx
+   1868 TS       -   0  19 docker-proxy
+   1875 TS       -   0  19 docker-proxy
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ ulimit -a
+[?2004lreal-time non-blocking time  (microseconds, -R) unlimited
+core file size              (blocks, -c) 0
+data seg size               (kbytes, -d) unlimited
+scheduling priority                 (-e) 0
+file size                   (blocks, -f) unlimited
+pending signals                     (-i) 30513
+max locked memory           (kbytes, -l) 65536
+max memory size             (kbytes, -m) unlimited
+open files                          (-n) 10240
+pipe size                (512 bytes, -p) 8
+POSIX message queues         (bytes, -q) 819200
+real-time priority                  (-r) 0
+stack size                  (kbytes, -s) 8192
+cpu time                   (seconds, -t) unlimited
+max user processes                  (-u) 30513
+virtual memory              (kbytes, -v) unlimited
+file locks                          (-x) unlimited
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ [7mcat /etc/passwd | grep student[27mcat /etc/passwd | grep student
+[?2004l[01;31m[Kstudent[m[K1:x:1005:1005::/home/[01;31m[Kstudent[m[K1:/bin/bash
+[01;31m[Kstudent[m[K2:x:1006:1006::/home/[01;31m[Kstudent[m[K2:/bin/bash
+[01;31m[Kstudent[m[K3:x:1007:1007::/home/[01;31m[Kstudent[m[K3:/bin/bash
+[01;31m[Kstudent[m[K4:x:1008:1008::/home/[01;31m[Kstudent[m[K4:/bin/bash
+[01;31m[Kstudent[m[K5:x:1009:1009::/home/[01;31m[Kstudent[m[K5:/bin/bash
+[01;31m[Kstudent[m[K13:x:1017:1017::/home/[01;31m[Kstudent[m[K13:/bin/bash
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ ㅕㅣㅑ[K[K[Kun[Klin[Kmit -u
+[?2004l30513
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ ulimit -u 30
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ ulin[K[K[K[Kulimit -u 30[K
+[?2004l30
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ [7mps -u $USER --no-header | wc -l[27mps -u $USER --no-header | wc -l
+[?2004lbash: fork: retry: Resource temporarily unavailable
+bash: fork: retry: Resource temporarily unavailable
+bash: fork: retry: Resource temporarily unavailable
+bash: fork: retry: Resource temporarily unavailable
+bash: fork: Resource temporarily unavailable
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux[00m$ exit
+[?2004lexit
+
+Script done on 2026-06-11 20:27:42+09:00 [COMMAND_EXIT_CODE="254"]
+Script started on 2026-06-11 20:27:51+09:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="120" LINES="30"]
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ exitps -u $USER --no-header | wc -l
+[?2004l16
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [7mulimit -u 30[27m
+[7mfor i in $(seq 1 35); do[27m
+[7m  sleep 300 &[27m
+[7m  echo "생성 $i : PID=$!"[27m
+[7mdone[27m[A[A[A[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ ulimit -u 30
+for i in $(seq 1 35); do
+  sleep 300 &
+  echo "생성 $i : PID=$!"
+done
+[?2004lbash: fork: retry: Resource temporarily unavailable
+bash: fork: retry: Resource temporarily unavailable
+bash: fork: retry: Resource temporarily unavailable
+bash: fork: retry: Resource temporarily unavailable
+bash: fork: Resource temporarily unavailable
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ exit
+[?2004lexit
+
+Script done on 2026-06-11 20:29:18+09:00 [COMMAND_EXIT_CODE="254"]
+Script started on 2026-06-11 20:29:21+09:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="120" LINES="30"]
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [7mcd /etc/security[27mcd /etc/security
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/security[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ [7msudo nano limits.conf[27msudo nano limits.conf
+[?2004l[sudo] password for minseo: 
+[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;52H(B[0;7m[ Read 67 lines ](B[m[H(B[0;7m  GNU nano 7.2                                           limits.conf                                                    [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[36m# /etc/security/limits.conf[3d#[4d#This file sets the resource limits for the users logged in via PAM.[5d#It does not affect resource limits of the system services.[6d#[7d#Also note that configuration files in /etc/security/limits.d directory,[8d#which are read in alphabetical order, override the settings in this[9d#file in case the domain is the same or more specific.[10d#That means, for example, that setting a limit for wildcard domain here[11d#can be overridden with a wildcard setting in a config file in the[12d#subdirectory, but a user specific setting here can be overridden only[13d#with a user specific setting in the subdirectory.[14d#[15d#Each line describes a limit for a user in the form:[16d#[17d#<domain>        <type>  <item>  <value>[18d#[19d#Where:[20d#<domain> can be:[21d#        - a user name[22d#        - a group name, with @group syntax[23d#        - the wildcard *, for default entry[24d#        - the wildcard %, can be also used with %group syntax,[25d#[17X[25;19Hfor maxlogin limit[26d#        - NOTE: group and wildcard limits are not applied to root.[27d#          To apply a limit to the root user, <domain> must be[2d[39m(B[m[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[16d[?25l[?12l[?25h[17d[?25l[?12l[?25h[18d[?25l[?12l[?25h[19d[?25l[?12l[?25h[20d[?25l[?12l[?25h[21d[?25l[28d[K[?12l[?25h[22d[?25l[?12l[?25h[23d[?25l[?12l[?25h[24d[?25l[?12l[?25h[25d[?25l[?12l[?25h[26d[?25l[?12l[?25h[27d[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#          the literal username root.[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#<type> can have the two values:[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - "soft" for enforcing the soft limits[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - "hard" for enforcing hard limits[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#<item> can be one of the following:[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - core - limits the core file size (KB)[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - data - max data size (KB)[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - fsize - maximum filesize (KB)[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - memlock - max locked-in-memory address space (KB)[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - nofile - max number of open file descriptors[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - rss - max resident set size (KB)[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - stack - max stack size (KB)[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - cpu - max CPU time (MIN)[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - nproc - max number of processes[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - as - address space limit (KB)[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - maxlogins - max number of logins for this user[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - maxsyslogins - max number of logins on the system[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - priority - the priority to run user process with[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - locks - max number of file locks the user can hold[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - sigpending - max number of pending signals[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - msgqueue - max memory used by POSIX message queues (bytes)[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - nice - max nice priority allowed to raise to values: [-20, 19][39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - rtprio - max realtime priority[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - chroot - change root to directory (Debian-specific)[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#<domain>      <type>  <item>         <value>[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#*[15X[27;18Hsoft    core            0[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#root            hard    core            100000[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#*[15X[27;18Hhard    rss             10000[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#@student        hard    nproc           20[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#@faculty        soft    nproc           20[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#@faculty        hard    nproc           50[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#ftp             hard    nproc           0[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#ftp             -       chroot          /ftp[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#@student        -       maxlogins       4[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# End of file[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[26;14H[?25l[?12l[?25h[27d[?25l[1;70H(B[0;7m*[119G(B[m[2;28r[28;1H[3S[1;30r[24;1Hstudent1    soft    nproc    10[25dstudent1    hard    nproc    15[26dstudent1    soft    nofile   20[27dstudent1    hard    nofile   30[?12l[?25h[?25l[28d(B[0;7mSave modified buffer?                                                                                                   [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;31H(B[0;7mM-D(B[m DOS Format[29;61H(B[0;7mM-A(B[m Append[29;91H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G[14X[30;31H(B[0;7mM-M(B[m Mac Format[30;61H(B[0;7mM-P(B[m Prepend[30;91H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: limits.conf(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;70H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 71 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/security[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ su student1
+[?2004lPassword: 
+su: Authentication failure
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/security[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ su student1
+[?2004lPassword: 
+su: Authentication failure
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/security[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ su student1
+[?2004lPassword: 
+
+[?2004h]0;student1@DESKTOP-2HHEQA0: /etc/security[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ 
+[?2004l[?2004h]0;student1@DESKTOP-2HHEQA0: /etc/security[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ ulin[Kmit -u
+[?2004l10
+[?2004h]0;student1@DESKTOP-2HHEQA0: /etc/security[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ [7mfor i in $(seq 1 35); do[27m
+[7m  sleep 300 &[27m
+[7m  echo "생성 $i : PID=$!"[27m
+[7mdone[27m[A[A[A]0;student1@DESKTOP-2HHEQA0: /etc/security[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ for i in $(seq 1 35); do
+  sleep 300 &
+  echo "생성 $i : PID=$!"
+done
+[?2004l[1] 30188
+생성 1 : PID=30188
+[2] 30189
+생성 2 : PID=30189
+[3] 30190
+생성 3 : PID=30190
+[4] 30191
+생성 4 : PID=30191
+[5] 30192
+생성 5 : PID=30192
+[6] 30193
+생성 6 : PID=30193
+[7] 30194
+생성 7 : PID=30194
+[8] 30195
+생성 8 : PID=30195
+[9] 30196
+생성 9 : PID=30196
+bash: fork: retry: Resource temporarily unavailable
+bash: fork: retry: Resource temporarily unavailable
+bash: fork: retry: Resource temporarily unavailable
+bash: fork: retry: Resource temporarily unavailable
+bash: fork: Resource temporarily unavailable
+[?2004h]0;student1@DESKTOP-2HHEQA0: /etc/security[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ [7mexit[27mexit
+[?2004lexit
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/security[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ [7mkill $(ps -u student1 | grep sleep | awk '{print $1}') 2>/dev/null[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckill $(ps -u student1 | grep sleep | awk '{print $1}') 2>/dev/null
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/security[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ [7mcat /etc/group | grep dev_team[27mcat /etc/group | grep dev_team
+[?2004l[01;31m[Kdev_team[m[K1:x:1025:student1,student2,student5
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/security[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ [7msudo nano limits.conf[27msudo nano limits.conf
+[?2004l[sudo] password for minseo: 
+[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;52H(B[0;7m[ Read 71 lines ](B[m[H(B[0;7m  GNU nano 7.2                                           limits.conf                                                    [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[36m# /etc/security/limits.conf[3d#[4d#This file sets the resource limits for the users logged in via PAM.[5d#It does not affect resource limits of the system services.[6d#[7d#Also note that configuration files in /etc/security/limits.d directory,[8d#which are read in alphabetical order, override the settings in this[9d#file in case the domain is the same or more specific.[10d#That means, for example, that setting a limit for wildcard domain here[11d#can be overridden with a wildcard setting in a config file in the[12d#subdirectory, but a user specific setting here can be overridden only[13d#with a user specific setting in the subdirectory.[14d#[15d#Each line describes a limit for a user in the form:[16d#[17d#<domain>        <type>  <item>  <value>[18d#[19d#Where:[20d#<domain> can be:[21d#        - a user name[22d#        - a group name, with @group syntax[23d#        - the wildcard *, for default entry[24d#        - the wildcard %, can be also used with %group syntax,[25d#[17X[25;19Hfor maxlogin limit[26d#        - NOTE: group and wildcard limits are not applied to root.[27d#          To apply a limit to the root user, <domain> must be[2d[39m(B[m[?12l[?25h[?25l[?12l[?25h[C[?25l[?12l[?25h[3d[?25l[?12l[?25h[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[16d[?25l[?12l[?25h[17d[?25l[?12l[?25h[18d[?25l[?12l[?25h[19d[?25l[28d[K[?12l[?25h[20d[?25l[?12l[?25h[21d[?25l[?12l[?25h[22d[?25l[?12l[?25h[23d[?25l[?12l[?25h[24d[?25l[?12l[?25h[25d[?25l[?12l[?25h[26d[?25l[?12l[?25h[27d[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#          the literal username root.[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#<type> can have the two values:[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - "soft" for enforcing the soft limits[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - "hard" for enforcing hard limits[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#<item> can be one of the following:[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - core - limits the core file size (KB)[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - data - max data size (KB)[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - fsize - maximum filesize (KB)[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - memlock - max locked-in-memory address space (KB)[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - nofile - max number of open file descriptors[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - rss - max resident set size (KB)[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - stack - max stack size (KB)[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - cpu - max CPU time (MIN)[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - nproc - max number of processes[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - as - address space limit (KB)[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - maxlogins - max number of logins for this user[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - maxsyslogins - max number of logins on the system[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - priority - the priority to run user process with[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - locks - max number of file locks the user can hold[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - sigpending - max number of pending signals[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - msgqueue - max memory used by POSIX message queues (bytes)[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - nice - max nice priority allowed to raise to values: [-20, 19][39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - rtprio - max realtime priority[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#        - chroot - change root to directory (Debian-specific)[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#<domain>      <type>  <item>         <value>[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#*[15X[27;18Hsoft    core            0[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#root            hard    core            100000[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#*[15X[27;18Hhard    rss             10000[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#@student        hard    nproc           20[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#@faculty        soft    nproc           20[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#@faculty        hard    nproc           50[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#ftp             hard    nproc           0[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#ftp             -       chroot          /ftp[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m#@student        -       maxlogins       4[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[36m# End of file[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hstudent1    soft    nproc    10[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hstudent1    hard    nproc    15[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hstudent1    soft    nofile   20[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hstudent1    hard    nofile   30[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;70H(B[0;7m*[119G(B[m[2;28r[28;1H
+[1;30r[27;1H[?12l[?25h[?25l7[2;28r8[28d[2S[1;30r[25;1H@dev_team1    soft    nproc    10[26d@dev_team1    hard    nproc    15[27d@dev_team1    soft    nofile   50[?12l[?25h[?25l[28d(B[0;7mSave modified buffer?                                                                                                   [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;31H(B[0;7mM-D(B[m DOS Format[29;61H(B[0;7mM-A(B[m Append[29;91H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G[14X[30;31H(B[0;7mM-M(B[m Mac Format[30;61H(B[0;7mM-P(B[m Prepend[30;91H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: limits.conf(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;70H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 75 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/security[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ [7msu student1[27m
+[7mulimit -u[27m[A]0;minseo@DESKTOP-2HHEQA0: /etc/security[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ su student1
+ulimit -u
+[?2004lPassword: 
+su: Authentication failure
+30513
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/security[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ Aulimit -usu student1
+[?2004lPassword: 
+[?2004h]0;student1@DESKTOP-2HHEQA0: /etc/security[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ exitfor i in $(seq 1 35); do   sleep 300 &   echo "생성 $i : PID=$!"; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K[Kui[Kili[K[K[Klimit -u
+[?2004l10
+[?2004h]0;student1@DESKTOP-2HHEQA0: /etc/security[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ [7mdocker stop stress-nginx[27m
+[7mdocker rm stress-nginx[27m[A]0;student1@DESKTOP-2HHEQA0: /etc/security[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ docker stop stress-nginx
+docker rm stress-nginx
+[?2004lpermission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+[?2004h]0;student1@DESKTOP-2HHEQA0: /etc/security[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ sudo minseo
+[?2004l[sudo] password for student1: 
+Sorry, try again.
+[sudo] password for student1: 
+Sorry, try again.
+[sudo] password for student1: 
+sudo: 2 incorrect password attempts
+[?2004h]0;student1@DESKTOP-2HHEQA0: /etc/security[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ sudo minseo[K[K[K[K[K[K[K[K[K minseo
+[?2004lPassword: 
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [7mdocker stop stress-nginx[27mdocker stop stress-nginx
+[?2004lstress-nginx
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [7mdocker rm stress-nginx[27mdocker rm stress-nginx
+[?2004lstress-nginx
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [7mdocker run -d --name stress-nginx --cpuset-cpus="0" --privileged -p 8081:80 n[27m[7mg[27m[7minx:alpine[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ docker run -d --name stress-nginx --cpuset-cpus="0" --privileged -p 8081:80 nginx:alpine
+[?2004ld94807d27686873b22a26dd3d878fc8e379092fd9e84c4723a3ad9b0da63e749
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [7mdocker exec stress-nginx apk add --no-cache stress-ng[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec stress-nginx apk add --no-cache stress-ng
+[?2004l(1/3) Installing judy (1.0.5-r1)
+(2/3) Installing liblksctp (1.0.19-r5)
+(3/3) Installing stress-ng (0.19.03-r0)
+Executing busybox-1.37.0-r30.trigger
+OK: 64.4 MiB in 74 packages
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [7mdocker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 120 &[27m
+[7mdocker exec stress-nginx nice -n -10 stress-ng --cpu 1 --timeout 120 &[27m[Adocker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 120 &
+docker exec stress-nginx nice -n -10 stress-ng --cpu 1 --timeout 120 &
+[?2004l[1] 40968
+[2] 40969
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ stress-ng: info:  [39] setting to a 2 mins run per stressor
+stress-ng: info:  [40] setting to a 2 mins run per stressor
+stress-ng: info:  [39] dispatching hogs: 1 cpu
+stress-ng: info:  [40] dispatching hogs: 1 cpu
+stress-ng: info:  [39] skipped: 0
+stress-ng: info:  [39] passed: 1: cpu (1)
+stress-ng: info:  [39] failed: 0
+stress-ng: info:  [39] metrics untrustworthy: 0
+stress-ng: info:  [39] successful run completed in 1 min, 54.26 secs
+stress-ng: info:  [40] skipped: 0
+stress-ng: info:  [40] passed: 1: cpu (1)
+stress-ng: info:  [40] failed: 0
+stress-ng: info:  [40] metrics untrustworthy: 0
+stress-ng: info:  [40] successful run completed in 1 min, 54.26 secs
+^C^C[?2004l[?2004h[?2004l
+[1]-  Done                    docker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 120
+[2]+  Done                    docker exec stress-nginx nice -n -10 stress-ng --cpu 1 --timeout 120
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [7mdocker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 120 &[27m
+[7mdocker exec stress-nginx nice -n -10 stress-ng --cpu 1 --timeout 120 &[27m[Adocker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 120 &
+docker exec stress-nginx nice -n -10 stress-ng --cpu 1 --timeout 120 &
+[?2004l[1] 42281
+[2] 42282
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ stress-ng: info:  [54] setting to a 2 mins run per stressor
+stress-ng: info:  [53] setting to a 2 mins run per stressor
+stress-ng: info:  [54] dispatching hogs: 1 cpu
+stress-ng: info:  [53] dispatching hogs: 1 cpu
+stress-ng: info:  [54] skipped: 0
+stress-ng: info:  [54] passed: 1: cpu (1)
+stress-ng: info:  [54] failed: 0
+stress-ng: info:  [54] metrics untrustworthy: 0
+stress-ng: info:  [54] successful run completed in 1 min, 54.25 secs
+stress-ng: info:  [53] skipped: 0
+stress-ng: info:  [53] passed: 1: cpu (1)
+stress-ng: info:  [53] failed: 0
+stress-ng: info:  [53] metrics untrustworthy: 0
+stress-ng: info:  [53] successful run completed in 1 min, 54.26 secs
+^C[?2004l[?2004h[?2004l
+[1]-  Done                    docker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 120
+[2]+  Done                    docker exec stress-nginx nice -n -10 stress-ng --cpu 1 --timeout 120
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ docker exec stress-nginx nice -n -10 stress-ng --cpu 1 --timeout 120 &[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[7mnproc[27mnproc
+[?2004l16
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [7mdocker stop stress-nginx my-web-proxy[27m
+[7mdocker rm stress-nginx my-web-proxy[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ docker stop stress-nginx my-web-proxy
+docker rm stress-nginx my-web-proxy
+[?2004lstress-nginx
+Error response from daemon: No such container: my-web-proxy
+stress-nginx
+Error response from daemon: No such container: my-web-proxy
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [7mdocker run -d --name stress-nginx --cpuset-cpus="0-3" --cpus="4.0" -p 8081:80[27m[7m [27m[7mnginx:alpine[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ docker run -d --name stress-nginx --cpuset-cpus="0-3" --cpus="4.0" -p 8081:80 nginx:alpine
+[?2004l7f8b9e08f8d44e4a22a41d5d7c36a6fff9cc3f197fce3ed2d70a71ad00fc3066
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [7mdocker run -d --name my-web-proxy --cpuset-cpus="4-7" --cpus="4.0" -p 80:80 n[27m[7mg[27m[7minx:alpine[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ docker run -d --name my-web-proxy --cpuset-cpus="4-7" --cpus="4.0" -p 80:80 nginx:alpine
+[?2004l189d8ba5d107d9b0cde54c464dae2cd8bc0e8f0469fd8a3c69e0fd9a06eac75c
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [7mdocker ps[27mdocker ps
+[?2004lCONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                                     NAMES
+189d8ba5d107   nginx:alpine   "/docker-entrypoint.…"   13 seconds ago   Up 13 seconds   0.0.0.0:80->80/tcp, [::]:80->80/tcp       my-web-proxy
+7f8b9e08f8d4   nginx:alpine   "/docker-entrypoint.…"   19 seconds ago   Up 18 seconds   0.0.0.0:8081->80/tcp, [::]:8081->80/tcp   stress-nginx
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [7mdocker exec stress-nginx ps -ef | grep nginx[27m
+[7mdocker exec my-web-proxy ps -ef | grep nginx[27m[Adocker exec stress-nginx ps -ef | grep nginx
+docker exec my-web-proxy ps -ef | grep nginx
+[?2004l    1 root      0:00 [01;31m[Knginx[m[K: master process [01;31m[Knginx[m[K -g daemon off;
+   30 [01;31m[Knginx[m[K     0:00 [01;31m[Knginx[m[K: worker process
+   31 [01;31m[Knginx[m[K     0:00 [01;31m[Knginx[m[K: worker process
+   32 [01;31m[Knginx[m[K     0:00 [01;31m[Knginx[m[K: worker process
+   33 [01;31m[Knginx[m[K     0:00 [01;31m[Knginx[m[K: worker process
+    1 root      0:00 [01;31m[Knginx[m[K: master process [01;31m[Knginx[m[K -g daemon off;
+   30 [01;31m[Knginx[m[K     0:00 [01;31m[Knginx[m[K: worker process
+   31 [01;31m[Knginx[m[K     0:00 [01;31m[Knginx[m[K: worker process
+   32 [01;31m[Knginx[m[K     0:00 [01;31m[Knginx[m[K: worker process
+   33 [01;31m[Knginx[m[K     0:00 [01;31m[Knginx[m[K: worker process
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [7mab -n 10000 -c 1000 http://localhost:8081/[27mab -n 10000 -c 1000 http://localhost:8081/
+[?2004lThis is ApacheBench, Version 2.3 <$Revision: 1903618 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Completed 1000 requests
+Completed 2000 requests
+Completed 3000 requests
+Completed 4000 requests
+Completed 5000 requests
+Completed 6000 requests
+Completed 7000 requests
+Completed 8000 requests
+Completed 9000 requests
+Completed 10000 requests
+Finished 10000 requests
+
+
+Server Software:        nginx/1.31.1
+Server Hostname:        localhost
+Server Port:            8081
+
+Document Path:          /
+Document Length:        896 bytes
+
+Concurrency Level:      1000
+Time taken for tests:   2.698 seconds
+Complete requests:      10000
+Failed requests:        0
+Total transferred:      11290000 bytes
+HTML transferred:       8960000 bytes
+Requests per second:    3706.41 [#/sec] (mean)
+Time per request:       269.803 [ms] (mean)
+Time per request:       0.270 [ms] (mean, across all concurrent requests)
+Transfer rate:          4086.46 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  117  20.9    119     162
+Processing:    46  140  34.9    136     244
+Waiting:        4  100  29.5     96     197
+Total:        151  257  22.5    257     316
+
+Percentage of the requests served within a certain time (ms)
+  50%    257
+  66%    263
+  75%    268
+  80%    273
+  90%    284
+  95%    292
+  98%    299
+  99%    301
+ 100%    316 (longest request)
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ [K]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-11[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-11[00m$ exit
+[?2004lexit
+[?2004h]0;student1@DESKTOP-2HHEQA0: /etc/security[01;32mstudent1@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ ei[K[Kexit
+[?2004lexit
+[?2004h]0;minseo@DESKTOP-2HHEQA0: /etc/security[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m/etc/security[00m$ ei[Kxit
+[?2004lexit
+
+Script done on 2026-06-11 21:23:32+09:00 [COMMAND_EXIT_CODE="0"]
