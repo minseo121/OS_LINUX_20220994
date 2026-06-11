@@ -1,0 +1,587 @@
+Script started on 2026-06-12 07:42:08+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="150" LINES="37"]
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-12[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-12[00m$ lost[K[K[K[Kloset [Kup -a
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-12[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-12[00m$ [7mcd ~/linux/week09[27mcd ~/linux/week09
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week09[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week09[00m$ [7msudo bash setup_disks.sh[27msudo bash setup_disks.sh
+[?2004l[sudo] password for minseo: 
+setup_disks.sh: line 4: cd: /root/linux/week09: No such file or directory
+week09 폴더 없음
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week09[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week09[00m$ ls
+[?2004l2026_20220994_week09_log.txt  2026_20220994_week09_studylog.txt  README.md  disk_a.img  disk_b.img  disk_c.img  [0m[01;32msetup_disks.sh[0m  t.txt
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week09[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week09[00m$ sydi [K[K[K[Kudo bash setup_disks.sh 
+[?2004lsetup_disks.sh: line 4: cd: /root/linux/week09: No such file or directory
+week09 폴더 없음
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week09[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week09[00m$ [7mnano setup_disks.sh[27mnano setup_disks.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;37r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[35;69H(B[0;7m[ Reading... ](B[m[35;67H(B[0;7m[ Read 54 lines ](B[m[H(B[0;7m  GNU nano 7.2                                                        setup_disks.sh                                                                  [1;149H(B[m[36d(B[0;7m^G(B[m Help[36;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[36;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[36;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket[37d(B[0;7m^X(B[m Exit[37;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[37;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[37;113H(B[0;7mM-6(B[m Copy[37;129H(B[0;7m^Q(B[m Where Was[2d[36m#!/bin/bash[4d# week09 폴더로 이동 (img 파일 위치)[5d(B[0;1m[34mcd[39m(B[m ~/linux/week09 [32m||[39m(B[m [32m{[39m(B[m (B[0;1m[34mecho[39m(B[m (B[0;1m[33m"week09 폴더 없음"(B[0m[32m;[39m(B[m [32mexit[39m(B[m 1[32m;[39m(B[m [32m}[7d[36m# 1. loop 디바이스 재연결 (이미 연결됐으면 건너뜀)[8d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"=== loop 디바이스 재연결 ==="[9d(B[0m[32mif[39m(B[m [32m![39m(B[m losetup(B[0;1m[35m -a[39m(B[m [32m|[39m(B[m (B[0;1m[34mgrep[35m -q[39m(B[m disk_a.img[32m;[39m(B[m [32mthen[10;5H[39m(B[msudo losetup -fP disk_a.img[11;5H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"disk_a.img 연결됨"[12d(B[0m[32melse[13d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"disk_a.img 이미 연결됨"[14d(B[0m[32mfi[16dif[39m(B[m [32m![39m(B[m losetup(B[0;1m[35m -a[39m(B[m [32m|[39m(B[m (B[0;1m[34mgrep[35m -q[39m(B[m disk_b.img[32m;[39m(B[m [32mthen[17;5H[39m(B[msudo losetup -fP disk_b.img[18;5H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"disk_b.img 연결됨"[19d(B[0m[32melse[20d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"disk_b.img 이미 연결됨"[21d(B[0m[32mfi[23dif[39m(B[m [32m![39m(B[m losetup(B[0;1m[35m -a[39m(B[m [32m|[39m(B[m (B[0;1m[34mgrep[35m -q[39m(B[m disk_c.img[32m;[39m(B[m [32mthen[24;5H[39m(B[msudo losetup -fP disk_c.img[25;5H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"disk_c.img 연결됨"[26d(B[0m[32melse[27d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"disk_c.img 이미 연결됨"[28d(B[0m[32mfi[30d[36m# 2. LVM 활성화[31d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"=== LVM 활성화 ==="[32d[39m(B[msudo vgchange -ay[34d[36m# docker LV 마운트[2d[39m(B[m[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[C[?25l[?12l[?25h[5d[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h~[?25l[?12l[?25h[?25l[?12l[?25h~[?25l[1;86H(B[0;7m*[149G(B[m[?12l[?25h[5;4H[1P[?25l[35d[K[5;4H/home/minseo/linux/week09 [32m||[39m(B[m [32m{[39m(B[m (B[0;1m[34mecho[39m(B[m (B[0;1m[33m"week09 폴더 없음"(B[0m[32m;[39m(B[m [32mexit[39m(B[m 1[32m;[39m(B[m [32m}[5;16H[39m(B[m[?12l[?25h[?25l[35d(B[0;7mSave modified buffer?                                                                                                                                 [36;1H Y(B[m Yes[K[37d(B[0;7m N(B[m No  [37;18H(B[0;7mC(B[m Cancel[K[35;23H[?12l[?25h[?25l[36d(B[0;7m^G(B[m Help[36;38H(B[0;7mM-D(B[m DOS Format[36;75H(B[0;7mM-A(B[m Append[36;112H(B[0;7mM-B(B[m Backup File[37d(B[0;7m^C(B[m Cancel[17G         [37;38H(B[0;7mM-M(B[m Mac Format[37;75H(B[0;7mM-P(B[m Prepend[37;112H(B[0;7m^T(B[m Browse[35d(B[0;7mFile Name to Write: setup_disks.sh(B[m[?12l[?25h[?25l[35;68H[1K (B[0;7m[ Writing... ](B[m[K[1;86H(B[0;7m [149G(B[m[35;67H(B[0;7m[ Wrote 54 lines ](B[m[J[37d[?12l[?25h[37;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week09[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week09[00m$ nano setup_disks.shsudo bash setup_disks.sh 
+[?2004l=== loop 디바이스 재연결 ===
+disk_a.img 연결됨
+disk_b.img 연결됨
+disk_c.img 연결됨
+=== LVM 활성화 ===
+  1 logical volume(s) in volume group "vg_home" now active
+  1 logical volume(s) in volume group "vg_mysql" now active
+  1 logical volume(s) in volume group "vg_docker" now active
+=== Docker LV 마운트 ===
+=== fstab 마운트 ===
+=== Docker 시작 ===
+
+=== 디스크 상태 ===
+/dev/loop1: [2096]:38485 (/home/minseo/linux/week09/disk_b.img)
+/dev/loop2: [2096]:47086 (/home/minseo/linux/week09/disk_c.img)
+/dev/loop0: [2096]:46360 (/home/minseo/linux/week09/disk_a.img)
+  LV        VG        Attr       LSize  Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  lv_docker vg_docker -wi-ao---- <3.00g                                                    
+  lv_home   vg_home   -wi-ao---- <2.00g                                                    
+  lv_mysql  vg_mysql  -wi-ao---- <1.49g                                                    
+/dev/mapper/vg_docker-lv_docker ext4     2.9G  2.7G  109M  97% /var/lib/docker
+/dev/mapper/vg_mysql-lv_mysql   ext4     1.5G  445M  934M  33% /mnt/mysql_data
+/dev/mapper/vg_home-lv_home     ext4     2.0G  121M  1.7G   7% /mnt/home_quota
+
+=== Docker 상태 ===
+CONTAINER ID   IMAGE                  COMMAND                  CREATED       STATUS                           PORTS                                                                                NAMES
+e681a608e322   mysql:8.0              "docker-entrypoint.s…"   3 hours ago   Up 1 second                      0.0.0.0:3306->3306/tcp, [::]:3306->3306/tcp, 33060/tcp                               mysql_lab
+a776e6341118   nginx:alpine           "/docker-entrypoint.…"   6 days ago    Up 1 second                      0.0.0.0:8080->80/tcp, [::]:8080->80/tcp, 0.0.0.0:8443->443/tcp, [::]:8443->443/tcp   wp_nginx
+e1048f672d21   wordpress:php8.2-fpm   "docker-entrypoint.s…"   6 days ago    Up 1 second                      9000/tcp                                                                             wp_app
+de1f72726d08   mysql:8.0              "docker-entrypoint.s…"   6 days ago    Up 1 second (health: starting)   3306/tcp, 33060/tcp                                                                  wp_db
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week09[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week09[00m$ losetup -a
+[?2004l/dev/loop1: []: (/home/minseo/linux/week09/disk_b.img)
+/dev/loop2: []: (/home/minseo/linux/week09/disk_c.img)
+/dev/loop0: []: (/home/minseo/linux/week09/disk_a.img)
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week09[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week09[00m$ sudo lvs
+[?2004l  LV        VG        Attr       LSize  Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  lv_docker vg_docker -wi-ao---- <3.00g                                                    
+  lv_home   vg_home   -wi-ao---- <2.00g                                                    
+  lv_mysql  vg_mysql  -wi-ao---- <1.49g                                                    
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week09[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week09[00m$ docker ps
+[?2004lCONTAINER ID   IMAGE                  COMMAND                  CREATED       STATUS                    PORTS                                                                                NAMES
+e681a608e322   mysql:8.0              "docker-entrypoint.s…"   3 hours ago   Up 14 seconds             0.0.0.0:3306->3306/tcp, [::]:3306->3306/tcp, 33060/tcp                               mysql_lab
+a776e6341118   nginx:alpine           "/docker-entrypoint.…"   6 days ago    Up 14 seconds             0.0.0.0:8080->80/tcp, [::]:8080->80/tcp, 0.0.0.0:8443->443/tcp, [::]:8443->443/tcp   wp_nginx
+e1048f672d21   wordpress:php8.2-fpm   "docker-entrypoint.s…"   6 days ago    Up 14 seconds             9000/tcp                                                                             wp_app
+de1f72726d08   mysql:8.0              "docker-entrypoint.s…"   6 days ago    Up 14 seconds (healthy)   3306/tcp, 33060/tcp                                                                  wp_db
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week09[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week09[00m$ df -h
+[?2004lFilesystem                       Size  Used Avail Use% Mounted on
+none                             3.8G     0  3.8G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none                             3.8G  4.0K  3.8G   1% /mnt/wsl
+drivers                          471G  464G  7.3G  99% /usr/lib/wsl/drivers
+/dev/sdd                        1007G   15G  942G   2% /
+none                             3.8G   88K  3.8G   1% /mnt/wslg
+none                             3.8G     0  3.8G   0% /usr/lib/wsl/lib
+rootfs                           3.8G  2.7M  3.8G   1% /init
+none                             3.8G  908K  3.8G   1% /run
+none                             3.8G     0  3.8G   0% /run/lock
+none                             3.8G     0  3.8G   0% /run/shm
+none                             3.8G   76K  3.8G   1% /mnt/wslg/versions.txt
+none                             3.8G   76K  3.8G   1% /mnt/wslg/doc
+C:\                              471G  464G  7.3G  99% /mnt/c
+D:\                              5.0G  3.4G  1.7G  68% /mnt/d
+E:\                              932G  619G  313G  67% /mnt/e
+/dev/mapper/vg_docker-lv_docker  2.9G  2.7G  109M  97% /var/lib/docker
+/dev/mapper/vg_mysql-lv_mysql    1.5G  457M  921M  34% /mnt/mysql_data
+/dev/mapper/vg_home-lv_home      2.0G  121M  1.7G   7% /mnt/home_quota
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week09[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week09[00m$ cd
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~[00m$ cd ~/linux/week10
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10[00m$ ls
+[?2004l2026_20220994_week10_log.txt  2026_20220994_week10_studylog.txt  t.txt  [0m[01;34mwordpress[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10[00m$ [7m_[27m_[7mdocker stop mysql_lab[27m
+[7mdocker rm mysql_lab[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10[00m$ [Cdocker stop mysql_lab
+docker rm mysql_lab
+[?2004lCommand '_docker' not found, did you mean:
+  command 'docker' from snap docker (29.3.1)
+  command 'kdocker' from deb kdocker (5.4-1)
+  command 'docker' from deb docker.io (29.1.3-0ubuntu3~24.04.2)
+  command 'docker' from deb podman-docker (4.9.3+ds1-1ubuntu0.2)
+See 'snap info <snapname>' for additional versions.
+Error response from daemon: cannot remove container "mysql_lab": container is running: stop the container before removing or force remove
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10[00m$ [7msudo rm -rf /mnt/mysql_data/*[27msudo rm -rf /mnt/mysql_data/*
+[?2004l[sudo] password for minseo: 
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10[00m$ [7mls -ld /mnt/mysql_data/[27mls -ld /mnt/mysql_data/
+[?2004ldrwxr-xr-x 2 999 root 4096 Jun 12 08:16 [0m[01;34m/mnt/mysql_data/[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10[00m$ [7mdf -hT /mnt/mysql_data[27mdf -hT /mnt/mysql_data
+[?2004lFilesystem                    Type  Size  Used Avail Use% Mounted on
+/dev/mapper/vg_mysql-lv_mysql ext4  1.5G  100M  1.3G   8% /mnt/mysql_data
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10[00m$ [7mcd ~/linux/week10/wordpress[27mcd ~/linux/week10/wordpress
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ [7mdocker compose -f compose.db.yaml up -d[27mdocker compose -f compose.db.yaml up -d
+[?2004l[33mWARN[0m[0000] Found orphan containers ([wp_nginx wp_app]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up. 
+[?25l[0G[+] up 1/1
+ [32m✔[0m Container wp_db [32mRunning[0m                                                                                                                        [34m0.0s[0m
+[?25h[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ [7mdocker compose -f compose.db.yaml ps[27mdocker compose -f compose.db.yaml ps
+[?2004lNAME       IMAGE                  COMMAND                  SERVICE     CREATED      STATUS                    PORTS
+wp_app     wordpress:php8.2-fpm   "docker-entrypoint.s…"   wordpress   6 days ago   Up 32 minutes             9000/tcp
+wp_db      mysql:8.0              "docker-entrypoint.s…"   db          6 days ago   Up 32 minutes (healthy)   3306/tcp, 33060/tcp
+wp_nginx   nginx:alpine           "/docker-entrypoint.…"   nginx       6 days ago   Up 32 minutes             0.0.0.0:8080->80/tcp, [::]:8080->80/tcp, 0.0.0.0:8443->443/tcp, [::]:8443->443/tcp
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ [7mdocker exec -it wp_db mysql -u wpuser -pwppass_2026! -e "SHOW DATABASES;"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec -it wp_db mysql -u wpuser -pwppass_2026! -e "SHOW DATABASES;"
+[?2004lmysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'wpuser'@'localhost' (using password: YES)
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ [7mcat .env[27mcat .env
+[?2004l# MySQL 설정
+MYSQL_ROOT_PASSWORD=rootpass_2026!
+MYSQL_DATABASE=wordpress
+MYSQL_USER=wpuser
+MYSQL_PASSWORD=wppass_2026!
+# WordPress 설정
+WORDPRESS_TABLE_PREFIX=wp_
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ [7mdocker compose -f compose.db.yaml down[27mdocker compose -f compose.db.yaml down
+[?2004l[?25l[0G[+] down 0/1
+ [33m⠋[0m Container wp_db Stopping                                                                                                                       [34m0.0s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠙[0m Container wp_db Stopping                                                                                                                       [34m0.2s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠹[0m Container wp_db Stopping                                                                                                                       [34m0.3s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠸[0m Container wp_db Stopping                                                                                                                       [34m0.3s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠼[0m Container wp_db Stopping                                                                                                                       [34m0.5s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠴[0m Container wp_db Stopping                                                                                                                       [34m0.5s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠦[0m Container wp_db Stopping                                                                                                                       [34m0.7s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠧[0m Container wp_db Stopping                                                                                                                       [34m0.7s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠇[0m Container wp_db Stopping                                                                                                                       [34m0.8s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠏[0m Container wp_db Stopping                                                                                                                       [34m1.0s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠋[0m Container wp_db Stopping                                                                                                                       [34m1.0s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠙[0m Container wp_db Stopping                                                                                                                       [34m1.2s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠹[0m Container wp_db Stopping                                                                                                                       [34m1.2s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠸[0m Container wp_db Stopping                                                                                                                       [34m1.4s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠼[0m Container wp_db Stopping                                                                                                                       [34m1.4s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠴[0m Container wp_db Stopping                                                                                                                       [34m1.6s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠦[0m Container wp_db Stopping                                                                                                                       [34m1.6s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠧[0m Container wp_db Stopping                                                                                                                       [34m1.8s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠇[0m Container wp_db Removing                                                                                                                       [34m1.8s[0m
+[?25h[?25l[2A[0G[+] down 2/2
+ [32m✔[0m Container wp_db          [32mRemoved[0m                                                                                                               [34m1.9s[0m
+ [33m[1m![0m Network wordpress_wp_net [33m[1mResource is still in use[0m                                                                                              [34m0.0s[0m
+[?25h[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ [7msudo rm -rf /mnt/mysql_data/*[27msudo rm -rf /mnt/mysql_data/*
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ [7mdocker compose -f compose.db.yaml up -d[27mdocker compose -f compose.db.yaml up -d
+[?2004l[33mWARN[0m[0000] Found orphan containers ([wp_nginx wp_app]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up. 
+[?25l[0G[+] up 0/1
+ [33m⠋[0m Container wp_db Creating                                                                                                                       [34m0.0s[0m
+[?25h[?25l[2A[0G[+] up 1/1
+ [32m✔[0m Container wp_db [32mCreated[0m                                                                                                                        [34m0.1s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠙[0m Container wp_db Starting                                                                                                                       [34m0.2s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠹[0m Container wp_db Starting                                                                                                                       [34m0.3s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠸[0m Container wp_db Starting                                                                                                                       [34m0.4s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠼[0m Container wp_db Starting                                                                                                                       [34m0.5s[0m
+[?25h[?25l[2A[0G[+] up 1/1
+ [32m✔[0m Container wp_db [32mStarted[0m                                                                                                                        [34m0.6s[0m
+[?25h[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ [7mdocker exec -it wp_db mysql -u wpuser -pwppass_2026! -e "SHOW DATABASES;"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec -it wp_db mysql -u wpuser -pwppass_2026! -e "SHOW DATABASES;"
+[?2004lmysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ [7mdocker exec -it wp_db mysql -u wpuser -pwppass_2026! -e "SHOW DATABASES;"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec -it wp_db mysql -u wpuser -pwppass_2026! -e "SHOW DATABASES;"
+[?2004lmysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ [7mdocker compose -f compose.db.yaml ps[27mdocker compose -f compose.db.yaml ps
+[?2004lNAME       IMAGE                  COMMAND                  SERVICE     CREATED          STATUS                    PORTS
+wp_app     wordpress:php8.2-fpm   "docker-entrypoint.s…"   wordpress   6 days ago       Up 33 minutes             9000/tcp
+wp_db      mysql:8.0              "docker-entrypoint.s…"   db          30 seconds ago   Up 29 seconds (healthy)   3306/tcp, 33060/tcp
+wp_nginx   nginx:alpine           "/docker-entrypoint.…"   nginx       6 days ago       Up 33 minutes             0.0.0.0:8080->80/tcp, [::]:8080->80/tcp, 0.0.0.0:8443->443/tcp, [::]:8443->443/tcp
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ docker compose -f compose.db.yaml psexec -it wp_db mysql -u wpuser -pwppass_2026! -e "SHOW DATABASES;"
+[?2004lmysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ [7mdocker exec -it wp_db mysql -h 127.0.0.1 -u wpuser -pwppass_2026! -e "SHOW DATABASES;"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec -it wp_db mysql -h 127.0.0.1 -u wpuser -pwppass_2026! -e "SHOW DATABASES;"
+[?2004lmysql: [Warning] Using a password on the command line interface can be insecure.
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| performance_schema |
+| wordpress          |
++--------------------+
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ [7mdocker compose -f compose.db.yaml -f compose.wordpress.yaml up -d[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker compose -f compose.db.yaml -f compose.wordpress.yaml up -d
+[?2004l
+[33mWARN[0m[0000] Found orphan containers ([wp_nginx]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up. 
+[?25l[0G[+] up 2/2
+ [32m✔[0m Container wp_db  [32mRunning[0m                                                                                                                       [34m0.0s[0m
+ [32m✔[0m Container wp_app [32mRunning[0m                                                                                                                       [34m0.0s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [33m⠙[0m Container wp_db  Waiting                                                                                                                       [34m0.1s[0m
+ [32m✔[0m Container wp_app [32mRunning[0m                                                                                                                       [34m0.0s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [33m⠹[0m Container wp_db  Waiting                                                                                                                       [34m0.2s[0m
+ [32m✔[0m Container wp_app [32mRunning[0m                                                                                                                       [34m0.0s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [33m⠸[0m Container wp_db  Waiting                                                                                                                       [34m0.3s[0m
+ [32m✔[0m Container wp_app [32mRunning[0m                                                                                                                       [34m0.0s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [33m⠼[0m Container wp_db  Waiting                                                                                                                       [34m0.4s[0m
+ [32m✔[0m Container wp_app [32mRunning[0m                                                                                                                       [34m0.0s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [33m⠴[0m Container wp_db  Waiting                                                                                                                       [34m0.5s[0m
+ [32m✔[0m Container wp_app [32mRunning[0m                                                                                                                       [34m0.0s[0m
+[?25h[?25l[3A[0G[+] up 2/2
+ [32m✔[0m Container wp_db  [32mHealthy[0m                                                                                                                       [34m0.6s[0m
+ [32m✔[0m Container wp_app [32mRunning[0m                                                                                                                       [34m0.0s[0m
+[?25h[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ 
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ [7mdocker exec wp_app getent hosts db[27mdocker exec wp_app getent hosts db
+[?2004l172.18.0.3      db
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ [7mdocker exec wp_app bash -c "cat < /dev/tcp/db/3306" 2>/dev/null && echo "연결 성공" || echo "연결 실 [27m[K[7m패[27m[7m"[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ docker exec wp_app bash -c "cat < /dev/tcp/db/3306" 2>/dev/null && echo "연결 성공" || echo "연결 실 [K패"
+[?2004lJ   
+8.0.46 M   y N?*4m ��� ��          eGz@G!de caching_sha2_password 2  ��#08S01Got timeout reading communication packets연결 성공
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ [7mdocker compose -f compose.db.yaml -f compose.wordpress.yaml down[27m
+[7mdocker compose -f compose.db.yaml -f compose.wordpress.yaml -f compose.nginx.yaml up -d[27m[Adocker compose -f compose.db.yaml -f compose.wordpress.yaml down
+docker compose -f compose.db.yaml -f compose.wordpress.yaml -f compose.nginx.yaml up -d
+[?2004l[?25l[0G[+] down 0/1
+ [33m⠋[0m Container wp_app Stopping                                                                                                                      [34m0.0s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠙[0m Container wp_app Stopping                                                                                                                      [34m0.1s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠹[0m Container wp_app Stopping                                                                                                                      [34m0.2s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠸[0m Container wp_app Stopping                                                                                                                      [34m0.3s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠼[0m Container wp_app Stopping                                                                                                                      [34m0.4s[0m
+[?25h[?25l[2A[0G[+] down 1/2
+ [32m✔[0m Container wp_app [32mRemoved[0m                                                                                                                       [34m0.5s[0m
+ [33m⠋[0m Container wp_db  Stopping                                                                                                                      [34m0.0s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container wp_app [32mRemoved[0m                                                                                                                       [34m0.5s[0m
+ [33m⠙[0m Container wp_db  Stopping                                                                                                                      [34m0.1s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container wp_app [32mRemoved[0m                                                                                                                       [34m0.5s[0m
+ [33m⠹[0m Container wp_db  Stopping                                                                                                                      [34m0.2s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container wp_app [32mRemoved[0m                                                                                                                       [34m0.5s[0m
+ [33m⠸[0m Container wp_db  Stopping                                                                                                                      [34m0.3s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container wp_app [32mRemoved[0m                                                                                                                       [34m0.5s[0m
+ [33m⠼[0m Container wp_db  Stopping                                                                                                                      [34m0.4s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container wp_app [32mRemoved[0m                                                                                                                       [34m0.5s[0m
+ [33m⠴[0m Container wp_db  Stopping                                                                                                                      [34m0.5s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container wp_app [32mRemoved[0m                                                                                                                       [34m0.5s[0m
+ [33m⠦[0m Container wp_db  Stopping                                                                                                                      [34m0.6s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container wp_app [32mRemoved[0m                                                                                                                       [34m0.5s[0m
+ [33m⠧[0m Container wp_db  Stopping                                                                                                                      [34m0.7s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container wp_app [32mRemoved[0m                                                                                                                       [34m0.5s[0m
+ [33m⠇[0m Container wp_db  Stopping                                                                                                                      [34m0.8s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container wp_app [32mRemoved[0m                                                                                                                       [34m0.5s[0m
+ [33m⠏[0m Container wp_db  Stopping                                                                                                                      [34m0.9s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container wp_app [32mRemoved[0m                                                                                                                       [34m0.5s[0m
+ [33m⠋[0m Container wp_db  Stopping                                                                                                                      [34m1.0s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container wp_app [32mRemoved[0m                                                                                                                       [34m0.5s[0m
+ [33m⠙[0m Container wp_db  Stopping                                                                                                                      [34m1.1s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container wp_app [32mRemoved[0m                                                                                                                       [34m0.5s[0m
+ [33m⠹[0m Container wp_db  Stopping                                                                                                                      [34m1.2s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container wp_app [32mRemoved[0m                                                                                                                       [34m0.5s[0m
+ [33m⠸[0m Container wp_db  Stopping                                                                                                                      [34m1.3s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container wp_app [32mRemoved[0m                                                                                                                       [34m0.5s[0m
+ [33m⠼[0m Container wp_db  Stopping                                                                                                                      [34m1.4s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container wp_app [32mRemoved[0m                                                                                                                       [34m0.5s[0m
+ [33m⠴[0m Container wp_db  Stopping                                                                                                                      [34m1.5s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container wp_app [32mRemoved[0m                                                                                                                       [34m0.5s[0m
+ [33m⠦[0m Container wp_db  Stopping                                                                                                                      [34m1.6s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container wp_app [32mRemoved[0m                                                                                                                       [34m0.5s[0m
+ [33m⠧[0m Container wp_db  Removing                                                                                                                      [34m1.7s[0m
+[?25h[?25l[3A[0G[+] down 3/3
+ [32m✔[0m Container wp_app         [32mRemoved[0m                                                                                                               [34m0.5s[0m
+ [32m✔[0m Container wp_db          [32mRemoved[0m                                                                                                               [34m1.8s[0m
+ [33m[1m![0m Network wordpress_wp_net [33m[1mResource is still in use[0m                                                                                              [34m0.0s[0m
+[?25h[?25l[0G[+] up 0/1
+ [33m⠋[0m Container wp_db Creating                                                                                                                       [34m0.0s[0m
+[?25h[?25l[2A[0G[+] up 1/2
+ [32m✔[0m Container wp_db  [32mCreated[0m                                                                                                                       [34m0.1s[0m
+ [33m⠋[0m Container wp_app Creating                                                                                                                      [34m0.0s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container wp_db  [32mCreated[0m                                                                                                                       [34m0.1s[0m
+ [33m⠙[0m Container wp_app Creating                                                                                                                      [34m0.1s[0m
+[?25h[?25l[3A[0G[+] up 2/3
+ [33m⠙[0m Container wp_db    Starting                                                                                                                    [34m0.3s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠹[0m Container wp_db    Starting                                                                                                                    [34m0.4s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠸[0m Container wp_db    Starting                                                                                                                    [34m0.5s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠼[0m Container wp_db    Starting                                                                                                                    [34m0.6s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠴[0m Container wp_db    Waiting                                                                                                                     [34m0.7s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠦[0m Container wp_db    Waiting                                                                                                                     [34m0.8s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠧[0m Container wp_db    Waiting                                                                                                                     [34m0.9s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠇[0m Container wp_db    Waiting                                                                                                                     [34m1.0s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠏[0m Container wp_db    Waiting                                                                                                                     [34m1.1s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠋[0m Container wp_db    Waiting                                                                                                                     [34m1.2s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠙[0m Container wp_db    Waiting                                                                                                                     [34m1.3s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠹[0m Container wp_db    Waiting                                                                                                                     [34m1.4s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠸[0m Container wp_db    Waiting                                                                                                                     [34m1.5s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠼[0m Container wp_db    Waiting                                                                                                                     [34m1.6s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠴[0m Container wp_db    Waiting                                                                                                                     [34m1.7s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠦[0m Container wp_db    Waiting                                                                                                                     [34m1.8s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠧[0m Container wp_db    Waiting                                                                                                                     [34m1.9s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠇[0m Container wp_db    Waiting                                                                                                                     [34m2.0s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠏[0m Container wp_db    Waiting                                                                                                                     [34m2.1s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠋[0m Container wp_db    Waiting                                                                                                                     [34m2.2s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠙[0m Container wp_db    Waiting                                                                                                                     [34m2.3s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠹[0m Container wp_db    Waiting                                                                                                                     [34m2.4s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠸[0m Container wp_db    Waiting                                                                                                                     [34m2.5s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠼[0m Container wp_db    Waiting                                                                                                                     [34m2.6s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠴[0m Container wp_db    Waiting                                                                                                                     [34m2.7s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠦[0m Container wp_db    Waiting                                                                                                                     [34m2.8s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠧[0m Container wp_db    Waiting                                                                                                                     [34m2.9s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠇[0m Container wp_db    Waiting                                                                                                                     [34m3.0s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠏[0m Container wp_db    Waiting                                                                                                                     [34m3.1s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠋[0m Container wp_db    Waiting                                                                                                                     [34m3.2s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠙[0m Container wp_db    Waiting                                                                                                                     [34m3.3s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠹[0m Container wp_db    Waiting                                                                                                                     [34m3.4s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠸[0m Container wp_db    Waiting                                                                                                                     [34m3.5s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠼[0m Container wp_db    Waiting                                                                                                                     [34m3.6s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠴[0m Container wp_db    Waiting                                                                                                                     [34m3.7s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠦[0m Container wp_db    Waiting                                                                                                                     [34m3.8s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠧[0m Container wp_db    Waiting                                                                                                                     [34m3.9s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠇[0m Container wp_db    Waiting                                                                                                                     [34m4.0s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠏[0m Container wp_db    Waiting                                                                                                                     [34m4.1s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠋[0m Container wp_db    Waiting                                                                                                                     [34m4.2s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠙[0m Container wp_db    Waiting                                                                                                                     [34m4.3s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠹[0m Container wp_db    Waiting                                                                                                                     [34m4.4s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠸[0m Container wp_db    Waiting                                                                                                                     [34m4.5s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠼[0m Container wp_db    Waiting                                                                                                                     [34m4.6s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠴[0m Container wp_db    Waiting                                                                                                                     [34m4.7s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠦[0m Container wp_db    Waiting                                                                                                                     [34m4.8s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠧[0m Container wp_db    Waiting                                                                                                                     [34m4.9s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠇[0m Container wp_db    Waiting                                                                                                                     [34m5.0s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠏[0m Container wp_db    Waiting                                                                                                                     [34m5.1s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠋[0m Container wp_db    Waiting                                                                                                                     [34m5.2s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠙[0m Container wp_db    Waiting                                                                                                                     [34m5.3s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠹[0m Container wp_db    Waiting                                                                                                                     [34m5.4s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠸[0m Container wp_db    Waiting                                                                                                                     [34m5.5s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠼[0m Container wp_db    Waiting                                                                                                                     [34m5.6s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠴[0m Container wp_db    Waiting                                                                                                                     [34m5.7s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠦[0m Container wp_db    Waiting                                                                                                                     [34m5.8s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠧[0m Container wp_db    Waiting                                                                                                                     [34m5.9s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠇[0m Container wp_db    Waiting                                                                                                                     [34m6.0s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [33m⠏[0m Container wp_db    Waiting                                                                                                                     [34m6.1s[0m
+ [32m✔[0m Container wp_app   [32mCreated[0m                                                                                                                     [34m0.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Container wp_db    [32mHealthy[0m                                                                                                                     [34m6.2s[0m
+ [33m⠹[0m Container wp_app   Starting                                                                                                                    [34m6.1s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Container wp_db    [32mHealthy[0m                                                                                                                     [34m6.2s[0m
+ [33m⠸[0m Container wp_app   Starting                                                                                                                    [34m6.2s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Container wp_db    [32mHealthy[0m                                                                                                                     [34m6.2s[0m
+ [33m⠼[0m Container wp_app   Starting                                                                                                                    [34m6.3s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Container wp_db    [32mHealthy[0m                                                                                                                     [34m6.2s[0m
+ [33m⠴[0m Container wp_app   Starting                                                                                                                    [34m6.4s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 3/3
+ [32m✔[0m Container wp_db    [32mHealthy[0m                                                                                                                     [34m6.2s[0m
+ [32m✔[0m Container wp_app   [32mStarted[0m                                                                                                                     [34m6.5s[0m
+ [32m✔[0m Container wp_nginx [32mRunning[0m                                                                                                                     [34m0.0s[0m
+[?25h[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ [7mdocker compose -f compose.db.yaml -f compose.wordpress.yaml -f compose.nginx.yaml ps[27m
+
+[7mcurl -s -o /dev/null -w "%{http_code}" http://localhost:8080[27m[A[Adocker compose -f compose.db.yaml -f compose.wordpress.yaml -f compose.nginx.yaml ps
+
+curl -s -o /dev/null -w "%{http_code}" http://localhost:8080
+[?2004lNAME       IMAGE                  COMMAND                  SERVICE     CREATED          STATUS                    PORTS
+wp_app     wordpress:php8.2-fpm   "docker-entrypoint.s…"   wordpress   37 seconds ago   Up 31 seconds             9000/tcp
+wp_db      mysql:8.0              "docker-entrypoint.s…"   db          38 seconds ago   Up 37 seconds (healthy)   3306/tcp, 33060/tcp
+wp_nginx   nginx:alpine           "/docker-entrypoint.…"   nginx       6 days ago       Up 50 minutes             0.0.0.0:8080->80/tcp, [::]:8080->80/tcp, 0.0.0.0:8443->443/tcp, [::]:8443->443/tcp
+301[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ [7mnano ~/linux/week10/wordpress/README.md[27mnano ~/linux/week10/wordpress/README.md
+[?2004l[?2004h[?1049h[22;0;0t[1;37r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[35;70H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2                                         /home/minseo/linux/week10/wordpress/README.md                                                  [1;149H(B[m[36d(B[0;7m^G(B[m Help[36;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[36;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[36;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket[37d(B[0;7m^X(B[m Exit[37;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[37;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[37;113H(B[0;7mM-6(B[m Copy[37;129H(B[0;7m^Q(B[m Where Was[2d[?12l[?25h[?25l[35d[J[37d[?12l[?25h[37;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ nano ~/linux/week10/wordpress/README.md[1P/README.md[1P/README.md[1P/README.md[1P/README.md[1P/README.md[1P/README.md[1P/README.md[1P/README.md[1P/README.md[1PREADME.md[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h[?1049h[22;0;0t[1;37r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[35;70H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2                                              /home/minseo/linux/week10/README.md                                                       [1;149H(B[m[36d(B[0;7m^G(B[m Help[36;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[36;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[36;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket[37d(B[0;7m^X(B[m Exit[37;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[37;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[37;113H(B[0;7mM-6(B[m Copy[37;129H(B[0;7m^Q(B[m Where Was[2d[?12l[?25h[?25l[35d[K[1;97H(B[0;7m*[149G(B[m[2d(B[0;1m[33m# 10주차 - 웹 서버 구축운영[4d## 서버 트렌드 이해[6d### 웹 서버 시장 현황[7d[39m(B[mNginx (약 34%) / Apache(약 28%) 역전은 2021년 경.[9d(B[0;1m[35m- [32m**Apache**[39m(B[m : 프로세스/스레드 기반. 연결이 들어올때마다 프로세스(스레드)를 하나씩 만들어서 처리. (B[0;1m[32m**연결 1개 = 프로세스 1개 점유**[39m(B[m. 동시 접속자가 많[(B[0;7m>[10;1H(B[0;1m[35m- [32m**Nginx**[39m(B[m : 이벤트 기반 비동기 방식. 소수의 worker 프로세스가 수만 개의 연결을 동시에 처리. 연결마다 프로세스를 새로 만들지 않으니까 메모리 점유 비(B[0;7m>[12;1H(B[0;1m[32m**왜 Nginx가 역전했는가?**[13d[39m(B[mCDN이랑 리버스 프록시 수요가 급증하면서 수십만 개의 동시 연결을 처리해야 하는 상황이 일반화. 때문에 한계있는 Apache 대신 Nginx가 굿.[15d(B[0;1m[32m**최근에 Apache도 따라잡지 않았나?**[16d[39m(B[meventMPM을 통해 비동기 처리가 가능해졌지만, 내장 모듈들이 메모리를 많이 먹어서 여전히 메모리 사용량이 Nginx 대비 3~5배 수준.[17dNginx는 PHP-FPM이나 upstream 처리를 외부 서버에 위임하는 방식이라 자기 자신은 가볍게 유지.[19d(B[0;1m[33m---[21d## 웹 서버 구축 준비[23d### 프로젝트 폴더 구조[39m(B[m[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[23;23H[?25l[?12l[?25h[24d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l~/linux/week10/[25d└── wordpress/[26d├── compose.yaml[27d├── .env[28d├── nginx/[29d│   └── default.conf[30d└── logs/[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[7;35r[35;1H[4S[1;37r[2;1H(B[0;1m[36mdocker exec wp_app bash -c "cat (B[0m[36m< /dev/tcp/db/3306" 2>(B[0;1m[36m/dev/null && echo "연결 성공" || echo "연결 실패"[3d```[4d[39m(B[m✅ DNS 해석 + 3306 포트 연결 성공하면 통과[6;5H(B[0;1m[33mSTEP 3 - 전체 실행[7d[36m```bash[8ddocker compose -f compose.db.yaml -f compose.wordpress.yaml down[9ddocker compose -f compose.db.yaml -f compose.wordpress.yaml -f compose.nginx.yaml up -d[39m(B[m[K[10d(B[0;1m[36mdocker compose -f compose.db.yaml -f compose.wordpress.yaml -f compose.nginx.yaml ps[11dcurl -s -o /dev/null -w "%{http_code}" http://localhost:8080[12d```[39m(B[m[K[13d✅ 301 또는 302 뜨면 통과[K[17;4H(B[0;1m[33mWordPress 초기 설정[18d[36m`http://localhost:8080`[39m(B[m 접속 → 설치 마법사 진행 → 완료![19d[K[20d[K[21d[K[22d[K[23d[K[24d[K[25d[K[26d[K[18;56H[?12l[?25h[?25l[35d(B[0;7mSave modified buffer?                                                                                                                                 [36;1H Y(B[m Yes[K[37d(B[0;7m N(B[m No  [37;18H(B[0;7mC(B[m Cancel[K[35;23H[?12l[?25h[?25l[36d(B[0;7m^G(B[m Help[36;38H(B[0;7mM-D(B[m DOS Format[36;75H(B[0;7mM-A(B[m Append[36;112H(B[0;7mM-B(B[m Backup File[37d(B[0;7m^C(B[m Cancel[17G         [37;38H(B[0;7mM-M(B[m Mac Format[37;75H(B[0;7mM-P(B[m Prepend[37;112H(B[0;7m^T(B[m Browse[35d(B[0;7mFile Name to Write: /home/minseo/linux/week10/README.md(B[m[?12l[?25h[?25l[35;68H[1K (B[0;7m[ Writing... ](B[m[K[1;97H(B[0;7m [149G(B[m[35;66H(B[0;7m[ Wrote 136 lines ](B[m[J[37d[?12l[?25h[37;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10/wordpress[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10/wordpress[00m$ cd ..
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10[00m$ ls
+[?2004l2026_20220994_week10_log.txt  2026_20220994_week10_studylog.txt  README.md  t.txt  [0m[01;34mwordpress[0m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10[00m$ git add .
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week10[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week10[00m$ exit
+[?2004lexit
+
+Script done on 2026-06-12 08:44:50+09:00 [COMMAND_EXIT_CODE="0"]
