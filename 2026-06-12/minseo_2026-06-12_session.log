@@ -1,0 +1,50 @@
+Script started on 2026-06-12 00:26:56+09:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="28"]
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-12[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-12[00m$ git commit[K[K[K[K[K[Kadd .
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-12[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-12[00m$ dit status
+[?2004lCommand 'dit' not found, but there are 22 similar ones.
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-12[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-12[00m$ dit [K[K[Kgit st[K[K[K[K[K[K[Kgit stats[Kus
+[?2004lOn branch main
+Your branch and 'origin/main' have diverged,
+and have 4 and 1 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   minseo_2026-06-12_session.log[m
+	[32mnew file:   minseo_2026-06-12_session.tm[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   ../2026-06-11/minseo_2026-06-11_session.log[m
+	[31mmodified:   ../2026-06-11/minseo_2026-06-11_session.tm[m
+	[31mmodified:   minseo_2026-06-12_session.log[m
+	[31mmodified:   minseo_2026-06-12_session.tm[m
+
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-12[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-12[00m$ git add .
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-12[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-12[00m$ git status
+[?2004lOn branch main
+Your branch and 'origin/main' have diverged,
+and have 4 and 1 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   minseo_2026-06-12_session.log[m
+	[32mnew file:   minseo_2026-06-12_session.tm[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   ../2026-06-11/minseo_2026-06-11_session.log[m
+	[31mmodified:   ../2026-06-11/minseo_2026-06-11_session.tm[m
+	[31mmodified:   minseo_2026-06-12_session.log[m
+	[31mmodified:   minseo_2026-06-12_session.tm[m
+
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-12[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-12[00m$ exit
+[?2004lexit
+
+Script done on 2026-06-12 00:27:38+09:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-06-12 00:27:46+09:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="28"]
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-12[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-12[00m$ git add .
+[?2004l
