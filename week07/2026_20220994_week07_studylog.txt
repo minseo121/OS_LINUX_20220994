@@ -10386,4 +10386,40 @@ Change: 2026-06-12 00:19:23.758881964 +0900
  Birth: 2026-06-12 00:19:23.726950044 +0900
 [?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week07[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week07[00m$ nano README.md
 [?2004l[?2004h[?1049h[22;0;0t[1;28r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[26;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2                                            README.md                                                     [1;119H(B[m[27d(B[0;7m^G(B[m Help[27;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[27;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[28d(B[0;7m^X(B[m Exit[28;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[26d[K[1;69H(B[0;7m*[119G(B[m[2d(B[0;1m[36mdd if=/dev/zero of=large.bin bs=1M count=10[3dstat tiny.bin small.bin medium.bin large.bin[4d```[6d[39m(B[m| 파일 | 실제 크기 | Blocks(섹터수) | 실제 점유 크기(Blocks×512) | 낭비 크기 |[7d|------|----------|----------------|---------------------------|----------|[8d| tiny.bin | 1 KB | 8 | 4 KB | (B[0;1m[32m**3 KB**[39m(B[m |[9d| small.bin | 40 KB | 80 | 40 KB | 0 KB |[10d| medium.bin | 1 MB | 2048 | 1024 KB | 0 |[11d| large.bin | 10 MB | 20480 | 10240 KB | 0 |[13d[35m> tiny.bin만 낭비 발생! 1KB짜리 파일인데 블록(4096bytes)이 최소 단위라서 4KB를 통째로 차지함.[14d> 40KB 이상부터는 블록에 딱 맞게 채워지니까 낭비 없음.[39m(B[m[?12l[?25h[?25l[26d(B[0;7mSave modified buffer?                                                                                                   [27;1H Y(B[m Yes[K[28d(B[0;7m N(B[m No  [28;16H (B[0;7m^C(B[m Cancel[K[26;23H[?12l[?25h[?25l[27d(B[0;7m^G(B[m Help[27;31H(B[0;7mM-D(B[m DOS Format[27;61H(B[0;7mM-A(B[m Append[27;91H(B[0;7mM-B(B[m Backup File[28d(B[0;7m^C(B[m Cancel[17G[14X[28;31H(B[0;7mM-M(B[m Mac Format[28;61H(B[0;7mM-P(B[m Prepend[28;91H(B[0;7m^T(B[m Browse[26d(B[0;7mFile Name to Write: README.md(B[m[?12l[?25h[?25l[26;53H[1K (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [119G(B[m[26;51H(B[0;7m[ Wrote 248 lines ](B[m[J[28d[?12l[?25h[28;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week07[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week07[00m$ git add .
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week07[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week07[00m$ git commit -m ""7"w"n"c"k" "[1P"[1P"[1P"[1P"[1P"주"차 "복"습 "완"료"
+[?2004l[main d86c3c7] 7주차 복습 완료
+ 11 files changed, 11763 insertions(+), 881 deletions(-)
+ create mode 100644 week07/2026_20220994_week07_studylog.txt
+ create mode 100644 week07/README.md
+ create mode 100644 week07/hard.txt
+ create mode 100644 week07/large.bin
+ create mode 100644 week07/medium.bin
+ create mode 100644 week07/small.bin
+ create mode 120000 week07/sym.txt
+ create mode 100644 week07/test3/hardlink
+ create mode 120000 week07/test3/symlink
+ create mode 100644 week07/tiny.bin
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week07[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week07[00m$ git push origin main
+[?2004lTo https://github.com/minseo121/OS_LINUX_20220994.git
+ [31m! [rejected]       [m main -> main (fetch first)
+[31merror: failed to push some refs to 'https://github.com/minseo121/OS_LINUX_20220994.git'
+[m[33mhint: Updates were rejected because the remote contains work that you do not[m
+[33mhint: have locally. This is usually caused by another repository pushing to[m
+[33mhint: the same ref. If you want to integrate the remote changes, use[m
+[33mhint: 'git pull' before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week07[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week07[00m$ [7mgit pull origin main --rebase[27m
+[7mgit push origin main[27m[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week07[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week07[00m$ git pull origin main --rebase
+git push origin main
+[?2004lerror: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+To https://github.com/minseo121/OS_LINUX_20220994.git
+ [31m! [rejected]       [m main -> main (fetch first)
+[31merror: failed to push some refs to 'https://github.com/minseo121/OS_LINUX_20220994.git'
+[m[33mhint: Updates were rejected because the remote contains work that you do not[m
+[33mhint: have locally. This is usually caused by another repository pushing to[m
+[33mhint: the same ref. If you want to integrate the remote changes, use[m
+[33mhint: 'git pull' before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week07[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week07[00m$ [7mgit add .[27mgit add .
 [?2004l
