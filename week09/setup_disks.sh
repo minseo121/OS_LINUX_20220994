@@ -19,9 +19,20 @@ else
     echo "disk_b.img 이미 연결됨"
 fi
 
+if ! losetup -a | grep -q disk_c.img; then
+    sudo losetup -fP disk_c.img
+    echo "disk_c.img 연결됨"
+else
+    echo "disk_c.img 이미 연결됨"
+fi
+
 # 2. LVM 활성화
 echo "=== LVM 활성화 ==="
 sudo vgchange -ay
+
+# docker LV 마운트
+echo "=== Docker LV 마운트 ==="
+sudo mount /dev/vg_docker/lv_docker /var/lib/docker
 
 # 3. fstab 마운트 (/mnt/mysql_data)
 echo "=== fstab 마운트 ==="
