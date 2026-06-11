@@ -10422,4 +10422,49 @@ To https://github.com/minseo121/OS_LINUX_20220994.git
 [33mhint: 'git pull' before pushing again.[m
 [33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
 [?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week07[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week07[00m$ [7mgit add .[27mgit add .
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week07[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week07[00m$ [7mgit commit -m "week07 완료"[27mgit commit -m "week07 완료"
+[?2004l[main f1c7eee] week07 완료
+ 2 files changed, 108 insertions(+)
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week07[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week07[00m$ [7mgit pull origin main --rebase[27mgit pull origin main --rebase
+[?2004lerror: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week07[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week07[00m$ ^?gi[K[K[Kgit add .
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week07[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week07[00m$ git add .pull origin main --rebase
+[?2004lerror: cannot pull with rebase: You have unstaged changes.
+error: additionally, your index contains uncommitted changes.
+error: Please commit or stash them.
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week07[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week07[00m$ gi [Kt push origin main
+[?2004lTo https://github.com/minseo121/OS_LINUX_20220994.git
+ [31m! [rejected]       [m main -> main (fetch first)
+[31merror: failed to push some refs to 'https://github.com/minseo121/OS_LINUX_20220994.git'
+[m[33mhint: Updates were rejected because the remote contains work that you do not[m
+[33mhint: have locally. This is usually caused by another repository pushing to[m
+[33mhint: the same ref. If you want to integrate the remote changes, use[m
+[33mhint: 'git pull' before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week07[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week07[00m$ git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   2026_20220994_week07_studylog.txt[m
+	[32mmodified:   t.txt[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   ../2026-06-11/minseo_2026-06-11_session.log[m
+	[31mmodified:   ../2026-06-11/minseo_2026-06-11_session.tm[m
+	[31mmodified:   2026_20220994_week07_studylog.txt[m
+	[31mmodified:   t.txt[m
+
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/week07[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week07[00m$ [7mgit add .[27m
+[7mgit commit -m "week07 log 추가"[27m
+[7mgit pull origin main[27m
+[7mgit push origin main[27m[A[A[A]0;minseo@DESKTOP-2HHEQA0: ~/linux/week07[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/week07[00m$ git add .
+git commit -m "week07 log 추가"
+git pull origin main
+git push origin main
 [?2004l
