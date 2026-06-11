@@ -133,7 +133,7 @@ docker exec stress-nginx apk add --no-cache stress-ng
 docker exec stress-nginx nice -n 0 stress-ng --cpu 1 --timeout 120 &
 docker exec stress-nginx nice -n -10 stress-ng --cpu 1 --timeout 120 &
 ```
-
+<img width="1198" height="170" alt="image" src="https://github.com/user-attachments/assets/e9c13e9f-507d-48ad-b24f-b9d51422257a" />
 | PID | NI | CPU% | 의미 |
 |-----|----|------|------|
 | 41027 | -10 | 85.7% | 우선순위 높음 → CPU 많이 받음 |
@@ -152,4 +152,7 @@ docker run -d --name my-web-proxy --cpuset-cpus="4-7" --cpus="4.0" -p 80:80 ngin
 ```
 
 - 코어 4개 할당 → **nginx worker 4개 자동 생성** (할당 코어 수 = worker 수)
+<img width="888" height="240" alt="image (1)" src="https://github.com/user-attachments/assets/a4cef37e-a1b9-4d78-8040-c4549619930b" />
+
 - ab 부하 테스트 결과 : 10,000개 요청, 실패 **0개**, 3,706 req/sec
+<img width="726" height="882" alt="image (2)" src="https://github.com/user-attachments/assets/98a2dbf5-4433-490d-93cd-70a853032e16" />
