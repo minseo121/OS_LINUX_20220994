@@ -379,3 +379,32 @@ ab -t 30 -c 50 <http://localhost:8080/wp-content/uploads/2026/05/그림파일명
 
 > **결론**: 파일의 요청 타입(동적 vs 정적)에 따라 컨테이너별 부하가 전혀 다르게 나타난다.
 >
+---
+### 실습문제 - 웹 서버 모니터링
+<img width="1842" height="825" alt="image (3)" src="https://github.com/user-attachments/assets/c9bdd401-ba76-4ad6-a74e-b77f5aa8c367" />
+---
+<img width="1572" height="860" alt="image (4)" src="https://github.com/user-attachments/assets/a871fa66-f629-4244-b849-b9094ee95abe" />
+
+**전체 상태: DEGRADED (불량)**
+
+**1. 노드 오프라인 (5시간 55분 데이터 공백)**
+
+- 02:22 ~ 08:17 UTC 동안 Netdata 에이전트가 꺼져 있었음
+- WSL2 특성상 Windows 절전/종료 시 같이 꺼지는 현상으로 추정
+
+**2. 디스크 용량 위험 (현재 WARNING 상태)**
+
+- `/mnt/c` (Windows C드라이브): **98.4% 사용 중** → 거의 꽉 찬 상태
+- `/var/lib/docker`: **96.4% 사용 중** → Docker 컨테이너 작동 위험
+
+**3. wp_db 컨테이너 불안정**
+
+- 재시작 직후 2분 30초 동안 WARNING↔CLEAR 4번 반복
+- MySQL 초기화 중 헬스체크 실패로 추정, 이후 정상화
+
+**권장 조치:**
+
+- `docker system prune -a --volumes` 로 Docker 공간 확보
+- Windows C드라이브 용량 정리
+
+
