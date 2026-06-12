@@ -11,8 +11,41 @@ services:
       - wp_net
     restart: unless-stopped
 
+  netdata:
+    image: netdata/netdata:stable
+    container_name: wp_netdata
+    pid: host
+    ports:
+      - "19999:19999"
+    cap_add:
+      - SYS_PTRACE
+      - SYS_ADMIN
+    security_opt:
+      - apparmor:unconfined
+    volumes:
+      - netdataconfig:/etc/netdata
+      - netdatalib:/var/lib/netdata
+      - netdatacache:/var/cache/netdata
+      - /:/host/root:ro
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /etc/passwd:/host/etc/passwd:ro
+      - /etc/group:/host/etc/group:ro
+      - /etc/os-release:/host/etc/os-release:ro
+      - /var/log:/host/var/log:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      - NETDATA_CLAIM_TOKEN=nstUbDIUKq29Vxj0pp_2GRCdgydpIA10cqoJoWVrjPvQmbvysMjBnC40HOrOQMkNDmOWEIG5kj2dQRbsjyQ6VbRrnsaa6ByRk2yTPciYlK0izfs73h5RgNm6E6hNp9d1oZUVCgc 
+      - NETDATA_CLAIM_URL=https://app.netdata.cloud
+    networks:
+      - wp_net
+    restart: unless-stopped
+
 volumes:
   portainer_data:
+  netdataconfig:
+  netdatalib:
+  netdatacache:
 
 networks:
   wp_net:

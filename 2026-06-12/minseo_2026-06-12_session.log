@@ -4985,4 +4985,43 @@ Script done.
 Script done on 2026-06-12 17:26:31+09:00 [COMMAND_EXIT_CODE="0"]
 Script started on 2026-06-12 17:26:33+09:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="123" LINES="49"]
 [?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-12[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-12[00m$ git add .
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-12[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-12[00m$ git cdomm[K[K[K[Kommit -m ""1"1"w"n"[1P"[1P"주"차 "완"료"
+[?2004l[main 63edab6] 11주차 완료
+ 2 files changed, 4913 insertions(+), 117 deletions(-)
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-12[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-12[00m$ git push origin main
+[?2004lEnumerating objects: 9, done.
+Counting objects:  11% (1/9)Counting objects:  22% (2/9)Counting objects:  33% (3/9)Counting objects:  44% (4/9)Counting objects:  55% (5/9)Counting objects:  66% (6/9)Counting objects:  77% (7/9)Counting objects:  88% (8/9)Counting objects: 100% (9/9)Counting objects: 100% (9/9), done.
+Delta compression using up to 16 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 73.20 KiB | 3.85 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/minseo121/OS_LINUX_20220994.git
+   c975058..63edab6  main -> main
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-12[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-12[00m$ git add .
+[?2004l[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-12[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-12[00m$ git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   minseo_2026-06-12_session.log[m
+	[32mmodified:   minseo_2026-06-12_session.tm[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   minseo_2026-06-12_session.log[m
+	[31mmodified:   minseo_2026-06-12_session.tm[m
+	[31mmodified:   ../week09/setup_disks.sh[m
+	[31mmodified:   ../week11/compose.manage.yaml[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m../week11/.txt[m
+	[31m../week11/2026_2022994_week11_log.txt[m
+	[31m../week11/README.md[m
+	[31m../week11/compose.manage.back[m
+
+[?2004h]0;minseo@DESKTOP-2HHEQA0: ~/linux/2026-06-12[01;32mminseo@DESKTOP-2HHEQA0[00m:[01;34m~/linux/2026-06-12[00m$ git add .
 [?2004l
